@@ -5,10 +5,10 @@ Run this command `docker-compose up -d`
 
 ## Access to postgres: 
 * `localhost:5432`
-* **Username:** mimic (as a default)
-* **Password:** password (as a default)
+* **Username:** mimic
+* **Password:** password
 
 ## Access to PgAdmin: 
 * **URL:** `http://localhost:5050`
-* **Username:** pgadmin4@pgadmin.org (as a default)
-* **Password:** admin (as a default)
+* **Username:** pgadmin4@pgadmin.org
+* **Password:** admin
