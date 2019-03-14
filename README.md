@@ -1,4 +1,4 @@
-# Docker compose of Postgresql & PgAdmin for MIMIC-III dataset
+## Docker compose of Postgresql & PgAdmin for MIMIC-III dataset
 
 ## Setup
 Run this command `docker-compose up -d`
