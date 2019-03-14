@@ -1,4 +1,4 @@
-version: '0.9'
+version: '3.7'
 services:
   postgres:
     container_name: postgres_mimic
@@ -7,7 +7,6 @@ services:
       POSTGRES_USER: ${POSTGRES_USER:-mimic}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
       MIMIC_PASSWORD: ${MIMIC_PASSWORD:-password}
-      PGDATA: /var/lib/postgresql/data
     volumes:
        - postgres:/var/lib/postgresql/data
     ports:
