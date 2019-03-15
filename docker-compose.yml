@@ -2,8 +2,9 @@ version: '3.7'
 services:
   postgres:
     container_name: postgres_mimic
-    image: tkolleh/mimic-iii
+    image: tkolleh/mimic-iii:latest
     environment:
+      CONTAINER_HOSTNAME: ${CONTAINER_HOSTNAME:-postgres}
       POSTGRES_USER: ${POSTGRES_USER:-mimic}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
       MIMIC_PASSWORD: ${MIMIC_PASSWORD:-password}

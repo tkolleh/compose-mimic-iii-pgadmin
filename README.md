@@ -12,3 +12,6 @@ Run this command `docker-compose up -d`
 * **URL:** `http://localhost:5050`
 * **Username:** pgadmin4@pgadmin.org
 * **Password:** admin
+
+## References
+- [PostgresSQL scripts for mimic-code](https://github.com/MIT-LCP/mimic-code)
