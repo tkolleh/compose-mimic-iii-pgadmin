@@ -4,12 +4,13 @@ services:
     container_name: postgres_mimic
     image: tkolleh/mimic-iii:latest
     environment:
-      CONTAINER_HOSTNAME: ${CONTAINER_HOSTNAME:-postgres}
-      POSTGRES_USER: ${POSTGRES_USER:-mimic}
+      # CONTAINR_HOSTNAME: ${CONTAINER_HOSTNAME:-postgres}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
       MIMIC_PASSWORD: ${MIMIC_PASSWORD:-password}
+      PGDATA: /var/lib/postgresql/data
     volumes:
-       - postgres:/var/lib/postgresql/data
+       - ${DB_DIR}:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     networks:
