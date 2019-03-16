@@ -3,7 +3,11 @@ module.exports = {
   // Please don't change this file manually but run `prisma generate` to update it.
   // For more information, please read the docs: https://www.prisma.io/docs/prisma-client/
 
-/* GraphQL */ `type AggregateUser {
+/* GraphQL */ `type AggregateCaregiver {
+  count: Int!
+}
+
+type AggregateUser {
   count: Int!
 }
 
@@ -11,9 +15,156 @@ type BatchPayload {
   count: Long!
 }
 
+type Caregiver {
+  row_id: ID!
+  cgid: Int!
+  label: String
+  description: String
+}
+
+type CaregiverConnection {
+  pageInfo: PageInfo!
+  edges: [CaregiverEdge]!
+  aggregate: AggregateCaregiver!
+}
+
+input CaregiverCreateInput {
+  row_id: ID!
+  cgid: Int!
+  label: String
+  description: String
+}
+
+type CaregiverEdge {
+  node: Caregiver!
+  cursor: String!
+}
+
+enum CaregiverOrderByInput {
+  row_id_ASC
+  row_id_DESC
+  cgid_ASC
+  cgid_DESC
+  label_ASC
+  label_DESC
+  description_ASC
+  description_DESC
+  id_ASC
+  id_DESC
+  createdAt_ASC
+  createdAt_DESC
+  updatedAt_ASC
+  updatedAt_DESC
+}
+
+type CaregiverPreviousValues {
+  row_id: ID!
+  cgid: Int!
+  label: String
+  description: String
+}
+
+type CaregiverSubscriptionPayload {
+  mutation: MutationType!
+  node: Caregiver
+  updatedFields: [String!]
+  previousValues: CaregiverPreviousValues
+}
+
+input CaregiverSubscriptionWhereInput {
+  mutation_in: [MutationType!]
+  updatedFields_contains: String
+  updatedFields_contains_every: [String!]
+  updatedFields_contains_some: [String!]
+  node: CaregiverWhereInput
+  AND: [CaregiverSubscriptionWhereInput!]
+  OR: [CaregiverSubscriptionWhereInput!]
+  NOT: [CaregiverSubscriptionWhereInput!]
+}
+
+input CaregiverUpdateInput {
+  row_id: ID
+  cgid: Int
+  label: String
+  description: String
+}
+
+input CaregiverUpdateManyMutationInput {
+  row_id: ID
+  cgid: Int
+  label: String
+  description: String
+}
+
+input CaregiverWhereInput {
+  row_id: ID
+  row_id_not: ID
+  row_id_in: [ID!]
+  row_id_not_in: [ID!]
+  row_id_lt: ID
+  row_id_lte: ID
+  row_id_gt: ID
+  row_id_gte: ID
+  row_id_contains: ID
+  row_id_not_contains: ID
+  row_id_starts_with: ID
+  row_id_not_starts_with: ID
+  row_id_ends_with: ID
+  row_id_not_ends_with: ID
+  cgid: Int
+  cgid_not: Int
+  cgid_in: [Int!]
+  cgid_not_in: [Int!]
+  cgid_lt: Int
+  cgid_lte: Int
+  cgid_gt: Int
+  cgid_gte: Int
+  label: String
+  label_not: String
+  label_in: [String!]
+  label_not_in: [String!]
+  label_lt: String
+  label_lte: String
+  label_gt: String
+  label_gte: String
+  label_contains: String
+  label_not_contains: String
+  label_starts_with: String
+  label_not_starts_with: String
+  label_ends_with: String
+  label_not_ends_with: String
+  description: String
+  description_not: String
+  description_in: [String!]
+  description_not_in: [String!]
+  description_lt: String
+  description_lte: String
+  description_gt: String
+  description_gte: String
+  description_contains: String
+  description_not_contains: String
+  description_starts_with: String
+  description_not_starts_with: String
+  description_ends_with: String
+  description_not_ends_with: String
+  AND: [CaregiverWhereInput!]
+  OR: [CaregiverWhereInput!]
+  NOT: [CaregiverWhereInput!]
+}
+
+input CaregiverWhereUniqueInput {
+  row_id: ID
+}
+
 scalar Long
 
 type Mutation {
+  createCaregiver(data: CaregiverCreateInput!): Caregiver!
+  updateCaregiver(data: CaregiverUpdateInput!, where: CaregiverWhereUniqueInput!): Caregiver
+  updateManyCaregivers(data: CaregiverUpdateManyMutationInput!, where: CaregiverWhereInput): BatchPayload!
+  upsertCaregiver(where: CaregiverWhereUniqueInput!, create: CaregiverCreateInput!, update: CaregiverUpdateInput!): Caregiver!
+  deleteCaregiver(where: CaregiverWhereUniqueInput!): Caregiver
+  deleteManyCaregivers(where: CaregiverWhereInput): BatchPayload!
   createUser(data: UserCreateInput!): User!
   updateUser(data: UserUpdateInput!, where: UserWhereUniqueInput!): User
   updateManyUsers(data: UserUpdateManyMutationInput!, where: UserWhereInput): BatchPayload!
@@ -40,6 +191,9 @@ type PageInfo {
 }
 
 type Query {
+  caregiver(where: CaregiverWhereUniqueInput!): Caregiver
+  caregivers(where: CaregiverWhereInput, orderBy: CaregiverOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Caregiver]!
+  caregiversConnection(where: CaregiverWhereInput, orderBy: CaregiverOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): CaregiverConnection!
   user(where: UserWhereUniqueInput!): User
   users(where: UserWhereInput, orderBy: UserOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [User]!
   usersConnection(where: UserWhereInput, orderBy: UserOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): UserConnection!
@@ -47,6 +201,7 @@ type Query {
 }
 
 type Subscription {
+  caregiver(where: CaregiverSubscriptionWhereInput): CaregiverSubscriptionPayload
   user(where: UserSubscriptionWhereInput): UserSubscriptionPayload
 }
 

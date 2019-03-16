@@ -14,6 +14,7 @@ export type AtLeastOne<T, U = { [K in keyof T]: Pick<T, K> }> = Partial<T> &
   U[keyof U];
 
 export interface Exists {
+  caregiver: (where?: CaregiverWhereInput) => Promise<boolean>;
   user: (where?: UserWhereInput) => Promise<boolean>;
 }
 
@@ -36,6 +37,29 @@ export interface Prisma {
    * Queries
    */
 
+  caregiver: (where: CaregiverWhereUniqueInput) => CaregiverPromise;
+  caregivers: (
+    args?: {
+      where?: CaregiverWhereInput;
+      orderBy?: CaregiverOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => FragmentableArray<Caregiver>;
+  caregiversConnection: (
+    args?: {
+      where?: CaregiverWhereInput;
+      orderBy?: CaregiverOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => CaregiverConnectionPromise;
   user: (where: UserWhereUniqueInput) => UserPromise;
   users: (
     args?: {
@@ -65,6 +89,25 @@ export interface Prisma {
    * Mutations
    */
 
+  createCaregiver: (data: CaregiverCreateInput) => CaregiverPromise;
+  updateCaregiver: (
+    args: { data: CaregiverUpdateInput; where: CaregiverWhereUniqueInput }
+  ) => CaregiverPromise;
+  updateManyCaregivers: (
+    args: {
+      data: CaregiverUpdateManyMutationInput;
+      where?: CaregiverWhereInput;
+    }
+  ) => BatchPayloadPromise;
+  upsertCaregiver: (
+    args: {
+      where: CaregiverWhereUniqueInput;
+      create: CaregiverCreateInput;
+      update: CaregiverUpdateInput;
+    }
+  ) => CaregiverPromise;
+  deleteCaregiver: (where: CaregiverWhereUniqueInput) => CaregiverPromise;
+  deleteManyCaregivers: (where?: CaregiverWhereInput) => BatchPayloadPromise;
   createUser: (data: UserCreateInput) => UserPromise;
   updateUser: (
     args: { data: UserUpdateInput; where: UserWhereUniqueInput }
@@ -90,6 +133,9 @@ export interface Prisma {
 }
 
 export interface Subscription {
+  caregiver: (
+    where?: CaregiverSubscriptionWhereInput
+  ) => CaregiverSubscriptionPayloadSubscription;
   user: (
     where?: UserSubscriptionWhereInput
   ) => UserSubscriptionPayloadSubscription;
@@ -102,6 +148,22 @@ export interface ClientConstructor<T> {
 /**
  * Types
  */
+
+export type CaregiverOrderByInput =
+  | "row_id_ASC"
+  | "row_id_DESC"
+  | "cgid_ASC"
+  | "cgid_DESC"
+  | "label_ASC"
+  | "label_DESC"
+  | "description_ASC"
+  | "description_DESC"
+  | "id_ASC"
+  | "id_DESC"
+  | "createdAt_ASC"
+  | "createdAt_DESC"
+  | "updatedAt_ASC"
+  | "updatedAt_DESC";
 
 export type UserOrderByInput =
   | "id_ASC"
@@ -119,12 +181,82 @@ export interface UserCreateInput {
   name: String;
 }
 
-export interface UserUpdateInput {
-  name?: String;
+export type CaregiverWhereUniqueInput = AtLeastOne<{
+  row_id: ID_Input;
+}>;
+
+export interface CaregiverUpdateInput {
+  row_id?: ID_Input;
+  cgid?: Int;
+  label?: String;
+  description?: String;
 }
 
-export interface UserUpdateManyMutationInput {
-  name?: String;
+export interface CaregiverWhereInput {
+  row_id?: ID_Input;
+  row_id_not?: ID_Input;
+  row_id_in?: ID_Input[] | ID_Input;
+  row_id_not_in?: ID_Input[] | ID_Input;
+  row_id_lt?: ID_Input;
+  row_id_lte?: ID_Input;
+  row_id_gt?: ID_Input;
+  row_id_gte?: ID_Input;
+  row_id_contains?: ID_Input;
+  row_id_not_contains?: ID_Input;
+  row_id_starts_with?: ID_Input;
+  row_id_not_starts_with?: ID_Input;
+  row_id_ends_with?: ID_Input;
+  row_id_not_ends_with?: ID_Input;
+  cgid?: Int;
+  cgid_not?: Int;
+  cgid_in?: Int[] | Int;
+  cgid_not_in?: Int[] | Int;
+  cgid_lt?: Int;
+  cgid_lte?: Int;
+  cgid_gt?: Int;
+  cgid_gte?: Int;
+  label?: String;
+  label_not?: String;
+  label_in?: String[] | String;
+  label_not_in?: String[] | String;
+  label_lt?: String;
+  label_lte?: String;
+  label_gt?: String;
+  label_gte?: String;
+  label_contains?: String;
+  label_not_contains?: String;
+  label_starts_with?: String;
+  label_not_starts_with?: String;
+  label_ends_with?: String;
+  label_not_ends_with?: String;
+  description?: String;
+  description_not?: String;
+  description_in?: String[] | String;
+  description_not_in?: String[] | String;
+  description_lt?: String;
+  description_lte?: String;
+  description_gt?: String;
+  description_gte?: String;
+  description_contains?: String;
+  description_not_contains?: String;
+  description_starts_with?: String;
+  description_not_starts_with?: String;
+  description_ends_with?: String;
+  description_not_ends_with?: String;
+  AND?: CaregiverWhereInput[] | CaregiverWhereInput;
+  OR?: CaregiverWhereInput[] | CaregiverWhereInput;
+  NOT?: CaregiverWhereInput[] | CaregiverWhereInput;
+}
+
+export interface CaregiverSubscriptionWhereInput {
+  mutation_in?: MutationType[] | MutationType;
+  updatedFields_contains?: String;
+  updatedFields_contains_every?: String[] | String;
+  updatedFields_contains_some?: String[] | String;
+  node?: CaregiverWhereInput;
+  AND?: CaregiverSubscriptionWhereInput[] | CaregiverSubscriptionWhereInput;
+  OR?: CaregiverSubscriptionWhereInput[] | CaregiverSubscriptionWhereInput;
+  NOT?: CaregiverSubscriptionWhereInput[] | CaregiverSubscriptionWhereInput;
 }
 
 export interface UserWhereInput {
@@ -161,6 +293,28 @@ export interface UserWhereInput {
   NOT?: UserWhereInput[] | UserWhereInput;
 }
 
+export interface CaregiverCreateInput {
+  row_id: ID_Input;
+  cgid: Int;
+  label?: String;
+  description?: String;
+}
+
+export type UserWhereUniqueInput = AtLeastOne<{
+  id: ID_Input;
+}>;
+
+export interface UserUpdateManyMutationInput {
+  name?: String;
+}
+
+export interface CaregiverUpdateManyMutationInput {
+  row_id?: ID_Input;
+  cgid?: Int;
+  label?: String;
+  description?: String;
+}
+
 export interface UserSubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
@@ -172,44 +326,52 @@ export interface UserSubscriptionWhereInput {
   NOT?: UserSubscriptionWhereInput[] | UserSubscriptionWhereInput;
 }
 
-export type UserWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
-}>;
+export interface UserUpdateInput {
+  name?: String;
+}
 
 export interface NodeNode {
   id: ID_Output;
 }
 
-export interface AggregateUser {
-  count: Int;
+export interface UserEdge {
+  node: User;
+  cursor: String;
 }
 
-export interface AggregateUserPromise
-  extends Promise<AggregateUser>,
+export interface UserEdgePromise extends Promise<UserEdge>, Fragmentable {
+  node: <T = UserPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface UserEdgeSubscription
+  extends Promise<AsyncIterator<UserEdge>>,
     Fragmentable {
-  count: () => Promise<Int>;
+  node: <T = UserSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface AggregateUserSubscription
-  extends Promise<AsyncIterator<AggregateUser>>,
+export interface PageInfo {
+  hasNextPage: Boolean;
+  hasPreviousPage: Boolean;
+  startCursor?: String;
+  endCursor?: String;
+}
+
+export interface PageInfoPromise extends Promise<PageInfo>, Fragmentable {
+  hasNextPage: () => Promise<Boolean>;
+  hasPreviousPage: () => Promise<Boolean>;
+  startCursor: () => Promise<String>;
+  endCursor: () => Promise<String>;
+}
+
+export interface PageInfoSubscription
+  extends Promise<AsyncIterator<PageInfo>>,
     Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface BatchPayload {
-  count: Long;
-}
-
-export interface BatchPayloadPromise
-  extends Promise<BatchPayload>,
-    Fragmentable {
-  count: () => Promise<Long>;
-}
-
-export interface BatchPayloadSubscription
-  extends Promise<AsyncIterator<BatchPayload>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Long>>;
+  hasNextPage: () => Promise<AsyncIterator<Boolean>>;
+  hasPreviousPage: () => Promise<AsyncIterator<Boolean>>;
+  startCursor: () => Promise<AsyncIterator<String>>;
+  endCursor: () => Promise<AsyncIterator<String>>;
 }
 
 export interface UserPreviousValues {
@@ -231,21 +393,171 @@ export interface UserPreviousValuesSubscription
   name: () => Promise<AsyncIterator<String>>;
 }
 
-export interface UserEdge {
-  node: User;
+export interface CaregiverConnection {
+  pageInfo: PageInfo;
+  edges: CaregiverEdge[];
+}
+
+export interface CaregiverConnectionPromise
+  extends Promise<CaregiverConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<CaregiverEdge>>() => T;
+  aggregate: <T = AggregateCaregiverPromise>() => T;
+}
+
+export interface CaregiverConnectionSubscription
+  extends Promise<AsyncIterator<CaregiverConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<CaregiverEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateCaregiverSubscription>() => T;
+}
+
+export interface UserConnection {
+  pageInfo: PageInfo;
+  edges: UserEdge[];
+}
+
+export interface UserConnectionPromise
+  extends Promise<UserConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<UserEdge>>() => T;
+  aggregate: <T = AggregateUserPromise>() => T;
+}
+
+export interface UserConnectionSubscription
+  extends Promise<AsyncIterator<UserConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<UserEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateUserSubscription>() => T;
+}
+
+export interface CaregiverSubscriptionPayload {
+  mutation: MutationType;
+  node: Caregiver;
+  updatedFields: String[];
+  previousValues: CaregiverPreviousValues;
+}
+
+export interface CaregiverSubscriptionPayloadPromise
+  extends Promise<CaregiverSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = CaregiverPromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = CaregiverPreviousValuesPromise>() => T;
+}
+
+export interface CaregiverSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<CaregiverSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = CaregiverSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = CaregiverPreviousValuesSubscription>() => T;
+}
+
+export interface CaregiverPreviousValues {
+  row_id: ID_Output;
+  cgid: Int;
+  label?: String;
+  description?: String;
+}
+
+export interface CaregiverPreviousValuesPromise
+  extends Promise<CaregiverPreviousValues>,
+    Fragmentable {
+  row_id: () => Promise<ID_Output>;
+  cgid: () => Promise<Int>;
+  label: () => Promise<String>;
+  description: () => Promise<String>;
+}
+
+export interface CaregiverPreviousValuesSubscription
+  extends Promise<AsyncIterator<CaregiverPreviousValues>>,
+    Fragmentable {
+  row_id: () => Promise<AsyncIterator<ID_Output>>;
+  cgid: () => Promise<AsyncIterator<Int>>;
+  label: () => Promise<AsyncIterator<String>>;
+  description: () => Promise<AsyncIterator<String>>;
+}
+
+export interface CaregiverEdge {
+  node: Caregiver;
   cursor: String;
 }
 
-export interface UserEdgePromise extends Promise<UserEdge>, Fragmentable {
-  node: <T = UserPromise>() => T;
+export interface CaregiverEdgePromise
+  extends Promise<CaregiverEdge>,
+    Fragmentable {
+  node: <T = CaregiverPromise>() => T;
   cursor: () => Promise<String>;
 }
 
-export interface UserEdgeSubscription
-  extends Promise<AsyncIterator<UserEdge>>,
+export interface CaregiverEdgeSubscription
+  extends Promise<AsyncIterator<CaregiverEdge>>,
     Fragmentable {
-  node: <T = UserSubscription>() => T;
+  node: <T = CaregiverSubscription>() => T;
   cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface User {
+  id: ID_Output;
+  name: String;
+}
+
+export interface UserPromise extends Promise<User>, Fragmentable {
+  id: () => Promise<ID_Output>;
+  name: () => Promise<String>;
+}
+
+export interface UserSubscription
+  extends Promise<AsyncIterator<User>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  name: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateUser {
+  count: Int;
+}
+
+export interface AggregateUserPromise
+  extends Promise<AggregateUser>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateUserSubscription
+  extends Promise<AsyncIterator<AggregateUser>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Caregiver {
+  row_id: ID_Output;
+  cgid: Int;
+  label?: String;
+  description?: String;
+}
+
+export interface CaregiverPromise extends Promise<Caregiver>, Fragmentable {
+  row_id: () => Promise<ID_Output>;
+  cgid: () => Promise<Int>;
+  label: () => Promise<String>;
+  description: () => Promise<String>;
+}
+
+export interface CaregiverSubscription
+  extends Promise<AsyncIterator<Caregiver>>,
+    Fragmentable {
+  row_id: () => Promise<AsyncIterator<ID_Output>>;
+  cgid: () => Promise<AsyncIterator<Int>>;
+  label: () => Promise<AsyncIterator<String>>;
+  description: () => Promise<AsyncIterator<String>>;
 }
 
 export interface UserSubscriptionPayload {
@@ -273,65 +585,36 @@ export interface UserSubscriptionPayloadSubscription
   previousValues: <T = UserPreviousValuesSubscription>() => T;
 }
 
-export interface User {
-  id: ID_Output;
-  name: String;
+export interface BatchPayload {
+  count: Long;
 }
 
-export interface UserPromise extends Promise<User>, Fragmentable {
-  id: () => Promise<ID_Output>;
-  name: () => Promise<String>;
-}
-
-export interface UserSubscription
-  extends Promise<AsyncIterator<User>>,
+export interface BatchPayloadPromise
+  extends Promise<BatchPayload>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  name: () => Promise<AsyncIterator<String>>;
+  count: () => Promise<Long>;
 }
 
-export interface UserConnection {
-  pageInfo: PageInfo;
-  edges: UserEdge[];
-}
-
-export interface UserConnectionPromise
-  extends Promise<UserConnection>,
+export interface BatchPayloadSubscription
+  extends Promise<AsyncIterator<BatchPayload>>,
     Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<UserEdge>>() => T;
-  aggregate: <T = AggregateUserPromise>() => T;
+  count: () => Promise<AsyncIterator<Long>>;
 }
 
-export interface UserConnectionSubscription
-  extends Promise<AsyncIterator<UserConnection>>,
+export interface AggregateCaregiver {
+  count: Int;
+}
+
+export interface AggregateCaregiverPromise
+  extends Promise<AggregateCaregiver>,
     Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<UserEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateUserSubscription>() => T;
+  count: () => Promise<Int>;
 }
 
-export interface PageInfo {
-  hasNextPage: Boolean;
-  hasPreviousPage: Boolean;
-  startCursor?: String;
-  endCursor?: String;
-}
-
-export interface PageInfoPromise extends Promise<PageInfo>, Fragmentable {
-  hasNextPage: () => Promise<Boolean>;
-  hasPreviousPage: () => Promise<Boolean>;
-  startCursor: () => Promise<String>;
-  endCursor: () => Promise<String>;
-}
-
-export interface PageInfoSubscription
-  extends Promise<AsyncIterator<PageInfo>>,
+export interface AggregateCaregiverSubscription
+  extends Promise<AsyncIterator<AggregateCaregiver>>,
     Fragmentable {
-  hasNextPage: () => Promise<AsyncIterator<Boolean>>;
-  hasPreviousPage: () => Promise<AsyncIterator<Boolean>>;
-  startCursor: () => Promise<AsyncIterator<String>>;
-  endCursor: () => Promise<AsyncIterator<String>>;
+  count: () => Promise<AsyncIterator<Int>>;
 }
 
 /*
@@ -339,23 +622,23 @@ The `String` scalar type represents textual data, represented as UTF-8 character
 */
 export type String = string;
 
-export type Long = string;
-
 /*
 The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `"4"`) or integer (such as `4`) input value will be accepted as an ID.
 */
 export type ID_Input = string | number;
 export type ID_Output = string;
 
-/*
-The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1. 
-*/
-export type Int = number;
+export type Long = string;
 
 /*
 The `Boolean` scalar type represents `true` or `false`.
 */
 export type Boolean = boolean;
+
+/*
+The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1. 
+*/
+export type Int = number;
 
 /**
  * Model Metadata
@@ -364,6 +647,10 @@ export type Boolean = boolean;
 export const models: Model[] = [
   {
     name: "User",
+    embedded: false
+  },
+  {
+    name: "Caregiver",
     embedded: false
   }
 ];
