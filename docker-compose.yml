@@ -31,6 +31,29 @@ services:
       - postgres
     restart: unless-stopped
 
+  prisma:
+    image: prismagraphql/prisma:1.28
+    restart: unless-stopped
+    ports:
+    - "4466:4466"
+    networks:
+      - postgres
+    environment:
+      PRISMA_CONFIG: |
+        port: 4466
+        # uncomment the next line and provide the env var PRISMA_MANAGEMENT_API_SECRET=my-secret to activate cluster security
+        # managementApiSecret: my-secret
+        databases:
+          default:
+            connector: postgres
+            host: host.docker.internal
+            database: mimic
+            user: mimic
+            password: ${MIMIC_PASSWORD:-password}
+            rawAccess: true
+            port: '5432'
+            migrations: true
+
 networks:
   postgres:
     driver: bridge
