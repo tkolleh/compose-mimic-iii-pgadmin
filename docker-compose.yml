@@ -38,6 +38,8 @@ services:
     - "4466:4466"
     networks:
       - postgres
+    links:
+      - "postgres:database"
     environment:
       PRISMA_CONFIG: |
         port: 4466
@@ -46,7 +48,7 @@ services:
         databases:
           default:
             connector: postgres
-            host: host.docker.internal
+            host: postgres
             database: mimic
             user: mimic
             password: ${MIMIC_PASSWORD:-password}

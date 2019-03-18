@@ -69,9 +69,6 @@ type Admission @indexes(value: [
   # Religon.
   religion: String
   services: [Service]
-  # Foreign key. Identifies the patient.
-  # Relation admissions.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
   transfers: [Transfer]
 }
 
@@ -102,9 +99,6 @@ type Callout @pgTable(name: "callout") {
   discharge_wardid: Int
   # First time at which a ward was reserved for the call out request.
   firstreservationtime: DateTime
-  # Foreign key. Identifies the hospital stay.
-  # Relation callout.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission!
   # Time at which the outcome (cancelled or discharged) occurred.
   outcometime: DateTime!
   # Indicates if special precautions are required.
@@ -117,9 +111,6 @@ type Callout @pgTable(name: "callout") {
   request_tele: Int!
   # Indicates if special precautions are required.
   request_vre: Int!
-  # Foreign key. Identifies the patient.
-  # Relation callout.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
   # If the ward where the call was submitted was an ICU, the ICU type is listed here.
   submit_careunit: String
   # Identifies the ward where the call out request was submitted.
@@ -131,31 +122,16 @@ type Callout @pgTable(name: "callout") {
 type Chartevent @pgTable(name: "chartevents") {
   # Unique row identifier.
   id: ID! @pgColumn(name: "row_id") @unique
-  # Foreign key. Identifies the caregiver.
-  # Relation chartevents.cgid -> caregivers.cgid does not target the id field of caregivers
-  # cgid: Caregiver
   # Time when the event occured.
   charttime: DateTime
   # Flag to highlight an error with the event.
   error: Int
-  # Foreign key. Identifies the hospital stay.
-  # Relation chartevents.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission
-  # Foreign key. Identifies the ICU stay.
-  # Relation chartevents.icustay_id -> icustays.icustay_id does not target the id field of icustays
-  # icustay_id: Icustay
-  # Foreign key. Identifies the charted item.
-  # Relation chartevents.itemid -> d_items.itemid does not target the id field of d_items
-  # itemid: D_item
   # Result status of lab data.
   resultstatus: String
   # Text string indicating the stopped status of an event (i.e. stopped, not stopped).
   stopped: String
   # Time when the event was recorded in the system.
   storetime: DateTime
-  # Foreign key. Identifies the patient.
-  # Relation chartevents.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
   # Value of the event as a text string.
   value: String
   # Value of the event as a number.
@@ -523,14 +499,8 @@ type Cptevent @indexes(value: [
   cpt_suffix: String
   # Description of the Current Procedural Terminology, if available.
   description: String
-  # Foreign key. Identifies the hospital stay.
-  # Relation cptevents.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission!
   # High-level section of the Current Procedural Terminology code.
   sectionheader: String
-  # Foreign key. Identifies the patient.
-  # Relation cptevents.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
   # Subsection of the Current Procedural Terminology code.
   subsectionheader: String
   # Sequence number of the event, derived from the ticket ID.
@@ -610,8 +580,8 @@ type D_item @indexes(value: [
   # Table which contains data for the given ITEMID.
   linksto: String
   microbiologyevents: [Microbiologyevent]
-  microbiologyevents: [Microbiologyevent]
-  microbiologyevents: [Microbiologyevent]
+  #microbiologyevents: [Microbiologyevent]
+  #microbiologyevents: [Microbiologyevent]
   outputevents: [Outputevent]
   # Type of item, for example solution or ingredient.
   param_type: String
@@ -643,31 +613,16 @@ type D_labitem @indexes(value: [
 type Datetimeevent @pgTable(name: "datetimeevents") {
   # Unique row identifier.
   id: ID! @pgColumn(name: "row_id") @unique
-  # Foreign key. Identifies the caregiver.
-  # Relation datetimeevents.cgid -> caregivers.cgid does not target the id field of caregivers
-  # cgid: Caregiver!
   # Time when the event occured.
   charttime: DateTime!
   # Flag to highlight an error with the event.
   error: Int
-  # Foreign key. Identifies the hospital stay.
-  # Relation datetimeevents.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission
-  # Foreign key. Identifies the ICU stay.
-  # Relation datetimeevents.icustay_id -> icustays.icustay_id does not target the id field of icustays
-  # icustay_id: Icustay
-  # Foreign key. Identifies the charted item.
-  # Relation datetimeevents.itemid -> d_items.itemid does not target the id field of d_items
-  # itemid: D_item!
   # Result status of lab data.
   resultstatus: String
   # Event was explicitly marked as stopped. Infrequently used by caregivers.
   stopped: String
   # Time when the event was recorded in the system.
   storetime: DateTime!
-  # Foreign key. Identifies the patient.
-  # Relation datetimeevents.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
   # Value of the event as a text string.
   value: DateTime
   # Unit of measurement.
@@ -681,16 +636,10 @@ type Diagnoses_icd @indexes(value: [
 ]) @pgTable(name: "diagnoses_icd") {
   # Unique row identifier.
   id: ID! @pgColumn(name: "row_id") @unique
-  # Foreign key. Identifies the hospital stay.
-  # Relation diagnoses_icd.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission!
   # ICD9 code for the diagnosis.
   icd9_code: String
   # Priority of the code. Sequence 1 is the primary code.
   seq_num: Int
-  # Foreign key. Identifies the patient.
-  # Relation diagnoses_icd.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
 }
 
 type Drgcode @indexes(value: [
@@ -709,12 +658,6 @@ type Drgcode @indexes(value: [
   drg_severity: Int
   # Type of Diagnosis-Related Group, for example APR is All Patient Refined
   drg_type: String!
-  # Foreign key. Identifies the hospital stay.
-  # Relation drgcodes.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission!
-  # Foreign key. Identifies the patient.
-  # Relation drgcodes.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
 }
 
 type Icustay @indexes(value: [
@@ -730,9 +673,6 @@ type Icustay @indexes(value: [
   first_careunit: String!
   # Identifier for the first ward the patient was located in.
   first_wardid: Int!
-  # Foreign key. Identifies the hospital stay.
-  # Relation icustays.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission!
   # Primary key. Identifies the ICU stay.
   icustay_id: Int! @unique
   inputevents_cv: [Inputevents_cv]
@@ -750,9 +690,6 @@ type Icustay @indexes(value: [
   outtime: DateTime
   prescriptions: [Prescription]
   procedureevents_mv: [Procedureevents_mv]
-  # Foreign key. Identifies the patient.
-  # Relation icustays.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
   transfers: [Transfer]
 }
 
@@ -766,17 +703,8 @@ type Inputevents_cv @indexes(value: [
   amount: Float
   # Unit of measurement for the amount.
   amountuom: String
-  # Foreign key. Identifies the caregiver.
-  # Relation inputevents_cv.cgid -> caregivers.cgid does not target the id field of caregivers
-  # cgid: Caregiver
   # Time that the input was started or received.
   charttime: DateTime
-  # Foreign key. Identifies the hospital stay.
-  # Relation inputevents_cv.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission
-  # Foreign key. Identifies the ICU stay.
-  # Relation inputevents_cv.icustay_id -> icustays.icustay_id does not target the id field of icustays
-  # icustay_id: Icustay
   # Foreign key. Identifies the charted item.
   itemid: Int
   # Identifier linking orders across multiple administrations. LINKORDERID is always equal to the first occuring ORDERID of the series.
@@ -805,9 +733,6 @@ type Inputevents_cv @indexes(value: [
   stopped: String
   # Time when the event was recorded in the system.
   storetime: DateTime
-  # Foreign key. Identifies the patient.
-  # Relation inputevents_cv.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
 }
 
 type Inputevents_mv @pgTable(name: "inputevents_mv") {
@@ -819,9 +744,6 @@ type Inputevents_mv @pgTable(name: "inputevents_mv") {
   amountuom: String
   # Reason for cancellation, if cancelled.
   cancelreason: Int
-  # Foreign key. Identifies the caregiver.
-  # Relation inputevents_mv.cgid -> caregivers.cgid does not target the id field of caregivers
-  # cgid: Caregiver
   # The title of the caregiver who canceled the order.
   comments_canceledby: String
   # Time at which the caregiver edited or cancelled the order.
@@ -832,17 +754,8 @@ type Inputevents_mv @pgTable(name: "inputevents_mv") {
   continueinnextdept: Int
   # Time when the event ended.
   endtime: DateTime
-  # Foreign key. Identifies the hospital stay.
-  # Relation inputevents_mv.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission
-  # Foreign key. Identifies the ICU stay.
-  # Relation inputevents_mv.icustay_id -> icustays.icustay_id does not target the id field of icustays
-  # icustay_id: Icustay
   # Indicates whether the bag containing the solution is open.
   isopenbag: Int
-  # Foreign key. Identifies the charted item.
-  # Relation inputevents_mv.itemid -> d_items.itemid does not target the id field of d_items
-  # itemid: D_item
   # Identifier linking orders across multiple administrations. LINKORDERID is always equal to the first occuring ORDERID of the series.
   linkorderid: Int
   # The type of item administered.
@@ -871,9 +784,6 @@ type Inputevents_mv @pgTable(name: "inputevents_mv") {
   statusdescription: String
   # Time when the event was recorded in the system.
   storetime: DateTime
-  # Foreign key. Identifies the patient.
-  # Relation inputevents_mv.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
   # The total amount in the solution for the given item.
   totalamount: Float
   # Unit of measurement for the total amount in the solution.
@@ -887,15 +797,6 @@ type Labevent @pgTable(name: "labevents") {
   charttime: DateTime
   # Flag indicating whether the lab test value is considered abnormal (null if the test was normal).
   flag: String
-  # Foreign key. Identifies the hospital stay.
-  # Relation labevents.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission
-  # Foreign key. Identifies the charted item.
-  # Relation labevents.itemid -> d_labitems.itemid does not target the id field of d_labitems
-  # itemid: D_labitem!
-  # Foreign key. Identifies the patient.
-  # Relation labevents.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
   # Value of the event as a text string.
   value: String
   # Value of the event as a number.
@@ -907,9 +808,6 @@ type Labevent @pgTable(name: "labevents") {
 type Microbiologyevent @pgTable(name: "microbiologyevents") {
   # Unique row identifier.
   id: ID! @pgColumn(name: "row_id") @unique
-  # Foreign key. Identifies the antibody.
-  # Relation microbiologyevents.ab_itemid -> d_items.itemid does not target the id field of d_items
-  # ab_itemid: D_item
   # Name of the antibody used.
   ab_name: String
   # Date when the event occured.
@@ -922,26 +820,14 @@ type Microbiologyevent @pgTable(name: "microbiologyevents") {
   dilution_text: String
   # The value component of DILUTION_TEXT: must be a floating point number.
   dilution_value: Float
-  # Foreign key. Identifies the hospital stay.
-  # Relation microbiologyevents.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission
   # Interpretation of the test.
   interpretation: String
   # Isolate number associated with the test.
   isolate_num: Int
-  # Foreign key. Identifies the organism.
-  # Relation microbiologyevents.org_itemid -> d_items.itemid does not target the id field of d_items
-  # org_itemid: D_item
   # Name of the organism.
   org_name: String
-  # Foreign key. Identifies the specimen.
-  # Relation microbiologyevents.spec_itemid -> d_items.itemid does not target the id field of d_items
-  # spec_itemid: D_item
   # Description of the specimen.
   spec_type_desc: String
-  # Foreign key. Identifies the patient.
-  # Relation microbiologyevents.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
 }
 
 type Noteevent @indexes(value: [
@@ -951,24 +837,15 @@ type Noteevent @indexes(value: [
   id: ID! @pgColumn(name: "row_id") @unique
   # Category of the note, e.g. Discharge summary.
   category: String
-  # Foreign key. Identifies the caregiver.
-  # Relation noteevents.cgid -> caregivers.cgid does not target the id field of caregivers
-  # cgid: Caregiver
   # Date when the note was charted.
   chartdate: DateTime
   # Date and time when the note was charted. Note that some notes (e.g. discharge summaries) do not have a time associated with them: these notes have NULL in this column.
   charttime: DateTime
   # A more detailed categorization for the note, sometimes entered by free-text.
   description: String
-  # Foreign key. Identifies the hospital stay.
-  # Relation noteevents.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission
   # Flag to highlight an error with the note.
   iserror: String
   storetime: DateTime
-  # Foreign key. Identifies the patient.
-  # Relation noteevents.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
   # Content of the note.
   text: String
 }
@@ -976,31 +853,16 @@ type Noteevent @indexes(value: [
 type Outputevent @pgTable(name: "outputevents") {
   # Unique row identifier.
   id: ID! @pgColumn(name: "row_id") @unique
-  # Foreign key. Identifies the caregiver.
-  # Relation outputevents.cgid -> caregivers.cgid does not target the id field of caregivers
-  # cgid: Caregiver
   # Time when the output was recorded/occurred.
   charttime: DateTime
-  # Foreign key. Identifies the hospital stay.
-  # Relation outputevents.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission
-  # Foreign key. Identifies the ICU stay.
-  # Relation outputevents.icustay_id -> icustays.icustay_id does not target the id field of icustays
-  # icustay_id: Icustay
   # Flag to highlight an error with the measurement.
   iserror: Int
-  # Foreign key. Identifies the charted item.
-  # Relation outputevents.itemid -> d_items.itemid does not target the id field of d_items
-  # itemid: D_item
   # Not applicable to outputs - column always null.
   newbottle: String
   # Event was explicitly marked as stopped. Infrequently used by caregivers.
   stopped: String
   # Time when the event was recorded in the system.
   storetime: DateTime
-  # Foreign key. Identifies the patient.
-  # Relation outputevents.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
   # Value of the event as a float.
   value: Float
   # Unit of measurement.
@@ -1073,12 +935,6 @@ type Prescription @indexes(value: [
   formulary_drug_cd: String
   # Generic Sequence Number.
   gsn: String
-  # Foreign key. Identifies the hospital stay.
-  # Relation prescriptions.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission!
-  # Foreign key. Identifies the ICU stay.
-  # Relation prescriptions.icustay_id -> icustays.icustay_id does not target the id field of icustays
-  # icustay_id: Icustay
   # National Drug Code.
   ndc: String
   # Strength of the drug (product).
@@ -1087,28 +943,17 @@ type Prescription @indexes(value: [
   route: String
   # Date when the prescription started.
   startdate: DateTime
-  # Foreign key. Identifies the patient.
-  # Relation prescriptions.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
 }
 
 type Procedureevents_mv @pgTable(name: "procedureevents_mv") {
   id: ID! @pgColumn(name: "row_id") @unique
   cancelreason: Int
-  # Relation procedureevents_mv.cgid -> caregivers.cgid does not target the id field of caregivers
-  # cgid: Caregiver
   comments_canceledby: String
   comments_date: DateTime
   comments_editedby: String
   continueinnextdept: Int
   endtime: DateTime
-  # Relation procedureevents_mv.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission!
-  # Relation procedureevents_mv.icustay_id -> icustays.icustay_id does not target the id field of icustays
-  # icustay_id: Icustay
   isopenbag: Int
-  # Relation procedureevents_mv.itemid -> d_items.itemid does not target the id field of d_items
-  # itemid: D_item
   linkorderid: Int
   location: String
   locationcategory: String
@@ -1119,8 +964,6 @@ type Procedureevents_mv @pgTable(name: "procedureevents_mv") {
   starttime: DateTime
   statusdescription: String
   storetime: DateTime
-  # Relation procedureevents_mv.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
   value: Float
   valueuom: String
 }
@@ -1130,16 +973,10 @@ type Procedures_icd @indexes(value: [
 ]) @pgTable(name: "procedures_icd") {
   # Unique row identifier.
   id: ID! @pgColumn(name: "row_id") @unique
-  # Foreign key. Identifies the hospital stay.
-  # Relation procedures_icd.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission!
   # ICD9 code associated with the procedure.
   icd9_code: String!
   # Lower procedure numbers occurred earlier.
   seq_num: Int!
-  # Foreign key. Identifies the patient.
-  # Relation procedures_icd.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
 }
 
 type Service @pgTable(name: "services") {
@@ -1147,14 +984,8 @@ type Service @pgTable(name: "services") {
   id: ID! @pgColumn(name: "row_id") @unique
   # Current service type.
   curr_service: String
-  # Foreign key. Identifies the hospital stay.
-  # Relation services.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission!
   # Previous service type.
   prev_service: String
-  # Foreign key. Identifies the patient.
-  # Relation services.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
   # Time when the transfer occured.
   transfertime: DateTime!
 }
@@ -1170,12 +1001,6 @@ type Transfer @pgTable(name: "transfers") {
   dbsource: String
   # Type of event, for example admission or transfer.
   eventtype: String
-  # Foreign key. Identifies the hospital stay.
-  # Relation transfers.hadm_id -> admissions.hadm_id does not target the id field of admissions
-  # hadm_id: Admission!
-  # Foreign key. Identifies the ICU stay.
-  # Relation transfers.icustay_id -> icustays.icustay_id does not target the id field of icustays
-  # icustay_id: Icustay
   # Time when the patient was transferred into the unit.
   intime: DateTime
   # Length of stay in the unit in minutes.
@@ -1186,7 +1011,4 @@ type Transfer @pgTable(name: "transfers") {
   prev_careunit: String
   # Identifier for the previous ward the patient was located in.
   prev_wardid: Int
-  # Foreign key. Identifies the patient.
-  # Relation transfers.subject_id -> patients.subject_id does not target the id field of patients
-  # subject_id: Patient!
 }
