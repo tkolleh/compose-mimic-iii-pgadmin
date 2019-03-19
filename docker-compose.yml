@@ -11,6 +11,7 @@ services:
       PGDATA: /var/lib/postgresql/data
     volumes:
        - ${DB_DIR}:/var/lib/postgresql/data
+       - ${MIMIC_DATA_DIR}:/var/lib/postgresql/mdata
     ports:
       - "5432:5432"
     networks:
