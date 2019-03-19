@@ -18,45 +18,43 @@ export interface Exists {
   callout: (where?: CalloutWhereInput) => Promise<boolean>;
   caregiver: (where?: CaregiverWhereInput) => Promise<boolean>;
   chartevent: (where?: CharteventWhereInput) => Promise<boolean>;
-  chartevents_1: (where?: Chartevents_1WhereInput) => Promise<boolean>;
-  chartevents_10: (where?: Chartevents_10WhereInput) => Promise<boolean>;
-  chartevents_11: (where?: Chartevents_11WhereInput) => Promise<boolean>;
-  chartevents_12: (where?: Chartevents_12WhereInput) => Promise<boolean>;
-  chartevents_13: (where?: Chartevents_13WhereInput) => Promise<boolean>;
-  chartevents_14: (where?: Chartevents_14WhereInput) => Promise<boolean>;
-  chartevents_15: (where?: Chartevents_15WhereInput) => Promise<boolean>;
-  chartevents_16: (where?: Chartevents_16WhereInput) => Promise<boolean>;
-  chartevents_17: (where?: Chartevents_17WhereInput) => Promise<boolean>;
-  chartevents_2: (where?: Chartevents_2WhereInput) => Promise<boolean>;
-  chartevents_3: (where?: Chartevents_3WhereInput) => Promise<boolean>;
-  chartevents_4: (where?: Chartevents_4WhereInput) => Promise<boolean>;
-  chartevents_5: (where?: Chartevents_5WhereInput) => Promise<boolean>;
-  chartevents_6: (where?: Chartevents_6WhereInput) => Promise<boolean>;
-  chartevents_7: (where?: Chartevents_7WhereInput) => Promise<boolean>;
-  chartevents_8: (where?: Chartevents_8WhereInput) => Promise<boolean>;
-  chartevents_9: (where?: Chartevents_9WhereInput) => Promise<boolean>;
+  chartevents1: (where?: Chartevents1WhereInput) => Promise<boolean>;
+  chartevents10: (where?: Chartevents10WhereInput) => Promise<boolean>;
+  chartevents11: (where?: Chartevents11WhereInput) => Promise<boolean>;
+  chartevents12: (where?: Chartevents12WhereInput) => Promise<boolean>;
+  chartevents13: (where?: Chartevents13WhereInput) => Promise<boolean>;
+  chartevents14: (where?: Chartevents14WhereInput) => Promise<boolean>;
+  chartevents15: (where?: Chartevents15WhereInput) => Promise<boolean>;
+  chartevents16: (where?: Chartevents16WhereInput) => Promise<boolean>;
+  chartevents17: (where?: Chartevents17WhereInput) => Promise<boolean>;
+  chartevents2: (where?: Chartevents2WhereInput) => Promise<boolean>;
+  chartevents3: (where?: Chartevents3WhereInput) => Promise<boolean>;
+  chartevents4: (where?: Chartevents4WhereInput) => Promise<boolean>;
+  chartevents5: (where?: Chartevents5WhereInput) => Promise<boolean>;
+  chartevents6: (where?: Chartevents6WhereInput) => Promise<boolean>;
+  chartevents7: (where?: Chartevents7WhereInput) => Promise<boolean>;
+  chartevents8: (where?: Chartevents8WhereInput) => Promise<boolean>;
+  chartevents9: (where?: Chartevents9WhereInput) => Promise<boolean>;
   cptevent: (where?: CpteventWhereInput) => Promise<boolean>;
-  d_cpt: (where?: D_cptWhereInput) => Promise<boolean>;
-  d_icd_diagnosis: (where?: D_icd_diagnosisWhereInput) => Promise<boolean>;
-  d_icd_procedure: (where?: D_icd_procedureWhereInput) => Promise<boolean>;
-  d_item: (where?: D_itemWhereInput) => Promise<boolean>;
-  d_labitem: (where?: D_labitemWhereInput) => Promise<boolean>;
+  dCpt: (where?: DCptWhereInput) => Promise<boolean>;
+  dIcdDiagnosis: (where?: DIcdDiagnosisWhereInput) => Promise<boolean>;
+  dIcdProcedure: (where?: DIcdProcedureWhereInput) => Promise<boolean>;
+  dItem: (where?: DItemWhereInput) => Promise<boolean>;
+  dLabitem: (where?: DLabitemWhereInput) => Promise<boolean>;
   datetimeevent: (where?: DatetimeeventWhereInput) => Promise<boolean>;
-  diagnoses_icd: (where?: Diagnoses_icdWhereInput) => Promise<boolean>;
+  diagnosesIcd: (where?: DiagnosesIcdWhereInput) => Promise<boolean>;
   drgcode: (where?: DrgcodeWhereInput) => Promise<boolean>;
   icustay: (where?: IcustayWhereInput) => Promise<boolean>;
-  inputevents_cv: (where?: Inputevents_cvWhereInput) => Promise<boolean>;
-  inputevents_mv: (where?: Inputevents_mvWhereInput) => Promise<boolean>;
+  inputeventsCv: (where?: InputeventsCvWhereInput) => Promise<boolean>;
+  inputeventsMv: (where?: InputeventsMvWhereInput) => Promise<boolean>;
   labevent: (where?: LabeventWhereInput) => Promise<boolean>;
   microbiologyevent: (where?: MicrobiologyeventWhereInput) => Promise<boolean>;
   noteevent: (where?: NoteeventWhereInput) => Promise<boolean>;
   outputevent: (where?: OutputeventWhereInput) => Promise<boolean>;
   patient: (where?: PatientWhereInput) => Promise<boolean>;
   prescription: (where?: PrescriptionWhereInput) => Promise<boolean>;
-  procedureevents_mv: (
-    where?: Procedureevents_mvWhereInput
-  ) => Promise<boolean>;
-  procedures_icd: (where?: Procedures_icdWhereInput) => Promise<boolean>;
+  procedureeventsMv: (where?: ProcedureeventsMvWhereInput) => Promise<boolean>;
+  proceduresIcd: (where?: ProceduresIcdWhereInput) => Promise<boolean>;
   service: (where?: ServiceWhereInput) => Promise<boolean>;
   transfer: (where?: TransferWhereInput) => Promise<boolean>;
 }
@@ -172,380 +170,380 @@ export interface Prisma {
       last?: Int;
     }
   ) => CharteventConnectionPromise;
-  chartevents_1s: (
+  chartevents1s: (
     args?: {
-      where?: Chartevents_1WhereInput;
-      orderBy?: Chartevents_1OrderByInput;
+      where?: Chartevents1WhereInput;
+      orderBy?: Chartevents1OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_1>;
-  chartevents_1sConnection: (
+  ) => FragmentableArray<Chartevents1>;
+  chartevents1sConnection: (
     args?: {
-      where?: Chartevents_1WhereInput;
-      orderBy?: Chartevents_1OrderByInput;
+      where?: Chartevents1WhereInput;
+      orderBy?: Chartevents1OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_1ConnectionPromise;
-  chartevents_10s: (
+  ) => Chartevents1ConnectionPromise;
+  chartevents10s: (
     args?: {
-      where?: Chartevents_10WhereInput;
-      orderBy?: Chartevents_10OrderByInput;
+      where?: Chartevents10WhereInput;
+      orderBy?: Chartevents10OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_10>;
-  chartevents_10sConnection: (
+  ) => FragmentableArray<Chartevents10>;
+  chartevents10sConnection: (
     args?: {
-      where?: Chartevents_10WhereInput;
-      orderBy?: Chartevents_10OrderByInput;
+      where?: Chartevents10WhereInput;
+      orderBy?: Chartevents10OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_10ConnectionPromise;
-  chartevents_11s: (
+  ) => Chartevents10ConnectionPromise;
+  chartevents11s: (
     args?: {
-      where?: Chartevents_11WhereInput;
-      orderBy?: Chartevents_11OrderByInput;
+      where?: Chartevents11WhereInput;
+      orderBy?: Chartevents11OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_11>;
-  chartevents_11sConnection: (
+  ) => FragmentableArray<Chartevents11>;
+  chartevents11sConnection: (
     args?: {
-      where?: Chartevents_11WhereInput;
-      orderBy?: Chartevents_11OrderByInput;
+      where?: Chartevents11WhereInput;
+      orderBy?: Chartevents11OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_11ConnectionPromise;
-  chartevents_12s: (
+  ) => Chartevents11ConnectionPromise;
+  chartevents12s: (
     args?: {
-      where?: Chartevents_12WhereInput;
-      orderBy?: Chartevents_12OrderByInput;
+      where?: Chartevents12WhereInput;
+      orderBy?: Chartevents12OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_12>;
-  chartevents_12sConnection: (
+  ) => FragmentableArray<Chartevents12>;
+  chartevents12sConnection: (
     args?: {
-      where?: Chartevents_12WhereInput;
-      orderBy?: Chartevents_12OrderByInput;
+      where?: Chartevents12WhereInput;
+      orderBy?: Chartevents12OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_12ConnectionPromise;
-  chartevents_13s: (
+  ) => Chartevents12ConnectionPromise;
+  chartevents13s: (
     args?: {
-      where?: Chartevents_13WhereInput;
-      orderBy?: Chartevents_13OrderByInput;
+      where?: Chartevents13WhereInput;
+      orderBy?: Chartevents13OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_13>;
-  chartevents_13sConnection: (
+  ) => FragmentableArray<Chartevents13>;
+  chartevents13sConnection: (
     args?: {
-      where?: Chartevents_13WhereInput;
-      orderBy?: Chartevents_13OrderByInput;
+      where?: Chartevents13WhereInput;
+      orderBy?: Chartevents13OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_13ConnectionPromise;
-  chartevents_14s: (
+  ) => Chartevents13ConnectionPromise;
+  chartevents14s: (
     args?: {
-      where?: Chartevents_14WhereInput;
-      orderBy?: Chartevents_14OrderByInput;
+      where?: Chartevents14WhereInput;
+      orderBy?: Chartevents14OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_14>;
-  chartevents_14sConnection: (
+  ) => FragmentableArray<Chartevents14>;
+  chartevents14sConnection: (
     args?: {
-      where?: Chartevents_14WhereInput;
-      orderBy?: Chartevents_14OrderByInput;
+      where?: Chartevents14WhereInput;
+      orderBy?: Chartevents14OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_14ConnectionPromise;
-  chartevents_15s: (
+  ) => Chartevents14ConnectionPromise;
+  chartevents15s: (
     args?: {
-      where?: Chartevents_15WhereInput;
-      orderBy?: Chartevents_15OrderByInput;
+      where?: Chartevents15WhereInput;
+      orderBy?: Chartevents15OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_15>;
-  chartevents_15sConnection: (
+  ) => FragmentableArray<Chartevents15>;
+  chartevents15sConnection: (
     args?: {
-      where?: Chartevents_15WhereInput;
-      orderBy?: Chartevents_15OrderByInput;
+      where?: Chartevents15WhereInput;
+      orderBy?: Chartevents15OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_15ConnectionPromise;
-  chartevents_16s: (
+  ) => Chartevents15ConnectionPromise;
+  chartevents16s: (
     args?: {
-      where?: Chartevents_16WhereInput;
-      orderBy?: Chartevents_16OrderByInput;
+      where?: Chartevents16WhereInput;
+      orderBy?: Chartevents16OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_16>;
-  chartevents_16sConnection: (
+  ) => FragmentableArray<Chartevents16>;
+  chartevents16sConnection: (
     args?: {
-      where?: Chartevents_16WhereInput;
-      orderBy?: Chartevents_16OrderByInput;
+      where?: Chartevents16WhereInput;
+      orderBy?: Chartevents16OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_16ConnectionPromise;
-  chartevents_17s: (
+  ) => Chartevents16ConnectionPromise;
+  chartevents17s: (
     args?: {
-      where?: Chartevents_17WhereInput;
-      orderBy?: Chartevents_17OrderByInput;
+      where?: Chartevents17WhereInput;
+      orderBy?: Chartevents17OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_17>;
-  chartevents_17sConnection: (
+  ) => FragmentableArray<Chartevents17>;
+  chartevents17sConnection: (
     args?: {
-      where?: Chartevents_17WhereInput;
-      orderBy?: Chartevents_17OrderByInput;
+      where?: Chartevents17WhereInput;
+      orderBy?: Chartevents17OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_17ConnectionPromise;
-  chartevents_2s: (
+  ) => Chartevents17ConnectionPromise;
+  chartevents2s: (
     args?: {
-      where?: Chartevents_2WhereInput;
-      orderBy?: Chartevents_2OrderByInput;
+      where?: Chartevents2WhereInput;
+      orderBy?: Chartevents2OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_2>;
-  chartevents_2sConnection: (
+  ) => FragmentableArray<Chartevents2>;
+  chartevents2sConnection: (
     args?: {
-      where?: Chartevents_2WhereInput;
-      orderBy?: Chartevents_2OrderByInput;
+      where?: Chartevents2WhereInput;
+      orderBy?: Chartevents2OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_2ConnectionPromise;
-  chartevents_3s: (
+  ) => Chartevents2ConnectionPromise;
+  chartevents3s: (
     args?: {
-      where?: Chartevents_3WhereInput;
-      orderBy?: Chartevents_3OrderByInput;
+      where?: Chartevents3WhereInput;
+      orderBy?: Chartevents3OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_3>;
-  chartevents_3sConnection: (
+  ) => FragmentableArray<Chartevents3>;
+  chartevents3sConnection: (
     args?: {
-      where?: Chartevents_3WhereInput;
-      orderBy?: Chartevents_3OrderByInput;
+      where?: Chartevents3WhereInput;
+      orderBy?: Chartevents3OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_3ConnectionPromise;
-  chartevents_4s: (
+  ) => Chartevents3ConnectionPromise;
+  chartevents4s: (
     args?: {
-      where?: Chartevents_4WhereInput;
-      orderBy?: Chartevents_4OrderByInput;
+      where?: Chartevents4WhereInput;
+      orderBy?: Chartevents4OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_4>;
-  chartevents_4sConnection: (
+  ) => FragmentableArray<Chartevents4>;
+  chartevents4sConnection: (
     args?: {
-      where?: Chartevents_4WhereInput;
-      orderBy?: Chartevents_4OrderByInput;
+      where?: Chartevents4WhereInput;
+      orderBy?: Chartevents4OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_4ConnectionPromise;
-  chartevents_5s: (
+  ) => Chartevents4ConnectionPromise;
+  chartevents5s: (
     args?: {
-      where?: Chartevents_5WhereInput;
-      orderBy?: Chartevents_5OrderByInput;
+      where?: Chartevents5WhereInput;
+      orderBy?: Chartevents5OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_5>;
-  chartevents_5sConnection: (
+  ) => FragmentableArray<Chartevents5>;
+  chartevents5sConnection: (
     args?: {
-      where?: Chartevents_5WhereInput;
-      orderBy?: Chartevents_5OrderByInput;
+      where?: Chartevents5WhereInput;
+      orderBy?: Chartevents5OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_5ConnectionPromise;
-  chartevents_6s: (
+  ) => Chartevents5ConnectionPromise;
+  chartevents6s: (
     args?: {
-      where?: Chartevents_6WhereInput;
-      orderBy?: Chartevents_6OrderByInput;
+      where?: Chartevents6WhereInput;
+      orderBy?: Chartevents6OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_6>;
-  chartevents_6sConnection: (
+  ) => FragmentableArray<Chartevents6>;
+  chartevents6sConnection: (
     args?: {
-      where?: Chartevents_6WhereInput;
-      orderBy?: Chartevents_6OrderByInput;
+      where?: Chartevents6WhereInput;
+      orderBy?: Chartevents6OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_6ConnectionPromise;
-  chartevents_7s: (
+  ) => Chartevents6ConnectionPromise;
+  chartevents7s: (
     args?: {
-      where?: Chartevents_7WhereInput;
-      orderBy?: Chartevents_7OrderByInput;
+      where?: Chartevents7WhereInput;
+      orderBy?: Chartevents7OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_7>;
-  chartevents_7sConnection: (
+  ) => FragmentableArray<Chartevents7>;
+  chartevents7sConnection: (
     args?: {
-      where?: Chartevents_7WhereInput;
-      orderBy?: Chartevents_7OrderByInput;
+      where?: Chartevents7WhereInput;
+      orderBy?: Chartevents7OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_7ConnectionPromise;
-  chartevents_8s: (
+  ) => Chartevents7ConnectionPromise;
+  chartevents8s: (
     args?: {
-      where?: Chartevents_8WhereInput;
-      orderBy?: Chartevents_8OrderByInput;
+      where?: Chartevents8WhereInput;
+      orderBy?: Chartevents8OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_8>;
-  chartevents_8sConnection: (
+  ) => FragmentableArray<Chartevents8>;
+  chartevents8sConnection: (
     args?: {
-      where?: Chartevents_8WhereInput;
-      orderBy?: Chartevents_8OrderByInput;
+      where?: Chartevents8WhereInput;
+      orderBy?: Chartevents8OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_8ConnectionPromise;
-  chartevents_9s: (
+  ) => Chartevents8ConnectionPromise;
+  chartevents9s: (
     args?: {
-      where?: Chartevents_9WhereInput;
-      orderBy?: Chartevents_9OrderByInput;
+      where?: Chartevents9WhereInput;
+      orderBy?: Chartevents9OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Chartevents_9>;
-  chartevents_9sConnection: (
+  ) => FragmentableArray<Chartevents9>;
+  chartevents9sConnection: (
     args?: {
-      where?: Chartevents_9WhereInput;
-      orderBy?: Chartevents_9OrderByInput;
+      where?: Chartevents9WhereInput;
+      orderBy?: Chartevents9OrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Chartevents_9ConnectionPromise;
+  ) => Chartevents9ConnectionPromise;
   cptevent: (where: CpteventWhereUniqueInput) => CpteventPromise;
   cptevents: (
     args?: {
@@ -569,125 +567,121 @@ export interface Prisma {
       last?: Int;
     }
   ) => CpteventConnectionPromise;
-  d_cpt: (where: D_cptWhereUniqueInput) => D_cptPromise;
-  d_cpts: (
+  dCpt: (where: DCptWhereUniqueInput) => DCptPromise;
+  dCpts: (
     args?: {
-      where?: D_cptWhereInput;
-      orderBy?: D_cptOrderByInput;
+      where?: DCptWhereInput;
+      orderBy?: DCptOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<D_cpt>;
-  d_cptsConnection: (
+  ) => FragmentableArray<DCpt>;
+  dCptsConnection: (
     args?: {
-      where?: D_cptWhereInput;
-      orderBy?: D_cptOrderByInput;
+      where?: DCptWhereInput;
+      orderBy?: DCptOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => D_cptConnectionPromise;
-  d_icd_diagnosis: (
-    where: D_icd_diagnosisWhereUniqueInput
-  ) => D_icd_diagnosisPromise;
-  d_icd_diagnoses: (
+  ) => DCptConnectionPromise;
+  dIcdDiagnosis: (where: DIcdDiagnosisWhereUniqueInput) => DIcdDiagnosisPromise;
+  dIcdDiagnoses: (
     args?: {
-      where?: D_icd_diagnosisWhereInput;
-      orderBy?: D_icd_diagnosisOrderByInput;
+      where?: DIcdDiagnosisWhereInput;
+      orderBy?: DIcdDiagnosisOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<D_icd_diagnosis>;
-  d_icd_diagnosesConnection: (
+  ) => FragmentableArray<DIcdDiagnosis>;
+  dIcdDiagnosesConnection: (
     args?: {
-      where?: D_icd_diagnosisWhereInput;
-      orderBy?: D_icd_diagnosisOrderByInput;
+      where?: DIcdDiagnosisWhereInput;
+      orderBy?: DIcdDiagnosisOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => D_icd_diagnosisConnectionPromise;
-  d_icd_procedure: (
-    where: D_icd_procedureWhereUniqueInput
-  ) => D_icd_procedurePromise;
-  d_icd_procedures: (
+  ) => DIcdDiagnosisConnectionPromise;
+  dIcdProcedure: (where: DIcdProcedureWhereUniqueInput) => DIcdProcedurePromise;
+  dIcdProcedures: (
     args?: {
-      where?: D_icd_procedureWhereInput;
-      orderBy?: D_icd_procedureOrderByInput;
+      where?: DIcdProcedureWhereInput;
+      orderBy?: DIcdProcedureOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<D_icd_procedure>;
-  d_icd_proceduresConnection: (
+  ) => FragmentableArray<DIcdProcedure>;
+  dIcdProceduresConnection: (
     args?: {
-      where?: D_icd_procedureWhereInput;
-      orderBy?: D_icd_procedureOrderByInput;
+      where?: DIcdProcedureWhereInput;
+      orderBy?: DIcdProcedureOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => D_icd_procedureConnectionPromise;
-  d_item: (where: D_itemWhereUniqueInput) => D_itemPromise;
-  d_items: (
+  ) => DIcdProcedureConnectionPromise;
+  dItem: (where: DItemWhereUniqueInput) => DItemPromise;
+  dItems: (
     args?: {
-      where?: D_itemWhereInput;
-      orderBy?: D_itemOrderByInput;
+      where?: DItemWhereInput;
+      orderBy?: DItemOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<D_item>;
-  d_itemsConnection: (
+  ) => FragmentableArray<DItem>;
+  dItemsConnection: (
     args?: {
-      where?: D_itemWhereInput;
-      orderBy?: D_itemOrderByInput;
+      where?: DItemWhereInput;
+      orderBy?: DItemOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => D_itemConnectionPromise;
-  d_labitem: (where: D_labitemWhereUniqueInput) => D_labitemPromise;
-  d_labitems: (
+  ) => DItemConnectionPromise;
+  dLabitem: (where: DLabitemWhereUniqueInput) => DLabitemPromise;
+  dLabitems: (
     args?: {
-      where?: D_labitemWhereInput;
-      orderBy?: D_labitemOrderByInput;
+      where?: DLabitemWhereInput;
+      orderBy?: DLabitemOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<D_labitem>;
-  d_labitemsConnection: (
+  ) => FragmentableArray<DLabitem>;
+  dLabitemsConnection: (
     args?: {
-      where?: D_labitemWhereInput;
-      orderBy?: D_labitemOrderByInput;
+      where?: DLabitemWhereInput;
+      orderBy?: DLabitemOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => D_labitemConnectionPromise;
+  ) => DLabitemConnectionPromise;
   datetimeevent: (where: DatetimeeventWhereUniqueInput) => DatetimeeventPromise;
   datetimeevents: (
     args?: {
@@ -711,29 +705,29 @@ export interface Prisma {
       last?: Int;
     }
   ) => DatetimeeventConnectionPromise;
-  diagnoses_icd: (where: Diagnoses_icdWhereUniqueInput) => Diagnoses_icdPromise;
-  diagnoses_icds: (
+  diagnosesIcd: (where: DiagnosesIcdWhereUniqueInput) => DiagnosesIcdPromise;
+  diagnosesIcds: (
     args?: {
-      where?: Diagnoses_icdWhereInput;
-      orderBy?: Diagnoses_icdOrderByInput;
+      where?: DiagnosesIcdWhereInput;
+      orderBy?: DiagnosesIcdOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Diagnoses_icd>;
-  diagnoses_icdsConnection: (
+  ) => FragmentableArray<DiagnosesIcd>;
+  diagnosesIcdsConnection: (
     args?: {
-      where?: Diagnoses_icdWhereInput;
-      orderBy?: Diagnoses_icdOrderByInput;
+      where?: DiagnosesIcdWhereInput;
+      orderBy?: DiagnosesIcdOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Diagnoses_icdConnectionPromise;
+  ) => DiagnosesIcdConnectionPromise;
   drgcode: (where: DrgcodeWhereUniqueInput) => DrgcodePromise;
   drgcodes: (
     args?: {
@@ -780,56 +774,52 @@ export interface Prisma {
       last?: Int;
     }
   ) => IcustayConnectionPromise;
-  inputevents_cv: (
-    where: Inputevents_cvWhereUniqueInput
-  ) => Inputevents_cvPromise;
-  inputevents_cvs: (
+  inputeventsCv: (where: InputeventsCvWhereUniqueInput) => InputeventsCvPromise;
+  inputeventsCvs: (
     args?: {
-      where?: Inputevents_cvWhereInput;
-      orderBy?: Inputevents_cvOrderByInput;
+      where?: InputeventsCvWhereInput;
+      orderBy?: InputeventsCvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Inputevents_cv>;
-  inputevents_cvsConnection: (
+  ) => FragmentableArray<InputeventsCv>;
+  inputeventsCvsConnection: (
     args?: {
-      where?: Inputevents_cvWhereInput;
-      orderBy?: Inputevents_cvOrderByInput;
+      where?: InputeventsCvWhereInput;
+      orderBy?: InputeventsCvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Inputevents_cvConnectionPromise;
-  inputevents_mv: (
-    where: Inputevents_mvWhereUniqueInput
-  ) => Inputevents_mvPromise;
-  inputevents_mvs: (
+  ) => InputeventsCvConnectionPromise;
+  inputeventsMv: (where: InputeventsMvWhereUniqueInput) => InputeventsMvPromise;
+  inputeventsMvs: (
     args?: {
-      where?: Inputevents_mvWhereInput;
-      orderBy?: Inputevents_mvOrderByInput;
+      where?: InputeventsMvWhereInput;
+      orderBy?: InputeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Inputevents_mv>;
-  inputevents_mvsConnection: (
+  ) => FragmentableArray<InputeventsMv>;
+  inputeventsMvsConnection: (
     args?: {
-      where?: Inputevents_mvWhereInput;
-      orderBy?: Inputevents_mvOrderByInput;
+      where?: InputeventsMvWhereInput;
+      orderBy?: InputeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Inputevents_mvConnectionPromise;
+  ) => InputeventsMvConnectionPromise;
   labevent: (where: LabeventWhereUniqueInput) => LabeventPromise;
   labevents: (
     args?: {
@@ -970,56 +960,54 @@ export interface Prisma {
       last?: Int;
     }
   ) => PrescriptionConnectionPromise;
-  procedureevents_mv: (
-    where: Procedureevents_mvWhereUniqueInput
-  ) => Procedureevents_mvPromise;
-  procedureevents_mvs: (
+  procedureeventsMv: (
+    where: ProcedureeventsMvWhereUniqueInput
+  ) => ProcedureeventsMvPromise;
+  procedureeventsMvs: (
     args?: {
-      where?: Procedureevents_mvWhereInput;
-      orderBy?: Procedureevents_mvOrderByInput;
+      where?: ProcedureeventsMvWhereInput;
+      orderBy?: ProcedureeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Procedureevents_mv>;
-  procedureevents_mvsConnection: (
+  ) => FragmentableArray<ProcedureeventsMv>;
+  procedureeventsMvsConnection: (
     args?: {
-      where?: Procedureevents_mvWhereInput;
-      orderBy?: Procedureevents_mvOrderByInput;
+      where?: ProcedureeventsMvWhereInput;
+      orderBy?: ProcedureeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Procedureevents_mvConnectionPromise;
-  procedures_icd: (
-    where: Procedures_icdWhereUniqueInput
-  ) => Procedures_icdPromise;
-  procedures_icds: (
+  ) => ProcedureeventsMvConnectionPromise;
+  proceduresIcd: (where: ProceduresIcdWhereUniqueInput) => ProceduresIcdPromise;
+  proceduresIcds: (
     args?: {
-      where?: Procedures_icdWhereInput;
-      orderBy?: Procedures_icdOrderByInput;
+      where?: ProceduresIcdWhereInput;
+      orderBy?: ProceduresIcdOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => FragmentableArray<Procedures_icd>;
-  procedures_icdsConnection: (
+  ) => FragmentableArray<ProceduresIcd>;
+  proceduresIcdsConnection: (
     args?: {
-      where?: Procedures_icdWhereInput;
-      orderBy?: Procedures_icdOrderByInput;
+      where?: ProceduresIcdWhereInput;
+      orderBy?: ProceduresIcdOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
       first?: Int;
       last?: Int;
     }
-  ) => Procedures_icdConnectionPromise;
+  ) => ProceduresIcdConnectionPromise;
   service: (where: ServiceWhereUniqueInput) => ServicePromise;
   services: (
     args?: {
@@ -1145,191 +1133,175 @@ export interface Prisma {
   ) => CharteventPromise;
   deleteChartevent: (where: CharteventWhereUniqueInput) => CharteventPromise;
   deleteManyChartevents: (where?: CharteventWhereInput) => BatchPayloadPromise;
-  createChartevents_1: (data: Chartevents_1CreateInput) => Chartevents_1Promise;
-  updateManyChartevents_1s: (
+  createChartevents1: (data: Chartevents1CreateInput) => Chartevents1Promise;
+  updateManyChartevents1s: (
     args: {
-      data: Chartevents_1UpdateManyMutationInput;
-      where?: Chartevents_1WhereInput;
+      data: Chartevents1UpdateManyMutationInput;
+      where?: Chartevents1WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_1s: (
-    where?: Chartevents_1WhereInput
+  deleteManyChartevents1s: (
+    where?: Chartevents1WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_10: (
-    data: Chartevents_10CreateInput
-  ) => Chartevents_10Promise;
-  updateManyChartevents_10s: (
+  createChartevents10: (data: Chartevents10CreateInput) => Chartevents10Promise;
+  updateManyChartevents10s: (
     args: {
-      data: Chartevents_10UpdateManyMutationInput;
-      where?: Chartevents_10WhereInput;
+      data: Chartevents10UpdateManyMutationInput;
+      where?: Chartevents10WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_10s: (
-    where?: Chartevents_10WhereInput
+  deleteManyChartevents10s: (
+    where?: Chartevents10WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_11: (
-    data: Chartevents_11CreateInput
-  ) => Chartevents_11Promise;
-  updateManyChartevents_11s: (
+  createChartevents11: (data: Chartevents11CreateInput) => Chartevents11Promise;
+  updateManyChartevents11s: (
     args: {
-      data: Chartevents_11UpdateManyMutationInput;
-      where?: Chartevents_11WhereInput;
+      data: Chartevents11UpdateManyMutationInput;
+      where?: Chartevents11WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_11s: (
-    where?: Chartevents_11WhereInput
+  deleteManyChartevents11s: (
+    where?: Chartevents11WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_12: (
-    data: Chartevents_12CreateInput
-  ) => Chartevents_12Promise;
-  updateManyChartevents_12s: (
+  createChartevents12: (data: Chartevents12CreateInput) => Chartevents12Promise;
+  updateManyChartevents12s: (
     args: {
-      data: Chartevents_12UpdateManyMutationInput;
-      where?: Chartevents_12WhereInput;
+      data: Chartevents12UpdateManyMutationInput;
+      where?: Chartevents12WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_12s: (
-    where?: Chartevents_12WhereInput
+  deleteManyChartevents12s: (
+    where?: Chartevents12WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_13: (
-    data: Chartevents_13CreateInput
-  ) => Chartevents_13Promise;
-  updateManyChartevents_13s: (
+  createChartevents13: (data: Chartevents13CreateInput) => Chartevents13Promise;
+  updateManyChartevents13s: (
     args: {
-      data: Chartevents_13UpdateManyMutationInput;
-      where?: Chartevents_13WhereInput;
+      data: Chartevents13UpdateManyMutationInput;
+      where?: Chartevents13WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_13s: (
-    where?: Chartevents_13WhereInput
+  deleteManyChartevents13s: (
+    where?: Chartevents13WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_14: (
-    data: Chartevents_14CreateInput
-  ) => Chartevents_14Promise;
-  updateManyChartevents_14s: (
+  createChartevents14: (data: Chartevents14CreateInput) => Chartevents14Promise;
+  updateManyChartevents14s: (
     args: {
-      data: Chartevents_14UpdateManyMutationInput;
-      where?: Chartevents_14WhereInput;
+      data: Chartevents14UpdateManyMutationInput;
+      where?: Chartevents14WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_14s: (
-    where?: Chartevents_14WhereInput
+  deleteManyChartevents14s: (
+    where?: Chartevents14WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_15: (
-    data: Chartevents_15CreateInput
-  ) => Chartevents_15Promise;
-  updateManyChartevents_15s: (
+  createChartevents15: (data: Chartevents15CreateInput) => Chartevents15Promise;
+  updateManyChartevents15s: (
     args: {
-      data: Chartevents_15UpdateManyMutationInput;
-      where?: Chartevents_15WhereInput;
+      data: Chartevents15UpdateManyMutationInput;
+      where?: Chartevents15WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_15s: (
-    where?: Chartevents_15WhereInput
+  deleteManyChartevents15s: (
+    where?: Chartevents15WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_16: (
-    data: Chartevents_16CreateInput
-  ) => Chartevents_16Promise;
-  updateManyChartevents_16s: (
+  createChartevents16: (data: Chartevents16CreateInput) => Chartevents16Promise;
+  updateManyChartevents16s: (
     args: {
-      data: Chartevents_16UpdateManyMutationInput;
-      where?: Chartevents_16WhereInput;
+      data: Chartevents16UpdateManyMutationInput;
+      where?: Chartevents16WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_16s: (
-    where?: Chartevents_16WhereInput
+  deleteManyChartevents16s: (
+    where?: Chartevents16WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_17: (
-    data: Chartevents_17CreateInput
-  ) => Chartevents_17Promise;
-  updateManyChartevents_17s: (
+  createChartevents17: (data: Chartevents17CreateInput) => Chartevents17Promise;
+  updateManyChartevents17s: (
     args: {
-      data: Chartevents_17UpdateManyMutationInput;
-      where?: Chartevents_17WhereInput;
+      data: Chartevents17UpdateManyMutationInput;
+      where?: Chartevents17WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_17s: (
-    where?: Chartevents_17WhereInput
+  deleteManyChartevents17s: (
+    where?: Chartevents17WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_2: (data: Chartevents_2CreateInput) => Chartevents_2Promise;
-  updateManyChartevents_2s: (
+  createChartevents2: (data: Chartevents2CreateInput) => Chartevents2Promise;
+  updateManyChartevents2s: (
     args: {
-      data: Chartevents_2UpdateManyMutationInput;
-      where?: Chartevents_2WhereInput;
+      data: Chartevents2UpdateManyMutationInput;
+      where?: Chartevents2WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_2s: (
-    where?: Chartevents_2WhereInput
+  deleteManyChartevents2s: (
+    where?: Chartevents2WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_3: (data: Chartevents_3CreateInput) => Chartevents_3Promise;
-  updateManyChartevents_3s: (
+  createChartevents3: (data: Chartevents3CreateInput) => Chartevents3Promise;
+  updateManyChartevents3s: (
     args: {
-      data: Chartevents_3UpdateManyMutationInput;
-      where?: Chartevents_3WhereInput;
+      data: Chartevents3UpdateManyMutationInput;
+      where?: Chartevents3WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_3s: (
-    where?: Chartevents_3WhereInput
+  deleteManyChartevents3s: (
+    where?: Chartevents3WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_4: (data: Chartevents_4CreateInput) => Chartevents_4Promise;
-  updateManyChartevents_4s: (
+  createChartevents4: (data: Chartevents4CreateInput) => Chartevents4Promise;
+  updateManyChartevents4s: (
     args: {
-      data: Chartevents_4UpdateManyMutationInput;
-      where?: Chartevents_4WhereInput;
+      data: Chartevents4UpdateManyMutationInput;
+      where?: Chartevents4WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_4s: (
-    where?: Chartevents_4WhereInput
+  deleteManyChartevents4s: (
+    where?: Chartevents4WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_5: (data: Chartevents_5CreateInput) => Chartevents_5Promise;
-  updateManyChartevents_5s: (
+  createChartevents5: (data: Chartevents5CreateInput) => Chartevents5Promise;
+  updateManyChartevents5s: (
     args: {
-      data: Chartevents_5UpdateManyMutationInput;
-      where?: Chartevents_5WhereInput;
+      data: Chartevents5UpdateManyMutationInput;
+      where?: Chartevents5WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_5s: (
-    where?: Chartevents_5WhereInput
+  deleteManyChartevents5s: (
+    where?: Chartevents5WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_6: (data: Chartevents_6CreateInput) => Chartevents_6Promise;
-  updateManyChartevents_6s: (
+  createChartevents6: (data: Chartevents6CreateInput) => Chartevents6Promise;
+  updateManyChartevents6s: (
     args: {
-      data: Chartevents_6UpdateManyMutationInput;
-      where?: Chartevents_6WhereInput;
+      data: Chartevents6UpdateManyMutationInput;
+      where?: Chartevents6WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_6s: (
-    where?: Chartevents_6WhereInput
+  deleteManyChartevents6s: (
+    where?: Chartevents6WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_7: (data: Chartevents_7CreateInput) => Chartevents_7Promise;
-  updateManyChartevents_7s: (
+  createChartevents7: (data: Chartevents7CreateInput) => Chartevents7Promise;
+  updateManyChartevents7s: (
     args: {
-      data: Chartevents_7UpdateManyMutationInput;
-      where?: Chartevents_7WhereInput;
+      data: Chartevents7UpdateManyMutationInput;
+      where?: Chartevents7WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_7s: (
-    where?: Chartevents_7WhereInput
+  deleteManyChartevents7s: (
+    where?: Chartevents7WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_8: (data: Chartevents_8CreateInput) => Chartevents_8Promise;
-  updateManyChartevents_8s: (
+  createChartevents8: (data: Chartevents8CreateInput) => Chartevents8Promise;
+  updateManyChartevents8s: (
     args: {
-      data: Chartevents_8UpdateManyMutationInput;
-      where?: Chartevents_8WhereInput;
+      data: Chartevents8UpdateManyMutationInput;
+      where?: Chartevents8WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_8s: (
-    where?: Chartevents_8WhereInput
+  deleteManyChartevents8s: (
+    where?: Chartevents8WhereInput
   ) => BatchPayloadPromise;
-  createChartevents_9: (data: Chartevents_9CreateInput) => Chartevents_9Promise;
-  updateManyChartevents_9s: (
+  createChartevents9: (data: Chartevents9CreateInput) => Chartevents9Promise;
+  updateManyChartevents9s: (
     args: {
-      data: Chartevents_9UpdateManyMutationInput;
-      where?: Chartevents_9WhereInput;
+      data: Chartevents9UpdateManyMutationInput;
+      where?: Chartevents9WhereInput;
     }
   ) => BatchPayloadPromise;
-  deleteManyChartevents_9s: (
-    where?: Chartevents_9WhereInput
+  deleteManyChartevents9s: (
+    where?: Chartevents9WhereInput
   ) => BatchPayloadPromise;
   createCptevent: (data: CpteventCreateInput) => CpteventPromise;
   updateCptevent: (
@@ -1347,113 +1319,106 @@ export interface Prisma {
   ) => CpteventPromise;
   deleteCptevent: (where: CpteventWhereUniqueInput) => CpteventPromise;
   deleteManyCptevents: (where?: CpteventWhereInput) => BatchPayloadPromise;
-  createD_cpt: (data: D_cptCreateInput) => D_cptPromise;
-  updateD_cpt: (
-    args: { data: D_cptUpdateInput; where: D_cptWhereUniqueInput }
-  ) => D_cptPromise;
-  updateManyD_cpts: (
-    args: { data: D_cptUpdateManyMutationInput; where?: D_cptWhereInput }
+  createDCpt: (data: DCptCreateInput) => DCptPromise;
+  updateDCpt: (
+    args: { data: DCptUpdateInput; where: DCptWhereUniqueInput }
+  ) => DCptPromise;
+  updateManyDCpts: (
+    args: { data: DCptUpdateManyMutationInput; where?: DCptWhereInput }
   ) => BatchPayloadPromise;
-  upsertD_cpt: (
+  upsertDCpt: (
     args: {
-      where: D_cptWhereUniqueInput;
-      create: D_cptCreateInput;
-      update: D_cptUpdateInput;
+      where: DCptWhereUniqueInput;
+      create: DCptCreateInput;
+      update: DCptUpdateInput;
     }
-  ) => D_cptPromise;
-  deleteD_cpt: (where: D_cptWhereUniqueInput) => D_cptPromise;
-  deleteManyD_cpts: (where?: D_cptWhereInput) => BatchPayloadPromise;
-  createD_icd_diagnosis: (
-    data: D_icd_diagnosisCreateInput
-  ) => D_icd_diagnosisPromise;
-  updateD_icd_diagnosis: (
+  ) => DCptPromise;
+  deleteDCpt: (where: DCptWhereUniqueInput) => DCptPromise;
+  deleteManyDCpts: (where?: DCptWhereInput) => BatchPayloadPromise;
+  createDIcdDiagnosis: (data: DIcdDiagnosisCreateInput) => DIcdDiagnosisPromise;
+  updateDIcdDiagnosis: (
     args: {
-      data: D_icd_diagnosisUpdateInput;
-      where: D_icd_diagnosisWhereUniqueInput;
+      data: DIcdDiagnosisUpdateInput;
+      where: DIcdDiagnosisWhereUniqueInput;
     }
-  ) => D_icd_diagnosisPromise;
-  updateManyD_icd_diagnoses: (
+  ) => DIcdDiagnosisPromise;
+  updateManyDIcdDiagnoses: (
     args: {
-      data: D_icd_diagnosisUpdateManyMutationInput;
-      where?: D_icd_diagnosisWhereInput;
+      data: DIcdDiagnosisUpdateManyMutationInput;
+      where?: DIcdDiagnosisWhereInput;
     }
   ) => BatchPayloadPromise;
-  upsertD_icd_diagnosis: (
+  upsertDIcdDiagnosis: (
     args: {
-      where: D_icd_diagnosisWhereUniqueInput;
-      create: D_icd_diagnosisCreateInput;
-      update: D_icd_diagnosisUpdateInput;
+      where: DIcdDiagnosisWhereUniqueInput;
+      create: DIcdDiagnosisCreateInput;
+      update: DIcdDiagnosisUpdateInput;
     }
-  ) => D_icd_diagnosisPromise;
-  deleteD_icd_diagnosis: (
-    where: D_icd_diagnosisWhereUniqueInput
-  ) => D_icd_diagnosisPromise;
-  deleteManyD_icd_diagnoses: (
-    where?: D_icd_diagnosisWhereInput
+  ) => DIcdDiagnosisPromise;
+  deleteDIcdDiagnosis: (
+    where: DIcdDiagnosisWhereUniqueInput
+  ) => DIcdDiagnosisPromise;
+  deleteManyDIcdDiagnoses: (
+    where?: DIcdDiagnosisWhereInput
   ) => BatchPayloadPromise;
-  createD_icd_procedure: (
-    data: D_icd_procedureCreateInput
-  ) => D_icd_procedurePromise;
-  updateD_icd_procedure: (
+  createDIcdProcedure: (data: DIcdProcedureCreateInput) => DIcdProcedurePromise;
+  updateDIcdProcedure: (
     args: {
-      data: D_icd_procedureUpdateInput;
-      where: D_icd_procedureWhereUniqueInput;
+      data: DIcdProcedureUpdateInput;
+      where: DIcdProcedureWhereUniqueInput;
     }
-  ) => D_icd_procedurePromise;
-  updateManyD_icd_procedures: (
+  ) => DIcdProcedurePromise;
+  updateManyDIcdProcedures: (
     args: {
-      data: D_icd_procedureUpdateManyMutationInput;
-      where?: D_icd_procedureWhereInput;
+      data: DIcdProcedureUpdateManyMutationInput;
+      where?: DIcdProcedureWhereInput;
     }
   ) => BatchPayloadPromise;
-  upsertD_icd_procedure: (
+  upsertDIcdProcedure: (
     args: {
-      where: D_icd_procedureWhereUniqueInput;
-      create: D_icd_procedureCreateInput;
-      update: D_icd_procedureUpdateInput;
+      where: DIcdProcedureWhereUniqueInput;
+      create: DIcdProcedureCreateInput;
+      update: DIcdProcedureUpdateInput;
     }
-  ) => D_icd_procedurePromise;
-  deleteD_icd_procedure: (
-    where: D_icd_procedureWhereUniqueInput
-  ) => D_icd_procedurePromise;
-  deleteManyD_icd_procedures: (
-    where?: D_icd_procedureWhereInput
+  ) => DIcdProcedurePromise;
+  deleteDIcdProcedure: (
+    where: DIcdProcedureWhereUniqueInput
+  ) => DIcdProcedurePromise;
+  deleteManyDIcdProcedures: (
+    where?: DIcdProcedureWhereInput
   ) => BatchPayloadPromise;
-  createD_item: (data: D_itemCreateInput) => D_itemPromise;
-  updateD_item: (
-    args: { data: D_itemUpdateInput; where: D_itemWhereUniqueInput }
-  ) => D_itemPromise;
-  updateManyD_items: (
-    args: { data: D_itemUpdateManyMutationInput; where?: D_itemWhereInput }
+  createDItem: (data: DItemCreateInput) => DItemPromise;
+  updateDItem: (
+    args: { data: DItemUpdateInput; where: DItemWhereUniqueInput }
+  ) => DItemPromise;
+  updateManyDItems: (
+    args: { data: DItemUpdateManyMutationInput; where?: DItemWhereInput }
   ) => BatchPayloadPromise;
-  upsertD_item: (
+  upsertDItem: (
     args: {
-      where: D_itemWhereUniqueInput;
-      create: D_itemCreateInput;
-      update: D_itemUpdateInput;
+      where: DItemWhereUniqueInput;
+      create: DItemCreateInput;
+      update: DItemUpdateInput;
     }
-  ) => D_itemPromise;
-  deleteD_item: (where: D_itemWhereUniqueInput) => D_itemPromise;
-  deleteManyD_items: (where?: D_itemWhereInput) => BatchPayloadPromise;
-  createD_labitem: (data: D_labitemCreateInput) => D_labitemPromise;
-  updateD_labitem: (
-    args: { data: D_labitemUpdateInput; where: D_labitemWhereUniqueInput }
-  ) => D_labitemPromise;
-  updateManyD_labitems: (
-    args: {
-      data: D_labitemUpdateManyMutationInput;
-      where?: D_labitemWhereInput;
-    }
+  ) => DItemPromise;
+  deleteDItem: (where: DItemWhereUniqueInput) => DItemPromise;
+  deleteManyDItems: (where?: DItemWhereInput) => BatchPayloadPromise;
+  createDLabitem: (data: DLabitemCreateInput) => DLabitemPromise;
+  updateDLabitem: (
+    args: { data: DLabitemUpdateInput; where: DLabitemWhereUniqueInput }
+  ) => DLabitemPromise;
+  updateManyDLabitems: (
+    args: { data: DLabitemUpdateManyMutationInput; where?: DLabitemWhereInput }
   ) => BatchPayloadPromise;
-  upsertD_labitem: (
+  upsertDLabitem: (
     args: {
-      where: D_labitemWhereUniqueInput;
-      create: D_labitemCreateInput;
-      update: D_labitemUpdateInput;
+      where: DLabitemWhereUniqueInput;
+      create: DLabitemCreateInput;
+      update: DLabitemUpdateInput;
     }
-  ) => D_labitemPromise;
-  deleteD_labitem: (where: D_labitemWhereUniqueInput) => D_labitemPromise;
-  deleteManyD_labitems: (where?: D_labitemWhereInput) => BatchPayloadPromise;
+  ) => DLabitemPromise;
+  deleteDLabitem: (where: DLabitemWhereUniqueInput) => DLabitemPromise;
+  deleteManyDLabitems: (where?: DLabitemWhereInput) => BatchPayloadPromise;
   createDatetimeevent: (data: DatetimeeventCreateInput) => DatetimeeventPromise;
   updateDatetimeevent: (
     args: {
@@ -1480,31 +1445,28 @@ export interface Prisma {
   deleteManyDatetimeevents: (
     where?: DatetimeeventWhereInput
   ) => BatchPayloadPromise;
-  createDiagnoses_icd: (data: Diagnoses_icdCreateInput) => Diagnoses_icdPromise;
-  updateDiagnoses_icd: (
+  createDiagnosesIcd: (data: DiagnosesIcdCreateInput) => DiagnosesIcdPromise;
+  updateDiagnosesIcd: (
+    args: { data: DiagnosesIcdUpdateInput; where: DiagnosesIcdWhereUniqueInput }
+  ) => DiagnosesIcdPromise;
+  updateManyDiagnosesIcds: (
     args: {
-      data: Diagnoses_icdUpdateInput;
-      where: Diagnoses_icdWhereUniqueInput;
-    }
-  ) => Diagnoses_icdPromise;
-  updateManyDiagnoses_icds: (
-    args: {
-      data: Diagnoses_icdUpdateManyMutationInput;
-      where?: Diagnoses_icdWhereInput;
+      data: DiagnosesIcdUpdateManyMutationInput;
+      where?: DiagnosesIcdWhereInput;
     }
   ) => BatchPayloadPromise;
-  upsertDiagnoses_icd: (
+  upsertDiagnosesIcd: (
     args: {
-      where: Diagnoses_icdWhereUniqueInput;
-      create: Diagnoses_icdCreateInput;
-      update: Diagnoses_icdUpdateInput;
+      where: DiagnosesIcdWhereUniqueInput;
+      create: DiagnosesIcdCreateInput;
+      update: DiagnosesIcdUpdateInput;
     }
-  ) => Diagnoses_icdPromise;
-  deleteDiagnoses_icd: (
-    where: Diagnoses_icdWhereUniqueInput
-  ) => Diagnoses_icdPromise;
-  deleteManyDiagnoses_icds: (
-    where?: Diagnoses_icdWhereInput
+  ) => DiagnosesIcdPromise;
+  deleteDiagnosesIcd: (
+    where: DiagnosesIcdWhereUniqueInput
+  ) => DiagnosesIcdPromise;
+  deleteManyDiagnosesIcds: (
+    where?: DiagnosesIcdWhereInput
   ) => BatchPayloadPromise;
   createDrgcode: (data: DrgcodeCreateInput) => DrgcodePromise;
   updateDrgcode: (
@@ -1538,61 +1500,57 @@ export interface Prisma {
   ) => IcustayPromise;
   deleteIcustay: (where: IcustayWhereUniqueInput) => IcustayPromise;
   deleteManyIcustays: (where?: IcustayWhereInput) => BatchPayloadPromise;
-  createInputevents_cv: (
-    data: Inputevents_cvCreateInput
-  ) => Inputevents_cvPromise;
-  updateInputevents_cv: (
+  createInputeventsCv: (data: InputeventsCvCreateInput) => InputeventsCvPromise;
+  updateInputeventsCv: (
     args: {
-      data: Inputevents_cvUpdateInput;
-      where: Inputevents_cvWhereUniqueInput;
+      data: InputeventsCvUpdateInput;
+      where: InputeventsCvWhereUniqueInput;
     }
-  ) => Inputevents_cvPromise;
-  updateManyInputevents_cvs: (
+  ) => InputeventsCvPromise;
+  updateManyInputeventsCvs: (
     args: {
-      data: Inputevents_cvUpdateManyMutationInput;
-      where?: Inputevents_cvWhereInput;
+      data: InputeventsCvUpdateManyMutationInput;
+      where?: InputeventsCvWhereInput;
     }
   ) => BatchPayloadPromise;
-  upsertInputevents_cv: (
+  upsertInputeventsCv: (
     args: {
-      where: Inputevents_cvWhereUniqueInput;
-      create: Inputevents_cvCreateInput;
-      update: Inputevents_cvUpdateInput;
+      where: InputeventsCvWhereUniqueInput;
+      create: InputeventsCvCreateInput;
+      update: InputeventsCvUpdateInput;
     }
-  ) => Inputevents_cvPromise;
-  deleteInputevents_cv: (
-    where: Inputevents_cvWhereUniqueInput
-  ) => Inputevents_cvPromise;
-  deleteManyInputevents_cvs: (
-    where?: Inputevents_cvWhereInput
+  ) => InputeventsCvPromise;
+  deleteInputeventsCv: (
+    where: InputeventsCvWhereUniqueInput
+  ) => InputeventsCvPromise;
+  deleteManyInputeventsCvs: (
+    where?: InputeventsCvWhereInput
   ) => BatchPayloadPromise;
-  createInputevents_mv: (
-    data: Inputevents_mvCreateInput
-  ) => Inputevents_mvPromise;
-  updateInputevents_mv: (
+  createInputeventsMv: (data: InputeventsMvCreateInput) => InputeventsMvPromise;
+  updateInputeventsMv: (
     args: {
-      data: Inputevents_mvUpdateInput;
-      where: Inputevents_mvWhereUniqueInput;
+      data: InputeventsMvUpdateInput;
+      where: InputeventsMvWhereUniqueInput;
     }
-  ) => Inputevents_mvPromise;
-  updateManyInputevents_mvs: (
+  ) => InputeventsMvPromise;
+  updateManyInputeventsMvs: (
     args: {
-      data: Inputevents_mvUpdateManyMutationInput;
-      where?: Inputevents_mvWhereInput;
+      data: InputeventsMvUpdateManyMutationInput;
+      where?: InputeventsMvWhereInput;
     }
   ) => BatchPayloadPromise;
-  upsertInputevents_mv: (
+  upsertInputeventsMv: (
     args: {
-      where: Inputevents_mvWhereUniqueInput;
-      create: Inputevents_mvCreateInput;
-      update: Inputevents_mvUpdateInput;
+      where: InputeventsMvWhereUniqueInput;
+      create: InputeventsMvCreateInput;
+      update: InputeventsMvUpdateInput;
     }
-  ) => Inputevents_mvPromise;
-  deleteInputevents_mv: (
-    where: Inputevents_mvWhereUniqueInput
-  ) => Inputevents_mvPromise;
-  deleteManyInputevents_mvs: (
-    where?: Inputevents_mvWhereInput
+  ) => InputeventsMvPromise;
+  deleteInputeventsMv: (
+    where: InputeventsMvWhereUniqueInput
+  ) => InputeventsMvPromise;
+  deleteManyInputeventsMvs: (
+    where?: InputeventsMvWhereInput
   ) => BatchPayloadPromise;
   createLabevent: (data: LabeventCreateInput) => LabeventPromise;
   updateLabevent: (
@@ -1717,61 +1675,59 @@ export interface Prisma {
   deleteManyPrescriptions: (
     where?: PrescriptionWhereInput
   ) => BatchPayloadPromise;
-  createProcedureevents_mv: (
-    data: Procedureevents_mvCreateInput
-  ) => Procedureevents_mvPromise;
-  updateProcedureevents_mv: (
+  createProcedureeventsMv: (
+    data: ProcedureeventsMvCreateInput
+  ) => ProcedureeventsMvPromise;
+  updateProcedureeventsMv: (
     args: {
-      data: Procedureevents_mvUpdateInput;
-      where: Procedureevents_mvWhereUniqueInput;
+      data: ProcedureeventsMvUpdateInput;
+      where: ProcedureeventsMvWhereUniqueInput;
     }
-  ) => Procedureevents_mvPromise;
-  updateManyProcedureevents_mvs: (
+  ) => ProcedureeventsMvPromise;
+  updateManyProcedureeventsMvs: (
     args: {
-      data: Procedureevents_mvUpdateManyMutationInput;
-      where?: Procedureevents_mvWhereInput;
-    }
-  ) => BatchPayloadPromise;
-  upsertProcedureevents_mv: (
-    args: {
-      where: Procedureevents_mvWhereUniqueInput;
-      create: Procedureevents_mvCreateInput;
-      update: Procedureevents_mvUpdateInput;
-    }
-  ) => Procedureevents_mvPromise;
-  deleteProcedureevents_mv: (
-    where: Procedureevents_mvWhereUniqueInput
-  ) => Procedureevents_mvPromise;
-  deleteManyProcedureevents_mvs: (
-    where?: Procedureevents_mvWhereInput
-  ) => BatchPayloadPromise;
-  createProcedures_icd: (
-    data: Procedures_icdCreateInput
-  ) => Procedures_icdPromise;
-  updateProcedures_icd: (
-    args: {
-      data: Procedures_icdUpdateInput;
-      where: Procedures_icdWhereUniqueInput;
-    }
-  ) => Procedures_icdPromise;
-  updateManyProcedures_icds: (
-    args: {
-      data: Procedures_icdUpdateManyMutationInput;
-      where?: Procedures_icdWhereInput;
+      data: ProcedureeventsMvUpdateManyMutationInput;
+      where?: ProcedureeventsMvWhereInput;
     }
   ) => BatchPayloadPromise;
-  upsertProcedures_icd: (
+  upsertProcedureeventsMv: (
     args: {
-      where: Procedures_icdWhereUniqueInput;
-      create: Procedures_icdCreateInput;
-      update: Procedures_icdUpdateInput;
+      where: ProcedureeventsMvWhereUniqueInput;
+      create: ProcedureeventsMvCreateInput;
+      update: ProcedureeventsMvUpdateInput;
     }
-  ) => Procedures_icdPromise;
-  deleteProcedures_icd: (
-    where: Procedures_icdWhereUniqueInput
-  ) => Procedures_icdPromise;
-  deleteManyProcedures_icds: (
-    where?: Procedures_icdWhereInput
+  ) => ProcedureeventsMvPromise;
+  deleteProcedureeventsMv: (
+    where: ProcedureeventsMvWhereUniqueInput
+  ) => ProcedureeventsMvPromise;
+  deleteManyProcedureeventsMvs: (
+    where?: ProcedureeventsMvWhereInput
+  ) => BatchPayloadPromise;
+  createProceduresIcd: (data: ProceduresIcdCreateInput) => ProceduresIcdPromise;
+  updateProceduresIcd: (
+    args: {
+      data: ProceduresIcdUpdateInput;
+      where: ProceduresIcdWhereUniqueInput;
+    }
+  ) => ProceduresIcdPromise;
+  updateManyProceduresIcds: (
+    args: {
+      data: ProceduresIcdUpdateManyMutationInput;
+      where?: ProceduresIcdWhereInput;
+    }
+  ) => BatchPayloadPromise;
+  upsertProceduresIcd: (
+    args: {
+      where: ProceduresIcdWhereUniqueInput;
+      create: ProceduresIcdCreateInput;
+      update: ProceduresIcdUpdateInput;
+    }
+  ) => ProceduresIcdPromise;
+  deleteProceduresIcd: (
+    where: ProceduresIcdWhereUniqueInput
+  ) => ProceduresIcdPromise;
+  deleteManyProceduresIcds: (
+    where?: ProceduresIcdWhereInput
   ) => BatchPayloadPromise;
   createService: (data: ServiceCreateInput) => ServicePromise;
   updateService: (
@@ -1826,93 +1782,93 @@ export interface Subscription {
   chartevent: (
     where?: CharteventSubscriptionWhereInput
   ) => CharteventSubscriptionPayloadSubscription;
-  chartevents_1: (
-    where?: Chartevents_1SubscriptionWhereInput
-  ) => Chartevents_1SubscriptionPayloadSubscription;
-  chartevents_10: (
-    where?: Chartevents_10SubscriptionWhereInput
-  ) => Chartevents_10SubscriptionPayloadSubscription;
-  chartevents_11: (
-    where?: Chartevents_11SubscriptionWhereInput
-  ) => Chartevents_11SubscriptionPayloadSubscription;
-  chartevents_12: (
-    where?: Chartevents_12SubscriptionWhereInput
-  ) => Chartevents_12SubscriptionPayloadSubscription;
-  chartevents_13: (
-    where?: Chartevents_13SubscriptionWhereInput
-  ) => Chartevents_13SubscriptionPayloadSubscription;
-  chartevents_14: (
-    where?: Chartevents_14SubscriptionWhereInput
-  ) => Chartevents_14SubscriptionPayloadSubscription;
-  chartevents_15: (
-    where?: Chartevents_15SubscriptionWhereInput
-  ) => Chartevents_15SubscriptionPayloadSubscription;
-  chartevents_16: (
-    where?: Chartevents_16SubscriptionWhereInput
-  ) => Chartevents_16SubscriptionPayloadSubscription;
-  chartevents_17: (
-    where?: Chartevents_17SubscriptionWhereInput
-  ) => Chartevents_17SubscriptionPayloadSubscription;
-  chartevents_2: (
-    where?: Chartevents_2SubscriptionWhereInput
-  ) => Chartevents_2SubscriptionPayloadSubscription;
-  chartevents_3: (
-    where?: Chartevents_3SubscriptionWhereInput
-  ) => Chartevents_3SubscriptionPayloadSubscription;
-  chartevents_4: (
-    where?: Chartevents_4SubscriptionWhereInput
-  ) => Chartevents_4SubscriptionPayloadSubscription;
-  chartevents_5: (
-    where?: Chartevents_5SubscriptionWhereInput
-  ) => Chartevents_5SubscriptionPayloadSubscription;
-  chartevents_6: (
-    where?: Chartevents_6SubscriptionWhereInput
-  ) => Chartevents_6SubscriptionPayloadSubscription;
-  chartevents_7: (
-    where?: Chartevents_7SubscriptionWhereInput
-  ) => Chartevents_7SubscriptionPayloadSubscription;
-  chartevents_8: (
-    where?: Chartevents_8SubscriptionWhereInput
-  ) => Chartevents_8SubscriptionPayloadSubscription;
-  chartevents_9: (
-    where?: Chartevents_9SubscriptionWhereInput
-  ) => Chartevents_9SubscriptionPayloadSubscription;
+  chartevents1: (
+    where?: Chartevents1SubscriptionWhereInput
+  ) => Chartevents1SubscriptionPayloadSubscription;
+  chartevents10: (
+    where?: Chartevents10SubscriptionWhereInput
+  ) => Chartevents10SubscriptionPayloadSubscription;
+  chartevents11: (
+    where?: Chartevents11SubscriptionWhereInput
+  ) => Chartevents11SubscriptionPayloadSubscription;
+  chartevents12: (
+    where?: Chartevents12SubscriptionWhereInput
+  ) => Chartevents12SubscriptionPayloadSubscription;
+  chartevents13: (
+    where?: Chartevents13SubscriptionWhereInput
+  ) => Chartevents13SubscriptionPayloadSubscription;
+  chartevents14: (
+    where?: Chartevents14SubscriptionWhereInput
+  ) => Chartevents14SubscriptionPayloadSubscription;
+  chartevents15: (
+    where?: Chartevents15SubscriptionWhereInput
+  ) => Chartevents15SubscriptionPayloadSubscription;
+  chartevents16: (
+    where?: Chartevents16SubscriptionWhereInput
+  ) => Chartevents16SubscriptionPayloadSubscription;
+  chartevents17: (
+    where?: Chartevents17SubscriptionWhereInput
+  ) => Chartevents17SubscriptionPayloadSubscription;
+  chartevents2: (
+    where?: Chartevents2SubscriptionWhereInput
+  ) => Chartevents2SubscriptionPayloadSubscription;
+  chartevents3: (
+    where?: Chartevents3SubscriptionWhereInput
+  ) => Chartevents3SubscriptionPayloadSubscription;
+  chartevents4: (
+    where?: Chartevents4SubscriptionWhereInput
+  ) => Chartevents4SubscriptionPayloadSubscription;
+  chartevents5: (
+    where?: Chartevents5SubscriptionWhereInput
+  ) => Chartevents5SubscriptionPayloadSubscription;
+  chartevents6: (
+    where?: Chartevents6SubscriptionWhereInput
+  ) => Chartevents6SubscriptionPayloadSubscription;
+  chartevents7: (
+    where?: Chartevents7SubscriptionWhereInput
+  ) => Chartevents7SubscriptionPayloadSubscription;
+  chartevents8: (
+    where?: Chartevents8SubscriptionWhereInput
+  ) => Chartevents8SubscriptionPayloadSubscription;
+  chartevents9: (
+    where?: Chartevents9SubscriptionWhereInput
+  ) => Chartevents9SubscriptionPayloadSubscription;
   cptevent: (
     where?: CpteventSubscriptionWhereInput
   ) => CpteventSubscriptionPayloadSubscription;
-  d_cpt: (
-    where?: D_cptSubscriptionWhereInput
-  ) => D_cptSubscriptionPayloadSubscription;
-  d_icd_diagnosis: (
-    where?: D_icd_diagnosisSubscriptionWhereInput
-  ) => D_icd_diagnosisSubscriptionPayloadSubscription;
-  d_icd_procedure: (
-    where?: D_icd_procedureSubscriptionWhereInput
-  ) => D_icd_procedureSubscriptionPayloadSubscription;
-  d_item: (
-    where?: D_itemSubscriptionWhereInput
-  ) => D_itemSubscriptionPayloadSubscription;
-  d_labitem: (
-    where?: D_labitemSubscriptionWhereInput
-  ) => D_labitemSubscriptionPayloadSubscription;
+  dCpt: (
+    where?: DCptSubscriptionWhereInput
+  ) => DCptSubscriptionPayloadSubscription;
+  dIcdDiagnosis: (
+    where?: DIcdDiagnosisSubscriptionWhereInput
+  ) => DIcdDiagnosisSubscriptionPayloadSubscription;
+  dIcdProcedure: (
+    where?: DIcdProcedureSubscriptionWhereInput
+  ) => DIcdProcedureSubscriptionPayloadSubscription;
+  dItem: (
+    where?: DItemSubscriptionWhereInput
+  ) => DItemSubscriptionPayloadSubscription;
+  dLabitem: (
+    where?: DLabitemSubscriptionWhereInput
+  ) => DLabitemSubscriptionPayloadSubscription;
   datetimeevent: (
     where?: DatetimeeventSubscriptionWhereInput
   ) => DatetimeeventSubscriptionPayloadSubscription;
-  diagnoses_icd: (
-    where?: Diagnoses_icdSubscriptionWhereInput
-  ) => Diagnoses_icdSubscriptionPayloadSubscription;
+  diagnosesIcd: (
+    where?: DiagnosesIcdSubscriptionWhereInput
+  ) => DiagnosesIcdSubscriptionPayloadSubscription;
   drgcode: (
     where?: DrgcodeSubscriptionWhereInput
   ) => DrgcodeSubscriptionPayloadSubscription;
   icustay: (
     where?: IcustaySubscriptionWhereInput
   ) => IcustaySubscriptionPayloadSubscription;
-  inputevents_cv: (
-    where?: Inputevents_cvSubscriptionWhereInput
-  ) => Inputevents_cvSubscriptionPayloadSubscription;
-  inputevents_mv: (
-    where?: Inputevents_mvSubscriptionWhereInput
-  ) => Inputevents_mvSubscriptionPayloadSubscription;
+  inputeventsCv: (
+    where?: InputeventsCvSubscriptionWhereInput
+  ) => InputeventsCvSubscriptionPayloadSubscription;
+  inputeventsMv: (
+    where?: InputeventsMvSubscriptionWhereInput
+  ) => InputeventsMvSubscriptionPayloadSubscription;
   labevent: (
     where?: LabeventSubscriptionWhereInput
   ) => LabeventSubscriptionPayloadSubscription;
@@ -1931,12 +1887,12 @@ export interface Subscription {
   prescription: (
     where?: PrescriptionSubscriptionWhereInput
   ) => PrescriptionSubscriptionPayloadSubscription;
-  procedureevents_mv: (
-    where?: Procedureevents_mvSubscriptionWhereInput
-  ) => Procedureevents_mvSubscriptionPayloadSubscription;
-  procedures_icd: (
-    where?: Procedures_icdSubscriptionWhereInput
-  ) => Procedures_icdSubscriptionPayloadSubscription;
+  procedureeventsMv: (
+    where?: ProcedureeventsMvSubscriptionWhereInput
+  ) => ProcedureeventsMvSubscriptionPayloadSubscription;
+  proceduresIcd: (
+    where?: ProceduresIcdSubscriptionWhereInput
+  ) => ProceduresIcdSubscriptionPayloadSubscription;
   service: (
     where?: ServiceSubscriptionWhereInput
   ) => ServiceSubscriptionPayloadSubscription;
@@ -1989,7 +1945,7 @@ export type LabeventOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_16OrderByInput =
+export type Chartevents16OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -2049,7 +2005,7 @@ export type PatientOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_15OrderByInput =
+export type Chartevents15OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -2087,7 +2043,7 @@ export type Chartevents_15OrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type D_itemOrderByInput =
+export type DItemOrderByInput =
   | "id_ASC"
   | "id_DESC"
   | "abbreviation_ASC"
@@ -2113,7 +2069,7 @@ export type D_itemOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_14OrderByInput =
+export type Chartevents14OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -2201,7 +2157,7 @@ export type CalloutOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_13OrderByInput =
+export type Chartevents13OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -2239,7 +2195,7 @@ export type Chartevents_13OrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type D_cptOrderByInput =
+export type DCptOrderByInput =
   | "id_ASC"
   | "id_DESC"
   | "category_ASC"
@@ -2263,7 +2219,7 @@ export type D_cptOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_12OrderByInput =
+export type Chartevents12OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -2327,7 +2283,7 @@ export type CharteventOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_11OrderByInput =
+export type Chartevents11OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -2365,7 +2321,7 @@ export type Chartevents_11OrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_7OrderByInput =
+export type Chartevents7OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -2403,7 +2359,7 @@ export type Chartevents_7OrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_10OrderByInput =
+export type Chartevents10OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -2441,7 +2397,7 @@ export type Chartevents_10OrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_6OrderByInput =
+export type Chartevents6OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -2479,7 +2435,7 @@ export type Chartevents_6OrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_1OrderByInput =
+export type Chartevents1OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -2567,7 +2523,7 @@ export type IcustayOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_3OrderByInput =
+export type Chartevents3OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -2610,16 +2566,16 @@ export type CaregiverOrderByInput =
   | "id_DESC"
   | "cgid_ASC"
   | "cgid_DESC"
-  | "label_ASC"
-  | "label_DESC"
   | "description_ASC"
   | "description_DESC"
+  | "label_ASC"
+  | "label_DESC"
   | "createdAt_ASC"
   | "createdAt_DESC"
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_2OrderByInput =
+export type Chartevents2OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -2657,7 +2613,7 @@ export type Chartevents_2OrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Inputevents_cvOrderByInput =
+export type InputeventsCvOrderByInput =
   | "id_ASC"
   | "id_DESC"
   | "amount_ASC"
@@ -2743,7 +2699,7 @@ export type AdmissionOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type D_icd_procedureOrderByInput =
+export type DIcdProcedureOrderByInput =
   | "id_ASC"
   | "id_DESC"
   | "icd9_code_ASC"
@@ -2757,7 +2713,7 @@ export type D_icd_procedureOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Inputevents_mvOrderByInput =
+export type InputeventsMvOrderByInput =
   | "id_ASC"
   | "id_DESC"
   | "amount_ASC"
@@ -2815,7 +2771,7 @@ export type Inputevents_mvOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_9OrderByInput =
+export type Chartevents9OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -2915,7 +2871,7 @@ export type OutputeventOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_4OrderByInput =
+export type Chartevents4OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -2953,7 +2909,7 @@ export type Chartevents_4OrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Procedures_icdOrderByInput =
+export type ProceduresIcdOrderByInput =
   | "id_ASC"
   | "id_DESC"
   | "icd9_code_ASC"
@@ -2965,7 +2921,7 @@ export type Procedures_icdOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_17OrderByInput =
+export type Chartevents17OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -3041,7 +2997,7 @@ export type PrescriptionOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type D_icd_diagnosisOrderByInput =
+export type DIcdDiagnosisOrderByInput =
   | "id_ASC"
   | "id_DESC"
   | "icd9_code_ASC"
@@ -3109,7 +3065,7 @@ export type MicrobiologyeventOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Procedureevents_mvOrderByInput =
+export type ProcedureeventsMvOrderByInput =
   | "id_ASC"
   | "id_DESC"
   | "cancelreason_ASC"
@@ -3177,7 +3133,7 @@ export type NoteeventOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_8OrderByInput =
+export type Chartevents8OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -3215,7 +3171,7 @@ export type Chartevents_8OrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type D_labitemOrderByInput =
+export type DLabitemOrderByInput =
   | "id_ASC"
   | "id_DESC"
   | "category_ASC"
@@ -3233,7 +3189,7 @@ export type D_labitemOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Diagnoses_icdOrderByInput =
+export type DiagnosesIcdOrderByInput =
   | "id_ASC"
   | "id_DESC"
   | "icd9_code_ASC"
@@ -3245,7 +3201,7 @@ export type Diagnoses_icdOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export type Chartevents_5OrderByInput =
+export type Chartevents5OrderByInput =
   | "cgid_ASC"
   | "cgid_DESC"
   | "charttime_ASC"
@@ -3283,52 +3239,43 @@ export type Chartevents_5OrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
-export interface CpteventUpdateManyInput {
-  create?: CpteventCreateInput[] | CpteventCreateInput;
-  update?:
-    | CpteventUpdateWithWhereUniqueNestedInput[]
-    | CpteventUpdateWithWhereUniqueNestedInput;
-  upsert?:
-    | CpteventUpsertWithWhereUniqueNestedInput[]
-    | CpteventUpsertWithWhereUniqueNestedInput;
-  delete?: CpteventWhereUniqueInput[] | CpteventWhereUniqueInput;
-  connect?: CpteventWhereUniqueInput[] | CpteventWhereUniqueInput;
-  set?: CpteventWhereUniqueInput[] | CpteventWhereUniqueInput;
-  disconnect?: CpteventWhereUniqueInput[] | CpteventWhereUniqueInput;
-  deleteMany?: CpteventScalarWhereInput[] | CpteventScalarWhereInput;
-  updateMany?:
-    | CpteventUpdateManyWithWhereNestedInput[]
-    | CpteventUpdateManyWithWhereNestedInput;
+export interface CharteventUpdateManyDataInput {
+  charttime?: DateTimeInput;
+  error?: Int;
+  resultstatus?: String;
+  stopped?: String;
+  storetime?: DateTimeInput;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
 }
 
 export type AdmissionWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+  id: UUID;
   hadm_id?: Int;
 }>;
 
-export interface DrgcodeUpdateDataInput {
-  description?: String;
-  drg_code?: String;
-  drg_mortality?: Int;
-  drg_severity?: Int;
-  drg_type?: String;
+export interface DrgcodeUpdateWithWhereUniqueNestedInput {
+  where: DrgcodeWhereUniqueInput;
+  data: DrgcodeUpdateDataInput;
 }
 
 export interface LabeventWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   charttime?: DateTimeInput;
   charttime_not?: DateTimeInput;
   charttime_in?: DateTimeInput[] | DateTimeInput;
@@ -3392,7 +3339,7 @@ export interface LabeventWhereInput {
   NOT?: LabeventWhereInput[] | LabeventWhereInput;
 }
 
-export interface Chartevents_1UpdateManyMutationInput {
+export interface Chartevents1UpdateManyMutationInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -3410,36 +3357,32 @@ export interface Chartevents_1UpdateManyMutationInput {
   warning?: Int;
 }
 
-export interface LabeventUpdateManyInput {
-  create?: LabeventCreateInput[] | LabeventCreateInput;
-  update?:
-    | LabeventUpdateWithWhereUniqueNestedInput[]
-    | LabeventUpdateWithWhereUniqueNestedInput;
-  upsert?:
-    | LabeventUpsertWithWhereUniqueNestedInput[]
-    | LabeventUpsertWithWhereUniqueNestedInput;
-  delete?: LabeventWhereUniqueInput[] | LabeventWhereUniqueInput;
-  connect?: LabeventWhereUniqueInput[] | LabeventWhereUniqueInput;
-  set?: LabeventWhereUniqueInput[] | LabeventWhereUniqueInput;
-  disconnect?: LabeventWhereUniqueInput[] | LabeventWhereUniqueInput;
-  deleteMany?: LabeventScalarWhereInput[] | LabeventScalarWhereInput;
-  updateMany?:
-    | LabeventUpdateManyWithWhereNestedInput[]
-    | LabeventUpdateManyWithWhereNestedInput;
+export interface IcustayUpdateManyDataInput {
+  dbsource?: String;
+  first_careunit?: String;
+  first_wardid?: Int;
+  icustay_id?: Int;
+  intime?: DateTimeInput;
+  last_careunit?: String;
+  last_wardid?: Int;
+  los?: Float;
+  outtime?: DateTimeInput;
 }
 
 export type IcustayWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+  id: UUID;
   icustay_id?: Int;
 }>;
 
-export interface DrgcodeUpsertWithWhereUniqueNestedInput {
-  where: DrgcodeWhereUniqueInput;
-  update: DrgcodeUpdateDataInput;
-  create: DrgcodeCreateInput;
+export interface DrgcodeUpdateDataInput {
+  description?: String;
+  drg_code?: String;
+  drg_mortality?: Int;
+  drg_severity?: Int;
+  drg_type?: String;
 }
 
-export interface Chartevents_1CreateInput {
+export interface Chartevents1CreateInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -3480,21 +3423,21 @@ export interface CharteventUpdateManyMutationInput {
   warning?: Int;
 }
 
-export interface Procedures_icdSubscriptionWhereInput {
+export interface ProceduresIcdSubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Procedures_icdWhereInput;
+  node?: ProceduresIcdWhereInput;
   AND?:
-    | Procedures_icdSubscriptionWhereInput[]
-    | Procedures_icdSubscriptionWhereInput;
+    | ProceduresIcdSubscriptionWhereInput[]
+    | ProceduresIcdSubscriptionWhereInput;
   OR?:
-    | Procedures_icdSubscriptionWhereInput[]
-    | Procedures_icdSubscriptionWhereInput;
+    | ProceduresIcdSubscriptionWhereInput[]
+    | ProceduresIcdSubscriptionWhereInput;
   NOT?:
-    | Procedures_icdSubscriptionWhereInput[]
-    | Procedures_icdSubscriptionWhereInput;
+    | ProceduresIcdSubscriptionWhereInput[]
+    | ProceduresIcdSubscriptionWhereInput;
 }
 
 export interface CharteventUpdateInput {
@@ -3509,21 +3452,21 @@ export interface CharteventUpdateInput {
   warning?: Int;
 }
 
-export interface Procedures_icdWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+export interface ProceduresIcdWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   icd9_code?: String;
   icd9_code_not?: String;
   icd9_code_in?: String[] | String;
@@ -3546,13 +3489,13 @@ export interface Procedures_icdWhereInput {
   seq_num_lte?: Int;
   seq_num_gt?: Int;
   seq_num_gte?: Int;
-  AND?: Procedures_icdWhereInput[] | Procedures_icdWhereInput;
-  OR?: Procedures_icdWhereInput[] | Procedures_icdWhereInput;
-  NOT?: Procedures_icdWhereInput[] | Procedures_icdWhereInput;
+  AND?: ProceduresIcdWhereInput[] | ProceduresIcdWhereInput;
+  OR?: ProceduresIcdWhereInput[] | ProceduresIcdWhereInput;
+  NOT?: ProceduresIcdWhereInput[] | ProceduresIcdWhereInput;
 }
 
-export type Inputevents_cvWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+export type InputeventsCvWhereUniqueInput = AtLeastOne<{
+  id: UUID;
 }>;
 
 export interface PatientSubscriptionWhereInput {
@@ -3568,8 +3511,8 @@ export interface PatientSubscriptionWhereInput {
 
 export interface CaregiverUpdateManyMutationInput {
   cgid?: Int;
-  label?: String;
   description?: String;
+  label?: String;
 }
 
 export interface OutputeventSubscriptionWhereInput {
@@ -3585,32 +3528,32 @@ export interface OutputeventSubscriptionWhereInput {
 
 export interface CaregiverUpdateInput {
   cgid?: Int;
-  label?: String;
-  description?: String;
   chartevents?: CharteventUpdateManyInput;
   datetimeevents?: DatetimeeventUpdateManyInput;
-  inputevents_cv?: Inputevents_cvUpdateManyInput;
-  inputevents_mv?: Inputevents_mvUpdateManyInput;
+  description?: String;
+  inputevents_cv?: InputeventsCvUpdateManyInput;
+  inputevents_mv?: InputeventsMvUpdateManyInput;
+  label?: String;
   noteevents?: NoteeventUpdateManyInput;
   outputevents?: OutputeventUpdateManyInput;
-  procedureevents_mv?: Procedureevents_mvUpdateManyInput;
+  procedureevents_mv?: ProcedureeventsMvUpdateManyInput;
 }
 
 export interface AdmissionWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   admission_location?: String;
   admission_location_not?: String;
   admission_location_in?: String[] | String;
@@ -3667,9 +3610,9 @@ export interface AdmissionWhereInput {
   deathtime_lte?: DateTimeInput;
   deathtime_gt?: DateTimeInput;
   deathtime_gte?: DateTimeInput;
-  diagnoses_icd_every?: Diagnoses_icdWhereInput;
-  diagnoses_icd_some?: Diagnoses_icdWhereInput;
-  diagnoses_icd_none?: Diagnoses_icdWhereInput;
+  diagnoses_icd_every?: DiagnosesIcdWhereInput;
+  diagnoses_icd_some?: DiagnosesIcdWhereInput;
+  diagnoses_icd_none?: DiagnosesIcdWhereInput;
   diagnosis?: String;
   diagnosis_not?: String;
   diagnosis_in?: String[] | String;
@@ -3766,12 +3709,12 @@ export interface AdmissionWhereInput {
   icustays_every?: IcustayWhereInput;
   icustays_some?: IcustayWhereInput;
   icustays_none?: IcustayWhereInput;
-  inputevents_cv_every?: Inputevents_cvWhereInput;
-  inputevents_cv_some?: Inputevents_cvWhereInput;
-  inputevents_cv_none?: Inputevents_cvWhereInput;
-  inputevents_mv_every?: Inputevents_mvWhereInput;
-  inputevents_mv_some?: Inputevents_mvWhereInput;
-  inputevents_mv_none?: Inputevents_mvWhereInput;
+  inputevents_cv_every?: InputeventsCvWhereInput;
+  inputevents_cv_some?: InputeventsCvWhereInput;
+  inputevents_cv_none?: InputeventsCvWhereInput;
+  inputevents_mv_every?: InputeventsMvWhereInput;
+  inputevents_mv_some?: InputeventsMvWhereInput;
+  inputevents_mv_none?: InputeventsMvWhereInput;
   insurance?: String;
   insurance_not?: String;
   insurance_in?: String[] | String;
@@ -3829,12 +3772,12 @@ export interface AdmissionWhereInput {
   prescriptions_every?: PrescriptionWhereInput;
   prescriptions_some?: PrescriptionWhereInput;
   prescriptions_none?: PrescriptionWhereInput;
-  procedureevents_mv_every?: Procedureevents_mvWhereInput;
-  procedureevents_mv_some?: Procedureevents_mvWhereInput;
-  procedureevents_mv_none?: Procedureevents_mvWhereInput;
-  procedures_icd_every?: Procedures_icdWhereInput;
-  procedures_icd_some?: Procedures_icdWhereInput;
-  procedures_icd_none?: Procedures_icdWhereInput;
+  procedureevents_mv_every?: ProcedureeventsMvWhereInput;
+  procedureevents_mv_some?: ProcedureeventsMvWhereInput;
+  procedureevents_mv_none?: ProcedureeventsMvWhereInput;
+  procedures_icd_every?: ProceduresIcdWhereInput;
+  procedures_icd_some?: ProceduresIcdWhereInput;
+  procedures_icd_none?: ProceduresIcdWhereInput;
   religion?: String;
   religion_not?: String;
   religion_in?: String[] | String;
@@ -3862,15 +3805,15 @@ export interface AdmissionWhereInput {
 
 export interface CaregiverCreateInput {
   cgid: Int;
-  label?: String;
-  description?: String;
   chartevents?: CharteventCreateManyInput;
   datetimeevents?: DatetimeeventCreateManyInput;
-  inputevents_cv?: Inputevents_cvCreateManyInput;
-  inputevents_mv?: Inputevents_mvCreateManyInput;
+  description?: String;
+  inputevents_cv?: InputeventsCvCreateManyInput;
+  inputevents_mv?: InputeventsMvCreateManyInput;
+  label?: String;
   noteevents?: NoteeventCreateManyInput;
   outputevents?: OutputeventCreateManyInput;
-  procedureevents_mv?: Procedureevents_mvCreateManyInput;
+  procedureevents_mv?: ProcedureeventsMvCreateManyInput;
 }
 
 export interface LabeventSubscriptionWhereInput {
@@ -3884,25 +3827,25 @@ export interface LabeventSubscriptionWhereInput {
   NOT?: LabeventSubscriptionWhereInput[] | LabeventSubscriptionWhereInput;
 }
 
-export type Inputevents_mvWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+export type InputeventsMvWhereUniqueInput = AtLeastOne<{
+  id: UUID;
 }>;
 
-export interface Inputevents_cvSubscriptionWhereInput {
+export interface InputeventsCvSubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Inputevents_cvWhereInput;
+  node?: InputeventsCvWhereInput;
   AND?:
-    | Inputevents_cvSubscriptionWhereInput[]
-    | Inputevents_cvSubscriptionWhereInput;
+    | InputeventsCvSubscriptionWhereInput[]
+    | InputeventsCvSubscriptionWhereInput;
   OR?:
-    | Inputevents_cvSubscriptionWhereInput[]
-    | Inputevents_cvSubscriptionWhereInput;
+    | InputeventsCvSubscriptionWhereInput[]
+    | InputeventsCvSubscriptionWhereInput;
   NOT?:
-    | Inputevents_cvSubscriptionWhereInput[]
-    | Inputevents_cvSubscriptionWhereInput;
+    | InputeventsCvSubscriptionWhereInput[]
+    | InputeventsCvSubscriptionWhereInput;
 }
 
 export interface CalloutUpdateManyMutationInput {
@@ -3964,21 +3907,21 @@ export interface CalloutUpdateInput {
   updatetime?: DateTimeInput;
 }
 
-export interface Diagnoses_icdSubscriptionWhereInput {
+export interface DiagnosesIcdSubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Diagnoses_icdWhereInput;
+  node?: DiagnosesIcdWhereInput;
   AND?:
-    | Diagnoses_icdSubscriptionWhereInput[]
-    | Diagnoses_icdSubscriptionWhereInput;
+    | DiagnosesIcdSubscriptionWhereInput[]
+    | DiagnosesIcdSubscriptionWhereInput;
   OR?:
-    | Diagnoses_icdSubscriptionWhereInput[]
-    | Diagnoses_icdSubscriptionWhereInput;
+    | DiagnosesIcdSubscriptionWhereInput[]
+    | DiagnosesIcdSubscriptionWhereInput;
   NOT?:
-    | Diagnoses_icdSubscriptionWhereInput[]
-    | Diagnoses_icdSubscriptionWhereInput;
+    | DiagnosesIcdSubscriptionWhereInput[]
+    | DiagnosesIcdSubscriptionWhereInput;
 }
 
 export interface AdmissionUpdateManyMutationInput {
@@ -4001,30 +3944,30 @@ export interface AdmissionUpdateManyMutationInput {
   religion?: String;
 }
 
-export interface D_labitemSubscriptionWhereInput {
+export interface DLabitemSubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: D_labitemWhereInput;
-  AND?: D_labitemSubscriptionWhereInput[] | D_labitemSubscriptionWhereInput;
-  OR?: D_labitemSubscriptionWhereInput[] | D_labitemSubscriptionWhereInput;
-  NOT?: D_labitemSubscriptionWhereInput[] | D_labitemSubscriptionWhereInput;
+  node?: DLabitemWhereInput;
+  AND?: DLabitemSubscriptionWhereInput[] | DLabitemSubscriptionWhereInput;
+  OR?: DLabitemSubscriptionWhereInput[] | DLabitemSubscriptionWhereInput;
+  NOT?: DLabitemSubscriptionWhereInput[] | DLabitemSubscriptionWhereInput;
 }
 
 export type LabeventWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+  id: UUID;
 }>;
 
-export interface D_itemSubscriptionWhereInput {
+export interface DItemSubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: D_itemWhereInput;
-  AND?: D_itemSubscriptionWhereInput[] | D_itemSubscriptionWhereInput;
-  OR?: D_itemSubscriptionWhereInput[] | D_itemSubscriptionWhereInput;
-  NOT?: D_itemSubscriptionWhereInput[] | D_itemSubscriptionWhereInput;
+  node?: DItemWhereInput;
+  AND?: DItemSubscriptionWhereInput[] | DItemSubscriptionWhereInput;
+  OR?: DItemSubscriptionWhereInput[] | DItemSubscriptionWhereInput;
+  NOT?: DItemSubscriptionWhereInput[] | DItemSubscriptionWhereInput;
 }
 
 export interface ServiceUpdateManyDataInput {
@@ -4033,21 +3976,21 @@ export interface ServiceUpdateManyDataInput {
   transfertime?: DateTimeInput;
 }
 
-export interface D_icd_procedureSubscriptionWhereInput {
+export interface DIcdProcedureSubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: D_icd_procedureWhereInput;
+  node?: DIcdProcedureWhereInput;
   AND?:
-    | D_icd_procedureSubscriptionWhereInput[]
-    | D_icd_procedureSubscriptionWhereInput;
+    | DIcdProcedureSubscriptionWhereInput[]
+    | DIcdProcedureSubscriptionWhereInput;
   OR?:
-    | D_icd_procedureSubscriptionWhereInput[]
-    | D_icd_procedureSubscriptionWhereInput;
+    | DIcdProcedureSubscriptionWhereInput[]
+    | DIcdProcedureSubscriptionWhereInput;
   NOT?:
-    | D_icd_procedureSubscriptionWhereInput[]
-    | D_icd_procedureSubscriptionWhereInput;
+    | DIcdProcedureSubscriptionWhereInput[]
+    | DIcdProcedureSubscriptionWhereInput;
 }
 
 export interface ServiceUpdateManyWithWhereNestedInput {
@@ -4055,32 +3998,32 @@ export interface ServiceUpdateManyWithWhereNestedInput {
   data: ServiceUpdateManyDataInput;
 }
 
-export interface D_cptSubscriptionWhereInput {
+export interface DCptSubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: D_cptWhereInput;
-  AND?: D_cptSubscriptionWhereInput[] | D_cptSubscriptionWhereInput;
-  OR?: D_cptSubscriptionWhereInput[] | D_cptSubscriptionWhereInput;
-  NOT?: D_cptSubscriptionWhereInput[] | D_cptSubscriptionWhereInput;
+  node?: DCptWhereInput;
+  AND?: DCptSubscriptionWhereInput[] | DCptSubscriptionWhereInput;
+  OR?: DCptSubscriptionWhereInput[] | DCptSubscriptionWhereInput;
+  NOT?: DCptSubscriptionWhereInput[] | DCptSubscriptionWhereInput;
 }
 
 export interface ServiceScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   curr_service?: String;
   curr_service_not?: String;
   curr_service_in?: String[] | String;
@@ -4123,28 +4066,28 @@ export interface ServiceScalarWhereInput {
 }
 
 export type CharteventWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+  id: UUID;
 }>;
 
 export type MicrobiologyeventWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+  id: UUID;
 }>;
 
-export interface Chartevents_8SubscriptionWhereInput {
+export interface Chartevents8SubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_8WhereInput;
+  node?: Chartevents8WhereInput;
   AND?:
-    | Chartevents_8SubscriptionWhereInput[]
-    | Chartevents_8SubscriptionWhereInput;
+    | Chartevents8SubscriptionWhereInput[]
+    | Chartevents8SubscriptionWhereInput;
   OR?:
-    | Chartevents_8SubscriptionWhereInput[]
-    | Chartevents_8SubscriptionWhereInput;
+    | Chartevents8SubscriptionWhereInput[]
+    | Chartevents8SubscriptionWhereInput;
   NOT?:
-    | Chartevents_8SubscriptionWhereInput[]
-    | Chartevents_8SubscriptionWhereInput;
+    | Chartevents8SubscriptionWhereInput[]
+    | Chartevents8SubscriptionWhereInput;
 }
 
 export interface ServiceUpsertWithWhereUniqueNestedInput {
@@ -4153,7 +4096,7 @@ export interface ServiceUpsertWithWhereUniqueNestedInput {
   create: ServiceCreateInput;
 }
 
-export interface Chartevents_1WhereInput {
+export interface Chartevents1WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -4298,9 +4241,9 @@ export interface Chartevents_1WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_1WhereInput[] | Chartevents_1WhereInput;
-  OR?: Chartevents_1WhereInput[] | Chartevents_1WhereInput;
-  NOT?: Chartevents_1WhereInput[] | Chartevents_1WhereInput;
+  AND?: Chartevents1WhereInput[] | Chartevents1WhereInput;
+  OR?: Chartevents1WhereInput[] | Chartevents1WhereInput;
+  NOT?: Chartevents1WhereInput[] | Chartevents1WhereInput;
 }
 
 export interface ServiceUpdateDataInput {
@@ -4309,21 +4252,21 @@ export interface ServiceUpdateDataInput {
   transfertime?: DateTimeInput;
 }
 
-export interface Chartevents_6SubscriptionWhereInput {
+export interface Chartevents6SubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_6WhereInput;
+  node?: Chartevents6WhereInput;
   AND?:
-    | Chartevents_6SubscriptionWhereInput[]
-    | Chartevents_6SubscriptionWhereInput;
+    | Chartevents6SubscriptionWhereInput[]
+    | Chartevents6SubscriptionWhereInput;
   OR?:
-    | Chartevents_6SubscriptionWhereInput[]
-    | Chartevents_6SubscriptionWhereInput;
+    | Chartevents6SubscriptionWhereInput[]
+    | Chartevents6SubscriptionWhereInput;
   NOT?:
-    | Chartevents_6SubscriptionWhereInput[]
-    | Chartevents_6SubscriptionWhereInput;
+    | Chartevents6SubscriptionWhereInput[]
+    | Chartevents6SubscriptionWhereInput;
 }
 
 export interface ServiceUpdateWithWhereUniqueNestedInput {
@@ -4331,28 +4274,28 @@ export interface ServiceUpdateWithWhereUniqueNestedInput {
   data: ServiceUpdateDataInput;
 }
 
-export interface Chartevents_4SubscriptionWhereInput {
+export interface Chartevents4SubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_4WhereInput;
+  node?: Chartevents4WhereInput;
   AND?:
-    | Chartevents_4SubscriptionWhereInput[]
-    | Chartevents_4SubscriptionWhereInput;
+    | Chartevents4SubscriptionWhereInput[]
+    | Chartevents4SubscriptionWhereInput;
   OR?:
-    | Chartevents_4SubscriptionWhereInput[]
-    | Chartevents_4SubscriptionWhereInput;
+    | Chartevents4SubscriptionWhereInput[]
+    | Chartevents4SubscriptionWhereInput;
   NOT?:
-    | Chartevents_4SubscriptionWhereInput[]
-    | Chartevents_4SubscriptionWhereInput;
+    | Chartevents4SubscriptionWhereInput[]
+    | Chartevents4SubscriptionWhereInput;
 }
 
 export type NoteeventWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+  id: UUID;
 }>;
 
-export interface Chartevents_10WhereInput {
+export interface Chartevents10WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -4497,9 +4440,9 @@ export interface Chartevents_10WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_10WhereInput[] | Chartevents_10WhereInput;
-  OR?: Chartevents_10WhereInput[] | Chartevents_10WhereInput;
-  NOT?: Chartevents_10WhereInput[] | Chartevents_10WhereInput;
+  AND?: Chartevents10WhereInput[] | Chartevents10WhereInput;
+  OR?: Chartevents10WhereInput[] | Chartevents10WhereInput;
+  NOT?: Chartevents10WhereInput[] | Chartevents10WhereInput;
 }
 
 export interface ServiceUpdateManyInput {
@@ -4520,51 +4463,51 @@ export interface ServiceUpdateManyInput {
     | ServiceUpdateManyWithWhereNestedInput;
 }
 
-export interface Chartevents_2SubscriptionWhereInput {
+export interface Chartevents2SubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_2WhereInput;
+  node?: Chartevents2WhereInput;
   AND?:
-    | Chartevents_2SubscriptionWhereInput[]
-    | Chartevents_2SubscriptionWhereInput;
+    | Chartevents2SubscriptionWhereInput[]
+    | Chartevents2SubscriptionWhereInput;
   OR?:
-    | Chartevents_2SubscriptionWhereInput[]
-    | Chartevents_2SubscriptionWhereInput;
+    | Chartevents2SubscriptionWhereInput[]
+    | Chartevents2SubscriptionWhereInput;
   NOT?:
-    | Chartevents_2SubscriptionWhereInput[]
-    | Chartevents_2SubscriptionWhereInput;
+    | Chartevents2SubscriptionWhereInput[]
+    | Chartevents2SubscriptionWhereInput;
 }
 
-export interface Procedures_icdUpdateManyDataInput {
+export interface ProceduresIcdUpdateManyDataInput {
   icd9_code?: String;
   seq_num?: Int;
 }
 
-export interface Chartevents_16SubscriptionWhereInput {
+export interface Chartevents16SubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_16WhereInput;
+  node?: Chartevents16WhereInput;
   AND?:
-    | Chartevents_16SubscriptionWhereInput[]
-    | Chartevents_16SubscriptionWhereInput;
+    | Chartevents16SubscriptionWhereInput[]
+    | Chartevents16SubscriptionWhereInput;
   OR?:
-    | Chartevents_16SubscriptionWhereInput[]
-    | Chartevents_16SubscriptionWhereInput;
+    | Chartevents16SubscriptionWhereInput[]
+    | Chartevents16SubscriptionWhereInput;
   NOT?:
-    | Chartevents_16SubscriptionWhereInput[]
-    | Chartevents_16SubscriptionWhereInput;
+    | Chartevents16SubscriptionWhereInput[]
+    | Chartevents16SubscriptionWhereInput;
 }
 
-export interface Procedures_icdUpdateManyWithWhereNestedInput {
-  where: Procedures_icdScalarWhereInput;
-  data: Procedures_icdUpdateManyDataInput;
+export interface ProceduresIcdUpdateManyWithWhereNestedInput {
+  where: ProceduresIcdScalarWhereInput;
+  data: ProceduresIcdUpdateManyDataInput;
 }
 
-export interface Chartevents_11WhereInput {
+export interface Chartevents11WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -4709,47 +4652,47 @@ export interface Chartevents_11WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_11WhereInput[] | Chartevents_11WhereInput;
-  OR?: Chartevents_11WhereInput[] | Chartevents_11WhereInput;
-  NOT?: Chartevents_11WhereInput[] | Chartevents_11WhereInput;
+  AND?: Chartevents11WhereInput[] | Chartevents11WhereInput;
+  OR?: Chartevents11WhereInput[] | Chartevents11WhereInput;
+  NOT?: Chartevents11WhereInput[] | Chartevents11WhereInput;
 }
 
 export type OutputeventWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+  id: UUID;
 }>;
 
-export interface Chartevents_14SubscriptionWhereInput {
+export interface Chartevents14SubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_14WhereInput;
+  node?: Chartevents14WhereInput;
   AND?:
-    | Chartevents_14SubscriptionWhereInput[]
-    | Chartevents_14SubscriptionWhereInput;
+    | Chartevents14SubscriptionWhereInput[]
+    | Chartevents14SubscriptionWhereInput;
   OR?:
-    | Chartevents_14SubscriptionWhereInput[]
-    | Chartevents_14SubscriptionWhereInput;
+    | Chartevents14SubscriptionWhereInput[]
+    | Chartevents14SubscriptionWhereInput;
   NOT?:
-    | Chartevents_14SubscriptionWhereInput[]
-    | Chartevents_14SubscriptionWhereInput;
+    | Chartevents14SubscriptionWhereInput[]
+    | Chartevents14SubscriptionWhereInput;
 }
 
-export interface Procedures_icdScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+export interface ProceduresIcdScalarWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   icd9_code?: String;
   icd9_code_not?: String;
   icd9_code_in?: String[] | String;
@@ -4772,35 +4715,35 @@ export interface Procedures_icdScalarWhereInput {
   seq_num_lte?: Int;
   seq_num_gt?: Int;
   seq_num_gte?: Int;
-  AND?: Procedures_icdScalarWhereInput[] | Procedures_icdScalarWhereInput;
-  OR?: Procedures_icdScalarWhereInput[] | Procedures_icdScalarWhereInput;
-  NOT?: Procedures_icdScalarWhereInput[] | Procedures_icdScalarWhereInput;
+  AND?: ProceduresIcdScalarWhereInput[] | ProceduresIcdScalarWhereInput;
+  OR?: ProceduresIcdScalarWhereInput[] | ProceduresIcdScalarWhereInput;
+  NOT?: ProceduresIcdScalarWhereInput[] | ProceduresIcdScalarWhereInput;
 }
 
-export interface Chartevents_12SubscriptionWhereInput {
+export interface Chartevents12SubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_12WhereInput;
+  node?: Chartevents12WhereInput;
   AND?:
-    | Chartevents_12SubscriptionWhereInput[]
-    | Chartevents_12SubscriptionWhereInput;
+    | Chartevents12SubscriptionWhereInput[]
+    | Chartevents12SubscriptionWhereInput;
   OR?:
-    | Chartevents_12SubscriptionWhereInput[]
-    | Chartevents_12SubscriptionWhereInput;
+    | Chartevents12SubscriptionWhereInput[]
+    | Chartevents12SubscriptionWhereInput;
   NOT?:
-    | Chartevents_12SubscriptionWhereInput[]
-    | Chartevents_12SubscriptionWhereInput;
+    | Chartevents12SubscriptionWhereInput[]
+    | Chartevents12SubscriptionWhereInput;
 }
 
-export interface Procedures_icdUpsertWithWhereUniqueNestedInput {
-  where: Procedures_icdWhereUniqueInput;
-  update: Procedures_icdUpdateDataInput;
-  create: Procedures_icdCreateInput;
+export interface ProceduresIcdUpsertWithWhereUniqueNestedInput {
+  where: ProceduresIcdWhereUniqueInput;
+  update: ProceduresIcdUpdateDataInput;
+  create: ProceduresIcdCreateInput;
 }
 
-export interface Chartevents_12WhereInput {
+export interface Chartevents12WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -4945,35 +4888,35 @@ export interface Chartevents_12WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_12WhereInput[] | Chartevents_12WhereInput;
-  OR?: Chartevents_12WhereInput[] | Chartevents_12WhereInput;
-  NOT?: Chartevents_12WhereInput[] | Chartevents_12WhereInput;
+  AND?: Chartevents12WhereInput[] | Chartevents12WhereInput;
+  OR?: Chartevents12WhereInput[] | Chartevents12WhereInput;
+  NOT?: Chartevents12WhereInput[] | Chartevents12WhereInput;
 }
 
-export interface Procedures_icdUpdateDataInput {
+export interface ProceduresIcdUpdateDataInput {
   icd9_code?: String;
   seq_num?: Int;
 }
 
-export interface Chartevents_10SubscriptionWhereInput {
+export interface Chartevents10SubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_10WhereInput;
+  node?: Chartevents10WhereInput;
   AND?:
-    | Chartevents_10SubscriptionWhereInput[]
-    | Chartevents_10SubscriptionWhereInput;
+    | Chartevents10SubscriptionWhereInput[]
+    | Chartevents10SubscriptionWhereInput;
   OR?:
-    | Chartevents_10SubscriptionWhereInput[]
-    | Chartevents_10SubscriptionWhereInput;
+    | Chartevents10SubscriptionWhereInput[]
+    | Chartevents10SubscriptionWhereInput;
   NOT?:
-    | Chartevents_10SubscriptionWhereInput[]
-    | Chartevents_10SubscriptionWhereInput;
+    | Chartevents10SubscriptionWhereInput[]
+    | Chartevents10SubscriptionWhereInput;
 }
 
 export type PatientWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+  id: UUID;
   subject_id?: Int;
 }>;
 
@@ -4988,12 +4931,12 @@ export interface CharteventSubscriptionWhereInput {
   NOT?: CharteventSubscriptionWhereInput[] | CharteventSubscriptionWhereInput;
 }
 
-export interface Procedures_icdUpdateWithWhereUniqueNestedInput {
-  where: Procedures_icdWhereUniqueInput;
-  data: Procedures_icdUpdateDataInput;
+export interface ProceduresIcdUpdateWithWhereUniqueNestedInput {
+  where: ProceduresIcdWhereUniqueInput;
+  data: ProceduresIcdUpdateDataInput;
 }
 
-export interface Chartevents_13WhereInput {
+export interface Chartevents13WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -5138,26 +5081,26 @@ export interface Chartevents_13WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_13WhereInput[] | Chartevents_13WhereInput;
-  OR?: Chartevents_13WhereInput[] | Chartevents_13WhereInput;
-  NOT?: Chartevents_13WhereInput[] | Chartevents_13WhereInput;
+  AND?: Chartevents13WhereInput[] | Chartevents13WhereInput;
+  OR?: Chartevents13WhereInput[] | Chartevents13WhereInput;
+  NOT?: Chartevents13WhereInput[] | Chartevents13WhereInput;
 }
 
 export interface PatientWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   admissions_every?: AdmissionWhereInput;
   admissions_some?: AdmissionWhereInput;
   admissions_none?: AdmissionWhereInput;
@@ -5173,9 +5116,9 @@ export interface PatientWhereInput {
   datetimeevents_every?: DatetimeeventWhereInput;
   datetimeevents_some?: DatetimeeventWhereInput;
   datetimeevents_none?: DatetimeeventWhereInput;
-  diagnoses_icd_every?: Diagnoses_icdWhereInput;
-  diagnoses_icd_some?: Diagnoses_icdWhereInput;
-  diagnoses_icd_none?: Diagnoses_icdWhereInput;
+  diagnoses_icd_every?: DiagnosesIcdWhereInput;
+  diagnoses_icd_some?: DiagnosesIcdWhereInput;
+  diagnoses_icd_none?: DiagnosesIcdWhereInput;
   dob?: DateTimeInput;
   dob_not?: DateTimeInput;
   dob_in?: DateTimeInput[] | DateTimeInput;
@@ -5236,12 +5179,12 @@ export interface PatientWhereInput {
   icustays_every?: IcustayWhereInput;
   icustays_some?: IcustayWhereInput;
   icustays_none?: IcustayWhereInput;
-  inputevents_cv_every?: Inputevents_cvWhereInput;
-  inputevents_cv_some?: Inputevents_cvWhereInput;
-  inputevents_cv_none?: Inputevents_cvWhereInput;
-  inputevents_mv_every?: Inputevents_mvWhereInput;
-  inputevents_mv_some?: Inputevents_mvWhereInput;
-  inputevents_mv_none?: Inputevents_mvWhereInput;
+  inputevents_cv_every?: InputeventsCvWhereInput;
+  inputevents_cv_some?: InputeventsCvWhereInput;
+  inputevents_cv_none?: InputeventsCvWhereInput;
+  inputevents_mv_every?: InputeventsMvWhereInput;
+  inputevents_mv_some?: InputeventsMvWhereInput;
+  inputevents_mv_none?: InputeventsMvWhereInput;
   labevents_every?: LabeventWhereInput;
   labevents_some?: LabeventWhereInput;
   labevents_none?: LabeventWhereInput;
@@ -5257,12 +5200,12 @@ export interface PatientWhereInput {
   prescriptions_every?: PrescriptionWhereInput;
   prescriptions_some?: PrescriptionWhereInput;
   prescriptions_none?: PrescriptionWhereInput;
-  procedureevents_mv_every?: Procedureevents_mvWhereInput;
-  procedureevents_mv_some?: Procedureevents_mvWhereInput;
-  procedureevents_mv_none?: Procedureevents_mvWhereInput;
-  procedures_icd_every?: Procedures_icdWhereInput;
-  procedures_icd_some?: Procedures_icdWhereInput;
-  procedures_icd_none?: Procedures_icdWhereInput;
+  procedureevents_mv_every?: ProcedureeventsMvWhereInput;
+  procedureevents_mv_some?: ProcedureeventsMvWhereInput;
+  procedureevents_mv_none?: ProcedureeventsMvWhereInput;
+  procedures_icd_every?: ProceduresIcdWhereInput;
+  procedures_icd_some?: ProceduresIcdWhereInput;
+  procedures_icd_none?: ProceduresIcdWhereInput;
   services_every?: ServiceWhereInput;
   services_some?: ServiceWhereInput;
   services_none?: ServiceWhereInput;
@@ -5293,26 +5236,22 @@ export interface CalloutSubscriptionWhereInput {
   NOT?: CalloutSubscriptionWhereInput[] | CalloutSubscriptionWhereInput;
 }
 
-export interface Procedures_icdUpdateManyInput {
-  create?: Procedures_icdCreateInput[] | Procedures_icdCreateInput;
+export interface ProceduresIcdUpdateManyInput {
+  create?: ProceduresIcdCreateInput[] | ProceduresIcdCreateInput;
   update?:
-    | Procedures_icdUpdateWithWhereUniqueNestedInput[]
-    | Procedures_icdUpdateWithWhereUniqueNestedInput;
+    | ProceduresIcdUpdateWithWhereUniqueNestedInput[]
+    | ProceduresIcdUpdateWithWhereUniqueNestedInput;
   upsert?:
-    | Procedures_icdUpsertWithWhereUniqueNestedInput[]
-    | Procedures_icdUpsertWithWhereUniqueNestedInput;
-  delete?: Procedures_icdWhereUniqueInput[] | Procedures_icdWhereUniqueInput;
-  connect?: Procedures_icdWhereUniqueInput[] | Procedures_icdWhereUniqueInput;
-  set?: Procedures_icdWhereUniqueInput[] | Procedures_icdWhereUniqueInput;
-  disconnect?:
-    | Procedures_icdWhereUniqueInput[]
-    | Procedures_icdWhereUniqueInput;
-  deleteMany?:
-    | Procedures_icdScalarWhereInput[]
-    | Procedures_icdScalarWhereInput;
+    | ProceduresIcdUpsertWithWhereUniqueNestedInput[]
+    | ProceduresIcdUpsertWithWhereUniqueNestedInput;
+  delete?: ProceduresIcdWhereUniqueInput[] | ProceduresIcdWhereUniqueInput;
+  connect?: ProceduresIcdWhereUniqueInput[] | ProceduresIcdWhereUniqueInput;
+  set?: ProceduresIcdWhereUniqueInput[] | ProceduresIcdWhereUniqueInput;
+  disconnect?: ProceduresIcdWhereUniqueInput[] | ProceduresIcdWhereUniqueInput;
+  deleteMany?: ProceduresIcdScalarWhereInput[] | ProceduresIcdScalarWhereInput;
   updateMany?:
-    | Procedures_icdUpdateManyWithWhereNestedInput[]
-    | Procedures_icdUpdateManyWithWhereNestedInput;
+    | ProceduresIcdUpdateManyWithWhereNestedInput[]
+    | ProceduresIcdUpdateManyWithWhereNestedInput;
 }
 
 export interface TransferUpdateManyMutationInput {
@@ -5337,7 +5276,7 @@ export interface NoteeventUpdateManyDataInput {
   text?: String;
 }
 
-export interface Chartevents_14WhereInput {
+export interface Chartevents14WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -5482,9 +5421,9 @@ export interface Chartevents_14WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_14WhereInput[] | Chartevents_14WhereInput;
-  OR?: Chartevents_14WhereInput[] | Chartevents_14WhereInput;
-  NOT?: Chartevents_14WhereInput[] | Chartevents_14WhereInput;
+  AND?: Chartevents14WhereInput[] | Chartevents14WhereInput;
+  OR?: Chartevents14WhereInput[] | Chartevents14WhereInput;
+  NOT?: Chartevents14WhereInput[] | Chartevents14WhereInput;
 }
 
 export interface NoteeventUpdateManyWithWhereNestedInput {
@@ -5499,20 +5438,20 @@ export interface ServiceUpdateManyMutationInput {
 }
 
 export interface NoteeventScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   category?: String;
   category_not?: String;
   category_in?: String[] | String;
@@ -5598,16 +5537,16 @@ export interface NoteeventScalarWhereInput {
   NOT?: NoteeventScalarWhereInput[] | NoteeventScalarWhereInput;
 }
 
-export interface Procedures_icdUpdateManyMutationInput {
+export interface ProceduresIcdUpdateManyMutationInput {
   icd9_code?: String;
   seq_num?: Int;
 }
 
 export type PrescriptionWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+  id: UUID;
 }>;
 
-export interface Chartevents_15WhereInput {
+export interface Chartevents15WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -5752,9 +5691,9 @@ export interface Chartevents_15WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_15WhereInput[] | Chartevents_15WhereInput;
-  OR?: Chartevents_15WhereInput[] | Chartevents_15WhereInput;
-  NOT?: Chartevents_15WhereInput[] | Chartevents_15WhereInput;
+  AND?: Chartevents15WhereInput[] | Chartevents15WhereInput;
+  OR?: Chartevents15WhereInput[] | Chartevents15WhereInput;
+  NOT?: Chartevents15WhereInput[] | Chartevents15WhereInput;
 }
 
 export interface NoteeventUpsertWithWhereUniqueNestedInput {
@@ -5763,7 +5702,7 @@ export interface NoteeventUpsertWithWhereUniqueNestedInput {
   create: NoteeventCreateInput;
 }
 
-export interface Procedureevents_mvUpdateManyMutationInput {
+export interface ProcedureeventsMvUpdateManyMutationInput {
   cancelreason?: Int;
   comments_canceledby?: String;
   comments_date?: DateTimeInput;
@@ -5818,7 +5757,7 @@ export interface NoteeventUpdateWithWhereUniqueNestedInput {
   data: NoteeventUpdateDataInput;
 }
 
-export interface Chartevents_16WhereInput {
+export interface Chartevents16WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -5963,13 +5902,13 @@ export interface Chartevents_16WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_16WhereInput[] | Chartevents_16WhereInput;
-  OR?: Chartevents_16WhereInput[] | Chartevents_16WhereInput;
-  NOT?: Chartevents_16WhereInput[] | Chartevents_16WhereInput;
+  AND?: Chartevents16WhereInput[] | Chartevents16WhereInput;
+  OR?: Chartevents16WhereInput[] | Chartevents16WhereInput;
+  NOT?: Chartevents16WhereInput[] | Chartevents16WhereInput;
 }
 
-export type Procedureevents_mvWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+export type ProcedureeventsMvWhereUniqueInput = AtLeastOne<{
+  id: UUID;
 }>;
 
 export interface AdmissionUpdateManyDataInput {
@@ -6011,20 +5950,20 @@ export interface NoteeventUpdateManyInput {
 }
 
 export interface AdmissionScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   admission_location?: String;
   admission_location_not?: String;
   admission_location_in?: String[] | String;
@@ -6233,7 +6172,7 @@ export interface MicrobiologyeventUpdateManyDataInput {
   spec_type_desc?: String;
 }
 
-export interface Chartevents_17WhereInput {
+export interface Chartevents17WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -6378,9 +6317,9 @@ export interface Chartevents_17WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_17WhereInput[] | Chartevents_17WhereInput;
-  OR?: Chartevents_17WhereInput[] | Chartevents_17WhereInput;
-  NOT?: Chartevents_17WhereInput[] | Chartevents_17WhereInput;
+  AND?: Chartevents17WhereInput[] | Chartevents17WhereInput;
+  OR?: Chartevents17WhereInput[] | Chartevents17WhereInput;
+  NOT?: Chartevents17WhereInput[] | Chartevents17WhereInput;
 }
 
 export interface MicrobiologyeventUpdateManyWithWhereNestedInput {
@@ -6397,7 +6336,7 @@ export interface AdmissionUpdateDataInput {
   cptevents?: CpteventUpdateManyInput;
   datetimeevents?: DatetimeeventUpdateManyInput;
   deathtime?: DateTimeInput;
-  diagnoses_icd?: Diagnoses_icdUpdateManyInput;
+  diagnoses_icd?: DiagnosesIcdUpdateManyInput;
   diagnosis?: String;
   discharge_location?: String;
   dischtime?: DateTimeInput;
@@ -6409,8 +6348,8 @@ export interface AdmissionUpdateDataInput {
   has_chartevents_data?: Int;
   hospital_expire_flag?: Int;
   icustays?: IcustayUpdateManyInput;
-  inputevents_cv?: Inputevents_cvUpdateManyInput;
-  inputevents_mv?: Inputevents_mvUpdateManyInput;
+  inputevents_cv?: InputeventsCvUpdateManyInput;
+  inputevents_mv?: InputeventsMvUpdateManyInput;
   insurance?: String;
   labevents?: LabeventUpdateManyInput;
   language?: String;
@@ -6419,15 +6358,15 @@ export interface AdmissionUpdateDataInput {
   noteevents?: NoteeventUpdateManyInput;
   outputevents?: OutputeventUpdateManyInput;
   prescriptions?: PrescriptionUpdateManyInput;
-  procedureevents_mv?: Procedureevents_mvUpdateManyInput;
-  procedures_icd?: Procedures_icdUpdateManyInput;
+  procedureevents_mv?: ProcedureeventsMvUpdateManyInput;
+  procedures_icd?: ProceduresIcdUpdateManyInput;
   religion?: String;
   services?: ServiceUpdateManyInput;
   transfers?: TransferUpdateManyInput;
 }
 
-export type Procedures_icdWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+export type ProceduresIcdWhereUniqueInput = AtLeastOne<{
+  id: UUID;
 }>;
 
 export interface AdmissionUpdateManyInput {
@@ -6449,20 +6388,20 @@ export interface AdmissionUpdateManyInput {
 }
 
 export interface MicrobiologyeventScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   ab_name?: String;
   ab_name_not?: String;
   ab_name_in?: String[] | String;
@@ -6584,7 +6523,7 @@ export interface MicrobiologyeventScalarWhereInput {
   NOT?: MicrobiologyeventScalarWhereInput[] | MicrobiologyeventScalarWhereInput;
 }
 
-export interface Chartevents_2WhereInput {
+export interface Chartevents2WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -6729,9 +6668,9 @@ export interface Chartevents_2WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_2WhereInput[] | Chartevents_2WhereInput;
-  OR?: Chartevents_2WhereInput[] | Chartevents_2WhereInput;
-  NOT?: Chartevents_2WhereInput[] | Chartevents_2WhereInput;
+  AND?: Chartevents2WhereInput[] | Chartevents2WhereInput;
+  OR?: Chartevents2WhereInput[] | Chartevents2WhereInput;
+  NOT?: Chartevents2WhereInput[] | Chartevents2WhereInput;
 }
 
 export interface MicrobiologyeventUpsertWithWhereUniqueNestedInput {
@@ -6746,7 +6685,7 @@ export interface PatientCreateInput {
   chartevents?: CharteventCreateManyInput;
   cptevents?: CpteventCreateManyInput;
   datetimeevents?: DatetimeeventCreateManyInput;
-  diagnoses_icd?: Diagnoses_icdCreateManyInput;
+  diagnoses_icd?: DiagnosesIcdCreateManyInput;
   dob: DateTimeInput;
   dod?: DateTimeInput;
   dod_hosp?: DateTimeInput;
@@ -6755,15 +6694,15 @@ export interface PatientCreateInput {
   expire_flag: Int;
   gender: String;
   icustays?: IcustayCreateManyInput;
-  inputevents_cv?: Inputevents_cvCreateManyInput;
-  inputevents_mv?: Inputevents_mvCreateManyInput;
+  inputevents_cv?: InputeventsCvCreateManyInput;
+  inputevents_mv?: InputeventsMvCreateManyInput;
   labevents?: LabeventCreateManyInput;
   microbiologyevents?: MicrobiologyeventCreateManyInput;
   noteevents?: NoteeventCreateManyInput;
   outputevents?: OutputeventCreateManyInput;
   prescriptions?: PrescriptionCreateManyInput;
-  procedureevents_mv?: Procedureevents_mvCreateManyInput;
-  procedures_icd?: Procedures_icdCreateManyInput;
+  procedureevents_mv?: ProcedureeventsMvCreateManyInput;
+  procedures_icd?: ProceduresIcdCreateManyInput;
   services?: ServiceCreateManyInput;
   subject_id: Int;
   transfers?: TransferCreateManyInput;
@@ -6793,10 +6732,10 @@ export interface OutputeventUpdateInput {
 }
 
 export type ServiceWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+  id: UUID;
 }>;
 
-export interface Chartevents_3WhereInput {
+export interface Chartevents3WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -6941,9 +6880,9 @@ export interface Chartevents_3WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_3WhereInput[] | Chartevents_3WhereInput;
-  OR?: Chartevents_3WhereInput[] | Chartevents_3WhereInput;
-  NOT?: Chartevents_3WhereInput[] | Chartevents_3WhereInput;
+  AND?: Chartevents3WhereInput[] | Chartevents3WhereInput;
+  OR?: Chartevents3WhereInput[] | Chartevents3WhereInput;
+  NOT?: Chartevents3WhereInput[] | Chartevents3WhereInput;
 }
 
 export interface MicrobiologyeventUpdateWithWhereUniqueNestedInput {
@@ -7008,7 +6947,7 @@ export interface LabeventUpdateManyDataInput {
   valueuom?: String;
 }
 
-export interface Chartevents_4WhereInput {
+export interface Chartevents4WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -7153,16 +7092,16 @@ export interface Chartevents_4WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_4WhereInput[] | Chartevents_4WhereInput;
-  OR?: Chartevents_4WhereInput[] | Chartevents_4WhereInput;
-  NOT?: Chartevents_4WhereInput[] | Chartevents_4WhereInput;
+  AND?: Chartevents4WhereInput[] | Chartevents4WhereInput;
+  OR?: Chartevents4WhereInput[] | Chartevents4WhereInput;
+  NOT?: Chartevents4WhereInput[] | Chartevents4WhereInput;
 }
 
 export type TransferWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+  id: UUID;
 }>;
 
-export interface Inputevents_mvUpdateManyMutationInput {
+export interface InputeventsMvUpdateManyMutationInput {
   amount?: Float;
   amountuom?: String;
   cancelreason?: Int;
@@ -7195,7 +7134,7 @@ export interface LabeventUpdateManyWithWhereNestedInput {
   data: LabeventUpdateManyDataInput;
 }
 
-export interface Inputevents_cvUpdateManyMutationInput {
+export interface InputeventsCvUpdateManyMutationInput {
   amount?: Float;
   amountuom?: String;
   charttime?: DateTimeInput;
@@ -7216,20 +7155,20 @@ export interface Inputevents_cvUpdateManyMutationInput {
 }
 
 export interface LabeventScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   charttime?: DateTimeInput;
   charttime_not?: DateTimeInput;
   charttime_in?: DateTimeInput[] | DateTimeInput;
@@ -7293,7 +7232,7 @@ export interface LabeventScalarWhereInput {
   NOT?: LabeventScalarWhereInput[] | LabeventScalarWhereInput;
 }
 
-export interface Chartevents_5WhereInput {
+export interface Chartevents5WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -7438,9 +7377,9 @@ export interface Chartevents_5WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_5WhereInput[] | Chartevents_5WhereInput;
-  OR?: Chartevents_5WhereInput[] | Chartevents_5WhereInput;
-  NOT?: Chartevents_5WhereInput[] | Chartevents_5WhereInput;
+  AND?: Chartevents5WhereInput[] | Chartevents5WhereInput;
+  OR?: Chartevents5WhereInput[] | Chartevents5WhereInput;
+  NOT?: Chartevents5WhereInput[] | Chartevents5WhereInput;
 }
 
 export interface LabeventUpsertWithWhereUniqueNestedInput {
@@ -7461,6 +7400,14 @@ export interface IcustayUpdateManyMutationInput {
   outtime?: DateTimeInput;
 }
 
+export interface LabeventUpdateDataInput {
+  charttime?: DateTimeInput;
+  flag?: String;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+}
+
 export interface DrgcodeUpdateManyMutationInput {
   description?: String;
   drg_code?: String;
@@ -7469,7 +7416,7 @@ export interface DrgcodeUpdateManyMutationInput {
   drg_type?: String;
 }
 
-export interface Chartevents_6WhereInput {
+export interface Chartevents6WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -7614,9 +7561,14 @@ export interface Chartevents_6WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_6WhereInput[] | Chartevents_6WhereInput;
-  OR?: Chartevents_6WhereInput[] | Chartevents_6WhereInput;
-  NOT?: Chartevents_6WhereInput[] | Chartevents_6WhereInput;
+  AND?: Chartevents6WhereInput[] | Chartevents6WhereInput;
+  OR?: Chartevents6WhereInput[] | Chartevents6WhereInput;
+  NOT?: Chartevents6WhereInput[] | Chartevents6WhereInput;
+}
+
+export interface DiagnosesIcdUpdateInput {
+  icd9_code?: String;
+  seq_num?: Int;
 }
 
 export interface AdmissionCreateInput {
@@ -7628,7 +7580,7 @@ export interface AdmissionCreateInput {
   cptevents?: CpteventCreateManyInput;
   datetimeevents?: DatetimeeventCreateManyInput;
   deathtime?: DateTimeInput;
-  diagnoses_icd?: Diagnoses_icdCreateManyInput;
+  diagnoses_icd?: DiagnosesIcdCreateManyInput;
   diagnosis?: String;
   discharge_location: String;
   dischtime: DateTimeInput;
@@ -7640,8 +7592,8 @@ export interface AdmissionCreateInput {
   has_chartevents_data: Int;
   hospital_expire_flag?: Int;
   icustays?: IcustayCreateManyInput;
-  inputevents_cv?: Inputevents_cvCreateManyInput;
-  inputevents_mv?: Inputevents_mvCreateManyInput;
+  inputevents_cv?: InputeventsCvCreateManyInput;
+  inputevents_mv?: InputeventsMvCreateManyInput;
   insurance: String;
   labevents?: LabeventCreateManyInput;
   language?: String;
@@ -7650,21 +7602,11 @@ export interface AdmissionCreateInput {
   noteevents?: NoteeventCreateManyInput;
   outputevents?: OutputeventCreateManyInput;
   prescriptions?: PrescriptionCreateManyInput;
-  procedureevents_mv?: Procedureevents_mvCreateManyInput;
-  procedures_icd?: Procedures_icdCreateManyInput;
+  procedureevents_mv?: ProcedureeventsMvCreateManyInput;
+  procedures_icd?: ProceduresIcdCreateManyInput;
   religion?: String;
   services?: ServiceCreateManyInput;
   transfers?: TransferCreateManyInput;
-}
-
-export interface Diagnoses_icdUpdateInput {
-  icd9_code?: String;
-  seq_num?: Int;
-}
-
-export interface CalloutCreateManyInput {
-  create?: CalloutCreateInput[] | CalloutCreateInput;
-  connect?: CalloutWhereUniqueInput[] | CalloutWhereUniqueInput;
 }
 
 export interface DatetimeeventUpdateInput {
@@ -7676,6 +7618,161 @@ export interface DatetimeeventUpdateInput {
   value?: DateTimeInput;
   valueuom?: String;
   warning?: Int;
+}
+
+export interface CalloutCreateManyInput {
+  create?: CalloutCreateInput[] | CalloutCreateInput;
+  connect?: CalloutWhereUniqueInput[] | CalloutWhereUniqueInput;
+}
+
+export interface Chartevents7WhereInput {
+  cgid?: Int;
+  cgid_not?: Int;
+  cgid_in?: Int[] | Int;
+  cgid_not_in?: Int[] | Int;
+  cgid_lt?: Int;
+  cgid_lte?: Int;
+  cgid_gt?: Int;
+  cgid_gte?: Int;
+  charttime?: DateTimeInput;
+  charttime_not?: DateTimeInput;
+  charttime_in?: DateTimeInput[] | DateTimeInput;
+  charttime_not_in?: DateTimeInput[] | DateTimeInput;
+  charttime_lt?: DateTimeInput;
+  charttime_lte?: DateTimeInput;
+  charttime_gt?: DateTimeInput;
+  charttime_gte?: DateTimeInput;
+  error?: Int;
+  error_not?: Int;
+  error_in?: Int[] | Int;
+  error_not_in?: Int[] | Int;
+  error_lt?: Int;
+  error_lte?: Int;
+  error_gt?: Int;
+  error_gte?: Int;
+  hadm_id?: Int;
+  hadm_id_not?: Int;
+  hadm_id_in?: Int[] | Int;
+  hadm_id_not_in?: Int[] | Int;
+  hadm_id_lt?: Int;
+  hadm_id_lte?: Int;
+  hadm_id_gt?: Int;
+  hadm_id_gte?: Int;
+  icustay_id?: Int;
+  icustay_id_not?: Int;
+  icustay_id_in?: Int[] | Int;
+  icustay_id_not_in?: Int[] | Int;
+  icustay_id_lt?: Int;
+  icustay_id_lte?: Int;
+  icustay_id_gt?: Int;
+  icustay_id_gte?: Int;
+  itemid?: Int;
+  itemid_not?: Int;
+  itemid_in?: Int[] | Int;
+  itemid_not_in?: Int[] | Int;
+  itemid_lt?: Int;
+  itemid_lte?: Int;
+  itemid_gt?: Int;
+  itemid_gte?: Int;
+  resultstatus?: String;
+  resultstatus_not?: String;
+  resultstatus_in?: String[] | String;
+  resultstatus_not_in?: String[] | String;
+  resultstatus_lt?: String;
+  resultstatus_lte?: String;
+  resultstatus_gt?: String;
+  resultstatus_gte?: String;
+  resultstatus_contains?: String;
+  resultstatus_not_contains?: String;
+  resultstatus_starts_with?: String;
+  resultstatus_not_starts_with?: String;
+  resultstatus_ends_with?: String;
+  resultstatus_not_ends_with?: String;
+  row_id?: Int;
+  row_id_not?: Int;
+  row_id_in?: Int[] | Int;
+  row_id_not_in?: Int[] | Int;
+  row_id_lt?: Int;
+  row_id_lte?: Int;
+  row_id_gt?: Int;
+  row_id_gte?: Int;
+  stopped?: String;
+  stopped_not?: String;
+  stopped_in?: String[] | String;
+  stopped_not_in?: String[] | String;
+  stopped_lt?: String;
+  stopped_lte?: String;
+  stopped_gt?: String;
+  stopped_gte?: String;
+  stopped_contains?: String;
+  stopped_not_contains?: String;
+  stopped_starts_with?: String;
+  stopped_not_starts_with?: String;
+  stopped_ends_with?: String;
+  stopped_not_ends_with?: String;
+  storetime?: DateTimeInput;
+  storetime_not?: DateTimeInput;
+  storetime_in?: DateTimeInput[] | DateTimeInput;
+  storetime_not_in?: DateTimeInput[] | DateTimeInput;
+  storetime_lt?: DateTimeInput;
+  storetime_lte?: DateTimeInput;
+  storetime_gt?: DateTimeInput;
+  storetime_gte?: DateTimeInput;
+  subject_id?: Int;
+  subject_id_not?: Int;
+  subject_id_in?: Int[] | Int;
+  subject_id_not_in?: Int[] | Int;
+  subject_id_lt?: Int;
+  subject_id_lte?: Int;
+  subject_id_gt?: Int;
+  subject_id_gte?: Int;
+  value?: String;
+  value_not?: String;
+  value_in?: String[] | String;
+  value_not_in?: String[] | String;
+  value_lt?: String;
+  value_lte?: String;
+  value_gt?: String;
+  value_gte?: String;
+  value_contains?: String;
+  value_not_contains?: String;
+  value_starts_with?: String;
+  value_not_starts_with?: String;
+  value_ends_with?: String;
+  value_not_ends_with?: String;
+  valuenum?: Float;
+  valuenum_not?: Float;
+  valuenum_in?: Float[] | Float;
+  valuenum_not_in?: Float[] | Float;
+  valuenum_lt?: Float;
+  valuenum_lte?: Float;
+  valuenum_gt?: Float;
+  valuenum_gte?: Float;
+  valueuom?: String;
+  valueuom_not?: String;
+  valueuom_in?: String[] | String;
+  valueuom_not_in?: String[] | String;
+  valueuom_lt?: String;
+  valueuom_lte?: String;
+  valueuom_gt?: String;
+  valueuom_gte?: String;
+  valueuom_contains?: String;
+  valueuom_not_contains?: String;
+  valueuom_starts_with?: String;
+  valueuom_not_starts_with?: String;
+  valueuom_ends_with?: String;
+  valueuom_not_ends_with?: String;
+  warning?: Int;
+  warning_not?: Int;
+  warning_in?: Int[] | Int;
+  warning_not_in?: Int[] | Int;
+  warning_lt?: Int;
+  warning_lte?: Int;
+  warning_gt?: Int;
+  warning_gte?: Int;
+  AND?: Chartevents7WhereInput[] | Chartevents7WhereInput;
+  OR?: Chartevents7WhereInput[] | Chartevents7WhereInput;
+  NOT?: Chartevents7WhereInput[] | Chartevents7WhereInput;
 }
 
 export interface CalloutCreateInput {
@@ -7702,154 +7799,13 @@ export interface CalloutCreateInput {
   updatetime: DateTimeInput;
 }
 
-export interface Chartevents_7WhereInput {
-  cgid?: Int;
-  cgid_not?: Int;
-  cgid_in?: Int[] | Int;
-  cgid_not_in?: Int[] | Int;
-  cgid_lt?: Int;
-  cgid_lte?: Int;
-  cgid_gt?: Int;
-  cgid_gte?: Int;
-  charttime?: DateTimeInput;
-  charttime_not?: DateTimeInput;
-  charttime_in?: DateTimeInput[] | DateTimeInput;
-  charttime_not_in?: DateTimeInput[] | DateTimeInput;
-  charttime_lt?: DateTimeInput;
-  charttime_lte?: DateTimeInput;
-  charttime_gt?: DateTimeInput;
-  charttime_gte?: DateTimeInput;
-  error?: Int;
-  error_not?: Int;
-  error_in?: Int[] | Int;
-  error_not_in?: Int[] | Int;
-  error_lt?: Int;
-  error_lte?: Int;
-  error_gt?: Int;
-  error_gte?: Int;
-  hadm_id?: Int;
-  hadm_id_not?: Int;
-  hadm_id_in?: Int[] | Int;
-  hadm_id_not_in?: Int[] | Int;
-  hadm_id_lt?: Int;
-  hadm_id_lte?: Int;
-  hadm_id_gt?: Int;
-  hadm_id_gte?: Int;
-  icustay_id?: Int;
-  icustay_id_not?: Int;
-  icustay_id_in?: Int[] | Int;
-  icustay_id_not_in?: Int[] | Int;
-  icustay_id_lt?: Int;
-  icustay_id_lte?: Int;
-  icustay_id_gt?: Int;
-  icustay_id_gte?: Int;
+export interface DLabitemUpdateInput {
+  category?: String;
+  fluid?: String;
   itemid?: Int;
-  itemid_not?: Int;
-  itemid_in?: Int[] | Int;
-  itemid_not_in?: Int[] | Int;
-  itemid_lt?: Int;
-  itemid_lte?: Int;
-  itemid_gt?: Int;
-  itemid_gte?: Int;
-  resultstatus?: String;
-  resultstatus_not?: String;
-  resultstatus_in?: String[] | String;
-  resultstatus_not_in?: String[] | String;
-  resultstatus_lt?: String;
-  resultstatus_lte?: String;
-  resultstatus_gt?: String;
-  resultstatus_gte?: String;
-  resultstatus_contains?: String;
-  resultstatus_not_contains?: String;
-  resultstatus_starts_with?: String;
-  resultstatus_not_starts_with?: String;
-  resultstatus_ends_with?: String;
-  resultstatus_not_ends_with?: String;
-  row_id?: Int;
-  row_id_not?: Int;
-  row_id_in?: Int[] | Int;
-  row_id_not_in?: Int[] | Int;
-  row_id_lt?: Int;
-  row_id_lte?: Int;
-  row_id_gt?: Int;
-  row_id_gte?: Int;
-  stopped?: String;
-  stopped_not?: String;
-  stopped_in?: String[] | String;
-  stopped_not_in?: String[] | String;
-  stopped_lt?: String;
-  stopped_lte?: String;
-  stopped_gt?: String;
-  stopped_gte?: String;
-  stopped_contains?: String;
-  stopped_not_contains?: String;
-  stopped_starts_with?: String;
-  stopped_not_starts_with?: String;
-  stopped_ends_with?: String;
-  stopped_not_ends_with?: String;
-  storetime?: DateTimeInput;
-  storetime_not?: DateTimeInput;
-  storetime_in?: DateTimeInput[] | DateTimeInput;
-  storetime_not_in?: DateTimeInput[] | DateTimeInput;
-  storetime_lt?: DateTimeInput;
-  storetime_lte?: DateTimeInput;
-  storetime_gt?: DateTimeInput;
-  storetime_gte?: DateTimeInput;
-  subject_id?: Int;
-  subject_id_not?: Int;
-  subject_id_in?: Int[] | Int;
-  subject_id_not_in?: Int[] | Int;
-  subject_id_lt?: Int;
-  subject_id_lte?: Int;
-  subject_id_gt?: Int;
-  subject_id_gte?: Int;
-  value?: String;
-  value_not?: String;
-  value_in?: String[] | String;
-  value_not_in?: String[] | String;
-  value_lt?: String;
-  value_lte?: String;
-  value_gt?: String;
-  value_gte?: String;
-  value_contains?: String;
-  value_not_contains?: String;
-  value_starts_with?: String;
-  value_not_starts_with?: String;
-  value_ends_with?: String;
-  value_not_ends_with?: String;
-  valuenum?: Float;
-  valuenum_not?: Float;
-  valuenum_in?: Float[] | Float;
-  valuenum_not_in?: Float[] | Float;
-  valuenum_lt?: Float;
-  valuenum_lte?: Float;
-  valuenum_gt?: Float;
-  valuenum_gte?: Float;
-  valueuom?: String;
-  valueuom_not?: String;
-  valueuom_in?: String[] | String;
-  valueuom_not_in?: String[] | String;
-  valueuom_lt?: String;
-  valueuom_lte?: String;
-  valueuom_gt?: String;
-  valueuom_gte?: String;
-  valueuom_contains?: String;
-  valueuom_not_contains?: String;
-  valueuom_starts_with?: String;
-  valueuom_not_starts_with?: String;
-  valueuom_ends_with?: String;
-  valueuom_not_ends_with?: String;
-  warning?: Int;
-  warning_not?: Int;
-  warning_in?: Int[] | Int;
-  warning_not_in?: Int[] | Int;
-  warning_lt?: Int;
-  warning_lte?: Int;
-  warning_gt?: Int;
-  warning_gte?: Int;
-  AND?: Chartevents_7WhereInput[] | Chartevents_7WhereInput;
-  OR?: Chartevents_7WhereInput[] | Chartevents_7WhereInput;
-  NOT?: Chartevents_7WhereInput[] | Chartevents_7WhereInput;
+  label?: String;
+  labevents?: LabeventUpdateManyInput;
+  loinc_code?: String;
 }
 
 export interface CharteventCreateManyInput {
@@ -7857,13 +7813,16 @@ export interface CharteventCreateManyInput {
   connect?: CharteventWhereUniqueInput[] | CharteventWhereUniqueInput;
 }
 
-export interface D_labitemUpdateInput {
+export interface DItemUpdateManyMutationInput {
+  abbreviation?: String;
   category?: String;
-  fluid?: String;
+  conceptid?: Int;
+  dbsource?: String;
   itemid?: Int;
   label?: String;
-  labevents?: LabeventUpdateManyInput;
-  loinc_code?: String;
+  linksto?: String;
+  param_type?: String;
+  unitname?: String;
 }
 
 export interface CharteventCreateInput {
@@ -7878,24 +7837,7 @@ export interface CharteventCreateInput {
   warning?: Int;
 }
 
-export interface D_itemUpdateManyMutationInput {
-  abbreviation?: String;
-  category?: String;
-  conceptid?: Int;
-  dbsource?: String;
-  itemid?: Int;
-  label?: String;
-  linksto?: String;
-  param_type?: String;
-  unitname?: String;
-}
-
-export interface CpteventCreateManyInput {
-  create?: CpteventCreateInput[] | CpteventCreateInput;
-  connect?: CpteventWhereUniqueInput[] | CpteventWhereUniqueInput;
-}
-
-export interface Chartevents_8WhereInput {
+export interface Chartevents8WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -8040,9 +7982,20 @@ export interface Chartevents_8WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_8WhereInput[] | Chartevents_8WhereInput;
-  OR?: Chartevents_8WhereInput[] | Chartevents_8WhereInput;
-  NOT?: Chartevents_8WhereInput[] | Chartevents_8WhereInput;
+  AND?: Chartevents8WhereInput[] | Chartevents8WhereInput;
+  OR?: Chartevents8WhereInput[] | Chartevents8WhereInput;
+  NOT?: Chartevents8WhereInput[] | Chartevents8WhereInput;
+}
+
+export interface CpteventCreateManyInput {
+  create?: CpteventCreateInput[] | CpteventCreateInput;
+  connect?: CpteventWhereUniqueInput[] | CpteventWhereUniqueInput;
+}
+
+export interface DIcdProcedureUpdateManyMutationInput {
+  icd9_code?: String;
+  long_title?: String;
+  short_title?: String;
 }
 
 export interface CpteventCreateInput {
@@ -8057,10 +8010,10 @@ export interface CpteventCreateInput {
   ticket_id_seq?: Int;
 }
 
-export interface D_icd_procedureUpdateManyMutationInput {
-  icd9_code?: String;
-  long_title?: String;
-  short_title?: String;
+export interface DIcdProcedureCreateInput {
+  icd9_code: String;
+  long_title: String;
+  short_title: String;
 }
 
 export interface DatetimeeventCreateManyInput {
@@ -8068,24 +8021,7 @@ export interface DatetimeeventCreateManyInput {
   connect?: DatetimeeventWhereUniqueInput[] | DatetimeeventWhereUniqueInput;
 }
 
-export interface D_icd_procedureCreateInput {
-  icd9_code: String;
-  long_title: String;
-  short_title: String;
-}
-
-export interface DatetimeeventCreateInput {
-  charttime: DateTimeInput;
-  error?: Int;
-  resultstatus?: String;
-  stopped?: String;
-  storetime: DateTimeInput;
-  value?: DateTimeInput;
-  valueuom: String;
-  warning?: Int;
-}
-
-export interface Chartevents_9WhereInput {
+export interface Chartevents9WhereInput {
   cgid?: Int;
   cgid_not?: Int;
   cgid_in?: Int[] | Int;
@@ -8230,28 +8166,34 @@ export interface Chartevents_9WhereInput {
   warning_lte?: Int;
   warning_gt?: Int;
   warning_gte?: Int;
-  AND?: Chartevents_9WhereInput[] | Chartevents_9WhereInput;
-  OR?: Chartevents_9WhereInput[] | Chartevents_9WhereInput;
-  NOT?: Chartevents_9WhereInput[] | Chartevents_9WhereInput;
+  AND?: Chartevents9WhereInput[] | Chartevents9WhereInput;
+  OR?: Chartevents9WhereInput[] | Chartevents9WhereInput;
+  NOT?: Chartevents9WhereInput[] | Chartevents9WhereInput;
 }
 
-export interface Diagnoses_icdCreateManyInput {
-  create?: Diagnoses_icdCreateInput[] | Diagnoses_icdCreateInput;
-  connect?: Diagnoses_icdWhereUniqueInput[] | Diagnoses_icdWhereUniqueInput;
+export interface DatetimeeventCreateInput {
+  charttime: DateTimeInput;
+  error?: Int;
+  resultstatus?: String;
+  stopped?: String;
+  storetime: DateTimeInput;
+  value?: DateTimeInput;
+  valueuom: String;
+  warning?: Int;
 }
 
-export interface D_icd_diagnosisCreateInput {
+export interface DIcdDiagnosisCreateInput {
   icd9_code: String;
   long_title: String;
   short_title: String;
 }
 
-export interface Diagnoses_icdCreateInput {
-  icd9_code?: String;
-  seq_num?: Int;
+export interface DiagnosesIcdCreateManyInput {
+  create?: DiagnosesIcdCreateInput[] | DiagnosesIcdCreateInput;
+  connect?: DiagnosesIcdWhereUniqueInput[] | DiagnosesIcdWhereUniqueInput;
 }
 
-export interface D_cptUpdateInput {
+export interface DCptUpdateInput {
   category?: Int;
   codesuffix?: String;
   maxcodeinsubsection?: Int;
@@ -8262,21 +8204,18 @@ export interface D_cptUpdateInput {
   subsectionrange?: String;
 }
 
-export interface DrgcodeCreateManyInput {
-  create?: DrgcodeCreateInput[] | DrgcodeCreateInput;
-  connect?: DrgcodeWhereUniqueInput[] | DrgcodeWhereUniqueInput;
+export interface DiagnosesIcdCreateInput {
+  icd9_code?: String;
+  seq_num?: Int;
 }
 
 export type CpteventWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+  id: UUID;
 }>;
 
-export interface DrgcodeCreateInput {
-  description?: String;
-  drg_code: String;
-  drg_mortality?: Int;
-  drg_severity?: Int;
-  drg_type: String;
+export interface DrgcodeCreateManyInput {
+  create?: DrgcodeCreateInput[] | DrgcodeCreateInput;
+  connect?: DrgcodeWhereUniqueInput[] | DrgcodeWhereUniqueInput;
 }
 
 export interface CpteventUpdateInput {
@@ -8291,51 +8230,39 @@ export interface CpteventUpdateInput {
   ticket_id_seq?: Int;
 }
 
+export interface DrgcodeCreateInput {
+  description?: String;
+  drg_code: String;
+  drg_mortality?: Int;
+  drg_severity?: Int;
+  drg_type: String;
+}
+
+export type DCptWhereUniqueInput = AtLeastOne<{
+  id: UUID;
+  subsectionrange?: String;
+}>;
+
 export interface IcustayCreateManyInput {
   create?: IcustayCreateInput[] | IcustayCreateInput;
   connect?: IcustayWhereUniqueInput[] | IcustayWhereUniqueInput;
 }
 
-export type D_cptWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
-  subsectionrange?: String;
-}>;
-
-export interface IcustayCreateInput {
-  chartevents?: CharteventCreateManyInput;
-  datetimeevents?: DatetimeeventCreateManyInput;
-  dbsource: String;
-  first_careunit: String;
-  first_wardid: Int;
-  icustay_id: Int;
-  inputevents_cv?: Inputevents_cvCreateManyInput;
-  inputevents_mv?: Inputevents_mvCreateManyInput;
-  intime: DateTimeInput;
-  last_careunit: String;
-  last_wardid: Int;
-  los?: Float;
-  outputevents?: OutputeventCreateManyInput;
-  outtime?: DateTimeInput;
-  prescriptions?: PrescriptionCreateManyInput;
-  procedureevents_mv?: Procedureevents_mvCreateManyInput;
-  transfers?: TransferCreateManyInput;
-}
-
-export interface D_cptWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+export interface DCptWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   category?: Int;
   category_not?: Int;
   category_in?: Int[] | Int;
@@ -8430,17 +8357,32 @@ export interface D_cptWhereInput {
   subsectionrange_not_starts_with?: String;
   subsectionrange_ends_with?: String;
   subsectionrange_not_ends_with?: String;
-  AND?: D_cptWhereInput[] | D_cptWhereInput;
-  OR?: D_cptWhereInput[] | D_cptWhereInput;
-  NOT?: D_cptWhereInput[] | D_cptWhereInput;
+  AND?: DCptWhereInput[] | DCptWhereInput;
+  OR?: DCptWhereInput[] | DCptWhereInput;
+  NOT?: DCptWhereInput[] | DCptWhereInput;
 }
 
-export interface Inputevents_cvCreateManyInput {
-  create?: Inputevents_cvCreateInput[] | Inputevents_cvCreateInput;
-  connect?: Inputevents_cvWhereUniqueInput[] | Inputevents_cvWhereUniqueInput;
+export interface IcustayCreateInput {
+  chartevents?: CharteventCreateManyInput;
+  datetimeevents?: DatetimeeventCreateManyInput;
+  dbsource: String;
+  first_careunit: String;
+  first_wardid: Int;
+  icustay_id: Int;
+  inputevents_cv?: InputeventsCvCreateManyInput;
+  inputevents_mv?: InputeventsMvCreateManyInput;
+  intime: DateTimeInput;
+  last_careunit: String;
+  last_wardid: Int;
+  los?: Float;
+  outputevents?: OutputeventCreateManyInput;
+  outtime?: DateTimeInput;
+  prescriptions?: PrescriptionCreateManyInput;
+  procedureevents_mv?: ProcedureeventsMvCreateManyInput;
+  transfers?: TransferCreateManyInput;
 }
 
-export interface Chartevents_8UpdateManyMutationInput {
+export interface Chartevents8UpdateManyMutationInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -8458,7 +8400,30 @@ export interface Chartevents_8UpdateManyMutationInput {
   warning?: Int;
 }
 
-export interface Inputevents_cvCreateInput {
+export interface InputeventsCvCreateManyInput {
+  create?: InputeventsCvCreateInput[] | InputeventsCvCreateInput;
+  connect?: InputeventsCvWhereUniqueInput[] | InputeventsCvWhereUniqueInput;
+}
+
+export interface Chartevents7UpdateManyMutationInput {
+  cgid?: Int;
+  charttime?: DateTimeInput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id?: Int;
+  stopped?: String;
+  storetime?: DateTimeInput;
+  subject_id?: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface InputeventsCvCreateInput {
   amount?: Float;
   amountuom?: String;
   charttime?: DateTimeInput;
@@ -8478,30 +8443,7 @@ export interface Inputevents_cvCreateInput {
   storetime?: DateTimeInput;
 }
 
-export interface Chartevents_7UpdateManyMutationInput {
-  cgid?: Int;
-  charttime?: DateTimeInput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id?: Int;
-  stopped?: String;
-  storetime?: DateTimeInput;
-  subject_id?: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Inputevents_mvCreateManyInput {
-  create?: Inputevents_mvCreateInput[] | Inputevents_mvCreateInput;
-  connect?: Inputevents_mvWhereUniqueInput[] | Inputevents_mvWhereUniqueInput;
-}
-
-export interface Chartevents_7CreateInput {
+export interface Chartevents7CreateInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -8519,7 +8461,30 @@ export interface Chartevents_7CreateInput {
   warning?: Int;
 }
 
-export interface Inputevents_mvCreateInput {
+export interface InputeventsMvCreateManyInput {
+  create?: InputeventsMvCreateInput[] | InputeventsMvCreateInput;
+  connect?: InputeventsMvWhereUniqueInput[] | InputeventsMvWhereUniqueInput;
+}
+
+export interface Chartevents6UpdateManyMutationInput {
+  cgid?: Int;
+  charttime?: DateTimeInput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id?: Int;
+  stopped?: String;
+  storetime?: DateTimeInput;
+  subject_id?: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface InputeventsMvCreateInput {
   amount?: Float;
   amountuom?: String;
   cancelreason?: Int;
@@ -8547,7 +8512,7 @@ export interface Inputevents_mvCreateInput {
   totalamountuom?: String;
 }
 
-export interface Chartevents_6UpdateManyMutationInput {
+export interface Chartevents5UpdateManyMutationInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -8570,23 +8535,10 @@ export interface OutputeventCreateManyInput {
   connect?: OutputeventWhereUniqueInput[] | OutputeventWhereUniqueInput;
 }
 
-export interface Chartevents_5UpdateManyMutationInput {
-  cgid?: Int;
-  charttime?: DateTimeInput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id?: Int;
-  stopped?: String;
-  storetime?: DateTimeInput;
-  subject_id?: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
+export type DIcdProcedureWhereUniqueInput = AtLeastOne<{
+  id: UUID;
+  icd9_code?: String;
+}>;
 
 export interface OutputeventCreateInput {
   charttime?: DateTimeInput;
@@ -8598,31 +8550,21 @@ export interface OutputeventCreateInput {
   valueuom?: String;
 }
 
-export type D_icd_procedureWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
-  icd9_code?: String;
-}>;
-
-export interface PrescriptionCreateManyInput {
-  create?: PrescriptionCreateInput[] | PrescriptionCreateInput;
-  connect?: PrescriptionWhereUniqueInput[] | PrescriptionWhereUniqueInput;
-}
-
-export interface D_icd_procedureWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+export interface DIcdProcedureWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   icd9_code?: String;
   icd9_code_not?: String;
   icd9_code_in?: String[] | String;
@@ -8665,9 +8607,32 @@ export interface D_icd_procedureWhereInput {
   short_title_not_starts_with?: String;
   short_title_ends_with?: String;
   short_title_not_ends_with?: String;
-  AND?: D_icd_procedureWhereInput[] | D_icd_procedureWhereInput;
-  OR?: D_icd_procedureWhereInput[] | D_icd_procedureWhereInput;
-  NOT?: D_icd_procedureWhereInput[] | D_icd_procedureWhereInput;
+  AND?: DIcdProcedureWhereInput[] | DIcdProcedureWhereInput;
+  OR?: DIcdProcedureWhereInput[] | DIcdProcedureWhereInput;
+  NOT?: DIcdProcedureWhereInput[] | DIcdProcedureWhereInput;
+}
+
+export interface PrescriptionCreateManyInput {
+  create?: PrescriptionCreateInput[] | PrescriptionCreateInput;
+  connect?: PrescriptionWhereUniqueInput[] | PrescriptionWhereUniqueInput;
+}
+
+export interface Chartevents4CreateInput {
+  cgid?: Int;
+  charttime?: DateTimeInput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeInput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
 }
 
 export interface PrescriptionCreateInput {
@@ -8688,7 +8653,7 @@ export interface PrescriptionCreateInput {
   startdate?: DateTimeInput;
 }
 
-export interface Chartevents_4CreateInput {
+export interface Chartevents3CreateInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -8706,14 +8671,14 @@ export interface Chartevents_4CreateInput {
   warning?: Int;
 }
 
-export interface Procedureevents_mvCreateManyInput {
-  create?: Procedureevents_mvCreateInput[] | Procedureevents_mvCreateInput;
+export interface ProcedureeventsMvCreateManyInput {
+  create?: ProcedureeventsMvCreateInput[] | ProcedureeventsMvCreateInput;
   connect?:
-    | Procedureevents_mvWhereUniqueInput[]
-    | Procedureevents_mvWhereUniqueInput;
+    | ProcedureeventsMvWhereUniqueInput[]
+    | ProcedureeventsMvWhereUniqueInput;
 }
 
-export interface Chartevents_3CreateInput {
+export interface Chartevents2UpdateManyMutationInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -8721,17 +8686,17 @@ export interface Chartevents_3CreateInput {
   icustay_id?: Int;
   itemid?: Int;
   resultstatus?: String;
-  row_id: Int;
+  row_id?: Int;
   stopped?: String;
   storetime?: DateTimeInput;
-  subject_id: Int;
+  subject_id?: Int;
   value?: String;
   valuenum?: Float;
   valueuom?: String;
   warning?: Int;
 }
 
-export interface Procedureevents_mvCreateInput {
+export interface ProcedureeventsMvCreateInput {
   cancelreason?: Int;
   comments_canceledby?: String;
   comments_date?: DateTimeInput;
@@ -8753,7 +8718,7 @@ export interface Procedureevents_mvCreateInput {
   valueuom?: String;
 }
 
-export interface Chartevents_2UpdateManyMutationInput {
+export interface Chartevents2CreateInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -8761,10 +8726,10 @@ export interface Chartevents_2UpdateManyMutationInput {
   icustay_id?: Int;
   itemid?: Int;
   resultstatus?: String;
-  row_id?: Int;
+  row_id: Int;
   stopped?: String;
   storetime?: DateTimeInput;
-  subject_id?: Int;
+  subject_id: Int;
   value?: String;
   valuenum?: Float;
   valueuom?: String;
@@ -8776,7 +8741,7 @@ export interface TransferCreateManyInput {
   connect?: TransferWhereUniqueInput[] | TransferWhereUniqueInput;
 }
 
-export interface Chartevents_2CreateInput {
+export interface Chartevents17CreateInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -8806,57 +8771,31 @@ export interface TransferCreateInput {
   prev_wardid?: Int;
 }
 
-export interface Chartevents_17CreateInput {
-  cgid?: Int;
-  charttime?: DateTimeInput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
+export type DLabitemWhereUniqueInput = AtLeastOne<{
+  id: UUID;
   itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeInput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
+}>;
 
 export interface LabeventCreateManyInput {
   create?: LabeventCreateInput[] | LabeventCreateInput;
   connect?: LabeventWhereUniqueInput[] | LabeventWhereUniqueInput;
 }
 
-export type D_labitemWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
-  itemid?: Int;
-}>;
-
-export interface LabeventCreateInput {
-  charttime?: DateTimeInput;
-  flag?: String;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-}
-
-export interface D_labitemWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+export interface DLabitemWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   category?: String;
   category_not?: String;
   category_in?: String[] | String;
@@ -8924,9 +8863,35 @@ export interface D_labitemWhereInput {
   loinc_code_not_starts_with?: String;
   loinc_code_ends_with?: String;
   loinc_code_not_ends_with?: String;
-  AND?: D_labitemWhereInput[] | D_labitemWhereInput;
-  OR?: D_labitemWhereInput[] | D_labitemWhereInput;
-  NOT?: D_labitemWhereInput[] | D_labitemWhereInput;
+  AND?: DLabitemWhereInput[] | DLabitemWhereInput;
+  OR?: DLabitemWhereInput[] | DLabitemWhereInput;
+  NOT?: DLabitemWhereInput[] | DLabitemWhereInput;
+}
+
+export interface LabeventCreateInput {
+  charttime?: DateTimeInput;
+  flag?: String;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+}
+
+export interface Chartevents15CreateInput {
+  cgid?: Int;
+  charttime?: DateTimeInput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeInput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
 }
 
 export interface MicrobiologyeventCreateManyInput {
@@ -8936,7 +8901,7 @@ export interface MicrobiologyeventCreateManyInput {
     | MicrobiologyeventWhereUniqueInput;
 }
 
-export interface Chartevents_15CreateInput {
+export interface Chartevents14CreateInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -8967,7 +8932,7 @@ export interface MicrobiologyeventCreateInput {
   spec_type_desc?: String;
 }
 
-export interface Chartevents_14CreateInput {
+export interface Chartevents13UpdateManyMutationInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -8975,10 +8940,10 @@ export interface Chartevents_14CreateInput {
   icustay_id?: Int;
   itemid?: Int;
   resultstatus?: String;
-  row_id: Int;
+  row_id?: Int;
   stopped?: String;
   storetime?: DateTimeInput;
-  subject_id: Int;
+  subject_id?: Int;
   value?: String;
   valuenum?: Float;
   valueuom?: String;
@@ -8990,7 +8955,7 @@ export interface NoteeventCreateManyInput {
   connect?: NoteeventWhereUniqueInput[] | NoteeventWhereUniqueInput;
 }
 
-export interface Chartevents_13UpdateManyMutationInput {
+export interface Chartevents12UpdateManyMutationInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -9018,7 +8983,53 @@ export interface NoteeventCreateInput {
   text?: String;
 }
 
-export interface Chartevents_12UpdateManyMutationInput {
+export interface Chartevents12CreateInput {
+  cgid?: Int;
+  charttime?: DateTimeInput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeInput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface ProceduresIcdCreateManyInput {
+  create?: ProceduresIcdCreateInput[] | ProceduresIcdCreateInput;
+  connect?: ProceduresIcdWhereUniqueInput[] | ProceduresIcdWhereUniqueInput;
+}
+
+export interface Chartevents11CreateInput {
+  cgid?: Int;
+  charttime?: DateTimeInput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeInput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface ProceduresIcdCreateInput {
+  icd9_code: String;
+  seq_num: Int;
+}
+
+export interface Chartevents10UpdateManyMutationInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -9030,52 +9041,6 @@ export interface Chartevents_12UpdateManyMutationInput {
   stopped?: String;
   storetime?: DateTimeInput;
   subject_id?: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Procedures_icdCreateManyInput {
-  create?: Procedures_icdCreateInput[] | Procedures_icdCreateInput;
-  connect?: Procedures_icdWhereUniqueInput[] | Procedures_icdWhereUniqueInput;
-}
-
-export interface Chartevents_12CreateInput {
-  cgid?: Int;
-  charttime?: DateTimeInput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeInput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Procedures_icdCreateInput {
-  icd9_code: String;
-  seq_num: Int;
-}
-
-export interface Chartevents_11CreateInput {
-  cgid?: Int;
-  charttime?: DateTimeInput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeInput;
-  subject_id: Int;
   value?: String;
   valuenum?: Float;
   valueuom?: String;
@@ -9085,30 +9050,6 @@ export interface Chartevents_11CreateInput {
 export interface ServiceCreateManyInput {
   create?: ServiceCreateInput[] | ServiceCreateInput;
   connect?: ServiceWhereUniqueInput[] | ServiceWhereUniqueInput;
-}
-
-export interface Chartevents_10UpdateManyMutationInput {
-  cgid?: Int;
-  charttime?: DateTimeInput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id?: Int;
-  stopped?: String;
-  storetime?: DateTimeInput;
-  subject_id?: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface ServiceCreateInput {
-  curr_service?: String;
-  prev_service?: String;
-  transfertime: DateTimeInput;
 }
 
 export interface TransferSubscriptionWhereInput {
@@ -9122,6 +9063,29 @@ export interface TransferSubscriptionWhereInput {
   NOT?: TransferSubscriptionWhereInput[] | TransferSubscriptionWhereInput;
 }
 
+export interface ServiceCreateInput {
+  curr_service?: String;
+  prev_service?: String;
+  transfertime: DateTimeInput;
+}
+
+export interface ProcedureeventsMvSubscriptionWhereInput {
+  mutation_in?: MutationType[] | MutationType;
+  updatedFields_contains?: String;
+  updatedFields_contains_every?: String[] | String;
+  updatedFields_contains_some?: String[] | String;
+  node?: ProcedureeventsMvWhereInput;
+  AND?:
+    | ProcedureeventsMvSubscriptionWhereInput[]
+    | ProcedureeventsMvSubscriptionWhereInput;
+  OR?:
+    | ProcedureeventsMvSubscriptionWhereInput[]
+    | ProcedureeventsMvSubscriptionWhereInput;
+  NOT?:
+    | ProcedureeventsMvSubscriptionWhereInput[]
+    | ProcedureeventsMvSubscriptionWhereInput;
+}
+
 export interface AdmissionUpdateInput {
   admission_location?: String;
   admission_type?: String;
@@ -9131,7 +9095,7 @@ export interface AdmissionUpdateInput {
   cptevents?: CpteventUpdateManyInput;
   datetimeevents?: DatetimeeventUpdateManyInput;
   deathtime?: DateTimeInput;
-  diagnoses_icd?: Diagnoses_icdUpdateManyInput;
+  diagnoses_icd?: DiagnosesIcdUpdateManyInput;
   diagnosis?: String;
   discharge_location?: String;
   dischtime?: DateTimeInput;
@@ -9143,8 +9107,8 @@ export interface AdmissionUpdateInput {
   has_chartevents_data?: Int;
   hospital_expire_flag?: Int;
   icustays?: IcustayUpdateManyInput;
-  inputevents_cv?: Inputevents_cvUpdateManyInput;
-  inputevents_mv?: Inputevents_mvUpdateManyInput;
+  inputevents_cv?: InputeventsCvUpdateManyInput;
+  inputevents_mv?: InputeventsMvUpdateManyInput;
   insurance?: String;
   labevents?: LabeventUpdateManyInput;
   language?: String;
@@ -9153,63 +9117,28 @@ export interface AdmissionUpdateInput {
   noteevents?: NoteeventUpdateManyInput;
   outputevents?: OutputeventUpdateManyInput;
   prescriptions?: PrescriptionUpdateManyInput;
-  procedureevents_mv?: Procedureevents_mvUpdateManyInput;
-  procedures_icd?: Procedures_icdUpdateManyInput;
+  procedureevents_mv?: ProcedureeventsMvUpdateManyInput;
+  procedures_icd?: ProceduresIcdUpdateManyInput;
   religion?: String;
   services?: ServiceUpdateManyInput;
   transfers?: TransferUpdateManyInput;
 }
 
-export interface Procedureevents_mvSubscriptionWhereInput {
-  mutation_in?: MutationType[] | MutationType;
-  updatedFields_contains?: String;
-  updatedFields_contains_every?: String[] | String;
-  updatedFields_contains_some?: String[] | String;
-  node?: Procedureevents_mvWhereInput;
-  AND?:
-    | Procedureevents_mvSubscriptionWhereInput[]
-    | Procedureevents_mvSubscriptionWhereInput;
-  OR?:
-    | Procedureevents_mvSubscriptionWhereInput[]
-    | Procedureevents_mvSubscriptionWhereInput;
-  NOT?:
-    | Procedureevents_mvSubscriptionWhereInput[]
-    | Procedureevents_mvSubscriptionWhereInput;
-}
-
-export interface CalloutUpdateManyInput {
-  create?: CalloutCreateInput[] | CalloutCreateInput;
-  update?:
-    | CalloutUpdateWithWhereUniqueNestedInput[]
-    | CalloutUpdateWithWhereUniqueNestedInput;
-  upsert?:
-    | CalloutUpsertWithWhereUniqueNestedInput[]
-    | CalloutUpsertWithWhereUniqueNestedInput;
-  delete?: CalloutWhereUniqueInput[] | CalloutWhereUniqueInput;
-  connect?: CalloutWhereUniqueInput[] | CalloutWhereUniqueInput;
-  set?: CalloutWhereUniqueInput[] | CalloutWhereUniqueInput;
-  disconnect?: CalloutWhereUniqueInput[] | CalloutWhereUniqueInput;
-  deleteMany?: CalloutScalarWhereInput[] | CalloutScalarWhereInput;
-  updateMany?:
-    | CalloutUpdateManyWithWhereNestedInput[]
-    | CalloutUpdateManyWithWhereNestedInput;
-}
-
 export interface ServiceWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   curr_service?: String;
   curr_service_not?: String;
   curr_service_in?: String[] | String;
@@ -9251,9 +9180,22 @@ export interface ServiceWhereInput {
   NOT?: ServiceWhereInput[] | ServiceWhereInput;
 }
 
-export interface CalloutUpdateWithWhereUniqueNestedInput {
-  where: CalloutWhereUniqueInput;
-  data: CalloutUpdateDataInput;
+export interface CalloutUpdateManyInput {
+  create?: CalloutCreateInput[] | CalloutCreateInput;
+  update?:
+    | CalloutUpdateWithWhereUniqueNestedInput[]
+    | CalloutUpdateWithWhereUniqueNestedInput;
+  upsert?:
+    | CalloutUpsertWithWhereUniqueNestedInput[]
+    | CalloutUpsertWithWhereUniqueNestedInput;
+  delete?: CalloutWhereUniqueInput[] | CalloutWhereUniqueInput;
+  connect?: CalloutWhereUniqueInput[] | CalloutWhereUniqueInput;
+  set?: CalloutWhereUniqueInput[] | CalloutWhereUniqueInput;
+  disconnect?: CalloutWhereUniqueInput[] | CalloutWhereUniqueInput;
+  deleteMany?: CalloutScalarWhereInput[] | CalloutScalarWhereInput;
+  updateMany?:
+    | CalloutUpdateManyWithWhereNestedInput[]
+    | CalloutUpdateManyWithWhereNestedInput;
 }
 
 export interface MicrobiologyeventSubscriptionWhereInput {
@@ -9271,6 +9213,22 @@ export interface MicrobiologyeventSubscriptionWhereInput {
   NOT?:
     | MicrobiologyeventSubscriptionWhereInput[]
     | MicrobiologyeventSubscriptionWhereInput;
+}
+
+export interface CalloutUpdateWithWhereUniqueNestedInput {
+  where: CalloutWhereUniqueInput;
+  data: CalloutUpdateDataInput;
+}
+
+export interface IcustaySubscriptionWhereInput {
+  mutation_in?: MutationType[] | MutationType;
+  updatedFields_contains?: String;
+  updatedFields_contains_every?: String[] | String;
+  updatedFields_contains_some?: String[] | String;
+  node?: IcustayWhereInput;
+  AND?: IcustaySubscriptionWhereInput[] | IcustaySubscriptionWhereInput;
+  OR?: IcustaySubscriptionWhereInput[] | IcustaySubscriptionWhereInput;
+  NOT?: IcustaySubscriptionWhereInput[] | IcustaySubscriptionWhereInput;
 }
 
 export interface CalloutUpdateDataInput {
@@ -9297,23 +9255,6 @@ export interface CalloutUpdateDataInput {
   updatetime?: DateTimeInput;
 }
 
-export interface IcustaySubscriptionWhereInput {
-  mutation_in?: MutationType[] | MutationType;
-  updatedFields_contains?: String;
-  updatedFields_contains_every?: String[] | String;
-  updatedFields_contains_some?: String[] | String;
-  node?: IcustayWhereInput;
-  AND?: IcustaySubscriptionWhereInput[] | IcustaySubscriptionWhereInput;
-  OR?: IcustaySubscriptionWhereInput[] | IcustaySubscriptionWhereInput;
-  NOT?: IcustaySubscriptionWhereInput[] | IcustaySubscriptionWhereInput;
-}
-
-export interface CalloutUpsertWithWhereUniqueNestedInput {
-  where: CalloutWhereUniqueInput;
-  update: CalloutUpdateDataInput;
-  create: CalloutCreateInput;
-}
-
 export interface DatetimeeventSubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
@@ -9331,21 +9272,104 @@ export interface DatetimeeventSubscriptionWhereInput {
     | DatetimeeventSubscriptionWhereInput;
 }
 
+export interface CalloutUpsertWithWhereUniqueNestedInput {
+  where: CalloutWhereUniqueInput;
+  update: CalloutUpdateDataInput;
+  create: CalloutCreateInput;
+}
+
+export interface CaregiverWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
+  cgid?: Int;
+  cgid_not?: Int;
+  cgid_in?: Int[] | Int;
+  cgid_not_in?: Int[] | Int;
+  cgid_lt?: Int;
+  cgid_lte?: Int;
+  cgid_gt?: Int;
+  cgid_gte?: Int;
+  chartevents_every?: CharteventWhereInput;
+  chartevents_some?: CharteventWhereInput;
+  chartevents_none?: CharteventWhereInput;
+  datetimeevents_every?: DatetimeeventWhereInput;
+  datetimeevents_some?: DatetimeeventWhereInput;
+  datetimeevents_none?: DatetimeeventWhereInput;
+  description?: String;
+  description_not?: String;
+  description_in?: String[] | String;
+  description_not_in?: String[] | String;
+  description_lt?: String;
+  description_lte?: String;
+  description_gt?: String;
+  description_gte?: String;
+  description_contains?: String;
+  description_not_contains?: String;
+  description_starts_with?: String;
+  description_not_starts_with?: String;
+  description_ends_with?: String;
+  description_not_ends_with?: String;
+  inputevents_cv_every?: InputeventsCvWhereInput;
+  inputevents_cv_some?: InputeventsCvWhereInput;
+  inputevents_cv_none?: InputeventsCvWhereInput;
+  inputevents_mv_every?: InputeventsMvWhereInput;
+  inputevents_mv_some?: InputeventsMvWhereInput;
+  inputevents_mv_none?: InputeventsMvWhereInput;
+  label?: String;
+  label_not?: String;
+  label_in?: String[] | String;
+  label_not_in?: String[] | String;
+  label_lt?: String;
+  label_lte?: String;
+  label_gt?: String;
+  label_gte?: String;
+  label_contains?: String;
+  label_not_contains?: String;
+  label_starts_with?: String;
+  label_not_starts_with?: String;
+  label_ends_with?: String;
+  label_not_ends_with?: String;
+  noteevents_every?: NoteeventWhereInput;
+  noteevents_some?: NoteeventWhereInput;
+  noteevents_none?: NoteeventWhereInput;
+  outputevents_every?: OutputeventWhereInput;
+  outputevents_some?: OutputeventWhereInput;
+  outputevents_none?: OutputeventWhereInput;
+  procedureevents_mv_every?: ProcedureeventsMvWhereInput;
+  procedureevents_mv_some?: ProcedureeventsMvWhereInput;
+  procedureevents_mv_none?: ProcedureeventsMvWhereInput;
+  AND?: CaregiverWhereInput[] | CaregiverWhereInput;
+  OR?: CaregiverWhereInput[] | CaregiverWhereInput;
+  NOT?: CaregiverWhereInput[] | CaregiverWhereInput;
+}
+
 export interface CalloutScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   acknowledge_status?: String;
   acknowledge_status_not?: String;
   acknowledge_status_in?: String[] | String;
@@ -9555,88 +9579,6 @@ export interface CalloutScalarWhereInput {
   NOT?: CalloutScalarWhereInput[] | CalloutScalarWhereInput;
 }
 
-export interface CaregiverWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
-  cgid?: Int;
-  cgid_not?: Int;
-  cgid_in?: Int[] | Int;
-  cgid_not_in?: Int[] | Int;
-  cgid_lt?: Int;
-  cgid_lte?: Int;
-  cgid_gt?: Int;
-  cgid_gte?: Int;
-  label?: String;
-  label_not?: String;
-  label_in?: String[] | String;
-  label_not_in?: String[] | String;
-  label_lt?: String;
-  label_lte?: String;
-  label_gt?: String;
-  label_gte?: String;
-  label_contains?: String;
-  label_not_contains?: String;
-  label_starts_with?: String;
-  label_not_starts_with?: String;
-  label_ends_with?: String;
-  label_not_ends_with?: String;
-  description?: String;
-  description_not?: String;
-  description_in?: String[] | String;
-  description_not_in?: String[] | String;
-  description_lt?: String;
-  description_lte?: String;
-  description_gt?: String;
-  description_gte?: String;
-  description_contains?: String;
-  description_not_contains?: String;
-  description_starts_with?: String;
-  description_not_starts_with?: String;
-  description_ends_with?: String;
-  description_not_ends_with?: String;
-  chartevents_every?: CharteventWhereInput;
-  chartevents_some?: CharteventWhereInput;
-  chartevents_none?: CharteventWhereInput;
-  datetimeevents_every?: DatetimeeventWhereInput;
-  datetimeevents_some?: DatetimeeventWhereInput;
-  datetimeevents_none?: DatetimeeventWhereInput;
-  inputevents_cv_every?: Inputevents_cvWhereInput;
-  inputevents_cv_some?: Inputevents_cvWhereInput;
-  inputevents_cv_none?: Inputevents_cvWhereInput;
-  inputevents_mv_every?: Inputevents_mvWhereInput;
-  inputevents_mv_some?: Inputevents_mvWhereInput;
-  inputevents_mv_none?: Inputevents_mvWhereInput;
-  noteevents_every?: NoteeventWhereInput;
-  noteevents_some?: NoteeventWhereInput;
-  noteevents_none?: NoteeventWhereInput;
-  outputevents_every?: OutputeventWhereInput;
-  outputevents_some?: OutputeventWhereInput;
-  outputevents_none?: OutputeventWhereInput;
-  procedureevents_mv_every?: Procedureevents_mvWhereInput;
-  procedureevents_mv_some?: Procedureevents_mvWhereInput;
-  procedureevents_mv_none?: Procedureevents_mvWhereInput;
-  AND?: CaregiverWhereInput[] | CaregiverWhereInput;
-  OR?: CaregiverWhereInput[] | CaregiverWhereInput;
-  NOT?: CaregiverWhereInput[] | CaregiverWhereInput;
-}
-
-export interface CalloutUpdateManyWithWhereNestedInput {
-  where: CalloutScalarWhereInput;
-  data: CalloutUpdateManyDataInput;
-}
-
 export interface CpteventSubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
@@ -9646,6 +9588,28 @@ export interface CpteventSubscriptionWhereInput {
   AND?: CpteventSubscriptionWhereInput[] | CpteventSubscriptionWhereInput;
   OR?: CpteventSubscriptionWhereInput[] | CpteventSubscriptionWhereInput;
   NOT?: CpteventSubscriptionWhereInput[] | CpteventSubscriptionWhereInput;
+}
+
+export interface CalloutUpdateManyWithWhereNestedInput {
+  where: CalloutScalarWhereInput;
+  data: CalloutUpdateManyDataInput;
+}
+
+export interface Chartevents7SubscriptionWhereInput {
+  mutation_in?: MutationType[] | MutationType;
+  updatedFields_contains?: String;
+  updatedFields_contains_every?: String[] | String;
+  updatedFields_contains_some?: String[] | String;
+  node?: Chartevents7WhereInput;
+  AND?:
+    | Chartevents7SubscriptionWhereInput[]
+    | Chartevents7SubscriptionWhereInput;
+  OR?:
+    | Chartevents7SubscriptionWhereInput[]
+    | Chartevents7SubscriptionWhereInput;
+  NOT?:
+    | Chartevents7SubscriptionWhereInput[]
+    | Chartevents7SubscriptionWhereInput;
 }
 
 export interface CalloutUpdateManyDataInput {
@@ -9672,21 +9636,21 @@ export interface CalloutUpdateManyDataInput {
   updatetime?: DateTimeInput;
 }
 
-export interface Chartevents_7SubscriptionWhereInput {
+export interface Chartevents5SubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_7WhereInput;
+  node?: Chartevents5WhereInput;
   AND?:
-    | Chartevents_7SubscriptionWhereInput[]
-    | Chartevents_7SubscriptionWhereInput;
+    | Chartevents5SubscriptionWhereInput[]
+    | Chartevents5SubscriptionWhereInput;
   OR?:
-    | Chartevents_7SubscriptionWhereInput[]
-    | Chartevents_7SubscriptionWhereInput;
+    | Chartevents5SubscriptionWhereInput[]
+    | Chartevents5SubscriptionWhereInput;
   NOT?:
-    | Chartevents_7SubscriptionWhereInput[]
-    | Chartevents_7SubscriptionWhereInput;
+    | Chartevents5SubscriptionWhereInput[]
+    | Chartevents5SubscriptionWhereInput;
 }
 
 export interface CharteventUpdateManyInput {
@@ -9707,43 +9671,21 @@ export interface CharteventUpdateManyInput {
     | CharteventUpdateManyWithWhereNestedInput;
 }
 
-export interface Chartevents_5SubscriptionWhereInput {
-  mutation_in?: MutationType[] | MutationType;
-  updatedFields_contains?: String;
-  updatedFields_contains_every?: String[] | String;
-  updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_5WhereInput;
-  AND?:
-    | Chartevents_5SubscriptionWhereInput[]
-    | Chartevents_5SubscriptionWhereInput;
-  OR?:
-    | Chartevents_5SubscriptionWhereInput[]
-    | Chartevents_5SubscriptionWhereInput;
-  NOT?:
-    | Chartevents_5SubscriptionWhereInput[]
-    | Chartevents_5SubscriptionWhereInput;
-}
-
-export interface CharteventUpdateWithWhereUniqueNestedInput {
-  where: CharteventWhereUniqueInput;
-  data: CharteventUpdateDataInput;
-}
-
-export interface Procedureevents_mvWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+export interface ProcedureeventsMvWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   cancelreason?: Int;
   cancelreason_not?: Int;
   cancelreason_in?: Int[] | Int;
@@ -9950,9 +9892,31 @@ export interface Procedureevents_mvWhereInput {
   valueuom_not_starts_with?: String;
   valueuom_ends_with?: String;
   valueuom_not_ends_with?: String;
-  AND?: Procedureevents_mvWhereInput[] | Procedureevents_mvWhereInput;
-  OR?: Procedureevents_mvWhereInput[] | Procedureevents_mvWhereInput;
-  NOT?: Procedureevents_mvWhereInput[] | Procedureevents_mvWhereInput;
+  AND?: ProcedureeventsMvWhereInput[] | ProcedureeventsMvWhereInput;
+  OR?: ProcedureeventsMvWhereInput[] | ProcedureeventsMvWhereInput;
+  NOT?: ProcedureeventsMvWhereInput[] | ProcedureeventsMvWhereInput;
+}
+
+export interface CharteventUpdateWithWhereUniqueNestedInput {
+  where: CharteventWhereUniqueInput;
+  data: CharteventUpdateDataInput;
+}
+
+export interface Chartevents15SubscriptionWhereInput {
+  mutation_in?: MutationType[] | MutationType;
+  updatedFields_contains?: String;
+  updatedFields_contains_every?: String[] | String;
+  updatedFields_contains_some?: String[] | String;
+  node?: Chartevents15WhereInput;
+  AND?:
+    | Chartevents15SubscriptionWhereInput[]
+    | Chartevents15SubscriptionWhereInput;
+  OR?:
+    | Chartevents15SubscriptionWhereInput[]
+    | Chartevents15SubscriptionWhereInput;
+  NOT?:
+    | Chartevents15SubscriptionWhereInput[]
+    | Chartevents15SubscriptionWhereInput;
 }
 
 export interface CharteventUpdateDataInput {
@@ -9967,21 +9931,21 @@ export interface CharteventUpdateDataInput {
   warning?: Int;
 }
 
-export interface Chartevents_15SubscriptionWhereInput {
+export interface Chartevents13SubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_15WhereInput;
+  node?: Chartevents13WhereInput;
   AND?:
-    | Chartevents_15SubscriptionWhereInput[]
-    | Chartevents_15SubscriptionWhereInput;
+    | Chartevents13SubscriptionWhereInput[]
+    | Chartevents13SubscriptionWhereInput;
   OR?:
-    | Chartevents_15SubscriptionWhereInput[]
-    | Chartevents_15SubscriptionWhereInput;
+    | Chartevents13SubscriptionWhereInput[]
+    | Chartevents13SubscriptionWhereInput;
   NOT?:
-    | Chartevents_15SubscriptionWhereInput[]
-    | Chartevents_15SubscriptionWhereInput;
+    | Chartevents13SubscriptionWhereInput[]
+    | Chartevents13SubscriptionWhereInput;
 }
 
 export interface CharteventUpsertWithWhereUniqueNestedInput {
@@ -9990,38 +9954,115 @@ export interface CharteventUpsertWithWhereUniqueNestedInput {
   create: CharteventCreateInput;
 }
 
-export interface Chartevents_13SubscriptionWhereInput {
-  mutation_in?: MutationType[] | MutationType;
-  updatedFields_contains?: String;
-  updatedFields_contains_every?: String[] | String;
-  updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_13WhereInput;
-  AND?:
-    | Chartevents_13SubscriptionWhereInput[]
-    | Chartevents_13SubscriptionWhereInput;
-  OR?:
-    | Chartevents_13SubscriptionWhereInput[]
-    | Chartevents_13SubscriptionWhereInput;
-  NOT?:
-    | Chartevents_13SubscriptionWhereInput[]
-    | Chartevents_13SubscriptionWhereInput;
+export interface OutputeventWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
+  charttime?: DateTimeInput;
+  charttime_not?: DateTimeInput;
+  charttime_in?: DateTimeInput[] | DateTimeInput;
+  charttime_not_in?: DateTimeInput[] | DateTimeInput;
+  charttime_lt?: DateTimeInput;
+  charttime_lte?: DateTimeInput;
+  charttime_gt?: DateTimeInput;
+  charttime_gte?: DateTimeInput;
+  iserror?: Int;
+  iserror_not?: Int;
+  iserror_in?: Int[] | Int;
+  iserror_not_in?: Int[] | Int;
+  iserror_lt?: Int;
+  iserror_lte?: Int;
+  iserror_gt?: Int;
+  iserror_gte?: Int;
+  newbottle?: String;
+  newbottle_not?: String;
+  newbottle_in?: String[] | String;
+  newbottle_not_in?: String[] | String;
+  newbottle_lt?: String;
+  newbottle_lte?: String;
+  newbottle_gt?: String;
+  newbottle_gte?: String;
+  newbottle_contains?: String;
+  newbottle_not_contains?: String;
+  newbottle_starts_with?: String;
+  newbottle_not_starts_with?: String;
+  newbottle_ends_with?: String;
+  newbottle_not_ends_with?: String;
+  stopped?: String;
+  stopped_not?: String;
+  stopped_in?: String[] | String;
+  stopped_not_in?: String[] | String;
+  stopped_lt?: String;
+  stopped_lte?: String;
+  stopped_gt?: String;
+  stopped_gte?: String;
+  stopped_contains?: String;
+  stopped_not_contains?: String;
+  stopped_starts_with?: String;
+  stopped_not_starts_with?: String;
+  stopped_ends_with?: String;
+  stopped_not_ends_with?: String;
+  storetime?: DateTimeInput;
+  storetime_not?: DateTimeInput;
+  storetime_in?: DateTimeInput[] | DateTimeInput;
+  storetime_not_in?: DateTimeInput[] | DateTimeInput;
+  storetime_lt?: DateTimeInput;
+  storetime_lte?: DateTimeInput;
+  storetime_gt?: DateTimeInput;
+  storetime_gte?: DateTimeInput;
+  value?: Float;
+  value_not?: Float;
+  value_in?: Float[] | Float;
+  value_not_in?: Float[] | Float;
+  value_lt?: Float;
+  value_lte?: Float;
+  value_gt?: Float;
+  value_gte?: Float;
+  valueuom?: String;
+  valueuom_not?: String;
+  valueuom_in?: String[] | String;
+  valueuom_not_in?: String[] | String;
+  valueuom_lt?: String;
+  valueuom_lte?: String;
+  valueuom_gt?: String;
+  valueuom_gte?: String;
+  valueuom_contains?: String;
+  valueuom_not_contains?: String;
+  valueuom_starts_with?: String;
+  valueuom_not_starts_with?: String;
+  valueuom_ends_with?: String;
+  valueuom_not_ends_with?: String;
+  AND?: OutputeventWhereInput[] | OutputeventWhereInput;
+  OR?: OutputeventWhereInput[] | OutputeventWhereInput;
+  NOT?: OutputeventWhereInput[] | OutputeventWhereInput;
 }
 
 export interface CharteventScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   charttime?: DateTimeInput;
   charttime_not?: DateTimeInput;
   charttime_in?: DateTimeInput[] | DateTimeInput;
@@ -10123,105 +10164,6 @@ export interface CharteventScalarWhereInput {
   NOT?: CharteventScalarWhereInput[] | CharteventScalarWhereInput;
 }
 
-export interface OutputeventWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
-  charttime?: DateTimeInput;
-  charttime_not?: DateTimeInput;
-  charttime_in?: DateTimeInput[] | DateTimeInput;
-  charttime_not_in?: DateTimeInput[] | DateTimeInput;
-  charttime_lt?: DateTimeInput;
-  charttime_lte?: DateTimeInput;
-  charttime_gt?: DateTimeInput;
-  charttime_gte?: DateTimeInput;
-  iserror?: Int;
-  iserror_not?: Int;
-  iserror_in?: Int[] | Int;
-  iserror_not_in?: Int[] | Int;
-  iserror_lt?: Int;
-  iserror_lte?: Int;
-  iserror_gt?: Int;
-  iserror_gte?: Int;
-  newbottle?: String;
-  newbottle_not?: String;
-  newbottle_in?: String[] | String;
-  newbottle_not_in?: String[] | String;
-  newbottle_lt?: String;
-  newbottle_lte?: String;
-  newbottle_gt?: String;
-  newbottle_gte?: String;
-  newbottle_contains?: String;
-  newbottle_not_contains?: String;
-  newbottle_starts_with?: String;
-  newbottle_not_starts_with?: String;
-  newbottle_ends_with?: String;
-  newbottle_not_ends_with?: String;
-  stopped?: String;
-  stopped_not?: String;
-  stopped_in?: String[] | String;
-  stopped_not_in?: String[] | String;
-  stopped_lt?: String;
-  stopped_lte?: String;
-  stopped_gt?: String;
-  stopped_gte?: String;
-  stopped_contains?: String;
-  stopped_not_contains?: String;
-  stopped_starts_with?: String;
-  stopped_not_starts_with?: String;
-  stopped_ends_with?: String;
-  stopped_not_ends_with?: String;
-  storetime?: DateTimeInput;
-  storetime_not?: DateTimeInput;
-  storetime_in?: DateTimeInput[] | DateTimeInput;
-  storetime_not_in?: DateTimeInput[] | DateTimeInput;
-  storetime_lt?: DateTimeInput;
-  storetime_lte?: DateTimeInput;
-  storetime_gt?: DateTimeInput;
-  storetime_gte?: DateTimeInput;
-  value?: Float;
-  value_not?: Float;
-  value_in?: Float[] | Float;
-  value_not_in?: Float[] | Float;
-  value_lt?: Float;
-  value_lte?: Float;
-  value_gt?: Float;
-  value_gte?: Float;
-  valueuom?: String;
-  valueuom_not?: String;
-  valueuom_in?: String[] | String;
-  valueuom_not_in?: String[] | String;
-  valueuom_lt?: String;
-  valueuom_lte?: String;
-  valueuom_gt?: String;
-  valueuom_gte?: String;
-  valueuom_contains?: String;
-  valueuom_not_contains?: String;
-  valueuom_starts_with?: String;
-  valueuom_not_starts_with?: String;
-  valueuom_ends_with?: String;
-  valueuom_not_ends_with?: String;
-  AND?: OutputeventWhereInput[] | OutputeventWhereInput;
-  OR?: OutputeventWhereInput[] | OutputeventWhereInput;
-  NOT?: OutputeventWhereInput[] | OutputeventWhereInput;
-}
-
-export interface CharteventUpdateManyWithWhereNestedInput {
-  where: CharteventScalarWhereInput;
-  data: CharteventUpdateManyDataInput;
-}
-
 export interface CaregiverSubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
@@ -10233,16 +10175,9 @@ export interface CaregiverSubscriptionWhereInput {
   NOT?: CaregiverSubscriptionWhereInput[] | CaregiverSubscriptionWhereInput;
 }
 
-export interface CharteventUpdateManyDataInput {
-  charttime?: DateTimeInput;
-  error?: Int;
-  resultstatus?: String;
-  stopped?: String;
-  storetime?: DateTimeInput;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
+export interface CharteventUpdateManyWithWhereNestedInput {
+  where: CharteventScalarWhereInput;
+  data: CharteventUpdateManyDataInput;
 }
 
 export interface AdmissionSubscriptionWhereInput {
@@ -10256,29 +10191,26 @@ export interface AdmissionSubscriptionWhereInput {
   NOT?: AdmissionSubscriptionWhereInput[] | AdmissionSubscriptionWhereInput;
 }
 
-export interface LabeventUpdateDataInput {
-  charttime?: DateTimeInput;
-  flag?: String;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
+export interface LabeventUpdateWithWhereUniqueNestedInput {
+  where: LabeventWhereUniqueInput;
+  data: LabeventUpdateDataInput;
 }
 
-export interface Inputevents_cvWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+export interface InputeventsCvWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   amount?: Float;
   amount_not?: Float;
   amount_in?: Float[] | Float;
@@ -10457,9 +10389,32 @@ export interface Inputevents_cvWhereInput {
   storetime_lte?: DateTimeInput;
   storetime_gt?: DateTimeInput;
   storetime_gte?: DateTimeInput;
-  AND?: Inputevents_cvWhereInput[] | Inputevents_cvWhereInput;
-  OR?: Inputevents_cvWhereInput[] | Inputevents_cvWhereInput;
-  NOT?: Inputevents_cvWhereInput[] | Inputevents_cvWhereInput;
+  AND?: InputeventsCvWhereInput[] | InputeventsCvWhereInput;
+  OR?: InputeventsCvWhereInput[] | InputeventsCvWhereInput;
+  NOT?: InputeventsCvWhereInput[] | InputeventsCvWhereInput;
+}
+
+export interface CpteventUpdateManyInput {
+  create?: CpteventCreateInput[] | CpteventCreateInput;
+  update?:
+    | CpteventUpdateWithWhereUniqueNestedInput[]
+    | CpteventUpdateWithWhereUniqueNestedInput;
+  upsert?:
+    | CpteventUpsertWithWhereUniqueNestedInput[]
+    | CpteventUpsertWithWhereUniqueNestedInput;
+  delete?: CpteventWhereUniqueInput[] | CpteventWhereUniqueInput;
+  connect?: CpteventWhereUniqueInput[] | CpteventWhereUniqueInput;
+  set?: CpteventWhereUniqueInput[] | CpteventWhereUniqueInput;
+  disconnect?: CpteventWhereUniqueInput[] | CpteventWhereUniqueInput;
+  deleteMany?: CpteventScalarWhereInput[] | CpteventScalarWhereInput;
+  updateMany?:
+    | CpteventUpdateManyWithWhereNestedInput[]
+    | CpteventUpdateManyWithWhereNestedInput;
+}
+
+export interface ProceduresIcdUpdateInput {
+  icd9_code?: String;
+  seq_num?: Int;
 }
 
 export interface CpteventUpdateWithWhereUniqueNestedInput {
@@ -10467,24 +10422,7 @@ export interface CpteventUpdateWithWhereUniqueNestedInput {
   data: CpteventUpdateDataInput;
 }
 
-export interface Procedures_icdUpdateInput {
-  icd9_code?: String;
-  seq_num?: Int;
-}
-
-export interface CpteventUpdateDataInput {
-  chartdate?: DateTimeInput;
-  costcenter?: String;
-  cpt_cd?: String;
-  cpt_number?: Int;
-  cpt_suffix?: String;
-  description?: String;
-  sectionheader?: String;
-  subsectionheader?: String;
-  ticket_id_seq?: Int;
-}
-
-export interface Procedureevents_mvUpdateInput {
+export interface ProcedureeventsMvUpdateInput {
   cancelreason?: Int;
   comments_canceledby?: String;
   comments_date?: DateTimeInput;
@@ -10506,10 +10444,16 @@ export interface Procedureevents_mvUpdateInput {
   valueuom?: String;
 }
 
-export interface CpteventUpsertWithWhereUniqueNestedInput {
-  where: CpteventWhereUniqueInput;
-  update: CpteventUpdateDataInput;
-  create: CpteventCreateInput;
+export interface CpteventUpdateDataInput {
+  chartdate?: DateTimeInput;
+  costcenter?: String;
+  cpt_cd?: String;
+  cpt_number?: Int;
+  cpt_suffix?: String;
+  description?: String;
+  sectionheader?: String;
+  subsectionheader?: String;
+  ticket_id_seq?: Int;
 }
 
 export interface PatientUpdateManyMutationInput {
@@ -10522,21 +10466,33 @@ export interface PatientUpdateManyMutationInput {
   subject_id?: Int;
 }
 
+export interface CpteventUpsertWithWhereUniqueNestedInput {
+  where: CpteventWhereUniqueInput;
+  update: CpteventUpdateDataInput;
+  create: CpteventCreateInput;
+}
+
+export interface AdmissionUpsertWithWhereUniqueNestedInput {
+  where: AdmissionWhereUniqueInput;
+  update: AdmissionUpdateDataInput;
+  create: AdmissionCreateInput;
+}
+
 export interface CpteventScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   chartdate?: DateTimeInput;
   chartdate_not?: DateTimeInput;
   chartdate_in?: DateTimeInput[] | DateTimeInput;
@@ -10650,10 +10606,9 @@ export interface CpteventScalarWhereInput {
   NOT?: CpteventScalarWhereInput[] | CpteventScalarWhereInput;
 }
 
-export interface AdmissionUpsertWithWhereUniqueNestedInput {
+export interface AdmissionUpdateWithWhereUniqueNestedInput {
   where: AdmissionWhereUniqueInput;
-  update: AdmissionUpdateDataInput;
-  create: AdmissionCreateInput;
+  data: AdmissionUpdateDataInput;
 }
 
 export interface CpteventUpdateManyWithWhereNestedInput {
@@ -10661,9 +10616,9 @@ export interface CpteventUpdateManyWithWhereNestedInput {
   data: CpteventUpdateManyDataInput;
 }
 
-export interface AdmissionUpdateWithWhereUniqueNestedInput {
-  where: AdmissionWhereUniqueInput;
-  data: AdmissionUpdateDataInput;
+export interface AdmissionCreateManyInput {
+  create?: AdmissionCreateInput[] | AdmissionCreateInput;
+  connect?: AdmissionWhereUniqueInput[] | AdmissionWhereUniqueInput;
 }
 
 export interface CpteventUpdateManyDataInput {
@@ -10678,9 +10633,14 @@ export interface CpteventUpdateManyDataInput {
   ticket_id_seq?: Int;
 }
 
-export interface AdmissionCreateManyInput {
-  create?: AdmissionCreateInput[] | AdmissionCreateInput;
-  connect?: AdmissionWhereUniqueInput[] | AdmissionWhereUniqueInput;
+export interface NoteeventUpdateManyMutationInput {
+  category?: String;
+  chartdate?: DateTimeInput;
+  charttime?: DateTimeInput;
+  description?: String;
+  iserror?: String;
+  storetime?: DateTimeInput;
+  text?: String;
 }
 
 export interface DatetimeeventUpdateManyInput {
@@ -10701,21 +10661,6 @@ export interface DatetimeeventUpdateManyInput {
     | DatetimeeventUpdateManyWithWhereNestedInput;
 }
 
-export interface NoteeventUpdateManyMutationInput {
-  category?: String;
-  chartdate?: DateTimeInput;
-  charttime?: DateTimeInput;
-  description?: String;
-  iserror?: String;
-  storetime?: DateTimeInput;
-  text?: String;
-}
-
-export interface DatetimeeventUpdateWithWhereUniqueNestedInput {
-  where: DatetimeeventWhereUniqueInput;
-  data: DatetimeeventUpdateDataInput;
-}
-
 export interface MicrobiologyeventUpdateManyMutationInput {
   ab_name?: String;
   chartdate?: DateTimeInput;
@@ -10729,6 +10674,19 @@ export interface MicrobiologyeventUpdateManyMutationInput {
   spec_type_desc?: String;
 }
 
+export interface DatetimeeventUpdateWithWhereUniqueNestedInput {
+  where: DatetimeeventWhereUniqueInput;
+  data: DatetimeeventUpdateDataInput;
+}
+
+export interface LabeventUpdateInput {
+  charttime?: DateTimeInput;
+  flag?: String;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+}
+
 export interface DatetimeeventUpdateDataInput {
   charttime?: DateTimeInput;
   error?: Int;
@@ -10740,21 +10698,7 @@ export interface DatetimeeventUpdateDataInput {
   warning?: Int;
 }
 
-export interface LabeventUpdateInput {
-  charttime?: DateTimeInput;
-  flag?: String;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-}
-
-export interface DatetimeeventUpsertWithWhereUniqueNestedInput {
-  where: DatetimeeventWhereUniqueInput;
-  update: DatetimeeventUpdateDataInput;
-  create: DatetimeeventCreateInput;
-}
-
-export interface Inputevents_cvUpdateInput {
+export interface InputeventsCvUpdateInput {
   amount?: Float;
   amountuom?: String;
   charttime?: DateTimeInput;
@@ -10774,21 +10718,47 @@ export interface Inputevents_cvUpdateInput {
   storetime?: DateTimeInput;
 }
 
+export interface DatetimeeventUpsertWithWhereUniqueNestedInput {
+  where: DatetimeeventWhereUniqueInput;
+  update: DatetimeeventUpdateDataInput;
+  create: DatetimeeventCreateInput;
+}
+
+export interface IcustayUpdateInput {
+  chartevents?: CharteventUpdateManyInput;
+  datetimeevents?: DatetimeeventUpdateManyInput;
+  dbsource?: String;
+  first_careunit?: String;
+  first_wardid?: Int;
+  icustay_id?: Int;
+  inputevents_cv?: InputeventsCvUpdateManyInput;
+  inputevents_mv?: InputeventsMvUpdateManyInput;
+  intime?: DateTimeInput;
+  last_careunit?: String;
+  last_wardid?: Int;
+  los?: Float;
+  outputevents?: OutputeventUpdateManyInput;
+  outtime?: DateTimeInput;
+  prescriptions?: PrescriptionUpdateManyInput;
+  procedureevents_mv?: ProcedureeventsMvUpdateManyInput;
+  transfers?: TransferUpdateManyInput;
+}
+
 export interface DatetimeeventScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   charttime?: DateTimeInput;
   charttime_not?: DateTimeInput;
   charttime_in?: DateTimeInput[] | DateTimeInput;
@@ -10876,24 +10846,9 @@ export interface DatetimeeventScalarWhereInput {
   NOT?: DatetimeeventScalarWhereInput[] | DatetimeeventScalarWhereInput;
 }
 
-export interface IcustayUpdateInput {
-  chartevents?: CharteventUpdateManyInput;
-  datetimeevents?: DatetimeeventUpdateManyInput;
-  dbsource?: String;
-  first_careunit?: String;
-  first_wardid?: Int;
-  icustay_id?: Int;
-  inputevents_cv?: Inputevents_cvUpdateManyInput;
-  inputevents_mv?: Inputevents_mvUpdateManyInput;
-  intime?: DateTimeInput;
-  last_careunit?: String;
-  last_wardid?: Int;
-  los?: Float;
-  outputevents?: OutputeventUpdateManyInput;
-  outtime?: DateTimeInput;
-  prescriptions?: PrescriptionUpdateManyInput;
-  procedureevents_mv?: Procedureevents_mvUpdateManyInput;
-  transfers?: TransferUpdateManyInput;
+export interface DiagnosesIcdUpdateManyMutationInput {
+  icd9_code?: String;
+  seq_num?: Int;
 }
 
 export interface DatetimeeventUpdateManyWithWhereNestedInput {
@@ -10901,9 +10856,12 @@ export interface DatetimeeventUpdateManyWithWhereNestedInput {
   data: DatetimeeventUpdateManyDataInput;
 }
 
-export interface Diagnoses_icdUpdateManyMutationInput {
-  icd9_code?: String;
-  seq_num?: Int;
+export interface DLabitemUpdateManyMutationInput {
+  category?: String;
+  fluid?: String;
+  itemid?: Int;
+  label?: String;
+  loinc_code?: String;
 }
 
 export interface DatetimeeventUpdateManyDataInput {
@@ -10917,33 +10875,7 @@ export interface DatetimeeventUpdateManyDataInput {
   warning?: Int;
 }
 
-export interface D_labitemUpdateManyMutationInput {
-  category?: String;
-  fluid?: String;
-  itemid?: Int;
-  label?: String;
-  loinc_code?: String;
-}
-
-export interface Diagnoses_icdUpdateManyInput {
-  create?: Diagnoses_icdCreateInput[] | Diagnoses_icdCreateInput;
-  update?:
-    | Diagnoses_icdUpdateWithWhereUniqueNestedInput[]
-    | Diagnoses_icdUpdateWithWhereUniqueNestedInput;
-  upsert?:
-    | Diagnoses_icdUpsertWithWhereUniqueNestedInput[]
-    | Diagnoses_icdUpsertWithWhereUniqueNestedInput;
-  delete?: Diagnoses_icdWhereUniqueInput[] | Diagnoses_icdWhereUniqueInput;
-  connect?: Diagnoses_icdWhereUniqueInput[] | Diagnoses_icdWhereUniqueInput;
-  set?: Diagnoses_icdWhereUniqueInput[] | Diagnoses_icdWhereUniqueInput;
-  disconnect?: Diagnoses_icdWhereUniqueInput[] | Diagnoses_icdWhereUniqueInput;
-  deleteMany?: Diagnoses_icdScalarWhereInput[] | Diagnoses_icdScalarWhereInput;
-  updateMany?:
-    | Diagnoses_icdUpdateManyWithWhereNestedInput[]
-    | Diagnoses_icdUpdateManyWithWhereNestedInput;
-}
-
-export interface D_labitemCreateInput {
+export interface DLabitemCreateInput {
   category: String;
   fluid: String;
   itemid: Int;
@@ -10952,47 +10884,59 @@ export interface D_labitemCreateInput {
   loinc_code?: String;
 }
 
-export interface Diagnoses_icdUpdateWithWhereUniqueNestedInput {
-  where: Diagnoses_icdWhereUniqueInput;
-  data: Diagnoses_icdUpdateDataInput;
+export interface DiagnosesIcdUpdateManyInput {
+  create?: DiagnosesIcdCreateInput[] | DiagnosesIcdCreateInput;
+  update?:
+    | DiagnosesIcdUpdateWithWhereUniqueNestedInput[]
+    | DiagnosesIcdUpdateWithWhereUniqueNestedInput;
+  upsert?:
+    | DiagnosesIcdUpsertWithWhereUniqueNestedInput[]
+    | DiagnosesIcdUpsertWithWhereUniqueNestedInput;
+  delete?: DiagnosesIcdWhereUniqueInput[] | DiagnosesIcdWhereUniqueInput;
+  connect?: DiagnosesIcdWhereUniqueInput[] | DiagnosesIcdWhereUniqueInput;
+  set?: DiagnosesIcdWhereUniqueInput[] | DiagnosesIcdWhereUniqueInput;
+  disconnect?: DiagnosesIcdWhereUniqueInput[] | DiagnosesIcdWhereUniqueInput;
+  deleteMany?: DiagnosesIcdScalarWhereInput[] | DiagnosesIcdScalarWhereInput;
+  updateMany?:
+    | DiagnosesIcdUpdateManyWithWhereNestedInput[]
+    | DiagnosesIcdUpdateManyWithWhereNestedInput;
 }
 
-export interface D_itemCreateInput {
+export interface DItemCreateInput {
   abbreviation?: String;
   category?: String;
   chartevents?: CharteventCreateManyInput;
   conceptid?: Int;
   datetimeevents?: DatetimeeventCreateManyInput;
   dbsource?: String;
-  inputevents_mv?: Inputevents_mvCreateManyInput;
+  inputevents_mv?: InputeventsMvCreateManyInput;
   itemid: Int;
   label?: String;
   linksto?: String;
   microbiologyevents?: MicrobiologyeventCreateManyInput;
   outputevents?: OutputeventCreateManyInput;
   param_type?: String;
-  procedureevents_mv?: Procedureevents_mvCreateManyInput;
+  procedureevents_mv?: ProcedureeventsMvCreateManyInput;
   unitname?: String;
 }
 
-export interface Diagnoses_icdUpdateDataInput {
-  icd9_code?: String;
-  seq_num?: Int;
+export interface DiagnosesIcdUpdateWithWhereUniqueNestedInput {
+  where: DiagnosesIcdWhereUniqueInput;
+  data: DiagnosesIcdUpdateDataInput;
 }
 
-export interface D_icd_diagnosisUpdateManyMutationInput {
+export interface DIcdDiagnosisUpdateManyMutationInput {
   icd9_code?: String;
   long_title?: String;
   short_title?: String;
 }
 
-export interface Diagnoses_icdUpsertWithWhereUniqueNestedInput {
-  where: Diagnoses_icdWhereUniqueInput;
-  update: Diagnoses_icdUpdateDataInput;
-  create: Diagnoses_icdCreateInput;
+export interface DiagnosesIcdUpdateDataInput {
+  icd9_code?: String;
+  seq_num?: Int;
 }
 
-export interface D_cptUpdateManyMutationInput {
+export interface DCptUpdateManyMutationInput {
   category?: Int;
   codesuffix?: String;
   maxcodeinsubsection?: Int;
@@ -11003,21 +10947,39 @@ export interface D_cptUpdateManyMutationInput {
   subsectionrange?: String;
 }
 
-export interface Diagnoses_icdScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+export interface DiagnosesIcdUpsertWithWhereUniqueNestedInput {
+  where: DiagnosesIcdWhereUniqueInput;
+  update: DiagnosesIcdUpdateDataInput;
+  create: DiagnosesIcdCreateInput;
+}
+
+export interface CpteventUpdateManyMutationInput {
+  chartdate?: DateTimeInput;
+  costcenter?: String;
+  cpt_cd?: String;
+  cpt_number?: Int;
+  cpt_suffix?: String;
+  description?: String;
+  sectionheader?: String;
+  subsectionheader?: String;
+  ticket_id_seq?: Int;
+}
+
+export interface DiagnosesIcdScalarWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   icd9_code?: String;
   icd9_code_not?: String;
   icd9_code_in?: String[] | String;
@@ -11040,29 +11002,12 @@ export interface Diagnoses_icdScalarWhereInput {
   seq_num_lte?: Int;
   seq_num_gt?: Int;
   seq_num_gte?: Int;
-  AND?: Diagnoses_icdScalarWhereInput[] | Diagnoses_icdScalarWhereInput;
-  OR?: Diagnoses_icdScalarWhereInput[] | Diagnoses_icdScalarWhereInput;
-  NOT?: Diagnoses_icdScalarWhereInput[] | Diagnoses_icdScalarWhereInput;
+  AND?: DiagnosesIcdScalarWhereInput[] | DiagnosesIcdScalarWhereInput;
+  OR?: DiagnosesIcdScalarWhereInput[] | DiagnosesIcdScalarWhereInput;
+  NOT?: DiagnosesIcdScalarWhereInput[] | DiagnosesIcdScalarWhereInput;
 }
 
-export interface CpteventUpdateManyMutationInput {
-  chartdate?: DateTimeInput;
-  costcenter?: String;
-  cpt_cd?: String;
-  cpt_number?: Int;
-  cpt_suffix?: String;
-  description?: String;
-  sectionheader?: String;
-  subsectionheader?: String;
-  ticket_id_seq?: Int;
-}
-
-export interface Diagnoses_icdUpdateManyWithWhereNestedInput {
-  where: Diagnoses_icdScalarWhereInput;
-  data: Diagnoses_icdUpdateManyDataInput;
-}
-
-export interface Chartevents_9CreateInput {
+export interface Chartevents9CreateInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -11080,62 +11025,49 @@ export interface Chartevents_9CreateInput {
   warning?: Int;
 }
 
-export interface Diagnoses_icdUpdateManyDataInput {
+export interface DiagnosesIcdUpdateManyWithWhereNestedInput {
+  where: DiagnosesIcdScalarWhereInput;
+  data: DiagnosesIcdUpdateManyDataInput;
+}
+
+export interface Chartevents8CreateInput {
+  cgid?: Int;
+  charttime?: DateTimeInput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeInput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface DiagnosesIcdUpdateManyDataInput {
   icd9_code?: String;
   seq_num?: Int;
 }
 
-export interface Chartevents_8CreateInput {
-  cgid?: Int;
-  charttime?: DateTimeInput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeInput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface DrgcodeUpdateManyInput {
-  create?: DrgcodeCreateInput[] | DrgcodeCreateInput;
-  update?:
-    | DrgcodeUpdateWithWhereUniqueNestedInput[]
-    | DrgcodeUpdateWithWhereUniqueNestedInput;
-  upsert?:
-    | DrgcodeUpsertWithWhereUniqueNestedInput[]
-    | DrgcodeUpsertWithWhereUniqueNestedInput;
-  delete?: DrgcodeWhereUniqueInput[] | DrgcodeWhereUniqueInput;
-  connect?: DrgcodeWhereUniqueInput[] | DrgcodeWhereUniqueInput;
-  set?: DrgcodeWhereUniqueInput[] | DrgcodeWhereUniqueInput;
-  disconnect?: DrgcodeWhereUniqueInput[] | DrgcodeWhereUniqueInput;
-  deleteMany?: DrgcodeScalarWhereInput[] | DrgcodeScalarWhereInput;
-  updateMany?:
-    | DrgcodeUpdateManyWithWhereNestedInput[]
-    | DrgcodeUpdateManyWithWhereNestedInput;
-}
-
-export interface D_icd_diagnosisWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+export interface DIcdDiagnosisWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   icd9_code?: String;
   icd9_code_not?: String;
   icd9_code_in?: String[] | String;
@@ -11178,17 +11110,30 @@ export interface D_icd_diagnosisWhereInput {
   short_title_not_starts_with?: String;
   short_title_ends_with?: String;
   short_title_not_ends_with?: String;
-  AND?: D_icd_diagnosisWhereInput[] | D_icd_diagnosisWhereInput;
-  OR?: D_icd_diagnosisWhereInput[] | D_icd_diagnosisWhereInput;
-  NOT?: D_icd_diagnosisWhereInput[] | D_icd_diagnosisWhereInput;
+  AND?: DIcdDiagnosisWhereInput[] | DIcdDiagnosisWhereInput;
+  OR?: DIcdDiagnosisWhereInput[] | DIcdDiagnosisWhereInput;
+  NOT?: DIcdDiagnosisWhereInput[] | DIcdDiagnosisWhereInput;
 }
 
-export interface DrgcodeUpdateWithWhereUniqueNestedInput {
-  where: DrgcodeWhereUniqueInput;
-  data: DrgcodeUpdateDataInput;
+export interface DrgcodeUpdateManyInput {
+  create?: DrgcodeCreateInput[] | DrgcodeCreateInput;
+  update?:
+    | DrgcodeUpdateWithWhereUniqueNestedInput[]
+    | DrgcodeUpdateWithWhereUniqueNestedInput;
+  upsert?:
+    | DrgcodeUpsertWithWhereUniqueNestedInput[]
+    | DrgcodeUpsertWithWhereUniqueNestedInput;
+  delete?: DrgcodeWhereUniqueInput[] | DrgcodeWhereUniqueInput;
+  connect?: DrgcodeWhereUniqueInput[] | DrgcodeWhereUniqueInput;
+  set?: DrgcodeWhereUniqueInput[] | DrgcodeWhereUniqueInput;
+  disconnect?: DrgcodeWhereUniqueInput[] | DrgcodeWhereUniqueInput;
+  deleteMany?: DrgcodeScalarWhereInput[] | DrgcodeScalarWhereInput;
+  updateMany?:
+    | DrgcodeUpdateManyWithWhereNestedInput[]
+    | DrgcodeUpdateManyWithWhereNestedInput;
 }
 
-export interface Chartevents_5CreateInput {
+export interface Chartevents5CreateInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -11206,26 +11151,39 @@ export interface Chartevents_5CreateInput {
   warning?: Int;
 }
 
-export interface LabeventUpdateWithWhereUniqueNestedInput {
-  where: LabeventWhereUniqueInput;
-  data: LabeventUpdateDataInput;
+export interface LabeventUpdateManyInput {
+  create?: LabeventCreateInput[] | LabeventCreateInput;
+  update?:
+    | LabeventUpdateWithWhereUniqueNestedInput[]
+    | LabeventUpdateWithWhereUniqueNestedInput;
+  upsert?:
+    | LabeventUpsertWithWhereUniqueNestedInput[]
+    | LabeventUpsertWithWhereUniqueNestedInput;
+  delete?: LabeventWhereUniqueInput[] | LabeventWhereUniqueInput;
+  connect?: LabeventWhereUniqueInput[] | LabeventWhereUniqueInput;
+  set?: LabeventWhereUniqueInput[] | LabeventWhereUniqueInput;
+  disconnect?: LabeventWhereUniqueInput[] | LabeventWhereUniqueInput;
+  deleteMany?: LabeventScalarWhereInput[] | LabeventScalarWhereInput;
+  updateMany?:
+    | LabeventUpdateManyWithWhereNestedInput[]
+    | LabeventUpdateManyWithWhereNestedInput;
 }
 
 export interface CalloutWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   acknowledge_status?: String;
   acknowledge_status_not?: String;
   acknowledge_status_in?: String[] | String;
@@ -11436,20 +11394,20 @@ export interface CalloutWhereInput {
 }
 
 export interface MicrobiologyeventWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   ab_name?: String;
   ab_name_not?: String;
   ab_name_in?: String[] | String;
@@ -11571,26 +11529,50 @@ export interface MicrobiologyeventWhereInput {
   NOT?: MicrobiologyeventWhereInput[] | MicrobiologyeventWhereInput;
 }
 
-export type D_itemWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+export type DItemWhereUniqueInput = AtLeastOne<{
+  id: UUID;
   itemid?: Int;
 }>;
 
+export interface DrgcodeUpsertWithWhereUniqueNestedInput {
+  where: DrgcodeWhereUniqueInput;
+  update: DrgcodeUpdateDataInput;
+  create: DrgcodeCreateInput;
+}
+
+export interface Chartevents17UpdateManyMutationInput {
+  cgid?: Int;
+  charttime?: DateTimeInput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id?: Int;
+  stopped?: String;
+  storetime?: DateTimeInput;
+  subject_id?: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
 export interface DrgcodeScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   description?: String;
   description_not?: String;
   description_in?: String[] | String;
@@ -11654,30 +11636,7 @@ export interface DrgcodeScalarWhereInput {
   NOT?: DrgcodeScalarWhereInput[] | DrgcodeScalarWhereInput;
 }
 
-export interface Chartevents_17UpdateManyMutationInput {
-  cgid?: Int;
-  charttime?: DateTimeInput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id?: Int;
-  stopped?: String;
-  storetime?: DateTimeInput;
-  subject_id?: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface DrgcodeUpdateManyWithWhereNestedInput {
-  where: DrgcodeScalarWhereInput;
-  data: DrgcodeUpdateManyDataInput;
-}
-
-export interface Chartevents_16CreateInput {
+export interface Chartevents16CreateInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -11695,15 +11654,12 @@ export interface Chartevents_16CreateInput {
   warning?: Int;
 }
 
-export interface DrgcodeUpdateManyDataInput {
-  description?: String;
-  drg_code?: String;
-  drg_mortality?: Int;
-  drg_severity?: Int;
-  drg_type?: String;
+export interface DrgcodeUpdateManyWithWhereNestedInput {
+  where: DrgcodeScalarWhereInput;
+  data: DrgcodeUpdateManyDataInput;
 }
 
-export interface Chartevents_14UpdateManyMutationInput {
+export interface Chartevents14UpdateManyMutationInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -11715,6 +11671,32 @@ export interface Chartevents_14UpdateManyMutationInput {
   stopped?: String;
   storetime?: DateTimeInput;
   subject_id?: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface DrgcodeUpdateManyDataInput {
+  description?: String;
+  drg_code?: String;
+  drg_mortality?: Int;
+  drg_severity?: Int;
+  drg_type?: String;
+}
+
+export interface Chartevents13CreateInput {
+  cgid?: Int;
+  charttime?: DateTimeInput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeInput;
+  subject_id: Int;
   value?: String;
   valuenum?: Float;
   valueuom?: String;
@@ -11739,30 +11721,7 @@ export interface IcustayUpdateManyInput {
     | IcustayUpdateManyWithWhereNestedInput;
 }
 
-export interface Chartevents_13CreateInput {
-  cgid?: Int;
-  charttime?: DateTimeInput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeInput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface IcustayUpdateWithWhereUniqueNestedInput {
-  where: IcustayWhereUniqueInput;
-  data: IcustayUpdateDataInput;
-}
-
-export interface Chartevents_11UpdateManyMutationInput {
+export interface Chartevents11UpdateManyMutationInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -11780,27 +11739,12 @@ export interface Chartevents_11UpdateManyMutationInput {
   warning?: Int;
 }
 
-export interface IcustayUpdateDataInput {
-  chartevents?: CharteventUpdateManyInput;
-  datetimeevents?: DatetimeeventUpdateManyInput;
-  dbsource?: String;
-  first_careunit?: String;
-  first_wardid?: Int;
-  icustay_id?: Int;
-  inputevents_cv?: Inputevents_cvUpdateManyInput;
-  inputevents_mv?: Inputevents_mvUpdateManyInput;
-  intime?: DateTimeInput;
-  last_careunit?: String;
-  last_wardid?: Int;
-  los?: Float;
-  outputevents?: OutputeventUpdateManyInput;
-  outtime?: DateTimeInput;
-  prescriptions?: PrescriptionUpdateManyInput;
-  procedureevents_mv?: Procedureevents_mvUpdateManyInput;
-  transfers?: TransferUpdateManyInput;
+export interface IcustayUpdateWithWhereUniqueNestedInput {
+  where: IcustayWhereUniqueInput;
+  data: IcustayUpdateDataInput;
 }
 
-export interface Chartevents_10CreateInput {
+export interface Chartevents10CreateInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -11818,26 +11762,24 @@ export interface Chartevents_10CreateInput {
   warning?: Int;
 }
 
-export interface Inputevents_cvUpdateManyInput {
-  create?: Inputevents_cvCreateInput[] | Inputevents_cvCreateInput;
-  update?:
-    | Inputevents_cvUpdateWithWhereUniqueNestedInput[]
-    | Inputevents_cvUpdateWithWhereUniqueNestedInput;
-  upsert?:
-    | Inputevents_cvUpsertWithWhereUniqueNestedInput[]
-    | Inputevents_cvUpsertWithWhereUniqueNestedInput;
-  delete?: Inputevents_cvWhereUniqueInput[] | Inputevents_cvWhereUniqueInput;
-  connect?: Inputevents_cvWhereUniqueInput[] | Inputevents_cvWhereUniqueInput;
-  set?: Inputevents_cvWhereUniqueInput[] | Inputevents_cvWhereUniqueInput;
-  disconnect?:
-    | Inputevents_cvWhereUniqueInput[]
-    | Inputevents_cvWhereUniqueInput;
-  deleteMany?:
-    | Inputevents_cvScalarWhereInput[]
-    | Inputevents_cvScalarWhereInput;
-  updateMany?:
-    | Inputevents_cvUpdateManyWithWhereNestedInput[]
-    | Inputevents_cvUpdateManyWithWhereNestedInput;
+export interface IcustayUpdateDataInput {
+  chartevents?: CharteventUpdateManyInput;
+  datetimeevents?: DatetimeeventUpdateManyInput;
+  dbsource?: String;
+  first_careunit?: String;
+  first_wardid?: Int;
+  icustay_id?: Int;
+  inputevents_cv?: InputeventsCvUpdateManyInput;
+  inputevents_mv?: InputeventsMvUpdateManyInput;
+  intime?: DateTimeInput;
+  last_careunit?: String;
+  last_wardid?: Int;
+  los?: Float;
+  outputevents?: OutputeventUpdateManyInput;
+  outtime?: DateTimeInput;
+  prescriptions?: PrescriptionUpdateManyInput;
+  procedureevents_mv?: ProcedureeventsMvUpdateManyInput;
+  transfers?: TransferUpdateManyInput;
 }
 
 export interface PrescriptionSubscriptionWhereInput {
@@ -11857,29 +11799,52 @@ export interface PrescriptionSubscriptionWhereInput {
     | PrescriptionSubscriptionWhereInput;
 }
 
-export interface Inputevents_cvUpdateWithWhereUniqueNestedInput {
-  where: Inputevents_cvWhereUniqueInput;
-  data: Inputevents_cvUpdateDataInput;
+export interface InputeventsCvUpdateManyInput {
+  create?: InputeventsCvCreateInput[] | InputeventsCvCreateInput;
+  update?:
+    | InputeventsCvUpdateWithWhereUniqueNestedInput[]
+    | InputeventsCvUpdateWithWhereUniqueNestedInput;
+  upsert?:
+    | InputeventsCvUpsertWithWhereUniqueNestedInput[]
+    | InputeventsCvUpsertWithWhereUniqueNestedInput;
+  delete?: InputeventsCvWhereUniqueInput[] | InputeventsCvWhereUniqueInput;
+  connect?: InputeventsCvWhereUniqueInput[] | InputeventsCvWhereUniqueInput;
+  set?: InputeventsCvWhereUniqueInput[] | InputeventsCvWhereUniqueInput;
+  disconnect?: InputeventsCvWhereUniqueInput[] | InputeventsCvWhereUniqueInput;
+  deleteMany?: InputeventsCvScalarWhereInput[] | InputeventsCvScalarWhereInput;
+  updateMany?:
+    | InputeventsCvUpdateManyWithWhereNestedInput[]
+    | InputeventsCvUpdateManyWithWhereNestedInput;
 }
 
-export interface Inputevents_mvSubscriptionWhereInput {
+export interface InputeventsMvSubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Inputevents_mvWhereInput;
+  node?: InputeventsMvWhereInput;
   AND?:
-    | Inputevents_mvSubscriptionWhereInput[]
-    | Inputevents_mvSubscriptionWhereInput;
+    | InputeventsMvSubscriptionWhereInput[]
+    | InputeventsMvSubscriptionWhereInput;
   OR?:
-    | Inputevents_mvSubscriptionWhereInput[]
-    | Inputevents_mvSubscriptionWhereInput;
+    | InputeventsMvSubscriptionWhereInput[]
+    | InputeventsMvSubscriptionWhereInput;
   NOT?:
-    | Inputevents_mvSubscriptionWhereInput[]
-    | Inputevents_mvSubscriptionWhereInput;
+    | InputeventsMvSubscriptionWhereInput[]
+    | InputeventsMvSubscriptionWhereInput;
 }
 
-export interface Inputevents_cvUpdateDataInput {
+export interface InputeventsCvUpdateWithWhereUniqueNestedInput {
+  where: InputeventsCvWhereUniqueInput;
+  data: InputeventsCvUpdateDataInput;
+}
+
+export type CaregiverWhereUniqueInput = AtLeastOne<{
+  id: UUID;
+  cgid?: Int;
+}>;
+
+export interface InputeventsCvUpdateDataInput {
   amount?: Float;
   amountuom?: String;
   charttime?: DateTimeInput;
@@ -11899,49 +11864,61 @@ export interface Inputevents_cvUpdateDataInput {
   storetime?: DateTimeInput;
 }
 
-export type CaregiverWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
-  cgid?: Int;
-}>;
-
-export interface Inputevents_cvUpsertWithWhereUniqueNestedInput {
-  where: Inputevents_cvWhereUniqueInput;
-  update: Inputevents_cvUpdateDataInput;
-  create: Inputevents_cvCreateInput;
-}
-
-export interface Chartevents_9SubscriptionWhereInput {
+export interface Chartevents9SubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_9WhereInput;
+  node?: Chartevents9WhereInput;
   AND?:
-    | Chartevents_9SubscriptionWhereInput[]
-    | Chartevents_9SubscriptionWhereInput;
+    | Chartevents9SubscriptionWhereInput[]
+    | Chartevents9SubscriptionWhereInput;
   OR?:
-    | Chartevents_9SubscriptionWhereInput[]
-    | Chartevents_9SubscriptionWhereInput;
+    | Chartevents9SubscriptionWhereInput[]
+    | Chartevents9SubscriptionWhereInput;
   NOT?:
-    | Chartevents_9SubscriptionWhereInput[]
-    | Chartevents_9SubscriptionWhereInput;
+    | Chartevents9SubscriptionWhereInput[]
+    | Chartevents9SubscriptionWhereInput;
 }
 
-export interface Inputevents_cvScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+export interface InputeventsCvUpsertWithWhereUniqueNestedInput {
+  where: InputeventsCvWhereUniqueInput;
+  update: InputeventsCvUpdateDataInput;
+  create: InputeventsCvCreateInput;
+}
+
+export interface Chartevents3SubscriptionWhereInput {
+  mutation_in?: MutationType[] | MutationType;
+  updatedFields_contains?: String;
+  updatedFields_contains_every?: String[] | String;
+  updatedFields_contains_some?: String[] | String;
+  node?: Chartevents3WhereInput;
+  AND?:
+    | Chartevents3SubscriptionWhereInput[]
+    | Chartevents3SubscriptionWhereInput;
+  OR?:
+    | Chartevents3SubscriptionWhereInput[]
+    | Chartevents3SubscriptionWhereInput;
+  NOT?:
+    | Chartevents3SubscriptionWhereInput[]
+    | Chartevents3SubscriptionWhereInput;
+}
+
+export interface InputeventsCvScalarWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   amount?: Float;
   amount_not?: Float;
   amount_in?: Float[] | Float;
@@ -12120,48 +12097,26 @@ export interface Inputevents_cvScalarWhereInput {
   storetime_lte?: DateTimeInput;
   storetime_gt?: DateTimeInput;
   storetime_gte?: DateTimeInput;
-  AND?: Inputevents_cvScalarWhereInput[] | Inputevents_cvScalarWhereInput;
-  OR?: Inputevents_cvScalarWhereInput[] | Inputevents_cvScalarWhereInput;
-  NOT?: Inputevents_cvScalarWhereInput[] | Inputevents_cvScalarWhereInput;
-}
-
-export interface Chartevents_3SubscriptionWhereInput {
-  mutation_in?: MutationType[] | MutationType;
-  updatedFields_contains?: String;
-  updatedFields_contains_every?: String[] | String;
-  updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_3WhereInput;
-  AND?:
-    | Chartevents_3SubscriptionWhereInput[]
-    | Chartevents_3SubscriptionWhereInput;
-  OR?:
-    | Chartevents_3SubscriptionWhereInput[]
-    | Chartevents_3SubscriptionWhereInput;
-  NOT?:
-    | Chartevents_3SubscriptionWhereInput[]
-    | Chartevents_3SubscriptionWhereInput;
-}
-
-export interface Inputevents_cvUpdateManyWithWhereNestedInput {
-  where: Inputevents_cvScalarWhereInput;
-  data: Inputevents_cvUpdateManyDataInput;
+  AND?: InputeventsCvScalarWhereInput[] | InputeventsCvScalarWhereInput;
+  OR?: InputeventsCvScalarWhereInput[] | InputeventsCvScalarWhereInput;
+  NOT?: InputeventsCvScalarWhereInput[] | InputeventsCvScalarWhereInput;
 }
 
 export interface PrescriptionWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   dose_unit_rx?: String;
   dose_unit_rx_not?: String;
   dose_unit_rx_in?: String[] | String;
@@ -12365,7 +12320,29 @@ export interface PrescriptionWhereInput {
   NOT?: PrescriptionWhereInput[] | PrescriptionWhereInput;
 }
 
-export interface Inputevents_cvUpdateManyDataInput {
+export interface InputeventsCvUpdateManyWithWhereNestedInput {
+  where: InputeventsCvScalarWhereInput;
+  data: InputeventsCvUpdateManyDataInput;
+}
+
+export interface Chartevents1SubscriptionWhereInput {
+  mutation_in?: MutationType[] | MutationType;
+  updatedFields_contains?: String;
+  updatedFields_contains_every?: String[] | String;
+  updatedFields_contains_some?: String[] | String;
+  node?: Chartevents1WhereInput;
+  AND?:
+    | Chartevents1SubscriptionWhereInput[]
+    | Chartevents1SubscriptionWhereInput;
+  OR?:
+    | Chartevents1SubscriptionWhereInput[]
+    | Chartevents1SubscriptionWhereInput;
+  NOT?:
+    | Chartevents1SubscriptionWhereInput[]
+    | Chartevents1SubscriptionWhereInput;
+}
+
+export interface InputeventsCvUpdateManyDataInput {
   amount?: Float;
   amountuom?: String;
   charttime?: DateTimeInput;
@@ -12385,45 +12362,6 @@ export interface Inputevents_cvUpdateManyDataInput {
   storetime?: DateTimeInput;
 }
 
-export interface Chartevents_1SubscriptionWhereInput {
-  mutation_in?: MutationType[] | MutationType;
-  updatedFields_contains?: String;
-  updatedFields_contains_every?: String[] | String;
-  updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_1WhereInput;
-  AND?:
-    | Chartevents_1SubscriptionWhereInput[]
-    | Chartevents_1SubscriptionWhereInput;
-  OR?:
-    | Chartevents_1SubscriptionWhereInput[]
-    | Chartevents_1SubscriptionWhereInput;
-  NOT?:
-    | Chartevents_1SubscriptionWhereInput[]
-    | Chartevents_1SubscriptionWhereInput;
-}
-
-export interface Inputevents_mvUpdateManyInput {
-  create?: Inputevents_mvCreateInput[] | Inputevents_mvCreateInput;
-  update?:
-    | Inputevents_mvUpdateWithWhereUniqueNestedInput[]
-    | Inputevents_mvUpdateWithWhereUniqueNestedInput;
-  upsert?:
-    | Inputevents_mvUpsertWithWhereUniqueNestedInput[]
-    | Inputevents_mvUpsertWithWhereUniqueNestedInput;
-  delete?: Inputevents_mvWhereUniqueInput[] | Inputevents_mvWhereUniqueInput;
-  connect?: Inputevents_mvWhereUniqueInput[] | Inputevents_mvWhereUniqueInput;
-  set?: Inputevents_mvWhereUniqueInput[] | Inputevents_mvWhereUniqueInput;
-  disconnect?:
-    | Inputevents_mvWhereUniqueInput[]
-    | Inputevents_mvWhereUniqueInput;
-  deleteMany?:
-    | Inputevents_mvScalarWhereInput[]
-    | Inputevents_mvScalarWhereInput;
-  updateMany?:
-    | Inputevents_mvUpdateManyWithWhereNestedInput[]
-    | Inputevents_mvUpdateManyWithWhereNestedInput;
-}
-
 export interface TransferUpdateInput {
   curr_careunit?: String;
   curr_wardid?: Int;
@@ -12436,26 +12374,39 @@ export interface TransferUpdateInput {
   prev_wardid?: Int;
 }
 
-export interface Inputevents_mvUpdateWithWhereUniqueNestedInput {
-  where: Inputevents_mvWhereUniqueInput;
-  data: Inputevents_mvUpdateDataInput;
+export interface InputeventsMvUpdateManyInput {
+  create?: InputeventsMvCreateInput[] | InputeventsMvCreateInput;
+  update?:
+    | InputeventsMvUpdateWithWhereUniqueNestedInput[]
+    | InputeventsMvUpdateWithWhereUniqueNestedInput;
+  upsert?:
+    | InputeventsMvUpsertWithWhereUniqueNestedInput[]
+    | InputeventsMvUpsertWithWhereUniqueNestedInput;
+  delete?: InputeventsMvWhereUniqueInput[] | InputeventsMvWhereUniqueInput;
+  connect?: InputeventsMvWhereUniqueInput[] | InputeventsMvWhereUniqueInput;
+  set?: InputeventsMvWhereUniqueInput[] | InputeventsMvWhereUniqueInput;
+  disconnect?: InputeventsMvWhereUniqueInput[] | InputeventsMvWhereUniqueInput;
+  deleteMany?: InputeventsMvScalarWhereInput[] | InputeventsMvScalarWhereInput;
+  updateMany?:
+    | InputeventsMvUpdateManyWithWhereNestedInput[]
+    | InputeventsMvUpdateManyWithWhereNestedInput;
 }
 
 export interface IcustayWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   chartevents_every?: CharteventWhereInput;
   chartevents_some?: CharteventWhereInput;
   chartevents_none?: CharteventWhereInput;
@@ -12506,12 +12457,12 @@ export interface IcustayWhereInput {
   icustay_id_lte?: Int;
   icustay_id_gt?: Int;
   icustay_id_gte?: Int;
-  inputevents_cv_every?: Inputevents_cvWhereInput;
-  inputevents_cv_some?: Inputevents_cvWhereInput;
-  inputevents_cv_none?: Inputevents_cvWhereInput;
-  inputevents_mv_every?: Inputevents_mvWhereInput;
-  inputevents_mv_some?: Inputevents_mvWhereInput;
-  inputevents_mv_none?: Inputevents_mvWhereInput;
+  inputevents_cv_every?: InputeventsCvWhereInput;
+  inputevents_cv_some?: InputeventsCvWhereInput;
+  inputevents_cv_none?: InputeventsCvWhereInput;
+  inputevents_mv_every?: InputeventsMvWhereInput;
+  inputevents_mv_some?: InputeventsMvWhereInput;
+  inputevents_mv_none?: InputeventsMvWhereInput;
   intime?: DateTimeInput;
   intime_not?: DateTimeInput;
   intime_in?: DateTimeInput[] | DateTimeInput;
@@ -12564,9 +12515,9 @@ export interface IcustayWhereInput {
   prescriptions_every?: PrescriptionWhereInput;
   prescriptions_some?: PrescriptionWhereInput;
   prescriptions_none?: PrescriptionWhereInput;
-  procedureevents_mv_every?: Procedureevents_mvWhereInput;
-  procedureevents_mv_some?: Procedureevents_mvWhereInput;
-  procedureevents_mv_none?: Procedureevents_mvWhereInput;
+  procedureevents_mv_every?: ProcedureeventsMvWhereInput;
+  procedureevents_mv_some?: ProcedureeventsMvWhereInput;
+  procedureevents_mv_none?: ProcedureeventsMvWhereInput;
   transfers_every?: TransferWhereInput;
   transfers_some?: TransferWhereInput;
   transfers_none?: TransferWhereInput;
@@ -12575,7 +12526,17 @@ export interface IcustayWhereInput {
   NOT?: IcustayWhereInput[] | IcustayWhereInput;
 }
 
-export interface Inputevents_mvUpdateDataInput {
+export interface InputeventsMvUpdateWithWhereUniqueNestedInput {
+  where: InputeventsMvWhereUniqueInput;
+  data: InputeventsMvUpdateDataInput;
+}
+
+export interface AdmissionUpdateManyWithWhereNestedInput {
+  where: AdmissionScalarWhereInput;
+  data: AdmissionUpdateManyDataInput;
+}
+
+export interface InputeventsMvUpdateDataInput {
   amount?: Float;
   amountuom?: String;
   cancelreason?: Int;
@@ -12603,24 +12564,13 @@ export interface Inputevents_mvUpdateDataInput {
   totalamountuom?: String;
 }
 
-export interface AdmissionUpdateManyWithWhereNestedInput {
-  where: AdmissionScalarWhereInput;
-  data: AdmissionUpdateManyDataInput;
-}
-
-export interface Inputevents_mvUpsertWithWhereUniqueNestedInput {
-  where: Inputevents_mvWhereUniqueInput;
-  update: Inputevents_mvUpdateDataInput;
-  create: Inputevents_mvCreateInput;
-}
-
 export interface PatientUpdateInput {
   admissions?: AdmissionUpdateManyInput;
   callout?: CalloutUpdateManyInput;
   chartevents?: CharteventUpdateManyInput;
   cptevents?: CpteventUpdateManyInput;
   datetimeevents?: DatetimeeventUpdateManyInput;
-  diagnoses_icd?: Diagnoses_icdUpdateManyInput;
+  diagnoses_icd?: DiagnosesIcdUpdateManyInput;
   dob?: DateTimeInput;
   dod?: DateTimeInput;
   dod_hosp?: DateTimeInput;
@@ -12629,35 +12579,83 @@ export interface PatientUpdateInput {
   expire_flag?: Int;
   gender?: String;
   icustays?: IcustayUpdateManyInput;
-  inputevents_cv?: Inputevents_cvUpdateManyInput;
-  inputevents_mv?: Inputevents_mvUpdateManyInput;
+  inputevents_cv?: InputeventsCvUpdateManyInput;
+  inputevents_mv?: InputeventsMvUpdateManyInput;
   labevents?: LabeventUpdateManyInput;
   microbiologyevents?: MicrobiologyeventUpdateManyInput;
   noteevents?: NoteeventUpdateManyInput;
   outputevents?: OutputeventUpdateManyInput;
   prescriptions?: PrescriptionUpdateManyInput;
-  procedureevents_mv?: Procedureevents_mvUpdateManyInput;
-  procedures_icd?: Procedures_icdUpdateManyInput;
+  procedureevents_mv?: ProcedureeventsMvUpdateManyInput;
+  procedures_icd?: ProceduresIcdUpdateManyInput;
   services?: ServiceUpdateManyInput;
   subject_id?: Int;
   transfers?: TransferUpdateManyInput;
 }
 
-export interface Inputevents_mvScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+export interface InputeventsMvUpsertWithWhereUniqueNestedInput {
+  where: InputeventsMvWhereUniqueInput;
+  update: InputeventsMvUpdateDataInput;
+  create: InputeventsMvCreateInput;
+}
+
+export interface DiagnosesIcdWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
+  icd9_code?: String;
+  icd9_code_not?: String;
+  icd9_code_in?: String[] | String;
+  icd9_code_not_in?: String[] | String;
+  icd9_code_lt?: String;
+  icd9_code_lte?: String;
+  icd9_code_gt?: String;
+  icd9_code_gte?: String;
+  icd9_code_contains?: String;
+  icd9_code_not_contains?: String;
+  icd9_code_starts_with?: String;
+  icd9_code_not_starts_with?: String;
+  icd9_code_ends_with?: String;
+  icd9_code_not_ends_with?: String;
+  seq_num?: Int;
+  seq_num_not?: Int;
+  seq_num_in?: Int[] | Int;
+  seq_num_not_in?: Int[] | Int;
+  seq_num_lt?: Int;
+  seq_num_lte?: Int;
+  seq_num_gt?: Int;
+  seq_num_gte?: Int;
+  AND?: DiagnosesIcdWhereInput[] | DiagnosesIcdWhereInput;
+  OR?: DiagnosesIcdWhereInput[] | DiagnosesIcdWhereInput;
+  NOT?: DiagnosesIcdWhereInput[] | DiagnosesIcdWhereInput;
+}
+
+export interface InputeventsMvScalarWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   amount?: Float;
   amount_not?: Float;
   amount_in?: Float[] | Float;
@@ -12918,59 +12916,12 @@ export interface Inputevents_mvScalarWhereInput {
   totalamountuom_not_starts_with?: String;
   totalamountuom_ends_with?: String;
   totalamountuom_not_ends_with?: String;
-  AND?: Inputevents_mvScalarWhereInput[] | Inputevents_mvScalarWhereInput;
-  OR?: Inputevents_mvScalarWhereInput[] | Inputevents_mvScalarWhereInput;
-  NOT?: Inputevents_mvScalarWhereInput[] | Inputevents_mvScalarWhereInput;
+  AND?: InputeventsMvScalarWhereInput[] | InputeventsMvScalarWhereInput;
+  OR?: InputeventsMvScalarWhereInput[] | InputeventsMvScalarWhereInput;
+  NOT?: InputeventsMvScalarWhereInput[] | InputeventsMvScalarWhereInput;
 }
 
-export interface Diagnoses_icdWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
-  icd9_code?: String;
-  icd9_code_not?: String;
-  icd9_code_in?: String[] | String;
-  icd9_code_not_in?: String[] | String;
-  icd9_code_lt?: String;
-  icd9_code_lte?: String;
-  icd9_code_gt?: String;
-  icd9_code_gte?: String;
-  icd9_code_contains?: String;
-  icd9_code_not_contains?: String;
-  icd9_code_starts_with?: String;
-  icd9_code_not_starts_with?: String;
-  icd9_code_ends_with?: String;
-  icd9_code_not_ends_with?: String;
-  seq_num?: Int;
-  seq_num_not?: Int;
-  seq_num_in?: Int[] | Int;
-  seq_num_not_in?: Int[] | Int;
-  seq_num_lt?: Int;
-  seq_num_lte?: Int;
-  seq_num_gt?: Int;
-  seq_num_gte?: Int;
-  AND?: Diagnoses_icdWhereInput[] | Diagnoses_icdWhereInput;
-  OR?: Diagnoses_icdWhereInput[] | Diagnoses_icdWhereInput;
-  NOT?: Diagnoses_icdWhereInput[] | Diagnoses_icdWhereInput;
-}
-
-export interface Inputevents_mvUpdateManyWithWhereNestedInput {
-  where: Inputevents_mvScalarWhereInput;
-  data: Inputevents_mvUpdateManyDataInput;
-}
-
-export interface Inputevents_mvUpdateInput {
+export interface InputeventsMvUpdateInput {
   amount?: Float;
   amountuom?: String;
   cancelreason?: Int;
@@ -12998,32 +12949,9 @@ export interface Inputevents_mvUpdateInput {
   totalamountuom?: String;
 }
 
-export interface Inputevents_mvUpdateManyDataInput {
-  amount?: Float;
-  amountuom?: String;
-  cancelreason?: Int;
-  comments_canceledby?: String;
-  comments_date?: DateTimeInput;
-  comments_editedby?: String;
-  continueinnextdept?: Int;
-  endtime?: DateTimeInput;
-  isopenbag?: Int;
-  linkorderid?: Int;
-  ordercategorydescription?: String;
-  ordercategoryname?: String;
-  ordercomponenttypedescription?: String;
-  orderid?: Int;
-  originalamount?: Float;
-  originalrate?: Float;
-  patientweight?: Float;
-  rate?: Float;
-  rateuom?: String;
-  secondaryordercategoryname?: String;
-  starttime?: DateTimeInput;
-  statusdescription?: String;
-  storetime?: DateTimeInput;
-  totalamount?: Float;
-  totalamountuom?: String;
+export interface InputeventsMvUpdateManyWithWhereNestedInput {
+  where: InputeventsMvScalarWhereInput;
+  data: InputeventsMvUpdateManyDataInput;
 }
 
 export interface DrgcodeUpdateInput {
@@ -13034,39 +12962,49 @@ export interface DrgcodeUpdateInput {
   drg_type?: String;
 }
 
-export interface OutputeventUpdateManyInput {
-  create?: OutputeventCreateInput[] | OutputeventCreateInput;
-  update?:
-    | OutputeventUpdateWithWhereUniqueNestedInput[]
-    | OutputeventUpdateWithWhereUniqueNestedInput;
-  upsert?:
-    | OutputeventUpsertWithWhereUniqueNestedInput[]
-    | OutputeventUpsertWithWhereUniqueNestedInput;
-  delete?: OutputeventWhereUniqueInput[] | OutputeventWhereUniqueInput;
-  connect?: OutputeventWhereUniqueInput[] | OutputeventWhereUniqueInput;
-  set?: OutputeventWhereUniqueInput[] | OutputeventWhereUniqueInput;
-  disconnect?: OutputeventWhereUniqueInput[] | OutputeventWhereUniqueInput;
-  deleteMany?: OutputeventScalarWhereInput[] | OutputeventScalarWhereInput;
-  updateMany?:
-    | OutputeventUpdateManyWithWhereNestedInput[]
-    | OutputeventUpdateManyWithWhereNestedInput;
+export interface InputeventsMvUpdateManyDataInput {
+  amount?: Float;
+  amountuom?: String;
+  cancelreason?: Int;
+  comments_canceledby?: String;
+  comments_date?: DateTimeInput;
+  comments_editedby?: String;
+  continueinnextdept?: Int;
+  endtime?: DateTimeInput;
+  isopenbag?: Int;
+  linkorderid?: Int;
+  ordercategorydescription?: String;
+  ordercategoryname?: String;
+  ordercomponenttypedescription?: String;
+  orderid?: Int;
+  originalamount?: Float;
+  originalrate?: Float;
+  patientweight?: Float;
+  rate?: Float;
+  rateuom?: String;
+  secondaryordercategoryname?: String;
+  starttime?: DateTimeInput;
+  statusdescription?: String;
+  storetime?: DateTimeInput;
+  totalamount?: Float;
+  totalamountuom?: String;
 }
 
 export interface CpteventWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   chartdate?: DateTimeInput;
   chartdate_not?: DateTimeInput;
   chartdate_in?: DateTimeInput[] | DateTimeInput;
@@ -13180,15 +13118,44 @@ export interface CpteventWhereInput {
   NOT?: CpteventWhereInput[] | CpteventWhereInput;
 }
 
+export interface OutputeventUpdateManyInput {
+  create?: OutputeventCreateInput[] | OutputeventCreateInput;
+  update?:
+    | OutputeventUpdateWithWhereUniqueNestedInput[]
+    | OutputeventUpdateWithWhereUniqueNestedInput;
+  upsert?:
+    | OutputeventUpsertWithWhereUniqueNestedInput[]
+    | OutputeventUpsertWithWhereUniqueNestedInput;
+  delete?: OutputeventWhereUniqueInput[] | OutputeventWhereUniqueInput;
+  connect?: OutputeventWhereUniqueInput[] | OutputeventWhereUniqueInput;
+  set?: OutputeventWhereUniqueInput[] | OutputeventWhereUniqueInput;
+  disconnect?: OutputeventWhereUniqueInput[] | OutputeventWhereUniqueInput;
+  deleteMany?: OutputeventScalarWhereInput[] | OutputeventScalarWhereInput;
+  updateMany?:
+    | OutputeventUpdateManyWithWhereNestedInput[]
+    | OutputeventUpdateManyWithWhereNestedInput;
+}
+
+export interface DIcdProcedureUpdateInput {
+  icd9_code?: String;
+  long_title?: String;
+  short_title?: String;
+}
+
 export interface OutputeventUpdateWithWhereUniqueNestedInput {
   where: OutputeventWhereUniqueInput;
   data: OutputeventUpdateDataInput;
 }
 
-export interface D_icd_procedureUpdateInput {
-  icd9_code?: String;
-  long_title?: String;
-  short_title?: String;
+export interface DCptCreateInput {
+  category: Int;
+  codesuffix?: String;
+  maxcodeinsubsection: Int;
+  mincodeinsubsection: Int;
+  sectionheader: String;
+  sectionrange: String;
+  subsectionheader: String;
+  subsectionrange: String;
 }
 
 export interface OutputeventUpdateDataInput {
@@ -13201,38 +13168,21 @@ export interface OutputeventUpdateDataInput {
   valueuom?: String;
 }
 
-export interface D_cptCreateInput {
-  category: Int;
-  codesuffix?: String;
-  maxcodeinsubsection: Int;
-  mincodeinsubsection: Int;
-  sectionheader: String;
-  sectionrange: String;
-  subsectionheader: String;
-  subsectionrange: String;
-}
-
-export interface OutputeventUpsertWithWhereUniqueNestedInput {
-  where: OutputeventWhereUniqueInput;
-  update: OutputeventUpdateDataInput;
-  create: OutputeventCreateInput;
-}
-
 export interface CharteventWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   charttime?: DateTimeInput;
   charttime_not?: DateTimeInput;
   charttime_in?: DateTimeInput[] | DateTimeInput;
@@ -13334,21 +13284,45 @@ export interface CharteventWhereInput {
   NOT?: CharteventWhereInput[] | CharteventWhereInput;
 }
 
+export interface OutputeventUpsertWithWhereUniqueNestedInput {
+  where: OutputeventWhereUniqueInput;
+  update: OutputeventUpdateDataInput;
+  create: OutputeventCreateInput;
+}
+
+export interface Chartevents6CreateInput {
+  cgid?: Int;
+  charttime?: DateTimeInput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeInput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
 export interface OutputeventScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   charttime?: DateTimeInput;
   charttime_not?: DateTimeInput;
   charttime_in?: DateTimeInput[] | DateTimeInput;
@@ -13428,7 +13402,7 @@ export interface OutputeventScalarWhereInput {
   NOT?: OutputeventScalarWhereInput[] | OutputeventScalarWhereInput;
 }
 
-export interface Chartevents_6CreateInput {
+export interface Chartevents3UpdateManyMutationInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -13436,10 +13410,10 @@ export interface Chartevents_6CreateInput {
   icustay_id?: Int;
   itemid?: Int;
   resultstatus?: String;
-  row_id: Int;
+  row_id?: Int;
   stopped?: String;
   storetime?: DateTimeInput;
-  subject_id: Int;
+  subject_id?: Int;
   value?: String;
   valuenum?: Float;
   valueuom?: String;
@@ -13451,7 +13425,7 @@ export interface OutputeventUpdateManyWithWhereNestedInput {
   data: OutputeventUpdateManyDataInput;
 }
 
-export interface Chartevents_3UpdateManyMutationInput {
+export interface Chartevents16UpdateManyMutationInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -13479,23 +13453,9 @@ export interface OutputeventUpdateManyDataInput {
   valueuom?: String;
 }
 
-export interface Chartevents_16UpdateManyMutationInput {
-  cgid?: Int;
-  charttime?: DateTimeInput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id?: Int;
-  stopped?: String;
-  storetime?: DateTimeInput;
-  subject_id?: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
+export type DatetimeeventWhereUniqueInput = AtLeastOne<{
+  id: UUID;
+}>;
 
 export interface PrescriptionUpdateManyInput {
   create?: PrescriptionCreateInput[] | PrescriptionCreateInput;
@@ -13515,8 +13475,8 @@ export interface PrescriptionUpdateManyInput {
     | PrescriptionUpdateManyWithWhereNestedInput;
 }
 
-export type DatetimeeventWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+export type DrgcodeWhereUniqueInput = AtLeastOne<{
+  id: UUID;
 }>;
 
 export interface PrescriptionUpdateWithWhereUniqueNestedInput {
@@ -13524,9 +13484,16 @@ export interface PrescriptionUpdateWithWhereUniqueNestedInput {
   data: PrescriptionUpdateDataInput;
 }
 
-export type DrgcodeWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
-}>;
+export interface NoteeventSubscriptionWhereInput {
+  mutation_in?: MutationType[] | MutationType;
+  updatedFields_contains?: String;
+  updatedFields_contains_every?: String[] | String;
+  updatedFields_contains_some?: String[] | String;
+  node?: NoteeventWhereInput;
+  AND?: NoteeventSubscriptionWhereInput[] | NoteeventSubscriptionWhereInput;
+  OR?: NoteeventSubscriptionWhereInput[] | NoteeventSubscriptionWhereInput;
+  NOT?: NoteeventSubscriptionWhereInput[] | NoteeventSubscriptionWhereInput;
+}
 
 export interface PrescriptionUpdateDataInput {
   dose_unit_rx?: String;
@@ -13546,15 +13513,21 @@ export interface PrescriptionUpdateDataInput {
   startdate?: DateTimeInput;
 }
 
-export interface NoteeventSubscriptionWhereInput {
+export interface DIcdDiagnosisSubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: NoteeventWhereInput;
-  AND?: NoteeventSubscriptionWhereInput[] | NoteeventSubscriptionWhereInput;
-  OR?: NoteeventSubscriptionWhereInput[] | NoteeventSubscriptionWhereInput;
-  NOT?: NoteeventSubscriptionWhereInput[] | NoteeventSubscriptionWhereInput;
+  node?: DIcdDiagnosisWhereInput;
+  AND?:
+    | DIcdDiagnosisSubscriptionWhereInput[]
+    | DIcdDiagnosisSubscriptionWhereInput;
+  OR?:
+    | DIcdDiagnosisSubscriptionWhereInput[]
+    | DIcdDiagnosisSubscriptionWhereInput;
+  NOT?:
+    | DIcdDiagnosisSubscriptionWhereInput[]
+    | DIcdDiagnosisSubscriptionWhereInput;
 }
 
 export interface PrescriptionUpsertWithWhereUniqueNestedInput {
@@ -13563,38 +13536,38 @@ export interface PrescriptionUpsertWithWhereUniqueNestedInput {
   create: PrescriptionCreateInput;
 }
 
-export interface D_icd_diagnosisSubscriptionWhereInput {
+export interface Chartevents17SubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: D_icd_diagnosisWhereInput;
+  node?: Chartevents17WhereInput;
   AND?:
-    | D_icd_diagnosisSubscriptionWhereInput[]
-    | D_icd_diagnosisSubscriptionWhereInput;
+    | Chartevents17SubscriptionWhereInput[]
+    | Chartevents17SubscriptionWhereInput;
   OR?:
-    | D_icd_diagnosisSubscriptionWhereInput[]
-    | D_icd_diagnosisSubscriptionWhereInput;
+    | Chartevents17SubscriptionWhereInput[]
+    | Chartevents17SubscriptionWhereInput;
   NOT?:
-    | D_icd_diagnosisSubscriptionWhereInput[]
-    | D_icd_diagnosisSubscriptionWhereInput;
+    | Chartevents17SubscriptionWhereInput[]
+    | Chartevents17SubscriptionWhereInput;
 }
 
 export interface PrescriptionScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   dose_unit_rx?: String;
   dose_unit_rx_not?: String;
   dose_unit_rx_in?: String[] | String;
@@ -13798,43 +13771,21 @@ export interface PrescriptionScalarWhereInput {
   NOT?: PrescriptionScalarWhereInput[] | PrescriptionScalarWhereInput;
 }
 
-export interface Chartevents_17SubscriptionWhereInput {
-  mutation_in?: MutationType[] | MutationType;
-  updatedFields_contains?: String;
-  updatedFields_contains_every?: String[] | String;
-  updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_17WhereInput;
-  AND?:
-    | Chartevents_17SubscriptionWhereInput[]
-    | Chartevents_17SubscriptionWhereInput;
-  OR?:
-    | Chartevents_17SubscriptionWhereInput[]
-    | Chartevents_17SubscriptionWhereInput;
-  NOT?:
-    | Chartevents_17SubscriptionWhereInput[]
-    | Chartevents_17SubscriptionWhereInput;
-}
-
-export interface PrescriptionUpdateManyWithWhereNestedInput {
-  where: PrescriptionScalarWhereInput;
-  data: PrescriptionUpdateManyDataInput;
-}
-
-export interface Inputevents_mvWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+export interface InputeventsMvWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   amount?: Float;
   amount_not?: Float;
   amount_in?: Float[] | Float;
@@ -14095,27 +14046,14 @@ export interface Inputevents_mvWhereInput {
   totalamountuom_not_starts_with?: String;
   totalamountuom_ends_with?: String;
   totalamountuom_not_ends_with?: String;
-  AND?: Inputevents_mvWhereInput[] | Inputevents_mvWhereInput;
-  OR?: Inputevents_mvWhereInput[] | Inputevents_mvWhereInput;
-  NOT?: Inputevents_mvWhereInput[] | Inputevents_mvWhereInput;
+  AND?: InputeventsMvWhereInput[] | InputeventsMvWhereInput;
+  OR?: InputeventsMvWhereInput[] | InputeventsMvWhereInput;
+  NOT?: InputeventsMvWhereInput[] | InputeventsMvWhereInput;
 }
 
-export interface PrescriptionUpdateManyDataInput {
-  dose_unit_rx?: String;
-  dose_val_rx?: String;
-  drug?: String;
-  drug_name_generic?: String;
-  drug_name_poe?: String;
-  drug_type?: String;
-  enddate?: DateTimeInput;
-  form_unit_disp?: String;
-  form_val_disp?: String;
-  formulary_drug_cd?: String;
-  gsn?: String;
-  ndc?: String;
-  prod_strength?: String;
-  route?: String;
-  startdate?: DateTimeInput;
+export interface PrescriptionUpdateManyWithWhereNestedInput {
+  where: PrescriptionScalarWhereInput;
+  data: PrescriptionUpdateManyDataInput;
 }
 
 export interface PrescriptionUpdateInput {
@@ -14136,32 +14074,22 @@ export interface PrescriptionUpdateInput {
   startdate?: DateTimeInput;
 }
 
-export interface Procedureevents_mvUpdateManyInput {
-  create?: Procedureevents_mvCreateInput[] | Procedureevents_mvCreateInput;
-  update?:
-    | Procedureevents_mvUpdateWithWhereUniqueNestedInput[]
-    | Procedureevents_mvUpdateWithWhereUniqueNestedInput;
-  upsert?:
-    | Procedureevents_mvUpsertWithWhereUniqueNestedInput[]
-    | Procedureevents_mvUpsertWithWhereUniqueNestedInput;
-  delete?:
-    | Procedureevents_mvWhereUniqueInput[]
-    | Procedureevents_mvWhereUniqueInput;
-  connect?:
-    | Procedureevents_mvWhereUniqueInput[]
-    | Procedureevents_mvWhereUniqueInput;
-  set?:
-    | Procedureevents_mvWhereUniqueInput[]
-    | Procedureevents_mvWhereUniqueInput;
-  disconnect?:
-    | Procedureevents_mvWhereUniqueInput[]
-    | Procedureevents_mvWhereUniqueInput;
-  deleteMany?:
-    | Procedureevents_mvScalarWhereInput[]
-    | Procedureevents_mvScalarWhereInput;
-  updateMany?:
-    | Procedureevents_mvUpdateManyWithWhereNestedInput[]
-    | Procedureevents_mvUpdateManyWithWhereNestedInput;
+export interface PrescriptionUpdateManyDataInput {
+  dose_unit_rx?: String;
+  dose_val_rx?: String;
+  drug?: String;
+  drug_name_generic?: String;
+  drug_name_poe?: String;
+  drug_type?: String;
+  enddate?: DateTimeInput;
+  form_unit_disp?: String;
+  form_val_disp?: String;
+  formulary_drug_cd?: String;
+  gsn?: String;
+  ndc?: String;
+  prod_strength?: String;
+  route?: String;
+  startdate?: DateTimeInput;
 }
 
 export interface OutputeventUpdateManyMutationInput {
@@ -14174,26 +14102,47 @@ export interface OutputeventUpdateManyMutationInput {
   valueuom?: String;
 }
 
-export interface Procedureevents_mvUpdateWithWhereUniqueNestedInput {
-  where: Procedureevents_mvWhereUniqueInput;
-  data: Procedureevents_mvUpdateDataInput;
+export interface ProcedureeventsMvUpdateManyInput {
+  create?: ProcedureeventsMvCreateInput[] | ProcedureeventsMvCreateInput;
+  update?:
+    | ProcedureeventsMvUpdateWithWhereUniqueNestedInput[]
+    | ProcedureeventsMvUpdateWithWhereUniqueNestedInput;
+  upsert?:
+    | ProcedureeventsMvUpsertWithWhereUniqueNestedInput[]
+    | ProcedureeventsMvUpsertWithWhereUniqueNestedInput;
+  delete?:
+    | ProcedureeventsMvWhereUniqueInput[]
+    | ProcedureeventsMvWhereUniqueInput;
+  connect?:
+    | ProcedureeventsMvWhereUniqueInput[]
+    | ProcedureeventsMvWhereUniqueInput;
+  set?: ProcedureeventsMvWhereUniqueInput[] | ProcedureeventsMvWhereUniqueInput;
+  disconnect?:
+    | ProcedureeventsMvWhereUniqueInput[]
+    | ProcedureeventsMvWhereUniqueInput;
+  deleteMany?:
+    | ProcedureeventsMvScalarWhereInput[]
+    | ProcedureeventsMvScalarWhereInput;
+  updateMany?:
+    | ProcedureeventsMvUpdateManyWithWhereNestedInput[]
+    | ProcedureeventsMvUpdateManyWithWhereNestedInput;
 }
 
 export interface DatetimeeventWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   charttime?: DateTimeInput;
   charttime_not?: DateTimeInput;
   charttime_in?: DateTimeInput[] | DateTimeInput;
@@ -14281,7 +14230,30 @@ export interface DatetimeeventWhereInput {
   NOT?: DatetimeeventWhereInput[] | DatetimeeventWhereInput;
 }
 
-export interface Procedureevents_mvUpdateDataInput {
+export interface ProcedureeventsMvUpdateWithWhereUniqueNestedInput {
+  where: ProcedureeventsMvWhereUniqueInput;
+  data: ProcedureeventsMvUpdateDataInput;
+}
+
+export interface DItemUpdateInput {
+  abbreviation?: String;
+  category?: String;
+  chartevents?: CharteventUpdateManyInput;
+  conceptid?: Int;
+  datetimeevents?: DatetimeeventUpdateManyInput;
+  dbsource?: String;
+  inputevents_mv?: InputeventsMvUpdateManyInput;
+  itemid?: Int;
+  label?: String;
+  linksto?: String;
+  microbiologyevents?: MicrobiologyeventUpdateManyInput;
+  outputevents?: OutputeventUpdateManyInput;
+  param_type?: String;
+  procedureevents_mv?: ProcedureeventsMvUpdateManyInput;
+  unitname?: String;
+}
+
+export interface ProcedureeventsMvUpdateDataInput {
   cancelreason?: Int;
   comments_canceledby?: String;
   comments_date?: DateTimeInput;
@@ -14303,31 +14275,7 @@ export interface Procedureevents_mvUpdateDataInput {
   valueuom?: String;
 }
 
-export interface D_itemUpdateInput {
-  abbreviation?: String;
-  category?: String;
-  chartevents?: CharteventUpdateManyInput;
-  conceptid?: Int;
-  datetimeevents?: DatetimeeventUpdateManyInput;
-  dbsource?: String;
-  inputevents_mv?: Inputevents_mvUpdateManyInput;
-  itemid?: Int;
-  label?: String;
-  linksto?: String;
-  microbiologyevents?: MicrobiologyeventUpdateManyInput;
-  outputevents?: OutputeventUpdateManyInput;
-  param_type?: String;
-  procedureevents_mv?: Procedureevents_mvUpdateManyInput;
-  unitname?: String;
-}
-
-export interface Procedureevents_mvUpsertWithWhereUniqueNestedInput {
-  where: Procedureevents_mvWhereUniqueInput;
-  update: Procedureevents_mvUpdateDataInput;
-  create: Procedureevents_mvCreateInput;
-}
-
-export interface Chartevents_9UpdateManyMutationInput {
+export interface Chartevents9UpdateManyMutationInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -14345,21 +14293,45 @@ export interface Chartevents_9UpdateManyMutationInput {
   warning?: Int;
 }
 
-export interface Procedureevents_mvScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+export interface ProcedureeventsMvUpsertWithWhereUniqueNestedInput {
+  where: ProcedureeventsMvWhereUniqueInput;
+  update: ProcedureeventsMvUpdateDataInput;
+  create: ProcedureeventsMvCreateInput;
+}
+
+export interface Chartevents4UpdateManyMutationInput {
+  cgid?: Int;
+  charttime?: DateTimeInput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id?: Int;
+  stopped?: String;
+  storetime?: DateTimeInput;
+  subject_id?: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface ProcedureeventsMvScalarWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   cancelreason?: Int;
   cancelreason_not?: Int;
   cancelreason_in?: Int[] | Int;
@@ -14566,18 +14538,12 @@ export interface Procedureevents_mvScalarWhereInput {
   valueuom_not_starts_with?: String;
   valueuom_ends_with?: String;
   valueuom_not_ends_with?: String;
-  AND?:
-    | Procedureevents_mvScalarWhereInput[]
-    | Procedureevents_mvScalarWhereInput;
-  OR?:
-    | Procedureevents_mvScalarWhereInput[]
-    | Procedureevents_mvScalarWhereInput;
-  NOT?:
-    | Procedureevents_mvScalarWhereInput[]
-    | Procedureevents_mvScalarWhereInput;
+  AND?: ProcedureeventsMvScalarWhereInput[] | ProcedureeventsMvScalarWhereInput;
+  OR?: ProcedureeventsMvScalarWhereInput[] | ProcedureeventsMvScalarWhereInput;
+  NOT?: ProcedureeventsMvScalarWhereInput[] | ProcedureeventsMvScalarWhereInput;
 }
 
-export interface Chartevents_4UpdateManyMutationInput {
+export interface Chartevents15UpdateManyMutationInput {
   cgid?: Int;
   charttime?: DateTimeInput;
   error?: Int;
@@ -14595,66 +14561,26 @@ export interface Chartevents_4UpdateManyMutationInput {
   warning?: Int;
 }
 
-export interface Procedureevents_mvUpdateManyWithWhereNestedInput {
-  where: Procedureevents_mvScalarWhereInput;
-  data: Procedureevents_mvUpdateManyDataInput;
-}
-
-export interface Chartevents_15UpdateManyMutationInput {
-  cgid?: Int;
-  charttime?: DateTimeInput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id?: Int;
-  stopped?: String;
-  storetime?: DateTimeInput;
-  subject_id?: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Procedureevents_mvUpdateManyDataInput {
-  cancelreason?: Int;
-  comments_canceledby?: String;
-  comments_date?: DateTimeInput;
-  comments_editedby?: String;
-  continueinnextdept?: Int;
-  endtime?: DateTimeInput;
-  isopenbag?: Int;
-  linkorderid?: Int;
-  location?: String;
-  locationcategory?: String;
-  ordercategorydescription?: String;
-  ordercategoryname?: String;
-  orderid?: Int;
-  secondaryordercategoryname?: String;
-  starttime?: DateTimeInput;
-  statusdescription?: String;
-  storetime?: DateTimeInput;
-  value?: Float;
-  valueuom?: String;
+export interface ProcedureeventsMvUpdateManyWithWhereNestedInput {
+  where: ProcedureeventsMvScalarWhereInput;
+  data: ProcedureeventsMvUpdateManyDataInput;
 }
 
 export interface NoteeventWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   category?: String;
   category_not?: String;
   category_in?: String[] | String;
@@ -14740,39 +14666,43 @@ export interface NoteeventWhereInput {
   NOT?: NoteeventWhereInput[] | NoteeventWhereInput;
 }
 
-export interface TransferUpdateManyInput {
-  create?: TransferCreateInput[] | TransferCreateInput;
-  update?:
-    | TransferUpdateWithWhereUniqueNestedInput[]
-    | TransferUpdateWithWhereUniqueNestedInput;
-  upsert?:
-    | TransferUpsertWithWhereUniqueNestedInput[]
-    | TransferUpsertWithWhereUniqueNestedInput;
-  delete?: TransferWhereUniqueInput[] | TransferWhereUniqueInput;
-  connect?: TransferWhereUniqueInput[] | TransferWhereUniqueInput;
-  set?: TransferWhereUniqueInput[] | TransferWhereUniqueInput;
-  disconnect?: TransferWhereUniqueInput[] | TransferWhereUniqueInput;
-  deleteMany?: TransferScalarWhereInput[] | TransferScalarWhereInput;
-  updateMany?:
-    | TransferUpdateManyWithWhereNestedInput[]
-    | TransferUpdateManyWithWhereNestedInput;
+export interface ProcedureeventsMvUpdateManyDataInput {
+  cancelreason?: Int;
+  comments_canceledby?: String;
+  comments_date?: DateTimeInput;
+  comments_editedby?: String;
+  continueinnextdept?: Int;
+  endtime?: DateTimeInput;
+  isopenbag?: Int;
+  linkorderid?: Int;
+  location?: String;
+  locationcategory?: String;
+  ordercategorydescription?: String;
+  ordercategoryname?: String;
+  orderid?: Int;
+  secondaryordercategoryname?: String;
+  starttime?: DateTimeInput;
+  statusdescription?: String;
+  storetime?: DateTimeInput;
+  value?: Float;
+  valueuom?: String;
 }
 
 export interface TransferWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   curr_careunit?: String;
   curr_careunit_not?: String;
   curr_careunit_in?: String[] | String;
@@ -14874,15 +14804,41 @@ export interface TransferWhereInput {
   NOT?: TransferWhereInput[] | TransferWhereInput;
 }
 
-export interface TransferUpdateWithWhereUniqueNestedInput {
-  where: TransferWhereUniqueInput;
-  data: TransferUpdateDataInput;
+export interface TransferUpdateManyInput {
+  create?: TransferCreateInput[] | TransferCreateInput;
+  update?:
+    | TransferUpdateWithWhereUniqueNestedInput[]
+    | TransferUpdateWithWhereUniqueNestedInput;
+  upsert?:
+    | TransferUpsertWithWhereUniqueNestedInput[]
+    | TransferUpsertWithWhereUniqueNestedInput;
+  delete?: TransferWhereUniqueInput[] | TransferWhereUniqueInput;
+  connect?: TransferWhereUniqueInput[] | TransferWhereUniqueInput;
+  set?: TransferWhereUniqueInput[] | TransferWhereUniqueInput;
+  disconnect?: TransferWhereUniqueInput[] | TransferWhereUniqueInput;
+  deleteMany?: TransferScalarWhereInput[] | TransferScalarWhereInput;
+  updateMany?:
+    | TransferUpdateManyWithWhereNestedInput[]
+    | TransferUpdateManyWithWhereNestedInput;
 }
 
 export interface ServiceUpdateInput {
   curr_service?: String;
   prev_service?: String;
   transfertime?: DateTimeInput;
+}
+
+export interface TransferUpdateWithWhereUniqueNestedInput {
+  where: TransferWhereUniqueInput;
+  data: TransferUpdateDataInput;
+}
+
+export interface LabeventUpdateManyMutationInput {
+  charttime?: DateTimeInput;
+  flag?: String;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
 }
 
 export interface TransferUpdateDataInput {
@@ -14897,12 +14853,10 @@ export interface TransferUpdateDataInput {
   prev_wardid?: Int;
 }
 
-export interface LabeventUpdateManyMutationInput {
-  charttime?: DateTimeInput;
-  flag?: String;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
+export interface DIcdDiagnosisUpdateInput {
+  icd9_code?: String;
+  long_title?: String;
+  short_title?: String;
 }
 
 export interface TransferUpsertWithWhereUniqueNestedInput {
@@ -14911,27 +14865,173 @@ export interface TransferUpsertWithWhereUniqueNestedInput {
   create: TransferCreateInput;
 }
 
-export interface D_icd_diagnosisUpdateInput {
-  icd9_code?: String;
-  long_title?: String;
-  short_title?: String;
+export interface DItemWhereInput {
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
+  abbreviation?: String;
+  abbreviation_not?: String;
+  abbreviation_in?: String[] | String;
+  abbreviation_not_in?: String[] | String;
+  abbreviation_lt?: String;
+  abbreviation_lte?: String;
+  abbreviation_gt?: String;
+  abbreviation_gte?: String;
+  abbreviation_contains?: String;
+  abbreviation_not_contains?: String;
+  abbreviation_starts_with?: String;
+  abbreviation_not_starts_with?: String;
+  abbreviation_ends_with?: String;
+  abbreviation_not_ends_with?: String;
+  category?: String;
+  category_not?: String;
+  category_in?: String[] | String;
+  category_not_in?: String[] | String;
+  category_lt?: String;
+  category_lte?: String;
+  category_gt?: String;
+  category_gte?: String;
+  category_contains?: String;
+  category_not_contains?: String;
+  category_starts_with?: String;
+  category_not_starts_with?: String;
+  category_ends_with?: String;
+  category_not_ends_with?: String;
+  chartevents_every?: CharteventWhereInput;
+  chartevents_some?: CharteventWhereInput;
+  chartevents_none?: CharteventWhereInput;
+  conceptid?: Int;
+  conceptid_not?: Int;
+  conceptid_in?: Int[] | Int;
+  conceptid_not_in?: Int[] | Int;
+  conceptid_lt?: Int;
+  conceptid_lte?: Int;
+  conceptid_gt?: Int;
+  conceptid_gte?: Int;
+  datetimeevents_every?: DatetimeeventWhereInput;
+  datetimeevents_some?: DatetimeeventWhereInput;
+  datetimeevents_none?: DatetimeeventWhereInput;
+  dbsource?: String;
+  dbsource_not?: String;
+  dbsource_in?: String[] | String;
+  dbsource_not_in?: String[] | String;
+  dbsource_lt?: String;
+  dbsource_lte?: String;
+  dbsource_gt?: String;
+  dbsource_gte?: String;
+  dbsource_contains?: String;
+  dbsource_not_contains?: String;
+  dbsource_starts_with?: String;
+  dbsource_not_starts_with?: String;
+  dbsource_ends_with?: String;
+  dbsource_not_ends_with?: String;
+  inputevents_mv_every?: InputeventsMvWhereInput;
+  inputevents_mv_some?: InputeventsMvWhereInput;
+  inputevents_mv_none?: InputeventsMvWhereInput;
+  itemid?: Int;
+  itemid_not?: Int;
+  itemid_in?: Int[] | Int;
+  itemid_not_in?: Int[] | Int;
+  itemid_lt?: Int;
+  itemid_lte?: Int;
+  itemid_gt?: Int;
+  itemid_gte?: Int;
+  label?: String;
+  label_not?: String;
+  label_in?: String[] | String;
+  label_not_in?: String[] | String;
+  label_lt?: String;
+  label_lte?: String;
+  label_gt?: String;
+  label_gte?: String;
+  label_contains?: String;
+  label_not_contains?: String;
+  label_starts_with?: String;
+  label_not_starts_with?: String;
+  label_ends_with?: String;
+  label_not_ends_with?: String;
+  linksto?: String;
+  linksto_not?: String;
+  linksto_in?: String[] | String;
+  linksto_not_in?: String[] | String;
+  linksto_lt?: String;
+  linksto_lte?: String;
+  linksto_gt?: String;
+  linksto_gte?: String;
+  linksto_contains?: String;
+  linksto_not_contains?: String;
+  linksto_starts_with?: String;
+  linksto_not_starts_with?: String;
+  linksto_ends_with?: String;
+  linksto_not_ends_with?: String;
+  microbiologyevents_every?: MicrobiologyeventWhereInput;
+  microbiologyevents_some?: MicrobiologyeventWhereInput;
+  microbiologyevents_none?: MicrobiologyeventWhereInput;
+  outputevents_every?: OutputeventWhereInput;
+  outputevents_some?: OutputeventWhereInput;
+  outputevents_none?: OutputeventWhereInput;
+  param_type?: String;
+  param_type_not?: String;
+  param_type_in?: String[] | String;
+  param_type_not_in?: String[] | String;
+  param_type_lt?: String;
+  param_type_lte?: String;
+  param_type_gt?: String;
+  param_type_gte?: String;
+  param_type_contains?: String;
+  param_type_not_contains?: String;
+  param_type_starts_with?: String;
+  param_type_not_starts_with?: String;
+  param_type_ends_with?: String;
+  param_type_not_ends_with?: String;
+  procedureevents_mv_every?: ProcedureeventsMvWhereInput;
+  procedureevents_mv_some?: ProcedureeventsMvWhereInput;
+  procedureevents_mv_none?: ProcedureeventsMvWhereInput;
+  unitname?: String;
+  unitname_not?: String;
+  unitname_in?: String[] | String;
+  unitname_not_in?: String[] | String;
+  unitname_lt?: String;
+  unitname_lte?: String;
+  unitname_gt?: String;
+  unitname_gte?: String;
+  unitname_contains?: String;
+  unitname_not_contains?: String;
+  unitname_starts_with?: String;
+  unitname_not_starts_with?: String;
+  unitname_ends_with?: String;
+  unitname_not_ends_with?: String;
+  AND?: DItemWhereInput[] | DItemWhereInput;
+  OR?: DItemWhereInput[] | DItemWhereInput;
+  NOT?: DItemWhereInput[] | DItemWhereInput;
 }
 
 export interface TransferScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   curr_careunit?: String;
   curr_careunit_not?: String;
   curr_careunit_in?: String[] | String;
@@ -15033,194 +15133,30 @@ export interface TransferScalarWhereInput {
   NOT?: TransferScalarWhereInput[] | TransferScalarWhereInput;
 }
 
-export interface D_itemWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
-  abbreviation?: String;
-  abbreviation_not?: String;
-  abbreviation_in?: String[] | String;
-  abbreviation_not_in?: String[] | String;
-  abbreviation_lt?: String;
-  abbreviation_lte?: String;
-  abbreviation_gt?: String;
-  abbreviation_gte?: String;
-  abbreviation_contains?: String;
-  abbreviation_not_contains?: String;
-  abbreviation_starts_with?: String;
-  abbreviation_not_starts_with?: String;
-  abbreviation_ends_with?: String;
-  abbreviation_not_ends_with?: String;
-  category?: String;
-  category_not?: String;
-  category_in?: String[] | String;
-  category_not_in?: String[] | String;
-  category_lt?: String;
-  category_lte?: String;
-  category_gt?: String;
-  category_gte?: String;
-  category_contains?: String;
-  category_not_contains?: String;
-  category_starts_with?: String;
-  category_not_starts_with?: String;
-  category_ends_with?: String;
-  category_not_ends_with?: String;
-  chartevents_every?: CharteventWhereInput;
-  chartevents_some?: CharteventWhereInput;
-  chartevents_none?: CharteventWhereInput;
-  conceptid?: Int;
-  conceptid_not?: Int;
-  conceptid_in?: Int[] | Int;
-  conceptid_not_in?: Int[] | Int;
-  conceptid_lt?: Int;
-  conceptid_lte?: Int;
-  conceptid_gt?: Int;
-  conceptid_gte?: Int;
-  datetimeevents_every?: DatetimeeventWhereInput;
-  datetimeevents_some?: DatetimeeventWhereInput;
-  datetimeevents_none?: DatetimeeventWhereInput;
-  dbsource?: String;
-  dbsource_not?: String;
-  dbsource_in?: String[] | String;
-  dbsource_not_in?: String[] | String;
-  dbsource_lt?: String;
-  dbsource_lte?: String;
-  dbsource_gt?: String;
-  dbsource_gte?: String;
-  dbsource_contains?: String;
-  dbsource_not_contains?: String;
-  dbsource_starts_with?: String;
-  dbsource_not_starts_with?: String;
-  dbsource_ends_with?: String;
-  dbsource_not_ends_with?: String;
-  inputevents_mv_every?: Inputevents_mvWhereInput;
-  inputevents_mv_some?: Inputevents_mvWhereInput;
-  inputevents_mv_none?: Inputevents_mvWhereInput;
-  itemid?: Int;
-  itemid_not?: Int;
-  itemid_in?: Int[] | Int;
-  itemid_not_in?: Int[] | Int;
-  itemid_lt?: Int;
-  itemid_lte?: Int;
-  itemid_gt?: Int;
-  itemid_gte?: Int;
-  label?: String;
-  label_not?: String;
-  label_in?: String[] | String;
-  label_not_in?: String[] | String;
-  label_lt?: String;
-  label_lte?: String;
-  label_gt?: String;
-  label_gte?: String;
-  label_contains?: String;
-  label_not_contains?: String;
-  label_starts_with?: String;
-  label_not_starts_with?: String;
-  label_ends_with?: String;
-  label_not_ends_with?: String;
-  linksto?: String;
-  linksto_not?: String;
-  linksto_in?: String[] | String;
-  linksto_not_in?: String[] | String;
-  linksto_lt?: String;
-  linksto_lte?: String;
-  linksto_gt?: String;
-  linksto_gte?: String;
-  linksto_contains?: String;
-  linksto_not_contains?: String;
-  linksto_starts_with?: String;
-  linksto_not_starts_with?: String;
-  linksto_ends_with?: String;
-  linksto_not_ends_with?: String;
-  microbiologyevents_every?: MicrobiologyeventWhereInput;
-  microbiologyevents_some?: MicrobiologyeventWhereInput;
-  microbiologyevents_none?: MicrobiologyeventWhereInput;
-  outputevents_every?: OutputeventWhereInput;
-  outputevents_some?: OutputeventWhereInput;
-  outputevents_none?: OutputeventWhereInput;
-  param_type?: String;
-  param_type_not?: String;
-  param_type_in?: String[] | String;
-  param_type_not_in?: String[] | String;
-  param_type_lt?: String;
-  param_type_lte?: String;
-  param_type_gt?: String;
-  param_type_gte?: String;
-  param_type_contains?: String;
-  param_type_not_contains?: String;
-  param_type_starts_with?: String;
-  param_type_not_starts_with?: String;
-  param_type_ends_with?: String;
-  param_type_not_ends_with?: String;
-  procedureevents_mv_every?: Procedureevents_mvWhereInput;
-  procedureevents_mv_some?: Procedureevents_mvWhereInput;
-  procedureevents_mv_none?: Procedureevents_mvWhereInput;
-  unitname?: String;
-  unitname_not?: String;
-  unitname_in?: String[] | String;
-  unitname_not_in?: String[] | String;
-  unitname_lt?: String;
-  unitname_lte?: String;
-  unitname_gt?: String;
-  unitname_gte?: String;
-  unitname_contains?: String;
-  unitname_not_contains?: String;
-  unitname_starts_with?: String;
-  unitname_not_starts_with?: String;
-  unitname_ends_with?: String;
-  unitname_not_ends_with?: String;
-  AND?: D_itemWhereInput[] | D_itemWhereInput;
-  OR?: D_itemWhereInput[] | D_itemWhereInput;
-  NOT?: D_itemWhereInput[] | D_itemWhereInput;
-}
+export type CalloutWhereUniqueInput = AtLeastOne<{
+  id: UUID;
+}>;
 
 export interface TransferUpdateManyWithWhereNestedInput {
   where: TransferScalarWhereInput;
   data: TransferUpdateManyDataInput;
 }
 
-export type CalloutWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
-}>;
-
-export interface TransferUpdateManyDataInput {
-  curr_careunit?: String;
-  curr_wardid?: Int;
-  dbsource?: String;
-  eventtype?: String;
-  intime?: DateTimeInput;
-  los?: Float;
-  outtime?: DateTimeInput;
-  prev_careunit?: String;
-  prev_wardid?: Int;
-}
-
 export interface DrgcodeWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   description?: String;
   description_not?: String;
   description_in?: String[] | String;
@@ -15284,38 +15220,26 @@ export interface DrgcodeWhereInput {
   NOT?: DrgcodeWhereInput[] | DrgcodeWhereInput;
 }
 
-export interface IcustayUpdateManyDataInput {
-  dbsource?: String;
-  first_careunit?: String;
-  first_wardid?: Int;
-  icustay_id?: Int;
-  intime?: DateTimeInput;
-  last_careunit?: String;
-  last_wardid?: Int;
-  los?: Float;
-  outtime?: DateTimeInput;
-}
-
 export interface IcustayUpdateManyWithWhereNestedInput {
   where: IcustayScalarWhereInput;
   data: IcustayUpdateManyDataInput;
 }
 
 export interface IcustayScalarWhereInput {
-  id?: ID_Input;
-  id_not?: ID_Input;
-  id_in?: ID_Input[] | ID_Input;
-  id_not_in?: ID_Input[] | ID_Input;
-  id_lt?: ID_Input;
-  id_lte?: ID_Input;
-  id_gt?: ID_Input;
-  id_gte?: ID_Input;
-  id_contains?: ID_Input;
-  id_not_contains?: ID_Input;
-  id_starts_with?: ID_Input;
-  id_not_starts_with?: ID_Input;
-  id_ends_with?: ID_Input;
-  id_not_ends_with?: ID_Input;
+  id?: UUID;
+  id_not?: UUID;
+  id_in?: UUID[] | UUID;
+  id_not_in?: UUID[] | UUID;
+  id_lt?: UUID;
+  id_lte?: UUID;
+  id_gt?: UUID;
+  id_gte?: UUID;
+  id_contains?: UUID;
+  id_not_contains?: UUID;
+  id_starts_with?: UUID;
+  id_not_starts_with?: UUID;
+  id_ends_with?: UUID;
+  id_not_ends_with?: UUID;
   dbsource?: String;
   dbsource_not?: String;
   dbsource_in?: String[] | String;
@@ -15417,6 +15341,18 @@ export interface IcustayUpsertWithWhereUniqueNestedInput {
   create: IcustayCreateInput;
 }
 
+export interface TransferUpdateManyDataInput {
+  curr_careunit?: String;
+  curr_wardid?: Int;
+  dbsource?: String;
+  eventtype?: String;
+  intime?: DateTimeInput;
+  los?: Float;
+  outtime?: DateTimeInput;
+  prev_careunit?: String;
+  prev_wardid?: Int;
+}
+
 export interface DatetimeeventUpdateManyMutationInput {
   charttime?: DateTimeInput;
   error?: Int;
@@ -15428,29 +15364,29 @@ export interface DatetimeeventUpdateManyMutationInput {
   warning?: Int;
 }
 
-export interface Chartevents_11SubscriptionWhereInput {
+export interface Chartevents11SubscriptionWhereInput {
   mutation_in?: MutationType[] | MutationType;
   updatedFields_contains?: String;
   updatedFields_contains_every?: String[] | String;
   updatedFields_contains_some?: String[] | String;
-  node?: Chartevents_11WhereInput;
+  node?: Chartevents11WhereInput;
   AND?:
-    | Chartevents_11SubscriptionWhereInput[]
-    | Chartevents_11SubscriptionWhereInput;
+    | Chartevents11SubscriptionWhereInput[]
+    | Chartevents11SubscriptionWhereInput;
   OR?:
-    | Chartevents_11SubscriptionWhereInput[]
-    | Chartevents_11SubscriptionWhereInput;
+    | Chartevents11SubscriptionWhereInput[]
+    | Chartevents11SubscriptionWhereInput;
   NOT?:
-    | Chartevents_11SubscriptionWhereInput[]
-    | Chartevents_11SubscriptionWhereInput;
+    | Chartevents11SubscriptionWhereInput[]
+    | Chartevents11SubscriptionWhereInput;
 }
 
-export type Diagnoses_icdWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+export type DiagnosesIcdWhereUniqueInput = AtLeastOne<{
+  id: UUID;
 }>;
 
-export type D_icd_diagnosisWhereUniqueInput = AtLeastOne<{
-  id: ID_Input;
+export type DIcdDiagnosisWhereUniqueInput = AtLeastOne<{
+  id: UUID;
   icd9_code?: String;
 }>;
 
@@ -15459,7 +15395,7 @@ export interface NodeNode {
 }
 
 export interface TransferPreviousValues {
-  id: ID_Output;
+  id: UUID;
   curr_careunit?: String;
   curr_wardid?: Int;
   dbsource?: String;
@@ -15474,7 +15410,7 @@ export interface TransferPreviousValues {
 export interface TransferPreviousValuesPromise
   extends Promise<TransferPreviousValues>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   curr_careunit: () => Promise<String>;
   curr_wardid: () => Promise<Int>;
   dbsource: () => Promise<String>;
@@ -15489,7 +15425,7 @@ export interface TransferPreviousValuesPromise
 export interface TransferPreviousValuesSubscription
   extends Promise<AsyncIterator<TransferPreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   curr_careunit: () => Promise<AsyncIterator<String>>;
   curr_wardid: () => Promise<AsyncIterator<Int>>;
   dbsource: () => Promise<AsyncIterator<String>>;
@@ -15501,7 +15437,57 @@ export interface TransferPreviousValuesSubscription
   prev_wardid: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Chartevents_14 {
+export interface Chartevents14Connection {
+  pageInfo: PageInfo;
+  edges: Chartevents14Edge[];
+}
+
+export interface Chartevents14ConnectionPromise
+  extends Promise<Chartevents14Connection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<Chartevents14Edge>>() => T;
+  aggregate: <T = AggregateChartevents14Promise>() => T;
+}
+
+export interface Chartevents14ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents14Connection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents14EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents14Subscription>() => T;
+}
+
+export interface Labevent {
+  id: UUID;
+  charttime?: DateTimeOutput;
+  flag?: String;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+}
+
+export interface LabeventPromise extends Promise<Labevent>, Fragmentable {
+  id: () => Promise<UUID>;
+  charttime: () => Promise<DateTimeOutput>;
+  flag: () => Promise<String>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+}
+
+export interface LabeventSubscription
+  extends Promise<AsyncIterator<Labevent>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  flag: () => Promise<AsyncIterator<String>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents14 {
   cgid?: Int;
   charttime?: DateTimeOutput;
   error?: Int;
@@ -15519,8 +15505,8 @@ export interface Chartevents_14 {
   warning?: Int;
 }
 
-export interface Chartevents_14Promise
-  extends Promise<Chartevents_14>,
+export interface Chartevents14Promise
+  extends Promise<Chartevents14>,
     Fragmentable {
   cgid: () => Promise<Int>;
   charttime: () => Promise<DateTimeOutput>;
@@ -15539,8 +15525,8 @@ export interface Chartevents_14Promise
   warning: () => Promise<Int>;
 }
 
-export interface Chartevents_14Subscription
-  extends Promise<AsyncIterator<Chartevents_14>>,
+export interface Chartevents14Subscription
+  extends Promise<AsyncIterator<Chartevents14>>,
     Fragmentable {
   cgid: () => Promise<AsyncIterator<Int>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
@@ -15559,53 +15545,8 @@ export interface Chartevents_14Subscription
   warning: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Labevent {
-  id: ID_Output;
-  charttime?: DateTimeOutput;
-  flag?: String;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-}
-
-export interface LabeventPromise extends Promise<Labevent>, Fragmentable {
-  id: () => Promise<ID_Output>;
-  charttime: () => Promise<DateTimeOutput>;
-  flag: () => Promise<String>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-}
-
-export interface LabeventSubscription
-  extends Promise<AsyncIterator<Labevent>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  flag: () => Promise<AsyncIterator<String>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-}
-
-export interface AggregateChartevents_13 {
-  count: Int;
-}
-
-export interface AggregateChartevents_13Promise
-  extends Promise<AggregateChartevents_13>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateChartevents_13Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_13>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
 export interface Transfer {
-  id: ID_Output;
+  id: UUID;
   curr_careunit?: String;
   curr_wardid?: Int;
   dbsource?: String;
@@ -15618,7 +15559,7 @@ export interface Transfer {
 }
 
 export interface TransferPromise extends Promise<Transfer>, Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   curr_careunit: () => Promise<String>;
   curr_wardid: () => Promise<Int>;
   dbsource: () => Promise<String>;
@@ -15633,7 +15574,7 @@ export interface TransferPromise extends Promise<Transfer>, Fragmentable {
 export interface TransferSubscription
   extends Promise<AsyncIterator<Transfer>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   curr_careunit: () => Promise<AsyncIterator<String>>;
   curr_wardid: () => Promise<AsyncIterator<Int>>;
   dbsource: () => Promise<AsyncIterator<String>>;
@@ -15645,60 +15586,116 @@ export interface TransferSubscription
   prev_wardid: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Chartevents_13Edge {
-  node: Chartevents_13;
-  cursor: String;
-}
-
-export interface Chartevents_13EdgePromise
-  extends Promise<Chartevents_13Edge>,
-    Fragmentable {
-  node: <T = Chartevents_13Promise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface Chartevents_13EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_13Edge>>,
-    Fragmentable {
-  node: <T = Chartevents_13Subscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface AggregateTransfer {
+export interface AggregateChartevents13 {
   count: Int;
 }
 
-export interface AggregateTransferPromise
-  extends Promise<AggregateTransfer>,
+export interface AggregateChartevents13Promise
+  extends Promise<AggregateChartevents13>,
     Fragmentable {
   count: () => Promise<Int>;
 }
 
-export interface AggregateTransferSubscription
-  extends Promise<AsyncIterator<AggregateTransfer>>,
+export interface AggregateChartevents13Subscription
+  extends Promise<AsyncIterator<AggregateChartevents13>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Chartevents_13Connection {
-  pageInfo: PageInfo;
-  edges: Chartevents_13Edge[];
+export interface TransferEdge {
+  node: Transfer;
+  cursor: String;
 }
 
-export interface Chartevents_13ConnectionPromise
-  extends Promise<Chartevents_13Connection>,
+export interface TransferEdgePromise
+  extends Promise<TransferEdge>,
+    Fragmentable {
+  node: <T = TransferPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface TransferEdgeSubscription
+  extends Promise<AsyncIterator<TransferEdge>>,
+    Fragmentable {
+  node: <T = TransferSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents13Edge {
+  node: Chartevents13;
+  cursor: String;
+}
+
+export interface Chartevents13EdgePromise
+  extends Promise<Chartevents13Edge>,
+    Fragmentable {
+  node: <T = Chartevents13Promise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface Chartevents13EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents13Edge>>,
+    Fragmentable {
+  node: <T = Chartevents13Subscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateService {
+  count: Int;
+}
+
+export interface AggregateServicePromise
+  extends Promise<AggregateService>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateServiceSubscription
+  extends Promise<AsyncIterator<AggregateService>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents13Connection {
+  pageInfo: PageInfo;
+  edges: Chartevents13Edge[];
+}
+
+export interface Chartevents13ConnectionPromise
+  extends Promise<Chartevents13Connection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_13Edge>>() => T;
-  aggregate: <T = AggregateChartevents_13Promise>() => T;
+  edges: <T = FragmentableArray<Chartevents13Edge>>() => T;
+  aggregate: <T = AggregateChartevents13Promise>() => T;
 }
 
-export interface Chartevents_13ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_13Connection>>,
+export interface Chartevents13ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents13Connection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_13EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_13Subscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents13EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents13Subscription>() => T;
+}
+
+export interface ServiceConnection {
+  pageInfo: PageInfo;
+  edges: ServiceEdge[];
+}
+
+export interface ServiceConnectionPromise
+  extends Promise<ServiceConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<ServiceEdge>>() => T;
+  aggregate: <T = AggregateServicePromise>() => T;
+}
+
+export interface ServiceConnectionSubscription
+  extends Promise<AsyncIterator<ServiceConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<ServiceEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateServiceSubscription>() => T;
 }
 
 export interface TransferConnection {
@@ -15722,6 +15719,31 @@ export interface TransferConnectionSubscription
   aggregate: <T = AggregateTransferSubscription>() => T;
 }
 
+export interface ProceduresIcdSubscriptionPayload {
+  mutation: MutationType;
+  node: ProceduresIcd;
+  updatedFields: String[];
+  previousValues: ProceduresIcdPreviousValues;
+}
+
+export interface ProceduresIcdSubscriptionPayloadPromise
+  extends Promise<ProceduresIcdSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = ProceduresIcdPromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = ProceduresIcdPreviousValuesPromise>() => T;
+}
+
+export interface ProceduresIcdSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<ProceduresIcdSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = ProceduresIcdSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = ProceduresIcdPreviousValuesSubscription>() => T;
+}
+
 export interface ServiceEdge {
   node: Service;
   cursor: String;
@@ -15739,18 +15761,93 @@ export interface ServiceEdgeSubscription
   cursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface AggregateProcedures_icd {
+export interface ProceduresIcdEdge {
+  node: ProceduresIcd;
+  cursor: String;
+}
+
+export interface ProceduresIcdEdgePromise
+  extends Promise<ProceduresIcdEdge>,
+    Fragmentable {
+  node: <T = ProceduresIcdPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface ProceduresIcdEdgeSubscription
+  extends Promise<AsyncIterator<ProceduresIcdEdge>>,
+    Fragmentable {
+  node: <T = ProceduresIcdSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateProceduresIcd {
   count: Int;
 }
 
-export interface AggregateProcedures_icdPromise
-  extends Promise<AggregateProcedures_icd>,
+export interface AggregateProceduresIcdPromise
+  extends Promise<AggregateProceduresIcd>,
     Fragmentable {
   count: () => Promise<Int>;
 }
 
-export interface AggregateProcedures_icdSubscription
-  extends Promise<AsyncIterator<AggregateProcedures_icd>>,
+export interface AggregateProceduresIcdSubscription
+  extends Promise<AsyncIterator<AggregateProceduresIcd>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface ProcedureeventsMvEdge {
+  node: ProcedureeventsMv;
+  cursor: String;
+}
+
+export interface ProcedureeventsMvEdgePromise
+  extends Promise<ProcedureeventsMvEdge>,
+    Fragmentable {
+  node: <T = ProcedureeventsMvPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface ProcedureeventsMvEdgeSubscription
+  extends Promise<AsyncIterator<ProcedureeventsMvEdge>>,
+    Fragmentable {
+  node: <T = ProcedureeventsMvSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface ProceduresIcdConnection {
+  pageInfo: PageInfo;
+  edges: ProceduresIcdEdge[];
+}
+
+export interface ProceduresIcdConnectionPromise
+  extends Promise<ProceduresIcdConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<ProceduresIcdEdge>>() => T;
+  aggregate: <T = AggregateProceduresIcdPromise>() => T;
+}
+
+export interface ProceduresIcdConnectionSubscription
+  extends Promise<AsyncIterator<ProceduresIcdConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<ProceduresIcdEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateProceduresIcdSubscription>() => T;
+}
+
+export interface AggregatePrescription {
+  count: Int;
+}
+
+export interface AggregatePrescriptionPromise
+  extends Promise<AggregatePrescription>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregatePrescriptionSubscription
+  extends Promise<AsyncIterator<AggregatePrescription>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
@@ -15780,29 +15877,29 @@ export interface AdmissionSubscriptionPayloadSubscription
   previousValues: <T = AdmissionPreviousValuesSubscription>() => T;
 }
 
-export interface Procedures_icdConnection {
+export interface PrescriptionConnection {
   pageInfo: PageInfo;
-  edges: Procedures_icdEdge[];
+  edges: PrescriptionEdge[];
 }
 
-export interface Procedures_icdConnectionPromise
-  extends Promise<Procedures_icdConnection>,
+export interface PrescriptionConnectionPromise
+  extends Promise<PrescriptionConnection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Procedures_icdEdge>>() => T;
-  aggregate: <T = AggregateProcedures_icdPromise>() => T;
+  edges: <T = FragmentableArray<PrescriptionEdge>>() => T;
+  aggregate: <T = AggregatePrescriptionPromise>() => T;
 }
 
-export interface Procedures_icdConnectionSubscription
-  extends Promise<AsyncIterator<Procedures_icdConnection>>,
+export interface PrescriptionConnectionSubscription
+  extends Promise<AsyncIterator<PrescriptionConnection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Procedures_icdEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateProcedures_icdSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<PrescriptionEdgeSubscription>>>() => T;
+  aggregate: <T = AggregatePrescriptionSubscription>() => T;
 }
 
 export interface AdmissionPreviousValues {
-  id: ID_Output;
+  id: UUID;
   admission_location: String;
   admission_type: String;
   admittime: DateTimeOutput;
@@ -15825,7 +15922,7 @@ export interface AdmissionPreviousValues {
 export interface AdmissionPreviousValuesPromise
   extends Promise<AdmissionPreviousValues>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   admission_location: () => Promise<String>;
   admission_type: () => Promise<String>;
   admittime: () => Promise<DateTimeOutput>;
@@ -15848,7 +15945,7 @@ export interface AdmissionPreviousValuesPromise
 export interface AdmissionPreviousValuesSubscription
   extends Promise<AsyncIterator<AdmissionPreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   admission_location: () => Promise<AsyncIterator<String>>;
   admission_type: () => Promise<AsyncIterator<String>>;
   admittime: () => Promise<AsyncIterator<DateTimeOutput>>;
@@ -15868,26 +15965,24 @@ export interface AdmissionPreviousValuesSubscription
   religion: () => Promise<AsyncIterator<String>>;
 }
 
-export interface Procedureevents_mvEdge {
-  node: Procedureevents_mv;
+export interface PatientEdge {
+  node: Patient;
   cursor: String;
 }
 
-export interface Procedureevents_mvEdgePromise
-  extends Promise<Procedureevents_mvEdge>,
-    Fragmentable {
-  node: <T = Procedureevents_mvPromise>() => T;
+export interface PatientEdgePromise extends Promise<PatientEdge>, Fragmentable {
+  node: <T = PatientPromise>() => T;
   cursor: () => Promise<String>;
 }
 
-export interface Procedureevents_mvEdgeSubscription
-  extends Promise<AsyncIterator<Procedureevents_mvEdge>>,
+export interface PatientEdgeSubscription
+  extends Promise<AsyncIterator<PatientEdge>>,
     Fragmentable {
-  node: <T = Procedureevents_mvSubscription>() => T;
+  node: <T = PatientSubscription>() => T;
   cursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface Chartevents_13 {
+export interface Chartevents13 {
   cgid?: Int;
   charttime?: DateTimeOutput;
   error?: Int;
@@ -15905,8 +16000,8 @@ export interface Chartevents_13 {
   warning?: Int;
 }
 
-export interface Chartevents_13Promise
-  extends Promise<Chartevents_13>,
+export interface Chartevents13Promise
+  extends Promise<Chartevents13>,
     Fragmentable {
   cgid: () => Promise<Int>;
   charttime: () => Promise<DateTimeOutput>;
@@ -15925,8 +16020,8 @@ export interface Chartevents_13Promise
   warning: () => Promise<Int>;
 }
 
-export interface Chartevents_13Subscription
-  extends Promise<AsyncIterator<Chartevents_13>>,
+export interface Chartevents13Subscription
+  extends Promise<AsyncIterator<Chartevents13>>,
     Fragmentable {
   cgid: () => Promise<AsyncIterator<Int>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
@@ -15945,182 +16040,8 @@ export interface Chartevents_13Subscription
   warning: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface AggregatePrescription {
-  count: Int;
-}
-
-export interface AggregatePrescriptionPromise
-  extends Promise<AggregatePrescription>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregatePrescriptionSubscription
-  extends Promise<AsyncIterator<AggregatePrescription>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface CalloutSubscriptionPayload {
-  mutation: MutationType;
-  node: Callout;
-  updatedFields: String[];
-  previousValues: CalloutPreviousValues;
-}
-
-export interface CalloutSubscriptionPayloadPromise
-  extends Promise<CalloutSubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = CalloutPromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = CalloutPreviousValuesPromise>() => T;
-}
-
-export interface CalloutSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<CalloutSubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = CalloutSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = CalloutPreviousValuesSubscription>() => T;
-}
-
-export interface PrescriptionConnection {
-  pageInfo: PageInfo;
-  edges: PrescriptionEdge[];
-}
-
-export interface PrescriptionConnectionPromise
-  extends Promise<PrescriptionConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<PrescriptionEdge>>() => T;
-  aggregate: <T = AggregatePrescriptionPromise>() => T;
-}
-
-export interface PrescriptionConnectionSubscription
-  extends Promise<AsyncIterator<PrescriptionConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<PrescriptionEdgeSubscription>>>() => T;
-  aggregate: <T = AggregatePrescriptionSubscription>() => T;
-}
-
-export interface CalloutPreviousValues {
-  id: ID_Output;
-  acknowledge_status: String;
-  acknowledgetime?: DateTimeOutput;
-  callout_outcome: String;
-  callout_service: String;
-  callout_status: String;
-  callout_wardid?: Int;
-  createtime: DateTimeOutput;
-  curr_careunit?: String;
-  curr_wardid?: Int;
-  currentreservationtime?: DateTimeOutput;
-  discharge_wardid?: Int;
-  firstreservationtime?: DateTimeOutput;
-  outcometime: DateTimeOutput;
-  request_cdiff: Int;
-  request_mrsa: Int;
-  request_resp: Int;
-  request_tele: Int;
-  request_vre: Int;
-  submit_careunit?: String;
-  submit_wardid?: Int;
-  updatetime: DateTimeOutput;
-}
-
-export interface CalloutPreviousValuesPromise
-  extends Promise<CalloutPreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  acknowledge_status: () => Promise<String>;
-  acknowledgetime: () => Promise<DateTimeOutput>;
-  callout_outcome: () => Promise<String>;
-  callout_service: () => Promise<String>;
-  callout_status: () => Promise<String>;
-  callout_wardid: () => Promise<Int>;
-  createtime: () => Promise<DateTimeOutput>;
-  curr_careunit: () => Promise<String>;
-  curr_wardid: () => Promise<Int>;
-  currentreservationtime: () => Promise<DateTimeOutput>;
-  discharge_wardid: () => Promise<Int>;
-  firstreservationtime: () => Promise<DateTimeOutput>;
-  outcometime: () => Promise<DateTimeOutput>;
-  request_cdiff: () => Promise<Int>;
-  request_mrsa: () => Promise<Int>;
-  request_resp: () => Promise<Int>;
-  request_tele: () => Promise<Int>;
-  request_vre: () => Promise<Int>;
-  submit_careunit: () => Promise<String>;
-  submit_wardid: () => Promise<Int>;
-  updatetime: () => Promise<DateTimeOutput>;
-}
-
-export interface CalloutPreviousValuesSubscription
-  extends Promise<AsyncIterator<CalloutPreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  acknowledge_status: () => Promise<AsyncIterator<String>>;
-  acknowledgetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  callout_outcome: () => Promise<AsyncIterator<String>>;
-  callout_service: () => Promise<AsyncIterator<String>>;
-  callout_status: () => Promise<AsyncIterator<String>>;
-  callout_wardid: () => Promise<AsyncIterator<Int>>;
-  createtime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  curr_careunit: () => Promise<AsyncIterator<String>>;
-  curr_wardid: () => Promise<AsyncIterator<Int>>;
-  currentreservationtime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  discharge_wardid: () => Promise<AsyncIterator<Int>>;
-  firstreservationtime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  outcometime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  request_cdiff: () => Promise<AsyncIterator<Int>>;
-  request_mrsa: () => Promise<AsyncIterator<Int>>;
-  request_resp: () => Promise<AsyncIterator<Int>>;
-  request_tele: () => Promise<AsyncIterator<Int>>;
-  request_vre: () => Promise<AsyncIterator<Int>>;
-  submit_careunit: () => Promise<AsyncIterator<String>>;
-  submit_wardid: () => Promise<AsyncIterator<Int>>;
-  updatetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-}
-
-export interface PatientEdge {
-  node: Patient;
-  cursor: String;
-}
-
-export interface PatientEdgePromise extends Promise<PatientEdge>, Fragmentable {
-  node: <T = PatientPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface PatientEdgeSubscription
-  extends Promise<AsyncIterator<PatientEdge>>,
-    Fragmentable {
-  node: <T = PatientSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface AggregateChartevents_12 {
-  count: Int;
-}
-
-export interface AggregateChartevents_12Promise
-  extends Promise<AggregateChartevents_12>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateChartevents_12Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_12>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
 export interface Admission {
-  id: ID_Output;
+  id: UUID;
   admission_location: String;
   admission_type: String;
   admittime: DateTimeOutput;
@@ -16141,7 +16062,7 @@ export interface Admission {
 }
 
 export interface AdmissionPromise extends Promise<Admission>, Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   admission_location: () => Promise<String>;
   admission_type: () => Promise<String>;
   admittime: () => Promise<DateTimeOutput>;
@@ -16190,10 +16111,10 @@ export interface AdmissionPromise extends Promise<Admission>, Fragmentable {
     }
   ) => T;
   deathtime: () => Promise<DateTimeOutput>;
-  diagnoses_icd: <T = FragmentableArray<Diagnoses_icd>>(
+  diagnoses_icd: <T = FragmentableArray<DiagnosesIcd>>(
     args?: {
-      where?: Diagnoses_icdWhereInput;
-      orderBy?: Diagnoses_icdOrderByInput;
+      where?: DiagnosesIcdWhereInput;
+      orderBy?: DiagnosesIcdOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -16232,10 +16153,10 @@ export interface AdmissionPromise extends Promise<Admission>, Fragmentable {
       last?: Int;
     }
   ) => T;
-  inputevents_cv: <T = FragmentableArray<Inputevents_cv>>(
+  inputevents_cv: <T = FragmentableArray<InputeventsCv>>(
     args?: {
-      where?: Inputevents_cvWhereInput;
-      orderBy?: Inputevents_cvOrderByInput;
+      where?: InputeventsCvWhereInput;
+      orderBy?: InputeventsCvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -16243,10 +16164,10 @@ export interface AdmissionPromise extends Promise<Admission>, Fragmentable {
       last?: Int;
     }
   ) => T;
-  inputevents_mv: <T = FragmentableArray<Inputevents_mv>>(
+  inputevents_mv: <T = FragmentableArray<InputeventsMv>>(
     args?: {
-      where?: Inputevents_mvWhereInput;
-      orderBy?: Inputevents_mvOrderByInput;
+      where?: InputeventsMvWhereInput;
+      orderBy?: InputeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -16312,10 +16233,10 @@ export interface AdmissionPromise extends Promise<Admission>, Fragmentable {
       last?: Int;
     }
   ) => T;
-  procedureevents_mv: <T = FragmentableArray<Procedureevents_mv>>(
+  procedureevents_mv: <T = FragmentableArray<ProcedureeventsMv>>(
     args?: {
-      where?: Procedureevents_mvWhereInput;
-      orderBy?: Procedureevents_mvOrderByInput;
+      where?: ProcedureeventsMvWhereInput;
+      orderBy?: ProcedureeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -16323,10 +16244,10 @@ export interface AdmissionPromise extends Promise<Admission>, Fragmentable {
       last?: Int;
     }
   ) => T;
-  procedures_icd: <T = FragmentableArray<Procedures_icd>>(
+  procedures_icd: <T = FragmentableArray<ProceduresIcd>>(
     args?: {
-      where?: Procedures_icdWhereInput;
-      orderBy?: Procedures_icdOrderByInput;
+      where?: ProceduresIcdWhereInput;
+      orderBy?: ProceduresIcdOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -16362,7 +16283,7 @@ export interface AdmissionPromise extends Promise<Admission>, Fragmentable {
 export interface AdmissionSubscription
   extends Promise<AsyncIterator<Admission>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   admission_location: () => Promise<AsyncIterator<String>>;
   admission_type: () => Promise<AsyncIterator<String>>;
   admittime: () => Promise<AsyncIterator<DateTimeOutput>>;
@@ -16411,10 +16332,10 @@ export interface AdmissionSubscription
     }
   ) => T;
   deathtime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  diagnoses_icd: <T = Promise<AsyncIterator<Diagnoses_icdSubscription>>>(
+  diagnoses_icd: <T = Promise<AsyncIterator<DiagnosesIcdSubscription>>>(
     args?: {
-      where?: Diagnoses_icdWhereInput;
-      orderBy?: Diagnoses_icdOrderByInput;
+      where?: DiagnosesIcdWhereInput;
+      orderBy?: DiagnosesIcdOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -16453,10 +16374,10 @@ export interface AdmissionSubscription
       last?: Int;
     }
   ) => T;
-  inputevents_cv: <T = Promise<AsyncIterator<Inputevents_cvSubscription>>>(
+  inputevents_cv: <T = Promise<AsyncIterator<InputeventsCvSubscription>>>(
     args?: {
-      where?: Inputevents_cvWhereInput;
-      orderBy?: Inputevents_cvOrderByInput;
+      where?: InputeventsCvWhereInput;
+      orderBy?: InputeventsCvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -16464,10 +16385,10 @@ export interface AdmissionSubscription
       last?: Int;
     }
   ) => T;
-  inputevents_mv: <T = Promise<AsyncIterator<Inputevents_mvSubscription>>>(
+  inputevents_mv: <T = Promise<AsyncIterator<InputeventsMvSubscription>>>(
     args?: {
-      where?: Inputevents_mvWhereInput;
-      orderBy?: Inputevents_mvOrderByInput;
+      where?: InputeventsMvWhereInput;
+      orderBy?: InputeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -16536,11 +16457,11 @@ export interface AdmissionSubscription
     }
   ) => T;
   procedureevents_mv: <
-    T = Promise<AsyncIterator<Procedureevents_mvSubscription>>
+    T = Promise<AsyncIterator<ProcedureeventsMvSubscription>>
   >(
     args?: {
-      where?: Procedureevents_mvWhereInput;
-      orderBy?: Procedureevents_mvOrderByInput;
+      where?: ProcedureeventsMvWhereInput;
+      orderBy?: ProcedureeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -16548,10 +16469,10 @@ export interface AdmissionSubscription
       last?: Int;
     }
   ) => T;
-  procedures_icd: <T = Promise<AsyncIterator<Procedures_icdSubscription>>>(
+  procedures_icd: <T = Promise<AsyncIterator<ProceduresIcdSubscription>>>(
     args?: {
-      where?: Procedures_icdWhereInput;
-      orderBy?: Procedures_icdOrderByInput;
+      where?: ProceduresIcdWhereInput;
+      orderBy?: ProceduresIcdOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -16584,6 +16505,182 @@ export interface AdmissionSubscription
   ) => T;
 }
 
+export interface CalloutSubscriptionPayload {
+  mutation: MutationType;
+  node: Callout;
+  updatedFields: String[];
+  previousValues: CalloutPreviousValues;
+}
+
+export interface CalloutSubscriptionPayloadPromise
+  extends Promise<CalloutSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = CalloutPromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = CalloutPreviousValuesPromise>() => T;
+}
+
+export interface CalloutSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<CalloutSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = CalloutSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = CalloutPreviousValuesSubscription>() => T;
+}
+
+export interface AggregateOutputevent {
+  count: Int;
+}
+
+export interface AggregateOutputeventPromise
+  extends Promise<AggregateOutputevent>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateOutputeventSubscription
+  extends Promise<AsyncIterator<AggregateOutputevent>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface CalloutPreviousValues {
+  id: UUID;
+  acknowledge_status: String;
+  acknowledgetime?: DateTimeOutput;
+  callout_outcome: String;
+  callout_service: String;
+  callout_status: String;
+  callout_wardid?: Int;
+  createtime: DateTimeOutput;
+  curr_careunit?: String;
+  curr_wardid?: Int;
+  currentreservationtime?: DateTimeOutput;
+  discharge_wardid?: Int;
+  firstreservationtime?: DateTimeOutput;
+  outcometime: DateTimeOutput;
+  request_cdiff: Int;
+  request_mrsa: Int;
+  request_resp: Int;
+  request_tele: Int;
+  request_vre: Int;
+  submit_careunit?: String;
+  submit_wardid?: Int;
+  updatetime: DateTimeOutput;
+}
+
+export interface CalloutPreviousValuesPromise
+  extends Promise<CalloutPreviousValues>,
+    Fragmentable {
+  id: () => Promise<UUID>;
+  acknowledge_status: () => Promise<String>;
+  acknowledgetime: () => Promise<DateTimeOutput>;
+  callout_outcome: () => Promise<String>;
+  callout_service: () => Promise<String>;
+  callout_status: () => Promise<String>;
+  callout_wardid: () => Promise<Int>;
+  createtime: () => Promise<DateTimeOutput>;
+  curr_careunit: () => Promise<String>;
+  curr_wardid: () => Promise<Int>;
+  currentreservationtime: () => Promise<DateTimeOutput>;
+  discharge_wardid: () => Promise<Int>;
+  firstreservationtime: () => Promise<DateTimeOutput>;
+  outcometime: () => Promise<DateTimeOutput>;
+  request_cdiff: () => Promise<Int>;
+  request_mrsa: () => Promise<Int>;
+  request_resp: () => Promise<Int>;
+  request_tele: () => Promise<Int>;
+  request_vre: () => Promise<Int>;
+  submit_careunit: () => Promise<String>;
+  submit_wardid: () => Promise<Int>;
+  updatetime: () => Promise<DateTimeOutput>;
+}
+
+export interface CalloutPreviousValuesSubscription
+  extends Promise<AsyncIterator<CalloutPreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
+  acknowledge_status: () => Promise<AsyncIterator<String>>;
+  acknowledgetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  callout_outcome: () => Promise<AsyncIterator<String>>;
+  callout_service: () => Promise<AsyncIterator<String>>;
+  callout_status: () => Promise<AsyncIterator<String>>;
+  callout_wardid: () => Promise<AsyncIterator<Int>>;
+  createtime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  curr_careunit: () => Promise<AsyncIterator<String>>;
+  curr_wardid: () => Promise<AsyncIterator<Int>>;
+  currentreservationtime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  discharge_wardid: () => Promise<AsyncIterator<Int>>;
+  firstreservationtime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  outcometime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  request_cdiff: () => Promise<AsyncIterator<Int>>;
+  request_mrsa: () => Promise<AsyncIterator<Int>>;
+  request_resp: () => Promise<AsyncIterator<Int>>;
+  request_tele: () => Promise<AsyncIterator<Int>>;
+  request_vre: () => Promise<AsyncIterator<Int>>;
+  submit_careunit: () => Promise<AsyncIterator<String>>;
+  submit_wardid: () => Promise<AsyncIterator<Int>>;
+  updatetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+}
+
+export interface OutputeventConnection {
+  pageInfo: PageInfo;
+  edges: OutputeventEdge[];
+}
+
+export interface OutputeventConnectionPromise
+  extends Promise<OutputeventConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<OutputeventEdge>>() => T;
+  aggregate: <T = AggregateOutputeventPromise>() => T;
+}
+
+export interface OutputeventConnectionSubscription
+  extends Promise<AsyncIterator<OutputeventConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<OutputeventEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateOutputeventSubscription>() => T;
+}
+
+export interface AggregateChartevents12 {
+  count: Int;
+}
+
+export interface AggregateChartevents12Promise
+  extends Promise<AggregateChartevents12>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateChartevents12Subscription
+  extends Promise<AsyncIterator<AggregateChartevents12>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface NoteeventEdge {
+  node: Noteevent;
+  cursor: String;
+}
+
+export interface NoteeventEdgePromise
+  extends Promise<NoteeventEdge>,
+    Fragmentable {
+  node: <T = NoteeventPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface NoteeventEdgeSubscription
+  extends Promise<AsyncIterator<NoteeventEdge>>,
+    Fragmentable {
+  node: <T = NoteeventSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
 export interface CaregiverSubscriptionPayload {
   mutation: MutationType;
   node: Caregiver;
@@ -16609,103 +16706,103 @@ export interface CaregiverSubscriptionPayloadSubscription
   previousValues: <T = CaregiverPreviousValuesSubscription>() => T;
 }
 
-export interface AggregateOutputevent {
+export interface AggregateMicrobiologyevent {
   count: Int;
 }
 
-export interface AggregateOutputeventPromise
-  extends Promise<AggregateOutputevent>,
+export interface AggregateMicrobiologyeventPromise
+  extends Promise<AggregateMicrobiologyevent>,
     Fragmentable {
   count: () => Promise<Int>;
 }
 
-export interface AggregateOutputeventSubscription
-  extends Promise<AsyncIterator<AggregateOutputevent>>,
+export interface AggregateMicrobiologyeventSubscription
+  extends Promise<AsyncIterator<AggregateMicrobiologyevent>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface CaregiverPreviousValues {
-  id: ID_Output;
+  id: UUID;
   cgid: Int;
-  label?: String;
   description?: String;
+  label?: String;
 }
 
 export interface CaregiverPreviousValuesPromise
   extends Promise<CaregiverPreviousValues>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   cgid: () => Promise<Int>;
-  label: () => Promise<String>;
   description: () => Promise<String>;
+  label: () => Promise<String>;
 }
 
 export interface CaregiverPreviousValuesSubscription
   extends Promise<AsyncIterator<CaregiverPreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   cgid: () => Promise<AsyncIterator<Int>>;
-  label: () => Promise<AsyncIterator<String>>;
   description: () => Promise<AsyncIterator<String>>;
+  label: () => Promise<AsyncIterator<String>>;
 }
 
-export interface OutputeventConnection {
+export interface MicrobiologyeventConnection {
   pageInfo: PageInfo;
-  edges: OutputeventEdge[];
+  edges: MicrobiologyeventEdge[];
 }
 
-export interface OutputeventConnectionPromise
-  extends Promise<OutputeventConnection>,
+export interface MicrobiologyeventConnectionPromise
+  extends Promise<MicrobiologyeventConnection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<OutputeventEdge>>() => T;
-  aggregate: <T = AggregateOutputeventPromise>() => T;
+  edges: <T = FragmentableArray<MicrobiologyeventEdge>>() => T;
+  aggregate: <T = AggregateMicrobiologyeventPromise>() => T;
 }
 
-export interface OutputeventConnectionSubscription
-  extends Promise<AsyncIterator<OutputeventConnection>>,
+export interface MicrobiologyeventConnectionSubscription
+  extends Promise<AsyncIterator<MicrobiologyeventConnection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<OutputeventEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateOutputeventSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<MicrobiologyeventEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateMicrobiologyeventSubscription>() => T;
 }
 
-export interface Chartevents_12Edge {
-  node: Chartevents_12;
+export interface Chartevents12Edge {
+  node: Chartevents12;
   cursor: String;
 }
 
-export interface Chartevents_12EdgePromise
-  extends Promise<Chartevents_12Edge>,
+export interface Chartevents12EdgePromise
+  extends Promise<Chartevents12Edge>,
     Fragmentable {
-  node: <T = Chartevents_12Promise>() => T;
+  node: <T = Chartevents12Promise>() => T;
   cursor: () => Promise<String>;
 }
 
-export interface Chartevents_12EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_12Edge>>,
+export interface Chartevents12EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents12Edge>>,
     Fragmentable {
-  node: <T = Chartevents_12Subscription>() => T;
+  node: <T = Chartevents12Subscription>() => T;
   cursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface NoteeventEdge {
-  node: Noteevent;
+export interface LabeventEdge {
+  node: Labevent;
   cursor: String;
 }
 
-export interface NoteeventEdgePromise
-  extends Promise<NoteeventEdge>,
+export interface LabeventEdgePromise
+  extends Promise<LabeventEdge>,
     Fragmentable {
-  node: <T = NoteeventPromise>() => T;
+  node: <T = LabeventPromise>() => T;
   cursor: () => Promise<String>;
 }
 
-export interface NoteeventEdgeSubscription
-  extends Promise<AsyncIterator<NoteeventEdge>>,
+export interface LabeventEdgeSubscription
+  extends Promise<AsyncIterator<LabeventEdge>>,
     Fragmentable {
-  node: <T = NoteeventSubscription>() => T;
+  node: <T = LabeventSubscription>() => T;
   cursor: () => Promise<AsyncIterator<String>>;
 }
 
@@ -16734,24 +16831,24 @@ export interface CharteventSubscriptionPayloadSubscription
   previousValues: <T = CharteventPreviousValuesSubscription>() => T;
 }
 
-export interface AggregateMicrobiologyevent {
+export interface AggregateInputeventsMv {
   count: Int;
 }
 
-export interface AggregateMicrobiologyeventPromise
-  extends Promise<AggregateMicrobiologyevent>,
+export interface AggregateInputeventsMvPromise
+  extends Promise<AggregateInputeventsMv>,
     Fragmentable {
   count: () => Promise<Int>;
 }
 
-export interface AggregateMicrobiologyeventSubscription
-  extends Promise<AsyncIterator<AggregateMicrobiologyevent>>,
+export interface AggregateInputeventsMvSubscription
+  extends Promise<AsyncIterator<AggregateInputeventsMv>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface CharteventPreviousValues {
-  id: ID_Output;
+  id: UUID;
   charttime?: DateTimeOutput;
   error?: Int;
   resultstatus?: String;
@@ -16766,7 +16863,7 @@ export interface CharteventPreviousValues {
 export interface CharteventPreviousValuesPromise
   extends Promise<CharteventPreviousValues>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   charttime: () => Promise<DateTimeOutput>;
   error: () => Promise<Int>;
   resultstatus: () => Promise<String>;
@@ -16781,7 +16878,7 @@ export interface CharteventPreviousValuesPromise
 export interface CharteventPreviousValuesSubscription
   extends Promise<AsyncIterator<CharteventPreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
   error: () => Promise<AsyncIterator<Int>>;
   resultstatus: () => Promise<AsyncIterator<String>>;
@@ -16791,710 +16888,6 @@ export interface CharteventPreviousValuesSubscription
   valuenum: () => Promise<AsyncIterator<Float>>;
   valueuom: () => Promise<AsyncIterator<String>>;
   warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface MicrobiologyeventConnection {
-  pageInfo: PageInfo;
-  edges: MicrobiologyeventEdge[];
-}
-
-export interface MicrobiologyeventConnectionPromise
-  extends Promise<MicrobiologyeventConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<MicrobiologyeventEdge>>() => T;
-  aggregate: <T = AggregateMicrobiologyeventPromise>() => T;
-}
-
-export interface MicrobiologyeventConnectionSubscription
-  extends Promise<AsyncIterator<MicrobiologyeventConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<MicrobiologyeventEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateMicrobiologyeventSubscription>() => T;
-}
-
-export interface Chartevents_12Connection {
-  pageInfo: PageInfo;
-  edges: Chartevents_12Edge[];
-}
-
-export interface Chartevents_12ConnectionPromise
-  extends Promise<Chartevents_12Connection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_12Edge>>() => T;
-  aggregate: <T = AggregateChartevents_12Promise>() => T;
-}
-
-export interface Chartevents_12ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_12Connection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_12EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_12Subscription>() => T;
-}
-
-export interface LabeventEdge {
-  node: Labevent;
-  cursor: String;
-}
-
-export interface LabeventEdgePromise
-  extends Promise<LabeventEdge>,
-    Fragmentable {
-  node: <T = LabeventPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface LabeventEdgeSubscription
-  extends Promise<AsyncIterator<LabeventEdge>>,
-    Fragmentable {
-  node: <T = LabeventSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Chartevents_1SubscriptionPayload {
-  mutation: MutationType;
-  node: Chartevents_1;
-  updatedFields: String[];
-  previousValues: Chartevents_1PreviousValues;
-}
-
-export interface Chartevents_1SubscriptionPayloadPromise
-  extends Promise<Chartevents_1SubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_1Promise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_1PreviousValuesPromise>() => T;
-}
-
-export interface Chartevents_1SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_1SubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_1Subscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_1PreviousValuesSubscription>() => T;
-}
-
-export interface AggregateInputevents_mv {
-  count: Int;
-}
-
-export interface AggregateInputevents_mvPromise
-  extends Promise<AggregateInputevents_mv>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateInputevents_mvSubscription
-  extends Promise<AsyncIterator<AggregateInputevents_mv>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface AggregateLabevent {
-  count: Int;
-}
-
-export interface AggregateLabeventPromise
-  extends Promise<AggregateLabevent>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateLabeventSubscription
-  extends Promise<AsyncIterator<AggregateLabevent>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Procedures_icdPreviousValues {
-  id: ID_Output;
-  icd9_code: String;
-  seq_num: Int;
-}
-
-export interface Procedures_icdPreviousValuesPromise
-  extends Promise<Procedures_icdPreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  icd9_code: () => Promise<String>;
-  seq_num: () => Promise<Int>;
-}
-
-export interface Procedures_icdPreviousValuesSubscription
-  extends Promise<AsyncIterator<Procedures_icdPreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  icd9_code: () => Promise<AsyncIterator<String>>;
-  seq_num: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface LabeventConnection {
-  pageInfo: PageInfo;
-  edges: LabeventEdge[];
-}
-
-export interface LabeventConnectionPromise
-  extends Promise<LabeventConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<LabeventEdge>>() => T;
-  aggregate: <T = AggregateLabeventPromise>() => T;
-}
-
-export interface LabeventConnectionSubscription
-  extends Promise<AsyncIterator<LabeventConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<LabeventEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateLabeventSubscription>() => T;
-}
-
-export interface Chartevents_1PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_1PreviousValuesPromise
-  extends Promise<Chartevents_1PreviousValues>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_1PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_1PreviousValues>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface BatchPayload {
-  count: Long;
-}
-
-export interface BatchPayloadPromise
-  extends Promise<BatchPayload>,
-    Fragmentable {
-  count: () => Promise<Long>;
-}
-
-export interface BatchPayloadSubscription
-  extends Promise<AsyncIterator<BatchPayload>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Long>>;
-}
-
-export interface AggregateInputevents_cv {
-  count: Int;
-}
-
-export interface AggregateInputevents_cvPromise
-  extends Promise<AggregateInputevents_cv>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateInputevents_cvSubscription
-  extends Promise<AsyncIterator<AggregateInputevents_cv>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Inputevents_mvEdge {
-  node: Inputevents_mv;
-  cursor: String;
-}
-
-export interface Inputevents_mvEdgePromise
-  extends Promise<Inputevents_mvEdge>,
-    Fragmentable {
-  node: <T = Inputevents_mvPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface Inputevents_mvEdgeSubscription
-  extends Promise<AsyncIterator<Inputevents_mvEdge>>,
-    Fragmentable {
-  node: <T = Inputevents_mvSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Inputevents_cvConnection {
-  pageInfo: PageInfo;
-  edges: Inputevents_cvEdge[];
-}
-
-export interface Inputevents_cvConnectionPromise
-  extends Promise<Inputevents_cvConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Inputevents_cvEdge>>() => T;
-  aggregate: <T = AggregateInputevents_cvPromise>() => T;
-}
-
-export interface Inputevents_cvConnectionSubscription
-  extends Promise<AsyncIterator<Inputevents_cvConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Inputevents_cvEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateInputevents_cvSubscription>() => T;
-}
-
-export interface Chartevents_12 {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_12Promise
-  extends Promise<Chartevents_12>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_12Subscription
-  extends Promise<AsyncIterator<Chartevents_12>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface IcustayEdge {
-  node: Icustay;
-  cursor: String;
-}
-
-export interface IcustayEdgePromise extends Promise<IcustayEdge>, Fragmentable {
-  node: <T = IcustayPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface IcustayEdgeSubscription
-  extends Promise<AsyncIterator<IcustayEdge>>,
-    Fragmentable {
-  node: <T = IcustaySubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Chartevents_10SubscriptionPayload {
-  mutation: MutationType;
-  node: Chartevents_10;
-  updatedFields: String[];
-  previousValues: Chartevents_10PreviousValues;
-}
-
-export interface Chartevents_10SubscriptionPayloadPromise
-  extends Promise<Chartevents_10SubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_10Promise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_10PreviousValuesPromise>() => T;
-}
-
-export interface Chartevents_10SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_10SubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_10Subscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_10PreviousValuesSubscription>() => T;
-}
-
-export interface AggregateDrgcode {
-  count: Int;
-}
-
-export interface AggregateDrgcodePromise
-  extends Promise<AggregateDrgcode>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateDrgcodeSubscription
-  extends Promise<AsyncIterator<AggregateDrgcode>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_10PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_10PreviousValuesPromise
-  extends Promise<Chartevents_10PreviousValues>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_10PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_10PreviousValues>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface DrgcodeConnection {
-  pageInfo: PageInfo;
-  edges: DrgcodeEdge[];
-}
-
-export interface DrgcodeConnectionPromise
-  extends Promise<DrgcodeConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<DrgcodeEdge>>() => T;
-  aggregate: <T = AggregateDrgcodePromise>() => T;
-}
-
-export interface DrgcodeConnectionSubscription
-  extends Promise<AsyncIterator<DrgcodeConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<DrgcodeEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateDrgcodeSubscription>() => T;
-}
-
-export interface AggregateChartevents_11 {
-  count: Int;
-}
-
-export interface AggregateChartevents_11Promise
-  extends Promise<AggregateChartevents_11>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateChartevents_11Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_11>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Diagnoses_icdEdge {
-  node: Diagnoses_icd;
-  cursor: String;
-}
-
-export interface Diagnoses_icdEdgePromise
-  extends Promise<Diagnoses_icdEdge>,
-    Fragmentable {
-  node: <T = Diagnoses_icdPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface Diagnoses_icdEdgeSubscription
-  extends Promise<AsyncIterator<Diagnoses_icdEdge>>,
-    Fragmentable {
-  node: <T = Diagnoses_icdSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Chartevents_11SubscriptionPayload {
-  mutation: MutationType;
-  node: Chartevents_11;
-  updatedFields: String[];
-  previousValues: Chartevents_11PreviousValues;
-}
-
-export interface Chartevents_11SubscriptionPayloadPromise
-  extends Promise<Chartevents_11SubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_11Promise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_11PreviousValuesPromise>() => T;
-}
-
-export interface Chartevents_11SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_11SubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_11Subscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_11PreviousValuesSubscription>() => T;
-}
-
-export interface AggregateDatetimeevent {
-  count: Int;
-}
-
-export interface AggregateDatetimeeventPromise
-  extends Promise<AggregateDatetimeevent>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateDatetimeeventSubscription
-  extends Promise<AsyncIterator<AggregateDatetimeevent>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_11PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_11PreviousValuesPromise
-  extends Promise<Chartevents_11PreviousValues>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_11PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_11PreviousValues>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface DatetimeeventConnection {
-  pageInfo: PageInfo;
-  edges: DatetimeeventEdge[];
-}
-
-export interface DatetimeeventConnectionPromise
-  extends Promise<DatetimeeventConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<DatetimeeventEdge>>() => T;
-  aggregate: <T = AggregateDatetimeeventPromise>() => T;
-}
-
-export interface DatetimeeventConnectionSubscription
-  extends Promise<AsyncIterator<DatetimeeventConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<DatetimeeventEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateDatetimeeventSubscription>() => T;
-}
-
-export interface Chartevents_11Edge {
-  node: Chartevents_11;
-  cursor: String;
-}
-
-export interface Chartevents_11EdgePromise
-  extends Promise<Chartevents_11Edge>,
-    Fragmentable {
-  node: <T = Chartevents_11Promise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface Chartevents_11EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_11Edge>>,
-    Fragmentable {
-  node: <T = Chartevents_11Subscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface D_labitemEdge {
-  node: D_labitem;
-  cursor: String;
-}
-
-export interface D_labitemEdgePromise
-  extends Promise<D_labitemEdge>,
-    Fragmentable {
-  node: <T = D_labitemPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface D_labitemEdgeSubscription
-  extends Promise<AsyncIterator<D_labitemEdge>>,
-    Fragmentable {
-  node: <T = D_labitemSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Chartevents_12SubscriptionPayload {
-  mutation: MutationType;
-  node: Chartevents_12;
-  updatedFields: String[];
-  previousValues: Chartevents_12PreviousValues;
-}
-
-export interface Chartevents_12SubscriptionPayloadPromise
-  extends Promise<Chartevents_12SubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_12Promise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_12PreviousValuesPromise>() => T;
-}
-
-export interface Chartevents_12SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_12SubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_12Subscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_12PreviousValuesSubscription>() => T;
 }
 
 export interface TransferSubscriptionPayload {
@@ -17522,7 +16915,93 @@ export interface TransferSubscriptionPayloadSubscription
   previousValues: <T = TransferPreviousValuesSubscription>() => T;
 }
 
-export interface Chartevents_12PreviousValues {
+export interface Chartevents12Connection {
+  pageInfo: PageInfo;
+  edges: Chartevents12Edge[];
+}
+
+export interface Chartevents12ConnectionPromise
+  extends Promise<Chartevents12Connection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<Chartevents12Edge>>() => T;
+  aggregate: <T = AggregateChartevents12Promise>() => T;
+}
+
+export interface Chartevents12ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents12Connection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents12EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents12Subscription>() => T;
+}
+
+export interface InputeventsMvConnection {
+  pageInfo: PageInfo;
+  edges: InputeventsMvEdge[];
+}
+
+export interface InputeventsMvConnectionPromise
+  extends Promise<InputeventsMvConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<InputeventsMvEdge>>() => T;
+  aggregate: <T = AggregateInputeventsMvPromise>() => T;
+}
+
+export interface InputeventsMvConnectionSubscription
+  extends Promise<AsyncIterator<InputeventsMvConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<InputeventsMvEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateInputeventsMvSubscription>() => T;
+}
+
+export interface Chartevents1SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents1;
+  updatedFields: String[];
+  previousValues: Chartevents1PreviousValues;
+}
+
+export interface Chartevents1SubscriptionPayloadPromise
+  extends Promise<Chartevents1SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents1Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents1PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents1SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents1SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents1Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents1PreviousValuesSubscription>() => T;
+}
+
+export interface InputeventsCvEdge {
+  node: InputeventsCv;
+  cursor: String;
+}
+
+export interface InputeventsCvEdgePromise
+  extends Promise<InputeventsCvEdge>,
+    Fragmentable {
+  node: <T = InputeventsCvPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface InputeventsCvEdgeSubscription
+  extends Promise<AsyncIterator<InputeventsCvEdge>>,
+    Fragmentable {
+  node: <T = InputeventsCvSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents1PreviousValues {
   cgid?: Int;
   charttime?: DateTimeOutput;
   error?: Int;
@@ -17540,8 +17019,8 @@ export interface Chartevents_12PreviousValues {
   warning?: Int;
 }
 
-export interface Chartevents_12PreviousValuesPromise
-  extends Promise<Chartevents_12PreviousValues>,
+export interface Chartevents1PreviousValuesPromise
+  extends Promise<Chartevents1PreviousValues>,
     Fragmentable {
   cgid: () => Promise<Int>;
   charttime: () => Promise<DateTimeOutput>;
@@ -17560,8 +17039,8 @@ export interface Chartevents_12PreviousValuesPromise
   warning: () => Promise<Int>;
 }
 
-export interface Chartevents_12PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_12PreviousValues>>,
+export interface Chartevents1PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents1PreviousValues>>,
     Fragmentable {
   cgid: () => Promise<AsyncIterator<Int>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
@@ -17580,91 +17059,3678 @@ export interface Chartevents_12PreviousValuesSubscription
   warning: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface AggregateD_item {
+export interface AggregateIcustay {
   count: Int;
 }
 
-export interface AggregateD_itemPromise
-  extends Promise<AggregateD_item>,
+export interface AggregateIcustayPromise
+  extends Promise<AggregateIcustay>,
     Fragmentable {
   count: () => Promise<Int>;
 }
 
-export interface AggregateD_itemSubscription
-  extends Promise<AsyncIterator<AggregateD_item>>,
+export interface AggregateIcustaySubscription
+  extends Promise<AsyncIterator<AggregateIcustay>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Chartevents_11Connection {
-  pageInfo: PageInfo;
-  edges: Chartevents_11Edge[];
+export interface Chartevents12 {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
 }
 
-export interface Chartevents_11ConnectionPromise
-  extends Promise<Chartevents_11Connection>,
+export interface Chartevents12Promise
+  extends Promise<Chartevents12>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents12Subscription
+  extends Promise<AsyncIterator<Chartevents12>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface IcustayConnection {
+  pageInfo: PageInfo;
+  edges: IcustayEdge[];
+}
+
+export interface IcustayConnectionPromise
+  extends Promise<IcustayConnection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_11Edge>>() => T;
-  aggregate: <T = AggregateChartevents_11Promise>() => T;
+  edges: <T = FragmentableArray<IcustayEdge>>() => T;
+  aggregate: <T = AggregateIcustayPromise>() => T;
 }
 
-export interface Chartevents_11ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_11Connection>>,
+export interface IcustayConnectionSubscription
+  extends Promise<AsyncIterator<IcustayConnection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_11EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_11Subscription>() => T;
+  edges: <T = Promise<AsyncIterator<IcustayEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateIcustaySubscription>() => T;
 }
 
-export interface D_itemConnection {
-  pageInfo: PageInfo;
-  edges: D_itemEdge[];
-}
-
-export interface D_itemConnectionPromise
-  extends Promise<D_itemConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<D_itemEdge>>() => T;
-  aggregate: <T = AggregateD_itemPromise>() => T;
-}
-
-export interface D_itemConnectionSubscription
-  extends Promise<AsyncIterator<D_itemConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<D_itemEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateD_itemSubscription>() => T;
-}
-
-export interface Chartevents_13SubscriptionPayload {
+export interface Chartevents10SubscriptionPayload {
   mutation: MutationType;
-  node: Chartevents_13;
+  node: Chartevents10;
   updatedFields: String[];
-  previousValues: Chartevents_13PreviousValues;
+  previousValues: Chartevents10PreviousValues;
 }
 
-export interface Chartevents_13SubscriptionPayloadPromise
-  extends Promise<Chartevents_13SubscriptionPayload>,
+export interface Chartevents10SubscriptionPayloadPromise
+  extends Promise<Chartevents10SubscriptionPayload>,
     Fragmentable {
   mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_13Promise>() => T;
+  node: <T = Chartevents10Promise>() => T;
   updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_13PreviousValuesPromise>() => T;
+  previousValues: <T = Chartevents10PreviousValuesPromise>() => T;
 }
 
-export interface Chartevents_13SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_13SubscriptionPayload>>,
+export interface Chartevents10SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents10SubscriptionPayload>>,
     Fragmentable {
   mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_13Subscription>() => T;
+  node: <T = Chartevents10Subscription>() => T;
   updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_13PreviousValuesSubscription>() => T;
+  previousValues: <T = Chartevents10PreviousValuesSubscription>() => T;
 }
 
-export interface D_item {
-  id: ID_Output;
+export interface DrgcodeEdge {
+  node: Drgcode;
+  cursor: String;
+}
+
+export interface DrgcodeEdgePromise extends Promise<DrgcodeEdge>, Fragmentable {
+  node: <T = DrgcodePromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface DrgcodeEdgeSubscription
+  extends Promise<AsyncIterator<DrgcodeEdge>>,
+    Fragmentable {
+  node: <T = DrgcodeSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents10PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents10PreviousValuesPromise
+  extends Promise<Chartevents10PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents10PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents10PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface AggregateDiagnosesIcd {
+  count: Int;
+}
+
+export interface AggregateDiagnosesIcdPromise
+  extends Promise<AggregateDiagnosesIcd>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateDiagnosesIcdSubscription
+  extends Promise<AsyncIterator<AggregateDiagnosesIcd>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface AggregateChartevents11 {
+  count: Int;
+}
+
+export interface AggregateChartevents11Promise
+  extends Promise<AggregateChartevents11>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateChartevents11Subscription
+  extends Promise<AsyncIterator<AggregateChartevents11>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface DiagnosesIcdConnection {
+  pageInfo: PageInfo;
+  edges: DiagnosesIcdEdge[];
+}
+
+export interface DiagnosesIcdConnectionPromise
+  extends Promise<DiagnosesIcdConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<DiagnosesIcdEdge>>() => T;
+  aggregate: <T = AggregateDiagnosesIcdPromise>() => T;
+}
+
+export interface DiagnosesIcdConnectionSubscription
+  extends Promise<AsyncIterator<DiagnosesIcdConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<DiagnosesIcdEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateDiagnosesIcdSubscription>() => T;
+}
+
+export interface Chartevents11SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents11;
+  updatedFields: String[];
+  previousValues: Chartevents11PreviousValues;
+}
+
+export interface Chartevents11SubscriptionPayloadPromise
+  extends Promise<Chartevents11SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents11Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents11PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents11SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents11SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents11Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents11PreviousValuesSubscription>() => T;
+}
+
+export interface DatetimeeventEdge {
+  node: Datetimeevent;
+  cursor: String;
+}
+
+export interface DatetimeeventEdgePromise
+  extends Promise<DatetimeeventEdge>,
+    Fragmentable {
+  node: <T = DatetimeeventPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface DatetimeeventEdgeSubscription
+  extends Promise<AsyncIterator<DatetimeeventEdge>>,
+    Fragmentable {
+  node: <T = DatetimeeventSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents11PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents11PreviousValuesPromise
+  extends Promise<Chartevents11PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents11PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents11PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface AggregateDLabitem {
+  count: Int;
+}
+
+export interface AggregateDLabitemPromise
+  extends Promise<AggregateDLabitem>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateDLabitemSubscription
+  extends Promise<AsyncIterator<AggregateDLabitem>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents11Edge {
+  node: Chartevents11;
+  cursor: String;
+}
+
+export interface Chartevents11EdgePromise
+  extends Promise<Chartevents11Edge>,
+    Fragmentable {
+  node: <T = Chartevents11Promise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface Chartevents11EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents11Edge>>,
+    Fragmentable {
+  node: <T = Chartevents11Subscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface DLabitemConnection {
+  pageInfo: PageInfo;
+  edges: DLabitemEdge[];
+}
+
+export interface DLabitemConnectionPromise
+  extends Promise<DLabitemConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<DLabitemEdge>>() => T;
+  aggregate: <T = AggregateDLabitemPromise>() => T;
+}
+
+export interface DLabitemConnectionSubscription
+  extends Promise<AsyncIterator<DLabitemConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<DLabitemEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateDLabitemSubscription>() => T;
+}
+
+export interface Chartevents12SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents12;
+  updatedFields: String[];
+  previousValues: Chartevents12PreviousValues;
+}
+
+export interface Chartevents12SubscriptionPayloadPromise
+  extends Promise<Chartevents12SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents12Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents12PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents12SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents12SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents12Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents12PreviousValuesSubscription>() => T;
+}
+
+export interface DLabitem {
+  id: UUID;
+  category: String;
+  fluid: String;
+  itemid: Int;
+  label: String;
+  loinc_code?: String;
+}
+
+export interface DLabitemPromise extends Promise<DLabitem>, Fragmentable {
+  id: () => Promise<UUID>;
+  category: () => Promise<String>;
+  fluid: () => Promise<String>;
+  itemid: () => Promise<Int>;
+  label: () => Promise<String>;
+  labevents: <T = FragmentableArray<Labevent>>(
+    args?: {
+      where?: LabeventWhereInput;
+      orderBy?: LabeventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  loinc_code: () => Promise<String>;
+}
+
+export interface DLabitemSubscription
+  extends Promise<AsyncIterator<DLabitem>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
+  category: () => Promise<AsyncIterator<String>>;
+  fluid: () => Promise<AsyncIterator<String>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  label: () => Promise<AsyncIterator<String>>;
+  labevents: <T = Promise<AsyncIterator<LabeventSubscription>>>(
+    args?: {
+      where?: LabeventWhereInput;
+      orderBy?: LabeventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  loinc_code: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents12PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents12PreviousValuesPromise
+  extends Promise<Chartevents12PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents12PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents12PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface DItemEdge {
+  node: DItem;
+  cursor: String;
+}
+
+export interface DItemEdgePromise extends Promise<DItemEdge>, Fragmentable {
+  node: <T = DItemPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface DItemEdgeSubscription
+  extends Promise<AsyncIterator<DItemEdge>>,
+    Fragmentable {
+  node: <T = DItemSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents11Connection {
+  pageInfo: PageInfo;
+  edges: Chartevents11Edge[];
+}
+
+export interface Chartevents11ConnectionPromise
+  extends Promise<Chartevents11Connection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<Chartevents11Edge>>() => T;
+  aggregate: <T = AggregateChartevents11Promise>() => T;
+}
+
+export interface Chartevents11ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents11Connection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents11EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents11Subscription>() => T;
+}
+
+export interface ServicePreviousValues {
+  id: UUID;
+  curr_service?: String;
+  prev_service?: String;
+  transfertime: DateTimeOutput;
+}
+
+export interface ServicePreviousValuesPromise
+  extends Promise<ServicePreviousValues>,
+    Fragmentable {
+  id: () => Promise<UUID>;
+  curr_service: () => Promise<String>;
+  prev_service: () => Promise<String>;
+  transfertime: () => Promise<DateTimeOutput>;
+}
+
+export interface ServicePreviousValuesSubscription
+  extends Promise<AsyncIterator<ServicePreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
+  curr_service: () => Promise<AsyncIterator<String>>;
+  prev_service: () => Promise<AsyncIterator<String>>;
+  transfertime: () => Promise<AsyncIterator<DateTimeOutput>>;
+}
+
+export interface Chartevents13SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents13;
+  updatedFields: String[];
+  previousValues: Chartevents13PreviousValues;
+}
+
+export interface Chartevents13SubscriptionPayloadPromise
+  extends Promise<Chartevents13SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents13Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents13PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents13SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents13SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents13Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents13PreviousValuesSubscription>() => T;
+}
+
+export interface AggregateDIcdProcedure {
+  count: Int;
+}
+
+export interface AggregateDIcdProcedurePromise
+  extends Promise<AggregateDIcdProcedure>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateDIcdProcedureSubscription
+  extends Promise<AsyncIterator<AggregateDIcdProcedure>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents13PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents13PreviousValuesPromise
+  extends Promise<Chartevents13PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents13PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents13PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface DIcdProcedureConnection {
+  pageInfo: PageInfo;
+  edges: DIcdProcedureEdge[];
+}
+
+export interface DIcdProcedureConnectionPromise
+  extends Promise<DIcdProcedureConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<DIcdProcedureEdge>>() => T;
+  aggregate: <T = AggregateDIcdProcedurePromise>() => T;
+}
+
+export interface DIcdProcedureConnectionSubscription
+  extends Promise<AsyncIterator<DIcdProcedureConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<DIcdProcedureEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateDIcdProcedureSubscription>() => T;
+}
+
+export interface Chartevents11 {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents11Promise
+  extends Promise<Chartevents11>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents11Subscription
+  extends Promise<AsyncIterator<Chartevents11>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface AggregateDIcdDiagnosis {
+  count: Int;
+}
+
+export interface AggregateDIcdDiagnosisPromise
+  extends Promise<AggregateDIcdDiagnosis>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateDIcdDiagnosisSubscription
+  extends Promise<AsyncIterator<AggregateDIcdDiagnosis>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents14SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents14;
+  updatedFields: String[];
+  previousValues: Chartevents14PreviousValues;
+}
+
+export interface Chartevents14SubscriptionPayloadPromise
+  extends Promise<Chartevents14SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents14Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents14PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents14SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents14SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents14Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents14PreviousValuesSubscription>() => T;
+}
+
+export interface DIcdDiagnosisConnection {
+  pageInfo: PageInfo;
+  edges: DIcdDiagnosisEdge[];
+}
+
+export interface DIcdDiagnosisConnectionPromise
+  extends Promise<DIcdDiagnosisConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<DIcdDiagnosisEdge>>() => T;
+  aggregate: <T = AggregateDIcdDiagnosisPromise>() => T;
+}
+
+export interface DIcdDiagnosisConnectionSubscription
+  extends Promise<AsyncIterator<DIcdDiagnosisConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<DIcdDiagnosisEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateDIcdDiagnosisSubscription>() => T;
+}
+
+export interface Chartevents14PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents14PreviousValuesPromise
+  extends Promise<Chartevents14PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents14PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents14PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface DIcdDiagnosis {
+  id: UUID;
+  icd9_code: String;
+  long_title: String;
+  short_title: String;
+}
+
+export interface DIcdDiagnosisPromise
+  extends Promise<DIcdDiagnosis>,
+    Fragmentable {
+  id: () => Promise<UUID>;
+  icd9_code: () => Promise<String>;
+  long_title: () => Promise<String>;
+  short_title: () => Promise<String>;
+}
+
+export interface DIcdDiagnosisSubscription
+  extends Promise<AsyncIterator<DIcdDiagnosis>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
+  icd9_code: () => Promise<AsyncIterator<String>>;
+  long_title: () => Promise<AsyncIterator<String>>;
+  short_title: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateChartevents10 {
+  count: Int;
+}
+
+export interface AggregateChartevents10Promise
+  extends Promise<AggregateChartevents10>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateChartevents10Subscription
+  extends Promise<AsyncIterator<AggregateChartevents10>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface DCptEdge {
+  node: DCpt;
+  cursor: String;
+}
+
+export interface DCptEdgePromise extends Promise<DCptEdge>, Fragmentable {
+  node: <T = DCptPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface DCptEdgeSubscription
+  extends Promise<AsyncIterator<DCptEdge>>,
+    Fragmentable {
+  node: <T = DCptSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents15SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents15;
+  updatedFields: String[];
+  previousValues: Chartevents15PreviousValues;
+}
+
+export interface Chartevents15SubscriptionPayloadPromise
+  extends Promise<Chartevents15SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents15Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents15PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents15SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents15SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents15Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents15PreviousValuesSubscription>() => T;
+}
+
+export interface DCpt {
+  id: UUID;
+  category: Int;
+  codesuffix?: String;
+  maxcodeinsubsection: Int;
+  mincodeinsubsection: Int;
+  sectionheader: String;
+  sectionrange: String;
+  subsectionheader: String;
+  subsectionrange: String;
+}
+
+export interface DCptPromise extends Promise<DCpt>, Fragmentable {
+  id: () => Promise<UUID>;
+  category: () => Promise<Int>;
+  codesuffix: () => Promise<String>;
+  maxcodeinsubsection: () => Promise<Int>;
+  mincodeinsubsection: () => Promise<Int>;
+  sectionheader: () => Promise<String>;
+  sectionrange: () => Promise<String>;
+  subsectionheader: () => Promise<String>;
+  subsectionrange: () => Promise<String>;
+}
+
+export interface DCptSubscription
+  extends Promise<AsyncIterator<DCpt>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
+  category: () => Promise<AsyncIterator<Int>>;
+  codesuffix: () => Promise<AsyncIterator<String>>;
+  maxcodeinsubsection: () => Promise<AsyncIterator<Int>>;
+  mincodeinsubsection: () => Promise<AsyncIterator<Int>>;
+  sectionheader: () => Promise<AsyncIterator<String>>;
+  sectionrange: () => Promise<AsyncIterator<String>>;
+  subsectionheader: () => Promise<AsyncIterator<String>>;
+  subsectionrange: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents15PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents15PreviousValuesPromise
+  extends Promise<Chartevents15PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents15PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents15PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface CpteventEdge {
+  node: Cptevent;
+  cursor: String;
+}
+
+export interface CpteventEdgePromise
+  extends Promise<CpteventEdge>,
+    Fragmentable {
+  node: <T = CpteventPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface CpteventEdgeSubscription
+  extends Promise<AsyncIterator<CpteventEdge>>,
+    Fragmentable {
+  node: <T = CpteventSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents10Edge {
+  node: Chartevents10;
+  cursor: String;
+}
+
+export interface Chartevents10EdgePromise
+  extends Promise<Chartevents10Edge>,
+    Fragmentable {
+  node: <T = Chartevents10Promise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface Chartevents10EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents10Edge>>,
+    Fragmentable {
+  node: <T = Chartevents10Subscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateChartevents9 {
+  count: Int;
+}
+
+export interface AggregateChartevents9Promise
+  extends Promise<AggregateChartevents9>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateChartevents9Subscription
+  extends Promise<AsyncIterator<AggregateChartevents9>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents16SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents16;
+  updatedFields: String[];
+  previousValues: Chartevents16PreviousValues;
+}
+
+export interface Chartevents16SubscriptionPayloadPromise
+  extends Promise<Chartevents16SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents16Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents16PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents16SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents16SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents16Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents16PreviousValuesSubscription>() => T;
+}
+
+export interface Chartevents9Connection {
+  pageInfo: PageInfo;
+  edges: Chartevents9Edge[];
+}
+
+export interface Chartevents9ConnectionPromise
+  extends Promise<Chartevents9Connection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<Chartevents9Edge>>() => T;
+  aggregate: <T = AggregateChartevents9Promise>() => T;
+}
+
+export interface Chartevents9ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents9Connection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents9EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents9Subscription>() => T;
+}
+
+export interface Chartevents16PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents16PreviousValuesPromise
+  extends Promise<Chartevents16PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents16PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents16PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface ServiceSubscriptionPayload {
+  mutation: MutationType;
+  node: Service;
+  updatedFields: String[];
+  previousValues: ServicePreviousValues;
+}
+
+export interface ServiceSubscriptionPayloadPromise
+  extends Promise<ServiceSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = ServicePromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = ServicePreviousValuesPromise>() => T;
+}
+
+export interface ServiceSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<ServiceSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = ServiceSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = ServicePreviousValuesSubscription>() => T;
+}
+
+export interface Chartevents10Connection {
+  pageInfo: PageInfo;
+  edges: Chartevents10Edge[];
+}
+
+export interface Chartevents10ConnectionPromise
+  extends Promise<Chartevents10Connection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<Chartevents10Edge>>() => T;
+  aggregate: <T = AggregateChartevents10Promise>() => T;
+}
+
+export interface Chartevents10ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents10Connection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents10EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents10Subscription>() => T;
+}
+
+export interface Chartevents8Edge {
+  node: Chartevents8;
+  cursor: String;
+}
+
+export interface Chartevents8EdgePromise
+  extends Promise<Chartevents8Edge>,
+    Fragmentable {
+  node: <T = Chartevents8Promise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface Chartevents8EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents8Edge>>,
+    Fragmentable {
+  node: <T = Chartevents8Subscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents17SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents17;
+  updatedFields: String[];
+  previousValues: Chartevents17PreviousValues;
+}
+
+export interface Chartevents17SubscriptionPayloadPromise
+  extends Promise<Chartevents17SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents17Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents17PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents17SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents17SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents17Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents17PreviousValuesSubscription>() => T;
+}
+
+export interface Chartevents8 {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents8Promise
+  extends Promise<Chartevents8>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents8Subscription
+  extends Promise<AsyncIterator<Chartevents8>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents17PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents17PreviousValuesPromise
+  extends Promise<Chartevents17PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents17PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents17PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface AggregateChartevents7 {
+  count: Int;
+}
+
+export interface AggregateChartevents7Promise
+  extends Promise<AggregateChartevents7>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateChartevents7Subscription
+  extends Promise<AsyncIterator<AggregateChartevents7>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents10 {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents10Promise
+  extends Promise<Chartevents10>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents10Subscription
+  extends Promise<AsyncIterator<Chartevents10>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents7Connection {
+  pageInfo: PageInfo;
+  edges: Chartevents7Edge[];
+}
+
+export interface Chartevents7ConnectionPromise
+  extends Promise<Chartevents7Connection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<Chartevents7Edge>>() => T;
+  aggregate: <T = AggregateChartevents7Promise>() => T;
+}
+
+export interface Chartevents7ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents7Connection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents7EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents7Subscription>() => T;
+}
+
+export interface Chartevents2SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents2;
+  updatedFields: String[];
+  previousValues: Chartevents2PreviousValues;
+}
+
+export interface Chartevents2SubscriptionPayloadPromise
+  extends Promise<Chartevents2SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents2Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents2PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents2SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents2SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents2Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents2PreviousValuesSubscription>() => T;
+}
+
+export interface AggregateChartevents6 {
+  count: Int;
+}
+
+export interface AggregateChartevents6Promise
+  extends Promise<AggregateChartevents6>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateChartevents6Subscription
+  extends Promise<AsyncIterator<AggregateChartevents6>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents2PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents2PreviousValuesPromise
+  extends Promise<Chartevents2PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents2PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents2PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents6Connection {
+  pageInfo: PageInfo;
+  edges: Chartevents6Edge[];
+}
+
+export interface Chartevents6ConnectionPromise
+  extends Promise<Chartevents6Connection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<Chartevents6Edge>>() => T;
+  aggregate: <T = AggregateChartevents6Promise>() => T;
+}
+
+export interface Chartevents6ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents6Connection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents6EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents6Subscription>() => T;
+}
+
+export interface AggregateChartevents1 {
+  count: Int;
+}
+
+export interface AggregateChartevents1Promise
+  extends Promise<AggregateChartevents1>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateChartevents1Subscription
+  extends Promise<AsyncIterator<AggregateChartevents1>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Cptevent {
+  id: UUID;
+  chartdate?: DateTimeOutput;
+  costcenter: String;
+  cpt_cd: String;
+  cpt_number?: Int;
+  cpt_suffix?: String;
+  description?: String;
+  sectionheader?: String;
+  subsectionheader?: String;
+  ticket_id_seq?: Int;
+}
+
+export interface CpteventPromise extends Promise<Cptevent>, Fragmentable {
+  id: () => Promise<UUID>;
+  chartdate: () => Promise<DateTimeOutput>;
+  costcenter: () => Promise<String>;
+  cpt_cd: () => Promise<String>;
+  cpt_number: () => Promise<Int>;
+  cpt_suffix: () => Promise<String>;
+  description: () => Promise<String>;
+  sectionheader: () => Promise<String>;
+  subsectionheader: () => Promise<String>;
+  ticket_id_seq: () => Promise<Int>;
+}
+
+export interface CpteventSubscription
+  extends Promise<AsyncIterator<Cptevent>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
+  chartdate: () => Promise<AsyncIterator<DateTimeOutput>>;
+  costcenter: () => Promise<AsyncIterator<String>>;
+  cpt_cd: () => Promise<AsyncIterator<String>>;
+  cpt_number: () => Promise<AsyncIterator<Int>>;
+  cpt_suffix: () => Promise<AsyncIterator<String>>;
+  description: () => Promise<AsyncIterator<String>>;
+  sectionheader: () => Promise<AsyncIterator<String>>;
+  subsectionheader: () => Promise<AsyncIterator<String>>;
+  ticket_id_seq: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents3SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents3;
+  updatedFields: String[];
+  previousValues: Chartevents3PreviousValues;
+}
+
+export interface Chartevents3SubscriptionPayloadPromise
+  extends Promise<Chartevents3SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents3Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents3PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents3SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents3SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents3Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents3PreviousValuesSubscription>() => T;
+}
+
+export interface Chartevents5Edge {
+  node: Chartevents5;
+  cursor: String;
+}
+
+export interface Chartevents5EdgePromise
+  extends Promise<Chartevents5Edge>,
+    Fragmentable {
+  node: <T = Chartevents5Promise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface Chartevents5EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents5Edge>>,
+    Fragmentable {
+  node: <T = Chartevents5Subscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents3PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents3PreviousValuesPromise
+  extends Promise<Chartevents3PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents3PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents3PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents5 {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents5Promise
+  extends Promise<Chartevents5>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents5Subscription
+  extends Promise<AsyncIterator<Chartevents5>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents1Edge {
+  node: Chartevents1;
+  cursor: String;
+}
+
+export interface Chartevents1EdgePromise
+  extends Promise<Chartevents1Edge>,
+    Fragmentable {
+  node: <T = Chartevents1Promise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface Chartevents1EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents1Edge>>,
+    Fragmentable {
+  node: <T = Chartevents1Subscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents4Edge {
+  node: Chartevents4;
+  cursor: String;
+}
+
+export interface Chartevents4EdgePromise
+  extends Promise<Chartevents4Edge>,
+    Fragmentable {
+  node: <T = Chartevents4Promise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface Chartevents4EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents4Edge>>,
+    Fragmentable {
+  node: <T = Chartevents4Subscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents4SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents4;
+  updatedFields: String[];
+  previousValues: Chartevents4PreviousValues;
+}
+
+export interface Chartevents4SubscriptionPayloadPromise
+  extends Promise<Chartevents4SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents4Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents4PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents4SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents4SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents4Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents4PreviousValuesSubscription>() => T;
+}
+
+export interface Chartevents4 {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents4Promise
+  extends Promise<Chartevents4>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents4Subscription
+  extends Promise<AsyncIterator<Chartevents4>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents4PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents4PreviousValuesPromise
+  extends Promise<Chartevents4PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents4PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents4PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface AggregateChartevents3 {
+  count: Int;
+}
+
+export interface AggregateChartevents3Promise
+  extends Promise<AggregateChartevents3>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateChartevents3Subscription
+  extends Promise<AsyncIterator<AggregateChartevents3>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents1Connection {
+  pageInfo: PageInfo;
+  edges: Chartevents1Edge[];
+}
+
+export interface Chartevents1ConnectionPromise
+  extends Promise<Chartevents1Connection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<Chartevents1Edge>>() => T;
+  aggregate: <T = AggregateChartevents1Promise>() => T;
+}
+
+export interface Chartevents1ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents1Connection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents1EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents1Subscription>() => T;
+}
+
+export interface Chartevents3Connection {
+  pageInfo: PageInfo;
+  edges: Chartevents3Edge[];
+}
+
+export interface Chartevents3ConnectionPromise
+  extends Promise<Chartevents3Connection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<Chartevents3Edge>>() => T;
+  aggregate: <T = AggregateChartevents3Promise>() => T;
+}
+
+export interface Chartevents3ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents3Connection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents3EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents3Subscription>() => T;
+}
+
+export interface Chartevents5SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents5;
+  updatedFields: String[];
+  previousValues: Chartevents5PreviousValues;
+}
+
+export interface Chartevents5SubscriptionPayloadPromise
+  extends Promise<Chartevents5SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents5Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents5PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents5SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents5SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents5Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents5PreviousValuesSubscription>() => T;
+}
+
+export interface AggregateChartevents2 {
+  count: Int;
+}
+
+export interface AggregateChartevents2Promise
+  extends Promise<AggregateChartevents2>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateChartevents2Subscription
+  extends Promise<AsyncIterator<AggregateChartevents2>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents5PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents5PreviousValuesPromise
+  extends Promise<Chartevents5PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents5PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents5PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents2Connection {
+  pageInfo: PageInfo;
+  edges: Chartevents2Edge[];
+}
+
+export interface Chartevents2ConnectionPromise
+  extends Promise<Chartevents2Connection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<Chartevents2Edge>>() => T;
+  aggregate: <T = AggregateChartevents2Promise>() => T;
+}
+
+export interface Chartevents2ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents2Connection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents2EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents2Subscription>() => T;
+}
+
+export interface Chartevents1 {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents1Promise
+  extends Promise<Chartevents1>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents1Subscription
+  extends Promise<AsyncIterator<Chartevents1>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface DiagnosesIcd {
+  id: UUID;
+  icd9_code?: String;
+  seq_num?: Int;
+}
+
+export interface DiagnosesIcdPromise
+  extends Promise<DiagnosesIcd>,
+    Fragmentable {
+  id: () => Promise<UUID>;
+  icd9_code: () => Promise<String>;
+  seq_num: () => Promise<Int>;
+}
+
+export interface DiagnosesIcdSubscription
+  extends Promise<AsyncIterator<DiagnosesIcd>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
+  icd9_code: () => Promise<AsyncIterator<String>>;
+  seq_num: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents6SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents6;
+  updatedFields: String[];
+  previousValues: Chartevents6PreviousValues;
+}
+
+export interface Chartevents6SubscriptionPayloadPromise
+  extends Promise<Chartevents6SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents6Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents6PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents6SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents6SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents6Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents6PreviousValuesSubscription>() => T;
+}
+
+export interface Chartevents17Edge {
+  node: Chartevents17;
+  cursor: String;
+}
+
+export interface Chartevents17EdgePromise
+  extends Promise<Chartevents17Edge>,
+    Fragmentable {
+  node: <T = Chartevents17Promise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface Chartevents17EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents17Edge>>,
+    Fragmentable {
+  node: <T = Chartevents17Subscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents6PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents6PreviousValuesPromise
+  extends Promise<Chartevents6PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents6PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents6PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents17 {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents17Promise
+  extends Promise<Chartevents17>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents17Subscription
+  extends Promise<AsyncIterator<Chartevents17>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface AggregateChartevent {
+  count: Int;
+}
+
+export interface AggregateCharteventPromise
+  extends Promise<AggregateChartevent>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateCharteventSubscription
+  extends Promise<AsyncIterator<AggregateChartevent>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents16Edge {
+  node: Chartevents16;
+  cursor: String;
+}
+
+export interface Chartevents16EdgePromise
+  extends Promise<Chartevents16Edge>,
+    Fragmentable {
+  node: <T = Chartevents16Promise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface Chartevents16EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents16Edge>>,
+    Fragmentable {
+  node: <T = Chartevents16Subscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents7SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents7;
+  updatedFields: String[];
+  previousValues: Chartevents7PreviousValues;
+}
+
+export interface Chartevents7SubscriptionPayloadPromise
+  extends Promise<Chartevents7SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents7Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents7PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents7SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents7SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents7Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents7PreviousValuesSubscription>() => T;
+}
+
+export interface Chartevents16 {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents16Promise
+  extends Promise<Chartevents16>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents16Subscription
+  extends Promise<AsyncIterator<Chartevents16>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents7PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents7PreviousValuesPromise
+  extends Promise<Chartevents7PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents7PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents7PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface AggregateChartevents15 {
+  count: Int;
+}
+
+export interface AggregateChartevents15Promise
+  extends Promise<AggregateChartevents15>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateChartevents15Subscription
+  extends Promise<AsyncIterator<AggregateChartevents15>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface CharteventEdge {
+  node: Chartevent;
+  cursor: String;
+}
+
+export interface CharteventEdgePromise
+  extends Promise<CharteventEdge>,
+    Fragmentable {
+  node: <T = CharteventPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface CharteventEdgeSubscription
+  extends Promise<AsyncIterator<CharteventEdge>>,
+    Fragmentable {
+  node: <T = CharteventSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents15Connection {
+  pageInfo: PageInfo;
+  edges: Chartevents15Edge[];
+}
+
+export interface Chartevents15ConnectionPromise
+  extends Promise<Chartevents15Connection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<Chartevents15Edge>>() => T;
+  aggregate: <T = AggregateChartevents15Promise>() => T;
+}
+
+export interface Chartevents15ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents15Connection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents15EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents15Subscription>() => T;
+}
+
+export interface Chartevents8SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents8;
+  updatedFields: String[];
+  previousValues: Chartevents8PreviousValues;
+}
+
+export interface Chartevents8SubscriptionPayloadPromise
+  extends Promise<Chartevents8SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents8Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents8PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents8SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents8SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents8Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents8PreviousValuesSubscription>() => T;
+}
+
+export interface AggregateChartevents14 {
+  count: Int;
+}
+
+export interface AggregateChartevents14Promise
+  extends Promise<AggregateChartevents14>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateChartevents14Subscription
+  extends Promise<AsyncIterator<AggregateChartevents14>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents8PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents8PreviousValuesPromise
+  extends Promise<Chartevents8PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents8PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents8PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Microbiologyevent {
+  id: UUID;
+  ab_name?: String;
+  chartdate?: DateTimeOutput;
+  charttime?: DateTimeOutput;
+  dilution_comparison?: String;
+  dilution_text?: String;
+  dilution_value?: Float;
+  interpretation?: String;
+  isolate_num?: Int;
+  org_name?: String;
+  spec_type_desc?: String;
+}
+
+export interface MicrobiologyeventPromise
+  extends Promise<Microbiologyevent>,
+    Fragmentable {
+  id: () => Promise<UUID>;
+  ab_name: () => Promise<String>;
+  chartdate: () => Promise<DateTimeOutput>;
+  charttime: () => Promise<DateTimeOutput>;
+  dilution_comparison: () => Promise<String>;
+  dilution_text: () => Promise<String>;
+  dilution_value: () => Promise<Float>;
+  interpretation: () => Promise<String>;
+  isolate_num: () => Promise<Int>;
+  org_name: () => Promise<String>;
+  spec_type_desc: () => Promise<String>;
+}
+
+export interface MicrobiologyeventSubscription
+  extends Promise<AsyncIterator<Microbiologyevent>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
+  ab_name: () => Promise<AsyncIterator<String>>;
+  chartdate: () => Promise<AsyncIterator<DateTimeOutput>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  dilution_comparison: () => Promise<AsyncIterator<String>>;
+  dilution_text: () => Promise<AsyncIterator<String>>;
+  dilution_value: () => Promise<AsyncIterator<Float>>;
+  interpretation: () => Promise<AsyncIterator<String>>;
+  isolate_num: () => Promise<AsyncIterator<Int>>;
+  org_name: () => Promise<AsyncIterator<String>>;
+  spec_type_desc: () => Promise<AsyncIterator<String>>;
+}
+
+export interface CharteventConnection {
+  pageInfo: PageInfo;
+  edges: CharteventEdge[];
+}
+
+export interface CharteventConnectionPromise
+  extends Promise<CharteventConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<CharteventEdge>>() => T;
+  aggregate: <T = AggregateCharteventPromise>() => T;
+}
+
+export interface CharteventConnectionSubscription
+  extends Promise<AsyncIterator<CharteventConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<CharteventEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateCharteventSubscription>() => T;
+}
+
+export interface AggregateProcedureeventsMv {
+  count: Int;
+}
+
+export interface AggregateProcedureeventsMvPromise
+  extends Promise<AggregateProcedureeventsMv>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateProcedureeventsMvSubscription
+  extends Promise<AsyncIterator<AggregateProcedureeventsMv>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents9SubscriptionPayload {
+  mutation: MutationType;
+  node: Chartevents9;
+  updatedFields: String[];
+  previousValues: Chartevents9PreviousValues;
+}
+
+export interface Chartevents9SubscriptionPayloadPromise
+  extends Promise<Chartevents9SubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = Chartevents9Promise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = Chartevents9PreviousValuesPromise>() => T;
+}
+
+export interface Chartevents9SubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<Chartevents9SubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = Chartevents9Subscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = Chartevents9PreviousValuesSubscription>() => T;
+}
+
+export interface PrescriptionEdge {
+  node: Prescription;
+  cursor: String;
+}
+
+export interface PrescriptionEdgePromise
+  extends Promise<PrescriptionEdge>,
+    Fragmentable {
+  node: <T = PrescriptionPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface PrescriptionEdgeSubscription
+  extends Promise<AsyncIterator<PrescriptionEdge>>,
+    Fragmentable {
+  node: <T = PrescriptionSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents9PreviousValues {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents9PreviousValuesPromise
+  extends Promise<Chartevents9PreviousValues>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents9PreviousValuesSubscription
+  extends Promise<AsyncIterator<Chartevents9PreviousValues>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface PatientConnection {
+  pageInfo: PageInfo;
+  edges: PatientEdge[];
+}
+
+export interface PatientConnectionPromise
+  extends Promise<PatientConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<PatientEdge>>() => T;
+  aggregate: <T = AggregatePatientPromise>() => T;
+}
+
+export interface PatientConnectionSubscription
+  extends Promise<AsyncIterator<PatientConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<PatientEdgeSubscription>>>() => T;
+  aggregate: <T = AggregatePatientSubscription>() => T;
+}
+
+export interface AggregateCaregiver {
+  count: Int;
+}
+
+export interface AggregateCaregiverPromise
+  extends Promise<AggregateCaregiver>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateCaregiverSubscription
+  extends Promise<AsyncIterator<AggregateCaregiver>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface OutputeventEdge {
+  node: Outputevent;
+  cursor: String;
+}
+
+export interface OutputeventEdgePromise
+  extends Promise<OutputeventEdge>,
+    Fragmentable {
+  node: <T = OutputeventPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface OutputeventEdgeSubscription
+  extends Promise<AsyncIterator<OutputeventEdge>>,
+    Fragmentable {
+  node: <T = OutputeventSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface CpteventSubscriptionPayload {
+  mutation: MutationType;
+  node: Cptevent;
+  updatedFields: String[];
+  previousValues: CpteventPreviousValues;
+}
+
+export interface CpteventSubscriptionPayloadPromise
+  extends Promise<CpteventSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = CpteventPromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = CpteventPreviousValuesPromise>() => T;
+}
+
+export interface CpteventSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<CpteventSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = CpteventSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = CpteventPreviousValuesSubscription>() => T;
+}
+
+export interface NoteeventConnection {
+  pageInfo: PageInfo;
+  edges: NoteeventEdge[];
+}
+
+export interface NoteeventConnectionPromise
+  extends Promise<NoteeventConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<NoteeventEdge>>() => T;
+  aggregate: <T = AggregateNoteeventPromise>() => T;
+}
+
+export interface NoteeventConnectionSubscription
+  extends Promise<AsyncIterator<NoteeventConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<NoteeventEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateNoteeventSubscription>() => T;
+}
+
+export interface CpteventPreviousValues {
+  id: UUID;
+  chartdate?: DateTimeOutput;
+  costcenter: String;
+  cpt_cd: String;
+  cpt_number?: Int;
+  cpt_suffix?: String;
+  description?: String;
+  sectionheader?: String;
+  subsectionheader?: String;
+  ticket_id_seq?: Int;
+}
+
+export interface CpteventPreviousValuesPromise
+  extends Promise<CpteventPreviousValues>,
+    Fragmentable {
+  id: () => Promise<UUID>;
+  chartdate: () => Promise<DateTimeOutput>;
+  costcenter: () => Promise<String>;
+  cpt_cd: () => Promise<String>;
+  cpt_number: () => Promise<Int>;
+  cpt_suffix: () => Promise<String>;
+  description: () => Promise<String>;
+  sectionheader: () => Promise<String>;
+  subsectionheader: () => Promise<String>;
+  ticket_id_seq: () => Promise<Int>;
+}
+
+export interface CpteventPreviousValuesSubscription
+  extends Promise<AsyncIterator<CpteventPreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
+  chartdate: () => Promise<AsyncIterator<DateTimeOutput>>;
+  costcenter: () => Promise<AsyncIterator<String>>;
+  cpt_cd: () => Promise<AsyncIterator<String>>;
+  cpt_number: () => Promise<AsyncIterator<Int>>;
+  cpt_suffix: () => Promise<AsyncIterator<String>>;
+  description: () => Promise<AsyncIterator<String>>;
+  sectionheader: () => Promise<AsyncIterator<String>>;
+  subsectionheader: () => Promise<AsyncIterator<String>>;
+  ticket_id_seq: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface AggregateLabevent {
+  count: Int;
+}
+
+export interface AggregateLabeventPromise
+  extends Promise<AggregateLabevent>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateLabeventSubscription
+  extends Promise<AsyncIterator<AggregateLabevent>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface CaregiverEdge {
+  node: Caregiver;
+  cursor: String;
+}
+
+export interface CaregiverEdgePromise
+  extends Promise<CaregiverEdge>,
+    Fragmentable {
+  node: <T = CaregiverPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface CaregiverEdgeSubscription
+  extends Promise<AsyncIterator<CaregiverEdge>>,
+    Fragmentable {
+  node: <T = CaregiverSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface BatchPayload {
+  count: Long;
+}
+
+export interface BatchPayloadPromise
+  extends Promise<BatchPayload>,
+    Fragmentable {
+  count: () => Promise<Long>;
+}
+
+export interface BatchPayloadSubscription
+  extends Promise<AsyncIterator<BatchPayload>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Long>>;
+}
+
+export interface DCptSubscriptionPayload {
+  mutation: MutationType;
+  node: DCpt;
+  updatedFields: String[];
+  previousValues: DCptPreviousValues;
+}
+
+export interface DCptSubscriptionPayloadPromise
+  extends Promise<DCptSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = DCptPromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = DCptPreviousValuesPromise>() => T;
+}
+
+export interface DCptSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<DCptSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = DCptSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = DCptPreviousValuesSubscription>() => T;
+}
+
+export interface AggregateInputeventsCv {
+  count: Int;
+}
+
+export interface AggregateInputeventsCvPromise
+  extends Promise<AggregateInputeventsCv>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateInputeventsCvSubscription
+  extends Promise<AsyncIterator<AggregateInputeventsCv>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface DCptPreviousValues {
+  id: UUID;
+  category: Int;
+  codesuffix?: String;
+  maxcodeinsubsection: Int;
+  mincodeinsubsection: Int;
+  sectionheader: String;
+  sectionrange: String;
+  subsectionheader: String;
+  subsectionrange: String;
+}
+
+export interface DCptPreviousValuesPromise
+  extends Promise<DCptPreviousValues>,
+    Fragmentable {
+  id: () => Promise<UUID>;
+  category: () => Promise<Int>;
+  codesuffix: () => Promise<String>;
+  maxcodeinsubsection: () => Promise<Int>;
+  mincodeinsubsection: () => Promise<Int>;
+  sectionheader: () => Promise<String>;
+  sectionrange: () => Promise<String>;
+  subsectionheader: () => Promise<String>;
+  subsectionrange: () => Promise<String>;
+}
+
+export interface DCptPreviousValuesSubscription
+  extends Promise<AsyncIterator<DCptPreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
+  category: () => Promise<AsyncIterator<Int>>;
+  codesuffix: () => Promise<AsyncIterator<String>>;
+  maxcodeinsubsection: () => Promise<AsyncIterator<Int>>;
+  mincodeinsubsection: () => Promise<AsyncIterator<Int>>;
+  sectionheader: () => Promise<AsyncIterator<String>>;
+  sectionrange: () => Promise<AsyncIterator<String>>;
+  subsectionheader: () => Promise<AsyncIterator<String>>;
+  subsectionrange: () => Promise<AsyncIterator<String>>;
+}
+
+export interface IcustayEdge {
+  node: Icustay;
+  cursor: String;
+}
+
+export interface IcustayEdgePromise extends Promise<IcustayEdge>, Fragmentable {
+  node: <T = IcustayPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface IcustayEdgeSubscription
+  extends Promise<AsyncIterator<IcustayEdge>>,
+    Fragmentable {
+  node: <T = IcustaySubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface CaregiverConnection {
+  pageInfo: PageInfo;
+  edges: CaregiverEdge[];
+}
+
+export interface CaregiverConnectionPromise
+  extends Promise<CaregiverConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<CaregiverEdge>>() => T;
+  aggregate: <T = AggregateCaregiverPromise>() => T;
+}
+
+export interface CaregiverConnectionSubscription
+  extends Promise<AsyncIterator<CaregiverConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<CaregiverEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateCaregiverSubscription>() => T;
+}
+
+export interface DrgcodeConnection {
+  pageInfo: PageInfo;
+  edges: DrgcodeEdge[];
+}
+
+export interface DrgcodeConnectionPromise
+  extends Promise<DrgcodeConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<DrgcodeEdge>>() => T;
+  aggregate: <T = AggregateDrgcodePromise>() => T;
+}
+
+export interface DrgcodeConnectionSubscription
+  extends Promise<AsyncIterator<DrgcodeConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<DrgcodeEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateDrgcodeSubscription>() => T;
+}
+
+export interface DIcdDiagnosisSubscriptionPayload {
+  mutation: MutationType;
+  node: DIcdDiagnosis;
+  updatedFields: String[];
+  previousValues: DIcdDiagnosisPreviousValues;
+}
+
+export interface DIcdDiagnosisSubscriptionPayloadPromise
+  extends Promise<DIcdDiagnosisSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = DIcdDiagnosisPromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = DIcdDiagnosisPreviousValuesPromise>() => T;
+}
+
+export interface DIcdDiagnosisSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<DIcdDiagnosisSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = DIcdDiagnosisSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = DIcdDiagnosisPreviousValuesSubscription>() => T;
+}
+
+export interface AggregateDatetimeevent {
+  count: Int;
+}
+
+export interface AggregateDatetimeeventPromise
+  extends Promise<AggregateDatetimeevent>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateDatetimeeventSubscription
+  extends Promise<AsyncIterator<AggregateDatetimeevent>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface DIcdDiagnosisPreviousValues {
+  id: UUID;
+  icd9_code: String;
+  long_title: String;
+  short_title: String;
+}
+
+export interface DIcdDiagnosisPreviousValuesPromise
+  extends Promise<DIcdDiagnosisPreviousValues>,
+    Fragmentable {
+  id: () => Promise<UUID>;
+  icd9_code: () => Promise<String>;
+  long_title: () => Promise<String>;
+  short_title: () => Promise<String>;
+}
+
+export interface DIcdDiagnosisPreviousValuesSubscription
+  extends Promise<AsyncIterator<DIcdDiagnosisPreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
+  icd9_code: () => Promise<AsyncIterator<String>>;
+  long_title: () => Promise<AsyncIterator<String>>;
+  short_title: () => Promise<AsyncIterator<String>>;
+}
+
+export interface DLabitemEdge {
+  node: DLabitem;
+  cursor: String;
+}
+
+export interface DLabitemEdgePromise
+  extends Promise<DLabitemEdge>,
+    Fragmentable {
+  node: <T = DLabitemPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface DLabitemEdgeSubscription
+  extends Promise<AsyncIterator<DLabitemEdge>>,
+    Fragmentable {
+  node: <T = DLabitemSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Icustay {
+  id: UUID;
+  dbsource: String;
+  first_careunit: String;
+  first_wardid: Int;
+  icustay_id: Int;
+  intime: DateTimeOutput;
+  last_careunit: String;
+  last_wardid: Int;
+  los?: Float;
+  outtime?: DateTimeOutput;
+}
+
+export interface IcustayPromise extends Promise<Icustay>, Fragmentable {
+  id: () => Promise<UUID>;
+  chartevents: <T = FragmentableArray<Chartevent>>(
+    args?: {
+      where?: CharteventWhereInput;
+      orderBy?: CharteventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  datetimeevents: <T = FragmentableArray<Datetimeevent>>(
+    args?: {
+      where?: DatetimeeventWhereInput;
+      orderBy?: DatetimeeventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  dbsource: () => Promise<String>;
+  first_careunit: () => Promise<String>;
+  first_wardid: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  inputevents_cv: <T = FragmentableArray<InputeventsCv>>(
+    args?: {
+      where?: InputeventsCvWhereInput;
+      orderBy?: InputeventsCvOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  inputevents_mv: <T = FragmentableArray<InputeventsMv>>(
+    args?: {
+      where?: InputeventsMvWhereInput;
+      orderBy?: InputeventsMvOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  intime: () => Promise<DateTimeOutput>;
+  last_careunit: () => Promise<String>;
+  last_wardid: () => Promise<Int>;
+  los: () => Promise<Float>;
+  outputevents: <T = FragmentableArray<Outputevent>>(
+    args?: {
+      where?: OutputeventWhereInput;
+      orderBy?: OutputeventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  outtime: () => Promise<DateTimeOutput>;
+  prescriptions: <T = FragmentableArray<Prescription>>(
+    args?: {
+      where?: PrescriptionWhereInput;
+      orderBy?: PrescriptionOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  procedureevents_mv: <T = FragmentableArray<ProcedureeventsMv>>(
+    args?: {
+      where?: ProcedureeventsMvWhereInput;
+      orderBy?: ProcedureeventsMvOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  transfers: <T = FragmentableArray<Transfer>>(
+    args?: {
+      where?: TransferWhereInput;
+      orderBy?: TransferOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+}
+
+export interface IcustaySubscription
+  extends Promise<AsyncIterator<Icustay>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
+  chartevents: <T = Promise<AsyncIterator<CharteventSubscription>>>(
+    args?: {
+      where?: CharteventWhereInput;
+      orderBy?: CharteventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  datetimeevents: <T = Promise<AsyncIterator<DatetimeeventSubscription>>>(
+    args?: {
+      where?: DatetimeeventWhereInput;
+      orderBy?: DatetimeeventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  dbsource: () => Promise<AsyncIterator<String>>;
+  first_careunit: () => Promise<AsyncIterator<String>>;
+  first_wardid: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  inputevents_cv: <T = Promise<AsyncIterator<InputeventsCvSubscription>>>(
+    args?: {
+      where?: InputeventsCvWhereInput;
+      orderBy?: InputeventsCvOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  inputevents_mv: <T = Promise<AsyncIterator<InputeventsMvSubscription>>>(
+    args?: {
+      where?: InputeventsMvWhereInput;
+      orderBy?: InputeventsMvOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  intime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  last_careunit: () => Promise<AsyncIterator<String>>;
+  last_wardid: () => Promise<AsyncIterator<Int>>;
+  los: () => Promise<AsyncIterator<Float>>;
+  outputevents: <T = Promise<AsyncIterator<OutputeventSubscription>>>(
+    args?: {
+      where?: OutputeventWhereInput;
+      orderBy?: OutputeventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  outtime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  prescriptions: <T = Promise<AsyncIterator<PrescriptionSubscription>>>(
+    args?: {
+      where?: PrescriptionWhereInput;
+      orderBy?: PrescriptionOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  procedureevents_mv: <
+    T = Promise<AsyncIterator<ProcedureeventsMvSubscription>>
+  >(
+    args?: {
+      where?: ProcedureeventsMvWhereInput;
+      orderBy?: ProcedureeventsMvOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  transfers: <T = Promise<AsyncIterator<TransferSubscription>>>(
+    args?: {
+      where?: TransferWhereInput;
+      orderBy?: TransferOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+}
+
+export interface AggregateDItem {
+  count: Int;
+}
+
+export interface AggregateDItemPromise
+  extends Promise<AggregateDItem>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateDItemSubscription
+  extends Promise<AsyncIterator<AggregateDItem>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface DIcdProcedureSubscriptionPayload {
+  mutation: MutationType;
+  node: DIcdProcedure;
+  updatedFields: String[];
+  previousValues: DIcdProcedurePreviousValues;
+}
+
+export interface DIcdProcedureSubscriptionPayloadPromise
+  extends Promise<DIcdProcedureSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = DIcdProcedurePromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = DIcdProcedurePreviousValuesPromise>() => T;
+}
+
+export interface DIcdProcedureSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<DIcdProcedureSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = DIcdProcedureSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = DIcdProcedurePreviousValuesSubscription>() => T;
+}
+
+export interface DItem {
+  id: UUID;
   abbreviation?: String;
   category?: String;
   conceptid?: Int;
@@ -17676,8 +20742,8 @@ export interface D_item {
   unitname?: String;
 }
 
-export interface D_itemPromise extends Promise<D_item>, Fragmentable {
-  id: () => Promise<ID_Output>;
+export interface DItemPromise extends Promise<DItem>, Fragmentable {
+  id: () => Promise<UUID>;
   abbreviation: () => Promise<String>;
   category: () => Promise<String>;
   chartevents: <T = FragmentableArray<Chartevent>>(
@@ -17704,10 +20770,10 @@ export interface D_itemPromise extends Promise<D_item>, Fragmentable {
     }
   ) => T;
   dbsource: () => Promise<String>;
-  inputevents_mv: <T = FragmentableArray<Inputevents_mv>>(
+  inputevents_mv: <T = FragmentableArray<InputeventsMv>>(
     args?: {
-      where?: Inputevents_mvWhereInput;
-      orderBy?: Inputevents_mvOrderByInput;
+      where?: InputeventsMvWhereInput;
+      orderBy?: InputeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -17741,10 +20807,10 @@ export interface D_itemPromise extends Promise<D_item>, Fragmentable {
     }
   ) => T;
   param_type: () => Promise<String>;
-  procedureevents_mv: <T = FragmentableArray<Procedureevents_mv>>(
+  procedureevents_mv: <T = FragmentableArray<ProcedureeventsMv>>(
     args?: {
-      where?: Procedureevents_mvWhereInput;
-      orderBy?: Procedureevents_mvOrderByInput;
+      where?: ProcedureeventsMvWhereInput;
+      orderBy?: ProcedureeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -17755,10 +20821,10 @@ export interface D_itemPromise extends Promise<D_item>, Fragmentable {
   unitname: () => Promise<String>;
 }
 
-export interface D_itemSubscription
-  extends Promise<AsyncIterator<D_item>>,
+export interface DItemSubscription
+  extends Promise<AsyncIterator<DItem>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   abbreviation: () => Promise<AsyncIterator<String>>;
   category: () => Promise<AsyncIterator<String>>;
   chartevents: <T = Promise<AsyncIterator<CharteventSubscription>>>(
@@ -17785,10 +20851,10 @@ export interface D_itemSubscription
     }
   ) => T;
   dbsource: () => Promise<AsyncIterator<String>>;
-  inputevents_mv: <T = Promise<AsyncIterator<Inputevents_mvSubscription>>>(
+  inputevents_mv: <T = Promise<AsyncIterator<InputeventsMvSubscription>>>(
     args?: {
-      where?: Inputevents_mvWhereInput;
-      orderBy?: Inputevents_mvOrderByInput;
+      where?: InputeventsMvWhereInput;
+      orderBy?: InputeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -17825,11 +20891,11 @@ export interface D_itemSubscription
   ) => T;
   param_type: () => Promise<AsyncIterator<String>>;
   procedureevents_mv: <
-    T = Promise<AsyncIterator<Procedureevents_mvSubscription>>
+    T = Promise<AsyncIterator<ProcedureeventsMvSubscription>>
   >(
     args?: {
-      where?: Procedureevents_mvWhereInput;
-      orderBy?: Procedureevents_mvOrderByInput;
+      where?: ProcedureeventsMvWhereInput;
+      orderBy?: ProcedureeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -17840,270 +20906,237 @@ export interface D_itemSubscription
   unitname: () => Promise<AsyncIterator<String>>;
 }
 
-export interface Chartevents_13PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_13PreviousValuesPromise
-  extends Promise<Chartevents_13PreviousValues>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_13PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_13PreviousValues>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface D_icd_procedureEdge {
-  node: D_icd_procedure;
-  cursor: String;
-}
-
-export interface D_icd_procedureEdgePromise
-  extends Promise<D_icd_procedureEdge>,
-    Fragmentable {
-  node: <T = D_icd_procedurePromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface D_icd_procedureEdgeSubscription
-  extends Promise<AsyncIterator<D_icd_procedureEdge>>,
-    Fragmentable {
-  node: <T = D_icd_procedureSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Chartevents_11 {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_11Promise
-  extends Promise<Chartevents_11>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_11Subscription
-  extends Promise<AsyncIterator<Chartevents_11>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface D_icd_procedure {
-  id: ID_Output;
+export interface DIcdProcedurePreviousValues {
+  id: UUID;
   icd9_code: String;
   long_title: String;
   short_title: String;
 }
 
-export interface D_icd_procedurePromise
-  extends Promise<D_icd_procedure>,
+export interface DIcdProcedurePreviousValuesPromise
+  extends Promise<DIcdProcedurePreviousValues>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   icd9_code: () => Promise<String>;
   long_title: () => Promise<String>;
   short_title: () => Promise<String>;
 }
 
-export interface D_icd_procedureSubscription
-  extends Promise<AsyncIterator<D_icd_procedure>>,
+export interface DIcdProcedurePreviousValuesSubscription
+  extends Promise<AsyncIterator<DIcdProcedurePreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   icd9_code: () => Promise<AsyncIterator<String>>;
   long_title: () => Promise<AsyncIterator<String>>;
   short_title: () => Promise<AsyncIterator<String>>;
 }
 
-export interface Chartevents_14SubscriptionPayload {
-  mutation: MutationType;
-  node: Chartevents_14;
-  updatedFields: String[];
-  previousValues: Chartevents_14PreviousValues;
+export interface DIcdProcedure {
+  id: UUID;
+  icd9_code: String;
+  long_title: String;
+  short_title: String;
 }
 
-export interface Chartevents_14SubscriptionPayloadPromise
-  extends Promise<Chartevents_14SubscriptionPayload>,
+export interface DIcdProcedurePromise
+  extends Promise<DIcdProcedure>,
     Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_14Promise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_14PreviousValuesPromise>() => T;
+  id: () => Promise<UUID>;
+  icd9_code: () => Promise<String>;
+  long_title: () => Promise<String>;
+  short_title: () => Promise<String>;
 }
 
-export interface Chartevents_14SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_14SubscriptionPayload>>,
+export interface DIcdProcedureSubscription
+  extends Promise<AsyncIterator<DIcdProcedure>>,
     Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_14Subscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_14PreviousValuesSubscription>() => T;
+  id: () => Promise<AsyncIterator<UUID>>;
+  icd9_code: () => Promise<AsyncIterator<String>>;
+  long_title: () => Promise<AsyncIterator<String>>;
+  short_title: () => Promise<AsyncIterator<String>>;
 }
 
-export interface D_icd_diagnosisEdge {
-  node: D_icd_diagnosis;
-  cursor: String;
+export interface Caregiver {
+  id: UUID;
+  cgid: Int;
+  description?: String;
+  label?: String;
 }
 
-export interface D_icd_diagnosisEdgePromise
-  extends Promise<D_icd_diagnosisEdge>,
-    Fragmentable {
-  node: <T = D_icd_diagnosisPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface D_icd_diagnosisEdgeSubscription
-  extends Promise<AsyncIterator<D_icd_diagnosisEdge>>,
-    Fragmentable {
-  node: <T = D_icd_diagnosisSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Chartevents_14PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_14PreviousValuesPromise
-  extends Promise<Chartevents_14PreviousValues>,
-    Fragmentable {
+export interface CaregiverPromise extends Promise<Caregiver>, Fragmentable {
+  id: () => Promise<UUID>;
   cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
+  chartevents: <T = FragmentableArray<Chartevent>>(
+    args?: {
+      where?: CharteventWhereInput;
+      orderBy?: CharteventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  datetimeevents: <T = FragmentableArray<Datetimeevent>>(
+    args?: {
+      where?: DatetimeeventWhereInput;
+      orderBy?: DatetimeeventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  description: () => Promise<String>;
+  inputevents_cv: <T = FragmentableArray<InputeventsCv>>(
+    args?: {
+      where?: InputeventsCvWhereInput;
+      orderBy?: InputeventsCvOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  inputevents_mv: <T = FragmentableArray<InputeventsMv>>(
+    args?: {
+      where?: InputeventsMvWhereInput;
+      orderBy?: InputeventsMvOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  label: () => Promise<String>;
+  noteevents: <T = FragmentableArray<Noteevent>>(
+    args?: {
+      where?: NoteeventWhereInput;
+      orderBy?: NoteeventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  outputevents: <T = FragmentableArray<Outputevent>>(
+    args?: {
+      where?: OutputeventWhereInput;
+      orderBy?: OutputeventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  procedureevents_mv: <T = FragmentableArray<ProcedureeventsMv>>(
+    args?: {
+      where?: ProcedureeventsMvWhereInput;
+      orderBy?: ProcedureeventsMvOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
 }
 
-export interface Chartevents_14PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_14PreviousValues>>,
+export interface CaregiverSubscription
+  extends Promise<AsyncIterator<Caregiver>>,
     Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
   cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
+  chartevents: <T = Promise<AsyncIterator<CharteventSubscription>>>(
+    args?: {
+      where?: CharteventWhereInput;
+      orderBy?: CharteventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  datetimeevents: <T = Promise<AsyncIterator<DatetimeeventSubscription>>>(
+    args?: {
+      where?: DatetimeeventWhereInput;
+      orderBy?: DatetimeeventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  description: () => Promise<AsyncIterator<String>>;
+  inputevents_cv: <T = Promise<AsyncIterator<InputeventsCvSubscription>>>(
+    args?: {
+      where?: InputeventsCvWhereInput;
+      orderBy?: InputeventsCvOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  inputevents_mv: <T = Promise<AsyncIterator<InputeventsMvSubscription>>>(
+    args?: {
+      where?: InputeventsMvWhereInput;
+      orderBy?: InputeventsMvOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  label: () => Promise<AsyncIterator<String>>;
+  noteevents: <T = Promise<AsyncIterator<NoteeventSubscription>>>(
+    args?: {
+      where?: NoteeventWhereInput;
+      orderBy?: NoteeventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  outputevents: <T = Promise<AsyncIterator<OutputeventSubscription>>>(
+    args?: {
+      where?: OutputeventWhereInput;
+      orderBy?: OutputeventOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
+  procedureevents_mv: <
+    T = Promise<AsyncIterator<ProcedureeventsMvSubscription>>
+  >(
+    args?: {
+      where?: ProcedureeventsMvWhereInput;
+      orderBy?: ProcedureeventsMvOrderByInput;
+      skip?: Int;
+      after?: String;
+      before?: String;
+      first?: Int;
+      last?: Int;
+    }
+  ) => T;
 }
 
 export interface Callout {
-  id: ID_Output;
+  id: UUID;
   acknowledge_status: String;
   acknowledgetime?: DateTimeOutput;
   callout_outcome: String;
@@ -18128,7 +21161,7 @@ export interface Callout {
 }
 
 export interface CalloutPromise extends Promise<Callout>, Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   acknowledge_status: () => Promise<String>;
   acknowledgetime: () => Promise<DateTimeOutput>;
   callout_outcome: () => Promise<String>;
@@ -18155,7 +21188,7 @@ export interface CalloutPromise extends Promise<Callout>, Fragmentable {
 export interface CalloutSubscription
   extends Promise<AsyncIterator<Callout>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   acknowledge_status: () => Promise<AsyncIterator<String>>;
   acknowledgetime: () => Promise<AsyncIterator<DateTimeOutput>>;
   callout_outcome: () => Promise<AsyncIterator<String>>;
@@ -18179,175 +21212,93 @@ export interface CalloutSubscription
   updatetime: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
 
-export interface AggregateChartevents_10 {
-  count: Int;
-}
-
-export interface AggregateChartevents_10Promise
-  extends Promise<AggregateChartevents_10>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateChartevents_10Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_10>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface AggregateD_cpt {
-  count: Int;
-}
-
-export interface AggregateD_cptPromise
-  extends Promise<AggregateD_cpt>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateD_cptSubscription
-  extends Promise<AsyncIterator<AggregateD_cpt>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_15SubscriptionPayload {
+export interface DItemSubscriptionPayload {
   mutation: MutationType;
-  node: Chartevents_15;
+  node: DItem;
   updatedFields: String[];
-  previousValues: Chartevents_15PreviousValues;
+  previousValues: DItemPreviousValues;
 }
 
-export interface Chartevents_15SubscriptionPayloadPromise
-  extends Promise<Chartevents_15SubscriptionPayload>,
+export interface DItemSubscriptionPayloadPromise
+  extends Promise<DItemSubscriptionPayload>,
     Fragmentable {
   mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_15Promise>() => T;
+  node: <T = DItemPromise>() => T;
   updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_15PreviousValuesPromise>() => T;
+  previousValues: <T = DItemPreviousValuesPromise>() => T;
 }
 
-export interface Chartevents_15SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_15SubscriptionPayload>>,
+export interface DItemSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<DItemSubscriptionPayload>>,
     Fragmentable {
   mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_15Subscription>() => T;
+  node: <T = DItemSubscription>() => T;
   updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_15PreviousValuesSubscription>() => T;
+  previousValues: <T = DItemPreviousValuesSubscription>() => T;
 }
 
-export interface D_cptConnection {
+export interface DCptConnection {
   pageInfo: PageInfo;
-  edges: D_cptEdge[];
+  edges: DCptEdge[];
 }
 
-export interface D_cptConnectionPromise
-  extends Promise<D_cptConnection>,
+export interface DCptConnectionPromise
+  extends Promise<DCptConnection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<D_cptEdge>>() => T;
-  aggregate: <T = AggregateD_cptPromise>() => T;
+  edges: <T = FragmentableArray<DCptEdge>>() => T;
+  aggregate: <T = AggregateDCptPromise>() => T;
 }
 
-export interface D_cptConnectionSubscription
-  extends Promise<AsyncIterator<D_cptConnection>>,
+export interface DCptConnectionSubscription
+  extends Promise<AsyncIterator<DCptConnection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<D_cptEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateD_cptSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<DCptEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateDCptSubscription>() => T;
 }
 
-export interface Chartevents_15PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
+export interface DItemPreviousValues {
+  id: UUID;
+  abbreviation?: String;
+  category?: String;
+  conceptid?: Int;
+  dbsource?: String;
+  itemid: Int;
+  label?: String;
+  linksto?: String;
+  param_type?: String;
+  unitname?: String;
 }
 
-export interface Chartevents_15PreviousValuesPromise
-  extends Promise<Chartevents_15PreviousValues>,
+export interface DItemPreviousValuesPromise
+  extends Promise<DItemPreviousValues>,
     Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
+  id: () => Promise<UUID>;
+  abbreviation: () => Promise<String>;
+  category: () => Promise<String>;
+  conceptid: () => Promise<Int>;
+  dbsource: () => Promise<String>;
   itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
+  label: () => Promise<String>;
+  linksto: () => Promise<String>;
+  param_type: () => Promise<String>;
+  unitname: () => Promise<String>;
 }
 
-export interface Chartevents_15PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_15PreviousValues>>,
+export interface DItemPreviousValuesSubscription
+  extends Promise<AsyncIterator<DItemPreviousValues>>,
     Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
+  id: () => Promise<AsyncIterator<UUID>>;
+  abbreviation: () => Promise<AsyncIterator<String>>;
+  category: () => Promise<AsyncIterator<String>>;
+  conceptid: () => Promise<AsyncIterator<Int>>;
+  dbsource: () => Promise<AsyncIterator<String>>;
   itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface AggregateCptevent {
-  count: Int;
-}
-
-export interface AggregateCpteventPromise
-  extends Promise<AggregateCptevent>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateCpteventSubscription
-  extends Promise<AsyncIterator<AggregateCptevent>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_10Edge {
-  node: Chartevents_10;
-  cursor: String;
-}
-
-export interface Chartevents_10EdgePromise
-  extends Promise<Chartevents_10Edge>,
-    Fragmentable {
-  node: <T = Chartevents_10Promise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface Chartevents_10EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_10Edge>>,
-    Fragmentable {
-  node: <T = Chartevents_10Subscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
+  label: () => Promise<AsyncIterator<String>>;
+  linksto: () => Promise<AsyncIterator<String>>;
+  param_type: () => Promise<AsyncIterator<String>>;
+  unitname: () => Promise<AsyncIterator<String>>;
 }
 
 export interface CpteventConnection {
@@ -18371,920 +21322,332 @@ export interface CpteventConnectionSubscription
   aggregate: <T = AggregateCpteventSubscription>() => T;
 }
 
-export interface Chartevents_16SubscriptionPayload {
-  mutation: MutationType;
-  node: Chartevents_16;
-  updatedFields: String[];
-  previousValues: Chartevents_16PreviousValues;
-}
-
-export interface Chartevents_16SubscriptionPayloadPromise
-  extends Promise<Chartevents_16SubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_16Promise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_16PreviousValuesPromise>() => T;
-}
-
-export interface Chartevents_16SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_16SubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_16Subscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_16PreviousValuesSubscription>() => T;
-}
-
-export interface Chartevents_9Edge {
-  node: Chartevents_9;
-  cursor: String;
-}
-
-export interface Chartevents_9EdgePromise
-  extends Promise<Chartevents_9Edge>,
-    Fragmentable {
-  node: <T = Chartevents_9Promise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface Chartevents_9EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_9Edge>>,
-    Fragmentable {
-  node: <T = Chartevents_9Subscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Chartevents_16PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_16PreviousValuesPromise
-  extends Promise<Chartevents_16PreviousValues>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_16PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_16PreviousValues>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_9 {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_9Promise
-  extends Promise<Chartevents_9>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_9Subscription
-  extends Promise<AsyncIterator<Chartevents_9>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_10Connection {
-  pageInfo: PageInfo;
-  edges: Chartevents_10Edge[];
-}
-
-export interface Chartevents_10ConnectionPromise
-  extends Promise<Chartevents_10Connection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_10Edge>>() => T;
-  aggregate: <T = AggregateChartevents_10Promise>() => T;
-}
-
-export interface Chartevents_10ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_10Connection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_10EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_10Subscription>() => T;
-}
-
-export interface AggregateChartevents_8 {
+export interface AggregateCallout {
   count: Int;
 }
 
-export interface AggregateChartevents_8Promise
-  extends Promise<AggregateChartevents_8>,
+export interface AggregateCalloutPromise
+  extends Promise<AggregateCallout>,
     Fragmentable {
   count: () => Promise<Int>;
 }
 
-export interface AggregateChartevents_8Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_8>>,
+export interface AggregateCalloutSubscription
+  extends Promise<AsyncIterator<AggregateCallout>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Chartevents_17SubscriptionPayload {
-  mutation: MutationType;
-  node: Chartevents_17;
-  updatedFields: String[];
-  previousValues: Chartevents_17PreviousValues;
+export interface Chartevents9 {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
 }
 
-export interface Chartevents_17SubscriptionPayloadPromise
-  extends Promise<Chartevents_17SubscriptionPayload>,
+export interface Chartevents9Promise
+  extends Promise<Chartevents9>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents9Subscription
+  extends Promise<AsyncIterator<Chartevents9>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface DLabitemSubscriptionPayload {
+  mutation: MutationType;
+  node: DLabitem;
+  updatedFields: String[];
+  previousValues: DLabitemPreviousValues;
+}
+
+export interface DLabitemSubscriptionPayloadPromise
+  extends Promise<DLabitemSubscriptionPayload>,
     Fragmentable {
   mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_17Promise>() => T;
+  node: <T = DLabitemPromise>() => T;
   updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_17PreviousValuesPromise>() => T;
+  previousValues: <T = DLabitemPreviousValuesPromise>() => T;
 }
 
-export interface Chartevents_17SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_17SubscriptionPayload>>,
+export interface DLabitemSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<DLabitemSubscriptionPayload>>,
     Fragmentable {
   mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_17Subscription>() => T;
+  node: <T = DLabitemSubscription>() => T;
   updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_17PreviousValuesSubscription>() => T;
+  previousValues: <T = DLabitemPreviousValuesSubscription>() => T;
 }
 
-export interface Chartevents_8Connection {
+export interface Chartevents8Connection {
   pageInfo: PageInfo;
-  edges: Chartevents_8Edge[];
+  edges: Chartevents8Edge[];
 }
 
-export interface Chartevents_8ConnectionPromise
-  extends Promise<Chartevents_8Connection>,
+export interface Chartevents8ConnectionPromise
+  extends Promise<Chartevents8Connection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_8Edge>>() => T;
-  aggregate: <T = AggregateChartevents_8Promise>() => T;
+  edges: <T = FragmentableArray<Chartevents8Edge>>() => T;
+  aggregate: <T = AggregateChartevents8Promise>() => T;
 }
 
-export interface Chartevents_8ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_8Connection>>,
+export interface Chartevents8ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents8Connection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_8EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_8Subscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents8EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents8Subscription>() => T;
 }
 
-export interface Chartevents_17PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
+export interface DLabitemPreviousValues {
+  id: UUID;
+  category: String;
+  fluid: String;
+  itemid: Int;
+  label: String;
+  loinc_code?: String;
 }
 
-export interface Chartevents_17PreviousValuesPromise
-  extends Promise<Chartevents_17PreviousValues>,
+export interface DLabitemPreviousValuesPromise
+  extends Promise<DLabitemPreviousValues>,
     Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
+  id: () => Promise<UUID>;
+  category: () => Promise<String>;
+  fluid: () => Promise<String>;
   itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
+  label: () => Promise<String>;
+  loinc_code: () => Promise<String>;
 }
 
-export interface Chartevents_17PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_17PreviousValues>>,
+export interface DLabitemPreviousValuesSubscription
+  extends Promise<AsyncIterator<DLabitemPreviousValues>>,
     Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
+  id: () => Promise<AsyncIterator<UUID>>;
+  category: () => Promise<AsyncIterator<String>>;
+  fluid: () => Promise<AsyncIterator<String>>;
   itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
+  label: () => Promise<AsyncIterator<String>>;
+  loinc_code: () => Promise<AsyncIterator<String>>;
 }
 
-export interface Chartevent {
-  id: ID_Output;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  resultstatus?: String;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface CharteventPromise extends Promise<Chartevent>, Fragmentable {
-  id: () => Promise<ID_Output>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface CharteventSubscription
-  extends Promise<AsyncIterator<Chartevent>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_10 {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_10Promise
-  extends Promise<Chartevents_10>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_10Subscription
-  extends Promise<AsyncIterator<Chartevents_10>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_7Edge {
-  node: Chartevents_7;
+export interface Chartevents7Edge {
+  node: Chartevents7;
   cursor: String;
 }
 
-export interface Chartevents_7EdgePromise
-  extends Promise<Chartevents_7Edge>,
+export interface Chartevents7EdgePromise
+  extends Promise<Chartevents7Edge>,
     Fragmentable {
-  node: <T = Chartevents_7Promise>() => T;
+  node: <T = Chartevents7Promise>() => T;
   cursor: () => Promise<String>;
 }
 
-export interface Chartevents_7EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_7Edge>>,
+export interface Chartevents7EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents7Edge>>,
     Fragmentable {
-  node: <T = Chartevents_7Subscription>() => T;
+  node: <T = Chartevents7Subscription>() => T;
   cursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface Chartevents_2SubscriptionPayload {
-  mutation: MutationType;
-  node: Chartevents_2;
-  updatedFields: String[];
-  previousValues: Chartevents_2PreviousValues;
+export interface CalloutEdge {
+  node: Callout;
+  cursor: String;
 }
 
-export interface Chartevents_2SubscriptionPayloadPromise
-  extends Promise<Chartevents_2SubscriptionPayload>,
+export interface CalloutEdgePromise extends Promise<CalloutEdge>, Fragmentable {
+  node: <T = CalloutPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface CalloutEdgeSubscription
+  extends Promise<AsyncIterator<CalloutEdge>>,
+    Fragmentable {
+  node: <T = CalloutSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface Chartevents6Edge {
+  node: Chartevents6;
+  cursor: String;
+}
+
+export interface Chartevents6EdgePromise
+  extends Promise<Chartevents6Edge>,
+    Fragmentable {
+  node: <T = Chartevents6Promise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface Chartevents6EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents6Edge>>,
+    Fragmentable {
+  node: <T = Chartevents6Subscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface DatetimeeventSubscriptionPayload {
+  mutation: MutationType;
+  node: Datetimeevent;
+  updatedFields: String[];
+  previousValues: DatetimeeventPreviousValues;
+}
+
+export interface DatetimeeventSubscriptionPayloadPromise
+  extends Promise<DatetimeeventSubscriptionPayload>,
     Fragmentable {
   mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_2Promise>() => T;
+  node: <T = DatetimeeventPromise>() => T;
   updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_2PreviousValuesPromise>() => T;
+  previousValues: <T = DatetimeeventPreviousValuesPromise>() => T;
 }
 
-export interface Chartevents_2SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_2SubscriptionPayload>>,
+export interface DatetimeeventSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<DatetimeeventSubscriptionPayload>>,
     Fragmentable {
   mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_2Subscription>() => T;
+  node: <T = DatetimeeventSubscription>() => T;
   updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_2PreviousValuesSubscription>() => T;
+  previousValues: <T = DatetimeeventPreviousValuesSubscription>() => T;
 }
 
-export interface Chartevents_7 {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_7Promise
-  extends Promise<Chartevents_7>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_7Subscription
-  extends Promise<AsyncIterator<Chartevents_7>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_2PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_2PreviousValuesPromise
-  extends Promise<Chartevents_2PreviousValues>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_2PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_2PreviousValues>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_6Edge {
-  node: Chartevents_6;
-  cursor: String;
-}
-
-export interface Chartevents_6EdgePromise
-  extends Promise<Chartevents_6Edge>,
-    Fragmentable {
-  node: <T = Chartevents_6Promise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface Chartevents_6EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_6Edge>>,
-    Fragmentable {
-  node: <T = Chartevents_6Subscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface AggregateChartevents_1 {
+export interface AggregateChartevents5 {
   count: Int;
 }
 
-export interface AggregateChartevents_1Promise
-  extends Promise<AggregateChartevents_1>,
+export interface AggregateChartevents5Promise
+  extends Promise<AggregateChartevents5>,
     Fragmentable {
   count: () => Promise<Int>;
 }
 
-export interface AggregateChartevents_1Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_1>>,
+export interface AggregateChartevents5Subscription
+  extends Promise<AsyncIterator<AggregateChartevents5>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Chartevents_6 {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
+export interface DatetimeeventPreviousValues {
+  id: UUID;
+  charttime: DateTimeOutput;
   error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
   resultstatus?: String;
-  row_id: Int;
   stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
+  storetime: DateTimeOutput;
+  value?: DateTimeOutput;
+  valueuom: String;
   warning?: Int;
 }
 
-export interface Chartevents_6Promise
-  extends Promise<Chartevents_6>,
+export interface DatetimeeventPreviousValuesPromise
+  extends Promise<DatetimeeventPreviousValues>,
     Fragmentable {
-  cgid: () => Promise<Int>;
+  id: () => Promise<UUID>;
   charttime: () => Promise<DateTimeOutput>;
   error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
   resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
   stopped: () => Promise<String>;
   storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
+  value: () => Promise<DateTimeOutput>;
   valueuom: () => Promise<String>;
   warning: () => Promise<Int>;
 }
 
-export interface Chartevents_6Subscription
-  extends Promise<AsyncIterator<Chartevents_6>>,
+export interface DatetimeeventPreviousValuesSubscription
+  extends Promise<AsyncIterator<DatetimeeventPreviousValues>>,
     Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
   error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
   resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
   stopped: () => Promise<AsyncIterator<String>>;
   storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
+  value: () => Promise<AsyncIterator<DateTimeOutput>>;
   valueuom: () => Promise<AsyncIterator<String>>;
   warning: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Chartevents_3SubscriptionPayload {
-  mutation: MutationType;
-  node: Chartevents_3;
-  updatedFields: String[];
-  previousValues: Chartevents_3PreviousValues;
-}
-
-export interface Chartevents_3SubscriptionPayloadPromise
-  extends Promise<Chartevents_3SubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_3Promise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_3PreviousValuesPromise>() => T;
-}
-
-export interface Chartevents_3SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_3SubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_3Subscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_3PreviousValuesSubscription>() => T;
-}
-
-export interface AggregateChartevents_5 {
+export interface AggregateChartevents4 {
   count: Int;
 }
 
-export interface AggregateChartevents_5Promise
-  extends Promise<AggregateChartevents_5>,
+export interface AggregateChartevents4Promise
+  extends Promise<AggregateChartevents4>,
     Fragmentable {
   count: () => Promise<Int>;
 }
 
-export interface AggregateChartevents_5Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_5>>,
+export interface AggregateChartevents4Subscription
+  extends Promise<AsyncIterator<AggregateChartevents4>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Chartevents_3PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_3PreviousValuesPromise
-  extends Promise<Chartevents_3PreviousValues>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_3PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_3PreviousValues>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_5Connection {
+export interface CalloutConnection {
   pageInfo: PageInfo;
-  edges: Chartevents_5Edge[];
+  edges: CalloutEdge[];
 }
 
-export interface Chartevents_5ConnectionPromise
-  extends Promise<Chartevents_5Connection>,
+export interface CalloutConnectionPromise
+  extends Promise<CalloutConnection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_5Edge>>() => T;
-  aggregate: <T = AggregateChartevents_5Promise>() => T;
+  edges: <T = FragmentableArray<CalloutEdge>>() => T;
+  aggregate: <T = AggregateCalloutPromise>() => T;
 }
 
-export interface Chartevents_5ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_5Connection>>,
+export interface CalloutConnectionSubscription
+  extends Promise<AsyncIterator<CalloutConnection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_5EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_5Subscription>() => T;
-}
-
-export interface Chartevents_1Edge {
-  node: Chartevents_1;
-  cursor: String;
-}
-
-export interface Chartevents_1EdgePromise
-  extends Promise<Chartevents_1Edge>,
-    Fragmentable {
-  node: <T = Chartevents_1Promise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface Chartevents_1EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_1Edge>>,
-    Fragmentable {
-  node: <T = Chartevents_1Subscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface AggregateChartevents_4 {
-  count: Int;
-}
-
-export interface AggregateChartevents_4Promise
-  extends Promise<AggregateChartevents_4>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateChartevents_4Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_4>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_4SubscriptionPayload {
-  mutation: MutationType;
-  node: Chartevents_4;
-  updatedFields: String[];
-  previousValues: Chartevents_4PreviousValues;
-}
-
-export interface Chartevents_4SubscriptionPayloadPromise
-  extends Promise<Chartevents_4SubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_4Promise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_4PreviousValuesPromise>() => T;
-}
-
-export interface Chartevents_4SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_4SubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_4Subscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_4PreviousValuesSubscription>() => T;
-}
-
-export interface Chartevents_4Connection {
-  pageInfo: PageInfo;
-  edges: Chartevents_4Edge[];
-}
-
-export interface Chartevents_4ConnectionPromise
-  extends Promise<Chartevents_4Connection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_4Edge>>() => T;
-  aggregate: <T = AggregateChartevents_4Promise>() => T;
-}
-
-export interface Chartevents_4ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_4Connection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_4EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_4Subscription>() => T;
-}
-
-export interface Chartevents_4PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_4PreviousValuesPromise
-  extends Promise<Chartevents_4PreviousValues>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_4PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_4PreviousValues>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
+  edges: <T = Promise<AsyncIterator<CalloutEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateCalloutSubscription>() => T;
 }
 
 export interface Datetimeevent {
-  id: ID_Output;
+  id: UUID;
   charttime: DateTimeOutput;
   error?: Int;
   resultstatus?: String;
@@ -19298,7 +21661,7 @@ export interface Datetimeevent {
 export interface DatetimeeventPromise
   extends Promise<Datetimeevent>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   charttime: () => Promise<DateTimeOutput>;
   error: () => Promise<Int>;
   resultstatus: () => Promise<String>;
@@ -19312,7 +21675,7 @@ export interface DatetimeeventPromise
 export interface DatetimeeventSubscription
   extends Promise<AsyncIterator<Datetimeevent>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
   error: () => Promise<AsyncIterator<Int>>;
   resultstatus: () => Promise<AsyncIterator<String>>;
@@ -19323,72 +21686,32 @@ export interface DatetimeeventSubscription
   warning: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Chartevents_1Connection {
-  pageInfo: PageInfo;
-  edges: Chartevents_1Edge[];
-}
-
-export interface Chartevents_1ConnectionPromise
-  extends Promise<Chartevents_1Connection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_1Edge>>() => T;
-  aggregate: <T = AggregateChartevents_1Promise>() => T;
-}
-
-export interface Chartevents_1ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_1Connection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_1EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_1Subscription>() => T;
-}
-
-export interface Chartevents_3Edge {
-  node: Chartevents_3;
-  cursor: String;
-}
-
-export interface Chartevents_3EdgePromise
-  extends Promise<Chartevents_3Edge>,
-    Fragmentable {
-  node: <T = Chartevents_3Promise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface Chartevents_3EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_3Edge>>,
-    Fragmentable {
-  node: <T = Chartevents_3Subscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Chartevents_5SubscriptionPayload {
+export interface DiagnosesIcdSubscriptionPayload {
   mutation: MutationType;
-  node: Chartevents_5;
+  node: DiagnosesIcd;
   updatedFields: String[];
-  previousValues: Chartevents_5PreviousValues;
+  previousValues: DiagnosesIcdPreviousValues;
 }
 
-export interface Chartevents_5SubscriptionPayloadPromise
-  extends Promise<Chartevents_5SubscriptionPayload>,
+export interface DiagnosesIcdSubscriptionPayloadPromise
+  extends Promise<DiagnosesIcdSubscriptionPayload>,
     Fragmentable {
   mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_5Promise>() => T;
+  node: <T = DiagnosesIcdPromise>() => T;
   updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_5PreviousValuesPromise>() => T;
+  previousValues: <T = DiagnosesIcdPreviousValuesPromise>() => T;
 }
 
-export interface Chartevents_5SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_5SubscriptionPayload>>,
+export interface DiagnosesIcdSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<DiagnosesIcdSubscriptionPayload>>,
     Fragmentable {
   mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_5Subscription>() => T;
+  node: <T = DiagnosesIcdSubscription>() => T;
   updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_5PreviousValuesSubscription>() => T;
+  previousValues: <T = DiagnosesIcdPreviousValuesSubscription>() => T;
 }
 
-export interface Chartevents_3 {
+export interface Chartevents3 {
   cgid?: Int;
   charttime?: DateTimeOutput;
   error?: Int;
@@ -19406,8 +21729,8 @@ export interface Chartevents_3 {
   warning?: Int;
 }
 
-export interface Chartevents_3Promise
-  extends Promise<Chartevents_3>,
+export interface Chartevents3Promise
+  extends Promise<Chartevents3>,
     Fragmentable {
   cgid: () => Promise<Int>;
   charttime: () => Promise<DateTimeOutput>;
@@ -19426,8 +21749,8 @@ export interface Chartevents_3Promise
   warning: () => Promise<Int>;
 }
 
-export interface Chartevents_3Subscription
-  extends Promise<AsyncIterator<Chartevents_3>>,
+export interface Chartevents3Subscription
+  extends Promise<AsyncIterator<Chartevents3>>,
     Fragmentable {
   cgid: () => Promise<AsyncIterator<Int>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
@@ -19446,7 +21769,29 @@ export interface Chartevents_3Subscription
   warning: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Chartevents_5PreviousValues {
+export interface DiagnosesIcdPreviousValues {
+  id: UUID;
+  icd9_code?: String;
+  seq_num?: Int;
+}
+
+export interface DiagnosesIcdPreviousValuesPromise
+  extends Promise<DiagnosesIcdPreviousValues>,
+    Fragmentable {
+  id: () => Promise<UUID>;
+  icd9_code: () => Promise<String>;
+  seq_num: () => Promise<Int>;
+}
+
+export interface DiagnosesIcdPreviousValuesSubscription
+  extends Promise<AsyncIterator<DiagnosesIcdPreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<UUID>>;
+  icd9_code: () => Promise<AsyncIterator<String>>;
+  seq_num: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents2 {
   cgid?: Int;
   charttime?: DateTimeOutput;
   error?: Int;
@@ -19464,8 +21809,8 @@ export interface Chartevents_5PreviousValues {
   warning?: Int;
 }
 
-export interface Chartevents_5PreviousValuesPromise
-  extends Promise<Chartevents_5PreviousValues>,
+export interface Chartevents2Promise
+  extends Promise<Chartevents2>,
     Fragmentable {
   cgid: () => Promise<Int>;
   charttime: () => Promise<DateTimeOutput>;
@@ -19484,8 +21829,8 @@ export interface Chartevents_5PreviousValuesPromise
   warning: () => Promise<Int>;
 }
 
-export interface Chartevents_5PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_5PreviousValues>>,
+export interface Chartevents2Subscription
+  extends Promise<AsyncIterator<Chartevents2>>,
     Fragmentable {
   cgid: () => Promise<AsyncIterator<Int>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
@@ -19504,399 +21849,91 @@ export interface Chartevents_5PreviousValuesSubscription
   warning: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Chartevents_2Edge {
-  node: Chartevents_2;
-  cursor: String;
-}
-
-export interface Chartevents_2EdgePromise
-  extends Promise<Chartevents_2Edge>,
-    Fragmentable {
-  node: <T = Chartevents_2Promise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface Chartevents_2EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_2Edge>>,
-    Fragmentable {
-  node: <T = Chartevents_2Subscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Chartevents_1 {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_1Promise
-  extends Promise<Chartevents_1>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_1Subscription
-  extends Promise<AsyncIterator<Chartevents_1>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_2 {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_2Promise
-  extends Promise<Chartevents_2>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_2Subscription
-  extends Promise<AsyncIterator<Chartevents_2>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_6SubscriptionPayload {
-  mutation: MutationType;
-  node: Chartevents_6;
-  updatedFields: String[];
-  previousValues: Chartevents_6PreviousValues;
-}
-
-export interface Chartevents_6SubscriptionPayloadPromise
-  extends Promise<Chartevents_6SubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_6Promise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_6PreviousValuesPromise>() => T;
-}
-
-export interface Chartevents_6SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_6SubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_6Subscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_6PreviousValuesSubscription>() => T;
-}
-
-export interface AggregateChartevents_17 {
+export interface AggregateAdmission {
   count: Int;
 }
 
-export interface AggregateChartevents_17Promise
-  extends Promise<AggregateChartevents_17>,
+export interface AggregateAdmissionPromise
+  extends Promise<AggregateAdmission>,
     Fragmentable {
   count: () => Promise<Int>;
 }
 
-export interface AggregateChartevents_17Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_17>>,
+export interface AggregateAdmissionSubscription
+  extends Promise<AsyncIterator<AggregateAdmission>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Chartevents_6PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_6PreviousValuesPromise
-  extends Promise<Chartevents_6PreviousValues>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_6PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_6PreviousValues>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_17Connection {
+export interface Chartevents17Connection {
   pageInfo: PageInfo;
-  edges: Chartevents_17Edge[];
+  edges: Chartevents17Edge[];
 }
 
-export interface Chartevents_17ConnectionPromise
-  extends Promise<Chartevents_17Connection>,
+export interface Chartevents17ConnectionPromise
+  extends Promise<Chartevents17Connection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_17Edge>>() => T;
-  aggregate: <T = AggregateChartevents_17Promise>() => T;
+  edges: <T = FragmentableArray<Chartevents17Edge>>() => T;
+  aggregate: <T = AggregateChartevents17Promise>() => T;
 }
 
-export interface Chartevents_17ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_17Connection>>,
+export interface Chartevents17ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents17Connection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_17EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_17Subscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents17EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents17Subscription>() => T;
 }
 
-export interface AggregateChartevent {
-  count: Int;
-}
-
-export interface AggregateCharteventPromise
-  extends Promise<AggregateChartevent>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateCharteventSubscription
-  extends Promise<AsyncIterator<AggregateChartevent>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface AggregateChartevents_16 {
-  count: Int;
-}
-
-export interface AggregateChartevents_16Promise
-  extends Promise<AggregateChartevents_16>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateChartevents_16Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_16>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_7SubscriptionPayload {
+export interface DrgcodeSubscriptionPayload {
   mutation: MutationType;
-  node: Chartevents_7;
+  node: Drgcode;
   updatedFields: String[];
-  previousValues: Chartevents_7PreviousValues;
+  previousValues: DrgcodePreviousValues;
 }
 
-export interface Chartevents_7SubscriptionPayloadPromise
-  extends Promise<Chartevents_7SubscriptionPayload>,
+export interface DrgcodeSubscriptionPayloadPromise
+  extends Promise<DrgcodeSubscriptionPayload>,
     Fragmentable {
   mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_7Promise>() => T;
+  node: <T = DrgcodePromise>() => T;
   updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_7PreviousValuesPromise>() => T;
+  previousValues: <T = DrgcodePreviousValuesPromise>() => T;
 }
 
-export interface Chartevents_7SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_7SubscriptionPayload>>,
+export interface DrgcodeSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<DrgcodeSubscriptionPayload>>,
     Fragmentable {
   mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_7Subscription>() => T;
+  node: <T = DrgcodeSubscription>() => T;
   updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_7PreviousValuesSubscription>() => T;
+  previousValues: <T = DrgcodePreviousValuesSubscription>() => T;
 }
 
-export interface Chartevents_16Connection {
+export interface Chartevents16Connection {
   pageInfo: PageInfo;
-  edges: Chartevents_16Edge[];
+  edges: Chartevents16Edge[];
 }
 
-export interface Chartevents_16ConnectionPromise
-  extends Promise<Chartevents_16Connection>,
+export interface Chartevents16ConnectionPromise
+  extends Promise<Chartevents16Connection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_16Edge>>() => T;
-  aggregate: <T = AggregateChartevents_16Promise>() => T;
+  edges: <T = FragmentableArray<Chartevents16Edge>>() => T;
+  aggregate: <T = AggregateChartevents16Promise>() => T;
 }
 
-export interface Chartevents_16ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_16Connection>>,
+export interface Chartevents16ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents16Connection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_16EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_16Subscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents16EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents16Subscription>() => T;
 }
 
-export interface Chartevents_7PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_7PreviousValuesPromise
-  extends Promise<Chartevents_7PreviousValues>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_7PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_7PreviousValues>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Drgcode {
-  id: ID_Output;
+export interface DrgcodePreviousValues {
+  id: UUID;
   description?: String;
   drg_code: String;
   drg_mortality?: Int;
@@ -19904,8 +21941,10 @@ export interface Drgcode {
   drg_type: String;
 }
 
-export interface DrgcodePromise extends Promise<Drgcode>, Fragmentable {
-  id: () => Promise<ID_Output>;
+export interface DrgcodePreviousValuesPromise
+  extends Promise<DrgcodePreviousValues>,
+    Fragmentable {
+  id: () => Promise<UUID>;
   description: () => Promise<String>;
   drg_code: () => Promise<String>;
   drg_mortality: () => Promise<Int>;
@@ -19913,10 +21952,10 @@ export interface DrgcodePromise extends Promise<Drgcode>, Fragmentable {
   drg_type: () => Promise<String>;
 }
 
-export interface DrgcodeSubscription
-  extends Promise<AsyncIterator<Drgcode>>,
+export interface DrgcodePreviousValuesSubscription
+  extends Promise<AsyncIterator<DrgcodePreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   description: () => Promise<AsyncIterator<String>>;
   drg_code: () => Promise<AsyncIterator<String>>;
   drg_mortality: () => Promise<AsyncIterator<Int>>;
@@ -19924,493 +21963,154 @@ export interface DrgcodeSubscription
   drg_type: () => Promise<AsyncIterator<String>>;
 }
 
-export interface CharteventEdge {
-  node: Chartevent;
+export interface Chartevents15Edge {
+  node: Chartevents15;
   cursor: String;
 }
 
-export interface CharteventEdgePromise
-  extends Promise<CharteventEdge>,
+export interface Chartevents15EdgePromise
+  extends Promise<Chartevents15Edge>,
     Fragmentable {
-  node: <T = CharteventPromise>() => T;
+  node: <T = Chartevents15Promise>() => T;
   cursor: () => Promise<String>;
 }
 
-export interface CharteventEdgeSubscription
-  extends Promise<AsyncIterator<CharteventEdge>>,
+export interface Chartevents15EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents15Edge>>,
     Fragmentable {
-  node: <T = CharteventSubscription>() => T;
+  node: <T = Chartevents15Subscription>() => T;
   cursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface Chartevents_15Edge {
-  node: Chartevents_15;
+export interface AdmissionEdge {
+  node: Admission;
   cursor: String;
 }
 
-export interface Chartevents_15EdgePromise
-  extends Promise<Chartevents_15Edge>,
+export interface AdmissionEdgePromise
+  extends Promise<AdmissionEdge>,
     Fragmentable {
-  node: <T = Chartevents_15Promise>() => T;
+  node: <T = AdmissionPromise>() => T;
   cursor: () => Promise<String>;
 }
 
-export interface Chartevents_15EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_15Edge>>,
+export interface AdmissionEdgeSubscription
+  extends Promise<AsyncIterator<AdmissionEdge>>,
     Fragmentable {
-  node: <T = Chartevents_15Subscription>() => T;
+  node: <T = AdmissionSubscription>() => T;
   cursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface Chartevents_8SubscriptionPayload {
+export interface Chartevents14Edge {
+  node: Chartevents14;
+  cursor: String;
+}
+
+export interface Chartevents14EdgePromise
+  extends Promise<Chartevents14Edge>,
+    Fragmentable {
+  node: <T = Chartevents14Promise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface Chartevents14EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents14Edge>>,
+    Fragmentable {
+  node: <T = Chartevents14Subscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface IcustaySubscriptionPayload {
   mutation: MutationType;
-  node: Chartevents_8;
+  node: Icustay;
   updatedFields: String[];
-  previousValues: Chartevents_8PreviousValues;
+  previousValues: IcustayPreviousValues;
 }
 
-export interface Chartevents_8SubscriptionPayloadPromise
-  extends Promise<Chartevents_8SubscriptionPayload>,
+export interface IcustaySubscriptionPayloadPromise
+  extends Promise<IcustaySubscriptionPayload>,
     Fragmentable {
   mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_8Promise>() => T;
+  node: <T = IcustayPromise>() => T;
   updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_8PreviousValuesPromise>() => T;
+  previousValues: <T = IcustayPreviousValuesPromise>() => T;
 }
 
-export interface Chartevents_8SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_8SubscriptionPayload>>,
+export interface IcustaySubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<IcustaySubscriptionPayload>>,
     Fragmentable {
   mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_8Subscription>() => T;
+  node: <T = IcustaySubscription>() => T;
   updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_8PreviousValuesSubscription>() => T;
+  previousValues: <T = IcustayPreviousValuesSubscription>() => T;
 }
 
-export interface Chartevents_15 {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_15Promise
-  extends Promise<Chartevents_15>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_15Subscription
-  extends Promise<AsyncIterator<Chartevents_15>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_8PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_8PreviousValuesPromise
-  extends Promise<Chartevents_8PreviousValues>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_8PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_8PreviousValues>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_14Edge {
-  node: Chartevents_14;
-  cursor: String;
-}
-
-export interface Chartevents_14EdgePromise
-  extends Promise<Chartevents_14Edge>,
-    Fragmentable {
-  node: <T = Chartevents_14Promise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface Chartevents_14EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_14Edge>>,
-    Fragmentable {
-  node: <T = Chartevents_14Subscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface CharteventConnection {
+export interface ProcedureeventsMvConnection {
   pageInfo: PageInfo;
-  edges: CharteventEdge[];
+  edges: ProcedureeventsMvEdge[];
 }
 
-export interface CharteventConnectionPromise
-  extends Promise<CharteventConnection>,
+export interface ProcedureeventsMvConnectionPromise
+  extends Promise<ProcedureeventsMvConnection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<CharteventEdge>>() => T;
-  aggregate: <T = AggregateCharteventPromise>() => T;
+  edges: <T = FragmentableArray<ProcedureeventsMvEdge>>() => T;
+  aggregate: <T = AggregateProcedureeventsMvPromise>() => T;
 }
 
-export interface CharteventConnectionSubscription
-  extends Promise<AsyncIterator<CharteventConnection>>,
+export interface ProcedureeventsMvConnectionSubscription
+  extends Promise<AsyncIterator<ProcedureeventsMvConnection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<CharteventEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateCharteventSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<ProcedureeventsMvEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateProcedureeventsMvSubscription>() => T;
 }
 
-export interface ServiceSubscriptionPayload {
-  mutation: MutationType;
-  node: Service;
-  updatedFields: String[];
-  previousValues: ServicePreviousValues;
+export interface IcustayPreviousValues {
+  id: UUID;
+  dbsource: String;
+  first_careunit: String;
+  first_wardid: Int;
+  icustay_id: Int;
+  intime: DateTimeOutput;
+  last_careunit: String;
+  last_wardid: Int;
+  los?: Float;
+  outtime?: DateTimeOutput;
 }
 
-export interface ServiceSubscriptionPayloadPromise
-  extends Promise<ServiceSubscriptionPayload>,
+export interface IcustayPreviousValuesPromise
+  extends Promise<IcustayPreviousValues>,
     Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = ServicePromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = ServicePreviousValuesPromise>() => T;
-}
-
-export interface ServiceSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<ServiceSubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = ServiceSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = ServicePreviousValuesSubscription>() => T;
-}
-
-export interface Chartevents_9SubscriptionPayload {
-  mutation: MutationType;
-  node: Chartevents_9;
-  updatedFields: String[];
-  previousValues: Chartevents_9PreviousValues;
-}
-
-export interface Chartevents_9SubscriptionPayloadPromise
-  extends Promise<Chartevents_9SubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = Chartevents_9Promise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = Chartevents_9PreviousValuesPromise>() => T;
-}
-
-export interface Chartevents_9SubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Chartevents_9SubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Chartevents_9Subscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Chartevents_9PreviousValuesSubscription>() => T;
-}
-
-export interface AggregateService {
-  count: Int;
-}
-
-export interface AggregateServicePromise
-  extends Promise<AggregateService>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateServiceSubscription
-  extends Promise<AsyncIterator<AggregateService>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_9PreviousValues {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_9PreviousValuesPromise
-  extends Promise<Chartevents_9PreviousValues>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
+  id: () => Promise<UUID>;
+  dbsource: () => Promise<String>;
+  first_careunit: () => Promise<String>;
+  first_wardid: () => Promise<Int>;
   icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
+  intime: () => Promise<DateTimeOutput>;
+  last_careunit: () => Promise<String>;
+  last_wardid: () => Promise<Int>;
+  los: () => Promise<Float>;
+  outtime: () => Promise<DateTimeOutput>;
 }
 
-export interface Chartevents_9PreviousValuesSubscription
-  extends Promise<AsyncIterator<Chartevents_9PreviousValues>>,
+export interface IcustayPreviousValuesSubscription
+  extends Promise<AsyncIterator<IcustayPreviousValues>>,
     Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
+  id: () => Promise<AsyncIterator<UUID>>;
+  dbsource: () => Promise<AsyncIterator<String>>;
+  first_careunit: () => Promise<AsyncIterator<String>>;
+  first_wardid: () => Promise<AsyncIterator<Int>>;
   icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Procedures_icdEdge {
-  node: Procedures_icd;
-  cursor: String;
-}
-
-export interface Procedures_icdEdgePromise
-  extends Promise<Procedures_icdEdge>,
-    Fragmentable {
-  node: <T = Procedures_icdPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface Procedures_icdEdgeSubscription
-  extends Promise<AsyncIterator<Procedures_icdEdge>>,
-    Fragmentable {
-  node: <T = Procedures_icdSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface AggregateCaregiver {
-  count: Int;
-}
-
-export interface AggregateCaregiverPromise
-  extends Promise<AggregateCaregiver>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateCaregiverSubscription
-  extends Promise<AsyncIterator<AggregateCaregiver>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Procedureevents_mvConnection {
-  pageInfo: PageInfo;
-  edges: Procedureevents_mvEdge[];
-}
-
-export interface Procedureevents_mvConnectionPromise
-  extends Promise<Procedureevents_mvConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Procedureevents_mvEdge>>() => T;
-  aggregate: <T = AggregateProcedureevents_mvPromise>() => T;
-}
-
-export interface Procedureevents_mvConnectionSubscription
-  extends Promise<AsyncIterator<Procedureevents_mvConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <
-    T = Promise<AsyncIterator<Procedureevents_mvEdgeSubscription>>
-  >() => T;
-  aggregate: <T = AggregateProcedureevents_mvSubscription>() => T;
-}
-
-export interface CpteventSubscriptionPayload {
-  mutation: MutationType;
-  node: Cptevent;
-  updatedFields: String[];
-  previousValues: CpteventPreviousValues;
-}
-
-export interface CpteventSubscriptionPayloadPromise
-  extends Promise<CpteventSubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = CpteventPromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = CpteventPreviousValuesPromise>() => T;
-}
-
-export interface CpteventSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<CpteventSubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = CpteventSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = CpteventPreviousValuesSubscription>() => T;
-}
-
-export interface AggregatePatient {
-  count: Int;
-}
-
-export interface AggregatePatientPromise
-  extends Promise<AggregatePatient>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregatePatientSubscription
-  extends Promise<AsyncIterator<AggregatePatient>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface CpteventPreviousValues {
-  id: ID_Output;
-  chartdate?: DateTimeOutput;
-  costcenter: String;
-  cpt_cd: String;
-  cpt_number?: Int;
-  cpt_suffix?: String;
-  description?: String;
-  sectionheader?: String;
-  subsectionheader?: String;
-  ticket_id_seq?: Int;
-}
-
-export interface CpteventPreviousValuesPromise
-  extends Promise<CpteventPreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  chartdate: () => Promise<DateTimeOutput>;
-  costcenter: () => Promise<String>;
-  cpt_cd: () => Promise<String>;
-  cpt_number: () => Promise<Int>;
-  cpt_suffix: () => Promise<String>;
-  description: () => Promise<String>;
-  sectionheader: () => Promise<String>;
-  subsectionheader: () => Promise<String>;
-  ticket_id_seq: () => Promise<Int>;
-}
-
-export interface CpteventPreviousValuesSubscription
-  extends Promise<AsyncIterator<CpteventPreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  chartdate: () => Promise<AsyncIterator<DateTimeOutput>>;
-  costcenter: () => Promise<AsyncIterator<String>>;
-  cpt_cd: () => Promise<AsyncIterator<String>>;
-  cpt_number: () => Promise<AsyncIterator<Int>>;
-  cpt_suffix: () => Promise<AsyncIterator<String>>;
-  description: () => Promise<AsyncIterator<String>>;
-  sectionheader: () => Promise<AsyncIterator<String>>;
-  subsectionheader: () => Promise<AsyncIterator<String>>;
-  ticket_id_seq: () => Promise<AsyncIterator<Int>>;
+  intime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  last_careunit: () => Promise<AsyncIterator<String>>;
+  last_wardid: () => Promise<AsyncIterator<Int>>;
+  los: () => Promise<AsyncIterator<Float>>;
+  outtime: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
 
 export interface Patient {
-  id: ID_Output;
+  id: UUID;
   dob: DateTimeOutput;
   dod?: DateTimeOutput;
   dod_hosp?: DateTimeOutput;
@@ -20421,7 +22121,7 @@ export interface Patient {
 }
 
 export interface PatientPromise extends Promise<Patient>, Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   admissions: <T = FragmentableArray<Admission>>(
     args?: {
       where?: AdmissionWhereInput;
@@ -20477,10 +22177,10 @@ export interface PatientPromise extends Promise<Patient>, Fragmentable {
       last?: Int;
     }
   ) => T;
-  diagnoses_icd: <T = FragmentableArray<Diagnoses_icd>>(
+  diagnoses_icd: <T = FragmentableArray<DiagnosesIcd>>(
     args?: {
-      where?: Diagnoses_icdWhereInput;
-      orderBy?: Diagnoses_icdOrderByInput;
+      where?: DiagnosesIcdWhereInput;
+      orderBy?: DiagnosesIcdOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -20516,10 +22216,10 @@ export interface PatientPromise extends Promise<Patient>, Fragmentable {
       last?: Int;
     }
   ) => T;
-  inputevents_cv: <T = FragmentableArray<Inputevents_cv>>(
+  inputevents_cv: <T = FragmentableArray<InputeventsCv>>(
     args?: {
-      where?: Inputevents_cvWhereInput;
-      orderBy?: Inputevents_cvOrderByInput;
+      where?: InputeventsCvWhereInput;
+      orderBy?: InputeventsCvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -20527,10 +22227,10 @@ export interface PatientPromise extends Promise<Patient>, Fragmentable {
       last?: Int;
     }
   ) => T;
-  inputevents_mv: <T = FragmentableArray<Inputevents_mv>>(
+  inputevents_mv: <T = FragmentableArray<InputeventsMv>>(
     args?: {
-      where?: Inputevents_mvWhereInput;
-      orderBy?: Inputevents_mvOrderByInput;
+      where?: InputeventsMvWhereInput;
+      orderBy?: InputeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -20593,10 +22293,10 @@ export interface PatientPromise extends Promise<Patient>, Fragmentable {
       last?: Int;
     }
   ) => T;
-  procedureevents_mv: <T = FragmentableArray<Procedureevents_mv>>(
+  procedureevents_mv: <T = FragmentableArray<ProcedureeventsMv>>(
     args?: {
-      where?: Procedureevents_mvWhereInput;
-      orderBy?: Procedureevents_mvOrderByInput;
+      where?: ProcedureeventsMvWhereInput;
+      orderBy?: ProcedureeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -20604,10 +22304,10 @@ export interface PatientPromise extends Promise<Patient>, Fragmentable {
       last?: Int;
     }
   ) => T;
-  procedures_icd: <T = FragmentableArray<Procedures_icd>>(
+  procedures_icd: <T = FragmentableArray<ProceduresIcd>>(
     args?: {
-      where?: Procedures_icdWhereInput;
-      orderBy?: Procedures_icdOrderByInput;
+      where?: ProceduresIcdWhereInput;
+      orderBy?: ProceduresIcdOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -20643,7 +22343,7 @@ export interface PatientPromise extends Promise<Patient>, Fragmentable {
 export interface PatientSubscription
   extends Promise<AsyncIterator<Patient>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   admissions: <T = Promise<AsyncIterator<AdmissionSubscription>>>(
     args?: {
       where?: AdmissionWhereInput;
@@ -20699,10 +22399,10 @@ export interface PatientSubscription
       last?: Int;
     }
   ) => T;
-  diagnoses_icd: <T = Promise<AsyncIterator<Diagnoses_icdSubscription>>>(
+  diagnoses_icd: <T = Promise<AsyncIterator<DiagnosesIcdSubscription>>>(
     args?: {
-      where?: Diagnoses_icdWhereInput;
-      orderBy?: Diagnoses_icdOrderByInput;
+      where?: DiagnosesIcdWhereInput;
+      orderBy?: DiagnosesIcdOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -20738,10 +22438,10 @@ export interface PatientSubscription
       last?: Int;
     }
   ) => T;
-  inputevents_cv: <T = Promise<AsyncIterator<Inputevents_cvSubscription>>>(
+  inputevents_cv: <T = Promise<AsyncIterator<InputeventsCvSubscription>>>(
     args?: {
-      where?: Inputevents_cvWhereInput;
-      orderBy?: Inputevents_cvOrderByInput;
+      where?: InputeventsCvWhereInput;
+      orderBy?: InputeventsCvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -20749,10 +22449,10 @@ export interface PatientSubscription
       last?: Int;
     }
   ) => T;
-  inputevents_mv: <T = Promise<AsyncIterator<Inputevents_mvSubscription>>>(
+  inputevents_mv: <T = Promise<AsyncIterator<InputeventsMvSubscription>>>(
     args?: {
-      where?: Inputevents_mvWhereInput;
-      orderBy?: Inputevents_mvOrderByInput;
+      where?: InputeventsMvWhereInput;
+      orderBy?: InputeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -20818,11 +22518,11 @@ export interface PatientSubscription
     }
   ) => T;
   procedureevents_mv: <
-    T = Promise<AsyncIterator<Procedureevents_mvSubscription>>
+    T = Promise<AsyncIterator<ProcedureeventsMvSubscription>>
   >(
     args?: {
-      where?: Procedureevents_mvWhereInput;
-      orderBy?: Procedureevents_mvOrderByInput;
+      where?: ProcedureeventsMvWhereInput;
+      orderBy?: ProcedureeventsMvOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -20830,10 +22530,10 @@ export interface PatientSubscription
       last?: Int;
     }
   ) => T;
-  procedures_icd: <T = Promise<AsyncIterator<Procedures_icdSubscription>>>(
+  procedures_icd: <T = Promise<AsyncIterator<ProceduresIcdSubscription>>>(
     args?: {
-      where?: Procedures_icdWhereInput;
-      orderBy?: Procedures_icdOrderByInput;
+      where?: ProceduresIcdWhereInput;
+      orderBy?: ProceduresIcdOrderByInput;
       skip?: Int;
       after?: String;
       before?: String;
@@ -20866,64 +22566,26 @@ export interface PatientSubscription
   ) => T;
 }
 
-export interface CaregiverEdge {
-  node: Caregiver;
-  cursor: String;
+export interface ProceduresIcdPreviousValues {
+  id: UUID;
+  icd9_code: String;
+  seq_num: Int;
 }
 
-export interface CaregiverEdgePromise
-  extends Promise<CaregiverEdge>,
+export interface ProceduresIcdPreviousValuesPromise
+  extends Promise<ProceduresIcdPreviousValues>,
     Fragmentable {
-  node: <T = CaregiverPromise>() => T;
-  cursor: () => Promise<String>;
+  id: () => Promise<UUID>;
+  icd9_code: () => Promise<String>;
+  seq_num: () => Promise<Int>;
 }
 
-export interface CaregiverEdgeSubscription
-  extends Promise<AsyncIterator<CaregiverEdge>>,
+export interface ProceduresIcdPreviousValuesSubscription
+  extends Promise<AsyncIterator<ProceduresIcdPreviousValues>>,
     Fragmentable {
-  node: <T = CaregiverSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface AggregateNoteevent {
-  count: Int;
-}
-
-export interface AggregateNoteeventPromise
-  extends Promise<AggregateNoteevent>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateNoteeventSubscription
-  extends Promise<AsyncIterator<AggregateNoteevent>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface D_cptSubscriptionPayload {
-  mutation: MutationType;
-  node: D_cpt;
-  updatedFields: String[];
-  previousValues: D_cptPreviousValues;
-}
-
-export interface D_cptSubscriptionPayloadPromise
-  extends Promise<D_cptSubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = D_cptPromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = D_cptPreviousValuesPromise>() => T;
-}
-
-export interface D_cptSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<D_cptSubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = D_cptSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = D_cptPreviousValuesSubscription>() => T;
+  id: () => Promise<AsyncIterator<UUID>>;
+  icd9_code: () => Promise<AsyncIterator<String>>;
+  seq_num: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface MicrobiologyeventEdge {
@@ -20945,1745 +22607,52 @@ export interface MicrobiologyeventEdgeSubscription
   cursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface D_cptPreviousValues {
-  id: ID_Output;
-  category: Int;
-  codesuffix?: String;
-  maxcodeinsubsection: Int;
-  mincodeinsubsection: Int;
-  sectionheader: String;
-  sectionrange: String;
-  subsectionheader: String;
-  subsectionrange: String;
+export interface InputeventsCvSubscriptionPayload {
+  mutation: MutationType;
+  node: InputeventsCv;
+  updatedFields: String[];
+  previousValues: InputeventsCvPreviousValues;
 }
 
-export interface D_cptPreviousValuesPromise
-  extends Promise<D_cptPreviousValues>,
+export interface InputeventsCvSubscriptionPayloadPromise
+  extends Promise<InputeventsCvSubscriptionPayload>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
-  category: () => Promise<Int>;
-  codesuffix: () => Promise<String>;
-  maxcodeinsubsection: () => Promise<Int>;
-  mincodeinsubsection: () => Promise<Int>;
-  sectionheader: () => Promise<String>;
-  sectionrange: () => Promise<String>;
-  subsectionheader: () => Promise<String>;
-  subsectionrange: () => Promise<String>;
+  mutation: () => Promise<MutationType>;
+  node: <T = InputeventsCvPromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = InputeventsCvPreviousValuesPromise>() => T;
 }
 
-export interface D_cptPreviousValuesSubscription
-  extends Promise<AsyncIterator<D_cptPreviousValues>>,
+export interface InputeventsCvSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<InputeventsCvSubscriptionPayload>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  category: () => Promise<AsyncIterator<Int>>;
-  codesuffix: () => Promise<AsyncIterator<String>>;
-  maxcodeinsubsection: () => Promise<AsyncIterator<Int>>;
-  mincodeinsubsection: () => Promise<AsyncIterator<Int>>;
-  sectionheader: () => Promise<AsyncIterator<String>>;
-  sectionrange: () => Promise<AsyncIterator<String>>;
-  subsectionheader: () => Promise<AsyncIterator<String>>;
-  subsectionrange: () => Promise<AsyncIterator<String>>;
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = InputeventsCvSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = InputeventsCvPreviousValuesSubscription>() => T;
 }
 
-export interface Inputevents_cvEdge {
-  node: Inputevents_cv;
+export interface InputeventsMvEdge {
+  node: InputeventsMv;
   cursor: String;
 }
 
-export interface Inputevents_cvEdgePromise
-  extends Promise<Inputevents_cvEdge>,
+export interface InputeventsMvEdgePromise
+  extends Promise<InputeventsMvEdge>,
     Fragmentable {
-  node: <T = Inputevents_cvPromise>() => T;
+  node: <T = InputeventsMvPromise>() => T;
   cursor: () => Promise<String>;
 }
 
-export interface Inputevents_cvEdgeSubscription
-  extends Promise<AsyncIterator<Inputevents_cvEdge>>,
+export interface InputeventsMvEdgeSubscription
+  extends Promise<AsyncIterator<InputeventsMvEdge>>,
     Fragmentable {
-  node: <T = Inputevents_cvSubscription>() => T;
+  node: <T = InputeventsMvSubscription>() => T;
   cursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface CaregiverConnection {
-  pageInfo: PageInfo;
-  edges: CaregiverEdge[];
-}
-
-export interface CaregiverConnectionPromise
-  extends Promise<CaregiverConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<CaregiverEdge>>() => T;
-  aggregate: <T = AggregateCaregiverPromise>() => T;
-}
-
-export interface CaregiverConnectionSubscription
-  extends Promise<AsyncIterator<CaregiverConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<CaregiverEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateCaregiverSubscription>() => T;
-}
-
-export interface IcustayConnection {
-  pageInfo: PageInfo;
-  edges: IcustayEdge[];
-}
-
-export interface IcustayConnectionPromise
-  extends Promise<IcustayConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<IcustayEdge>>() => T;
-  aggregate: <T = AggregateIcustayPromise>() => T;
-}
-
-export interface IcustayConnectionSubscription
-  extends Promise<AsyncIterator<IcustayConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<IcustayEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateIcustaySubscription>() => T;
-}
-
-export interface D_icd_diagnosisSubscriptionPayload {
-  mutation: MutationType;
-  node: D_icd_diagnosis;
-  updatedFields: String[];
-  previousValues: D_icd_diagnosisPreviousValues;
-}
-
-export interface D_icd_diagnosisSubscriptionPayloadPromise
-  extends Promise<D_icd_diagnosisSubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = D_icd_diagnosisPromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = D_icd_diagnosisPreviousValuesPromise>() => T;
-}
-
-export interface D_icd_diagnosisSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<D_icd_diagnosisSubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = D_icd_diagnosisSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = D_icd_diagnosisPreviousValuesSubscription>() => T;
-}
-
-export interface AggregateDiagnoses_icd {
-  count: Int;
-}
-
-export interface AggregateDiagnoses_icdPromise
-  extends Promise<AggregateDiagnoses_icd>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateDiagnoses_icdSubscription
-  extends Promise<AsyncIterator<AggregateDiagnoses_icd>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface D_icd_diagnosisPreviousValues {
-  id: ID_Output;
-  icd9_code: String;
-  long_title: String;
-  short_title: String;
-}
-
-export interface D_icd_diagnosisPreviousValuesPromise
-  extends Promise<D_icd_diagnosisPreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  icd9_code: () => Promise<String>;
-  long_title: () => Promise<String>;
-  short_title: () => Promise<String>;
-}
-
-export interface D_icd_diagnosisPreviousValuesSubscription
-  extends Promise<AsyncIterator<D_icd_diagnosisPreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  icd9_code: () => Promise<AsyncIterator<String>>;
-  long_title: () => Promise<AsyncIterator<String>>;
-  short_title: () => Promise<AsyncIterator<String>>;
-}
-
-export interface DatetimeeventEdge {
-  node: Datetimeevent;
-  cursor: String;
-}
-
-export interface DatetimeeventEdgePromise
-  extends Promise<DatetimeeventEdge>,
-    Fragmentable {
-  node: <T = DatetimeeventPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface DatetimeeventEdgeSubscription
-  extends Promise<AsyncIterator<DatetimeeventEdge>>,
-    Fragmentable {
-  node: <T = DatetimeeventSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Icustay {
-  id: ID_Output;
-  dbsource: String;
-  first_careunit: String;
-  first_wardid: Int;
-  icustay_id: Int;
-  intime: DateTimeOutput;
-  last_careunit: String;
-  last_wardid: Int;
-  los?: Float;
-  outtime?: DateTimeOutput;
-}
-
-export interface IcustayPromise extends Promise<Icustay>, Fragmentable {
-  id: () => Promise<ID_Output>;
-  chartevents: <T = FragmentableArray<Chartevent>>(
-    args?: {
-      where?: CharteventWhereInput;
-      orderBy?: CharteventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  datetimeevents: <T = FragmentableArray<Datetimeevent>>(
-    args?: {
-      where?: DatetimeeventWhereInput;
-      orderBy?: DatetimeeventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  dbsource: () => Promise<String>;
-  first_careunit: () => Promise<String>;
-  first_wardid: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  inputevents_cv: <T = FragmentableArray<Inputevents_cv>>(
-    args?: {
-      where?: Inputevents_cvWhereInput;
-      orderBy?: Inputevents_cvOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  inputevents_mv: <T = FragmentableArray<Inputevents_mv>>(
-    args?: {
-      where?: Inputevents_mvWhereInput;
-      orderBy?: Inputevents_mvOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  intime: () => Promise<DateTimeOutput>;
-  last_careunit: () => Promise<String>;
-  last_wardid: () => Promise<Int>;
-  los: () => Promise<Float>;
-  outputevents: <T = FragmentableArray<Outputevent>>(
-    args?: {
-      where?: OutputeventWhereInput;
-      orderBy?: OutputeventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  outtime: () => Promise<DateTimeOutput>;
-  prescriptions: <T = FragmentableArray<Prescription>>(
-    args?: {
-      where?: PrescriptionWhereInput;
-      orderBy?: PrescriptionOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  procedureevents_mv: <T = FragmentableArray<Procedureevents_mv>>(
-    args?: {
-      where?: Procedureevents_mvWhereInput;
-      orderBy?: Procedureevents_mvOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  transfers: <T = FragmentableArray<Transfer>>(
-    args?: {
-      where?: TransferWhereInput;
-      orderBy?: TransferOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-}
-
-export interface IcustaySubscription
-  extends Promise<AsyncIterator<Icustay>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  chartevents: <T = Promise<AsyncIterator<CharteventSubscription>>>(
-    args?: {
-      where?: CharteventWhereInput;
-      orderBy?: CharteventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  datetimeevents: <T = Promise<AsyncIterator<DatetimeeventSubscription>>>(
-    args?: {
-      where?: DatetimeeventWhereInput;
-      orderBy?: DatetimeeventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  dbsource: () => Promise<AsyncIterator<String>>;
-  first_careunit: () => Promise<AsyncIterator<String>>;
-  first_wardid: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  inputevents_cv: <T = Promise<AsyncIterator<Inputevents_cvSubscription>>>(
-    args?: {
-      where?: Inputevents_cvWhereInput;
-      orderBy?: Inputevents_cvOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  inputevents_mv: <T = Promise<AsyncIterator<Inputevents_mvSubscription>>>(
-    args?: {
-      where?: Inputevents_mvWhereInput;
-      orderBy?: Inputevents_mvOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  intime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  last_careunit: () => Promise<AsyncIterator<String>>;
-  last_wardid: () => Promise<AsyncIterator<Int>>;
-  los: () => Promise<AsyncIterator<Float>>;
-  outputevents: <T = Promise<AsyncIterator<OutputeventSubscription>>>(
-    args?: {
-      where?: OutputeventWhereInput;
-      orderBy?: OutputeventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  outtime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  prescriptions: <T = Promise<AsyncIterator<PrescriptionSubscription>>>(
-    args?: {
-      where?: PrescriptionWhereInput;
-      orderBy?: PrescriptionOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  procedureevents_mv: <
-    T = Promise<AsyncIterator<Procedureevents_mvSubscription>>
-  >(
-    args?: {
-      where?: Procedureevents_mvWhereInput;
-      orderBy?: Procedureevents_mvOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  transfers: <T = Promise<AsyncIterator<TransferSubscription>>>(
-    args?: {
-      where?: TransferWhereInput;
-      orderBy?: TransferOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-}
-
-export interface D_labitemConnection {
-  pageInfo: PageInfo;
-  edges: D_labitemEdge[];
-}
-
-export interface D_labitemConnectionPromise
-  extends Promise<D_labitemConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<D_labitemEdge>>() => T;
-  aggregate: <T = AggregateD_labitemPromise>() => T;
-}
-
-export interface D_labitemConnectionSubscription
-  extends Promise<AsyncIterator<D_labitemConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<D_labitemEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateD_labitemSubscription>() => T;
-}
-
-export interface D_icd_procedureSubscriptionPayload {
-  mutation: MutationType;
-  node: D_icd_procedure;
-  updatedFields: String[];
-  previousValues: D_icd_procedurePreviousValues;
-}
-
-export interface D_icd_procedureSubscriptionPayloadPromise
-  extends Promise<D_icd_procedureSubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = D_icd_procedurePromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = D_icd_procedurePreviousValuesPromise>() => T;
-}
-
-export interface D_icd_procedureSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<D_icd_procedureSubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = D_icd_procedureSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = D_icd_procedurePreviousValuesSubscription>() => T;
-}
-
-export interface D_itemEdge {
-  node: D_item;
-  cursor: String;
-}
-
-export interface D_itemEdgePromise extends Promise<D_itemEdge>, Fragmentable {
-  node: <T = D_itemPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface D_itemEdgeSubscription
-  extends Promise<AsyncIterator<D_itemEdge>>,
-    Fragmentable {
-  node: <T = D_itemSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface D_icd_procedurePreviousValues {
-  id: ID_Output;
-  icd9_code: String;
-  long_title: String;
-  short_title: String;
-}
-
-export interface D_icd_procedurePreviousValuesPromise
-  extends Promise<D_icd_procedurePreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  icd9_code: () => Promise<String>;
-  long_title: () => Promise<String>;
-  short_title: () => Promise<String>;
-}
-
-export interface D_icd_procedurePreviousValuesSubscription
-  extends Promise<AsyncIterator<D_icd_procedurePreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  icd9_code: () => Promise<AsyncIterator<String>>;
-  long_title: () => Promise<AsyncIterator<String>>;
-  short_title: () => Promise<AsyncIterator<String>>;
-}
-
-export interface AggregateD_icd_procedure {
-  count: Int;
-}
-
-export interface AggregateD_icd_procedurePromise
-  extends Promise<AggregateD_icd_procedure>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateD_icd_procedureSubscription
-  extends Promise<AsyncIterator<AggregateD_icd_procedure>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Caregiver {
-  id: ID_Output;
-  cgid: Int;
-  label?: String;
-  description?: String;
-}
-
-export interface CaregiverPromise extends Promise<Caregiver>, Fragmentable {
-  id: () => Promise<ID_Output>;
-  cgid: () => Promise<Int>;
-  label: () => Promise<String>;
-  description: () => Promise<String>;
-  chartevents: <T = FragmentableArray<Chartevent>>(
-    args?: {
-      where?: CharteventWhereInput;
-      orderBy?: CharteventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  datetimeevents: <T = FragmentableArray<Datetimeevent>>(
-    args?: {
-      where?: DatetimeeventWhereInput;
-      orderBy?: DatetimeeventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  inputevents_cv: <T = FragmentableArray<Inputevents_cv>>(
-    args?: {
-      where?: Inputevents_cvWhereInput;
-      orderBy?: Inputevents_cvOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  inputevents_mv: <T = FragmentableArray<Inputevents_mv>>(
-    args?: {
-      where?: Inputevents_mvWhereInput;
-      orderBy?: Inputevents_mvOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  noteevents: <T = FragmentableArray<Noteevent>>(
-    args?: {
-      where?: NoteeventWhereInput;
-      orderBy?: NoteeventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  outputevents: <T = FragmentableArray<Outputevent>>(
-    args?: {
-      where?: OutputeventWhereInput;
-      orderBy?: OutputeventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  procedureevents_mv: <T = FragmentableArray<Procedureevents_mv>>(
-    args?: {
-      where?: Procedureevents_mvWhereInput;
-      orderBy?: Procedureevents_mvOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-}
-
-export interface CaregiverSubscription
-  extends Promise<AsyncIterator<Caregiver>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  cgid: () => Promise<AsyncIterator<Int>>;
-  label: () => Promise<AsyncIterator<String>>;
-  description: () => Promise<AsyncIterator<String>>;
-  chartevents: <T = Promise<AsyncIterator<CharteventSubscription>>>(
-    args?: {
-      where?: CharteventWhereInput;
-      orderBy?: CharteventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  datetimeevents: <T = Promise<AsyncIterator<DatetimeeventSubscription>>>(
-    args?: {
-      where?: DatetimeeventWhereInput;
-      orderBy?: DatetimeeventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  inputevents_cv: <T = Promise<AsyncIterator<Inputevents_cvSubscription>>>(
-    args?: {
-      where?: Inputevents_cvWhereInput;
-      orderBy?: Inputevents_cvOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  inputevents_mv: <T = Promise<AsyncIterator<Inputevents_mvSubscription>>>(
-    args?: {
-      where?: Inputevents_mvWhereInput;
-      orderBy?: Inputevents_mvOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  noteevents: <T = Promise<AsyncIterator<NoteeventSubscription>>>(
-    args?: {
-      where?: NoteeventWhereInput;
-      orderBy?: NoteeventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  outputevents: <T = Promise<AsyncIterator<OutputeventSubscription>>>(
-    args?: {
-      where?: OutputeventWhereInput;
-      orderBy?: OutputeventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  procedureevents_mv: <
-    T = Promise<AsyncIterator<Procedureevents_mvSubscription>>
-  >(
-    args?: {
-      where?: Procedureevents_mvWhereInput;
-      orderBy?: Procedureevents_mvOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-}
-
-export interface AggregateD_icd_diagnosis {
-  count: Int;
-}
-
-export interface AggregateD_icd_diagnosisPromise
-  extends Promise<AggregateD_icd_diagnosis>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateD_icd_diagnosisSubscription
-  extends Promise<AsyncIterator<AggregateD_icd_diagnosis>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface D_itemSubscriptionPayload {
-  mutation: MutationType;
-  node: D_item;
-  updatedFields: String[];
-  previousValues: D_itemPreviousValues;
-}
-
-export interface D_itemSubscriptionPayloadPromise
-  extends Promise<D_itemSubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = D_itemPromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = D_itemPreviousValuesPromise>() => T;
-}
-
-export interface D_itemSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<D_itemSubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = D_itemSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = D_itemPreviousValuesSubscription>() => T;
-}
-
-export interface D_icd_diagnosis {
-  id: ID_Output;
-  icd9_code: String;
-  long_title: String;
-  short_title: String;
-}
-
-export interface D_icd_diagnosisPromise
-  extends Promise<D_icd_diagnosis>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  icd9_code: () => Promise<String>;
-  long_title: () => Promise<String>;
-  short_title: () => Promise<String>;
-}
-
-export interface D_icd_diagnosisSubscription
-  extends Promise<AsyncIterator<D_icd_diagnosis>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  icd9_code: () => Promise<AsyncIterator<String>>;
-  long_title: () => Promise<AsyncIterator<String>>;
-  short_title: () => Promise<AsyncIterator<String>>;
-}
-
-export interface D_itemPreviousValues {
-  id: ID_Output;
-  abbreviation?: String;
-  category?: String;
-  conceptid?: Int;
-  dbsource?: String;
-  itemid: Int;
-  label?: String;
-  linksto?: String;
-  param_type?: String;
-  unitname?: String;
-}
-
-export interface D_itemPreviousValuesPromise
-  extends Promise<D_itemPreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  abbreviation: () => Promise<String>;
-  category: () => Promise<String>;
-  conceptid: () => Promise<Int>;
-  dbsource: () => Promise<String>;
-  itemid: () => Promise<Int>;
-  label: () => Promise<String>;
-  linksto: () => Promise<String>;
-  param_type: () => Promise<String>;
-  unitname: () => Promise<String>;
-}
-
-export interface D_itemPreviousValuesSubscription
-  extends Promise<AsyncIterator<D_itemPreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  abbreviation: () => Promise<AsyncIterator<String>>;
-  category: () => Promise<AsyncIterator<String>>;
-  conceptid: () => Promise<AsyncIterator<Int>>;
-  dbsource: () => Promise<AsyncIterator<String>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  label: () => Promise<AsyncIterator<String>>;
-  linksto: () => Promise<AsyncIterator<String>>;
-  param_type: () => Promise<AsyncIterator<String>>;
-  unitname: () => Promise<AsyncIterator<String>>;
-}
-
-export interface D_cpt {
-  id: ID_Output;
-  category: Int;
-  codesuffix?: String;
-  maxcodeinsubsection: Int;
-  mincodeinsubsection: Int;
-  sectionheader: String;
-  sectionrange: String;
-  subsectionheader: String;
-  subsectionrange: String;
-}
-
-export interface D_cptPromise extends Promise<D_cpt>, Fragmentable {
-  id: () => Promise<ID_Output>;
-  category: () => Promise<Int>;
-  codesuffix: () => Promise<String>;
-  maxcodeinsubsection: () => Promise<Int>;
-  mincodeinsubsection: () => Promise<Int>;
-  sectionheader: () => Promise<String>;
-  sectionrange: () => Promise<String>;
-  subsectionheader: () => Promise<String>;
-  subsectionrange: () => Promise<String>;
-}
-
-export interface D_cptSubscription
-  extends Promise<AsyncIterator<D_cpt>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  category: () => Promise<AsyncIterator<Int>>;
-  codesuffix: () => Promise<AsyncIterator<String>>;
-  maxcodeinsubsection: () => Promise<AsyncIterator<Int>>;
-  mincodeinsubsection: () => Promise<AsyncIterator<Int>>;
-  sectionheader: () => Promise<AsyncIterator<String>>;
-  sectionrange: () => Promise<AsyncIterator<String>>;
-  subsectionheader: () => Promise<AsyncIterator<String>>;
-  subsectionrange: () => Promise<AsyncIterator<String>>;
-}
-
-export interface AggregateCallout {
-  count: Int;
-}
-
-export interface AggregateCalloutPromise
-  extends Promise<AggregateCallout>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateCalloutSubscription
-  extends Promise<AsyncIterator<AggregateCallout>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface AggregateChartevents_9 {
-  count: Int;
-}
-
-export interface AggregateChartevents_9Promise
-  extends Promise<AggregateChartevents_9>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateChartevents_9Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_9>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface D_labitemSubscriptionPayload {
-  mutation: MutationType;
-  node: D_labitem;
-  updatedFields: String[];
-  previousValues: D_labitemPreviousValues;
-}
-
-export interface D_labitemSubscriptionPayloadPromise
-  extends Promise<D_labitemSubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = D_labitemPromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = D_labitemPreviousValuesPromise>() => T;
-}
-
-export interface D_labitemSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<D_labitemSubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = D_labitemSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = D_labitemPreviousValuesSubscription>() => T;
-}
-
-export interface ServicePreviousValues {
-  id: ID_Output;
-  curr_service?: String;
-  prev_service?: String;
-  transfertime: DateTimeOutput;
-}
-
-export interface ServicePreviousValuesPromise
-  extends Promise<ServicePreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  curr_service: () => Promise<String>;
-  prev_service: () => Promise<String>;
-  transfertime: () => Promise<DateTimeOutput>;
-}
-
-export interface ServicePreviousValuesSubscription
-  extends Promise<AsyncIterator<ServicePreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  curr_service: () => Promise<AsyncIterator<String>>;
-  prev_service: () => Promise<AsyncIterator<String>>;
-  transfertime: () => Promise<AsyncIterator<DateTimeOutput>>;
-}
-
-export interface D_labitemPreviousValues {
-  id: ID_Output;
-  category: String;
-  fluid: String;
-  itemid: Int;
-  label: String;
-  loinc_code?: String;
-}
-
-export interface D_labitemPreviousValuesPromise
-  extends Promise<D_labitemPreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  category: () => Promise<String>;
-  fluid: () => Promise<String>;
-  itemid: () => Promise<Int>;
-  label: () => Promise<String>;
-  loinc_code: () => Promise<String>;
-}
-
-export interface D_labitemPreviousValuesSubscription
-  extends Promise<AsyncIterator<D_labitemPreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  category: () => Promise<AsyncIterator<String>>;
-  fluid: () => Promise<AsyncIterator<String>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  label: () => Promise<AsyncIterator<String>>;
-  loinc_code: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Chartevents_8 {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_8Promise
-  extends Promise<Chartevents_8>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_8Subscription
-  extends Promise<AsyncIterator<Chartevents_8>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface CalloutEdge {
-  node: Callout;
-  cursor: String;
-}
-
-export interface CalloutEdgePromise extends Promise<CalloutEdge>, Fragmentable {
-  node: <T = CalloutPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface CalloutEdgeSubscription
-  extends Promise<AsyncIterator<CalloutEdge>>,
-    Fragmentable {
-  node: <T = CalloutSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Chartevents_7Connection {
-  pageInfo: PageInfo;
-  edges: Chartevents_7Edge[];
-}
-
-export interface Chartevents_7ConnectionPromise
-  extends Promise<Chartevents_7Connection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_7Edge>>() => T;
-  aggregate: <T = AggregateChartevents_7Promise>() => T;
-}
-
-export interface Chartevents_7ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_7Connection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_7EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_7Subscription>() => T;
-}
-
-export interface DatetimeeventSubscriptionPayload {
-  mutation: MutationType;
-  node: Datetimeevent;
-  updatedFields: String[];
-  previousValues: DatetimeeventPreviousValues;
-}
-
-export interface DatetimeeventSubscriptionPayloadPromise
-  extends Promise<DatetimeeventSubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = DatetimeeventPromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = DatetimeeventPreviousValuesPromise>() => T;
-}
-
-export interface DatetimeeventSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<DatetimeeventSubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = DatetimeeventSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = DatetimeeventPreviousValuesSubscription>() => T;
-}
-
-export interface Chartevents_6Connection {
-  pageInfo: PageInfo;
-  edges: Chartevents_6Edge[];
-}
-
-export interface Chartevents_6ConnectionPromise
-  extends Promise<Chartevents_6Connection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_6Edge>>() => T;
-  aggregate: <T = AggregateChartevents_6Promise>() => T;
-}
-
-export interface Chartevents_6ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_6Connection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_6EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_6Subscription>() => T;
-}
-
-export interface DatetimeeventPreviousValues {
-  id: ID_Output;
-  charttime: DateTimeOutput;
-  error?: Int;
-  resultstatus?: String;
-  stopped?: String;
-  storetime: DateTimeOutput;
-  value?: DateTimeOutput;
-  valueuom: String;
-  warning?: Int;
-}
-
-export interface DatetimeeventPreviousValuesPromise
-  extends Promise<DatetimeeventPreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  value: () => Promise<DateTimeOutput>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface DatetimeeventPreviousValuesSubscription
-  extends Promise<AsyncIterator<DatetimeeventPreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  value: () => Promise<AsyncIterator<DateTimeOutput>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Chartevents_5Edge {
-  node: Chartevents_5;
-  cursor: String;
-}
-
-export interface Chartevents_5EdgePromise
-  extends Promise<Chartevents_5Edge>,
-    Fragmentable {
-  node: <T = Chartevents_5Promise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface Chartevents_5EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_5Edge>>,
-    Fragmentable {
-  node: <T = Chartevents_5Subscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface CalloutConnection {
-  pageInfo: PageInfo;
-  edges: CalloutEdge[];
-}
-
-export interface CalloutConnectionPromise
-  extends Promise<CalloutConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<CalloutEdge>>() => T;
-  aggregate: <T = AggregateCalloutPromise>() => T;
-}
-
-export interface CalloutConnectionSubscription
-  extends Promise<AsyncIterator<CalloutConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<CalloutEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateCalloutSubscription>() => T;
-}
-
-export interface Chartevents_4Edge {
-  node: Chartevents_4;
-  cursor: String;
-}
-
-export interface Chartevents_4EdgePromise
-  extends Promise<Chartevents_4Edge>,
-    Fragmentable {
-  node: <T = Chartevents_4Promise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface Chartevents_4EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_4Edge>>,
-    Fragmentable {
-  node: <T = Chartevents_4Subscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Diagnoses_icdSubscriptionPayload {
-  mutation: MutationType;
-  node: Diagnoses_icd;
-  updatedFields: String[];
-  previousValues: Diagnoses_icdPreviousValues;
-}
-
-export interface Diagnoses_icdSubscriptionPayloadPromise
-  extends Promise<Diagnoses_icdSubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = Diagnoses_icdPromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = Diagnoses_icdPreviousValuesPromise>() => T;
-}
-
-export interface Diagnoses_icdSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Diagnoses_icdSubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Diagnoses_icdSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Diagnoses_icdPreviousValuesSubscription>() => T;
-}
-
-export interface AggregateChartevents_3 {
-  count: Int;
-}
-
-export interface AggregateChartevents_3Promise
-  extends Promise<AggregateChartevents_3>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateChartevents_3Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_3>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Diagnoses_icdPreviousValues {
-  id: ID_Output;
-  icd9_code?: String;
-  seq_num?: Int;
-}
-
-export interface Diagnoses_icdPreviousValuesPromise
-  extends Promise<Diagnoses_icdPreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  icd9_code: () => Promise<String>;
-  seq_num: () => Promise<Int>;
-}
-
-export interface Diagnoses_icdPreviousValuesSubscription
-  extends Promise<AsyncIterator<Diagnoses_icdPreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  icd9_code: () => Promise<AsyncIterator<String>>;
-  seq_num: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface AggregateChartevents_2 {
-  count: Int;
-}
-
-export interface AggregateChartevents_2Promise
-  extends Promise<AggregateChartevents_2>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateChartevents_2Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_2>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface AggregateAdmission {
-  count: Int;
-}
-
-export interface AggregateAdmissionPromise
-  extends Promise<AggregateAdmission>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateAdmissionSubscription
-  extends Promise<AsyncIterator<AggregateAdmission>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Diagnoses_icd {
-  id: ID_Output;
-  icd9_code?: String;
-  seq_num?: Int;
-}
-
-export interface Diagnoses_icdPromise
-  extends Promise<Diagnoses_icd>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  icd9_code: () => Promise<String>;
-  seq_num: () => Promise<Int>;
-}
-
-export interface Diagnoses_icdSubscription
-  extends Promise<AsyncIterator<Diagnoses_icd>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  icd9_code: () => Promise<AsyncIterator<String>>;
-  seq_num: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface DrgcodeSubscriptionPayload {
-  mutation: MutationType;
-  node: Drgcode;
-  updatedFields: String[];
-  previousValues: DrgcodePreviousValues;
-}
-
-export interface DrgcodeSubscriptionPayloadPromise
-  extends Promise<DrgcodeSubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = DrgcodePromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = DrgcodePreviousValuesPromise>() => T;
-}
-
-export interface DrgcodeSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<DrgcodeSubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = DrgcodeSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = DrgcodePreviousValuesSubscription>() => T;
-}
-
-export interface Chartevents_17 {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_17Promise
-  extends Promise<Chartevents_17>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_17Subscription
-  extends Promise<AsyncIterator<Chartevents_17>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface DrgcodePreviousValues {
-  id: ID_Output;
-  description?: String;
-  drg_code: String;
-  drg_mortality?: Int;
-  drg_severity?: Int;
-  drg_type: String;
-}
-
-export interface DrgcodePreviousValuesPromise
-  extends Promise<DrgcodePreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  description: () => Promise<String>;
-  drg_code: () => Promise<String>;
-  drg_mortality: () => Promise<Int>;
-  drg_severity: () => Promise<Int>;
-  drg_type: () => Promise<String>;
-}
-
-export interface DrgcodePreviousValuesSubscription
-  extends Promise<AsyncIterator<DrgcodePreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  description: () => Promise<AsyncIterator<String>>;
-  drg_code: () => Promise<AsyncIterator<String>>;
-  drg_mortality: () => Promise<AsyncIterator<Int>>;
-  drg_severity: () => Promise<AsyncIterator<Int>>;
-  drg_type: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Chartevents_16 {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
-}
-
-export interface Chartevents_16Promise
-  extends Promise<Chartevents_16>,
-    Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
-}
-
-export interface Chartevents_16Subscription
-  extends Promise<AsyncIterator<Chartevents_16>>,
-    Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface AdmissionEdge {
-  node: Admission;
-  cursor: String;
-}
-
-export interface AdmissionEdgePromise
-  extends Promise<AdmissionEdge>,
-    Fragmentable {
-  node: <T = AdmissionPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface AdmissionEdgeSubscription
-  extends Promise<AsyncIterator<AdmissionEdge>>,
-    Fragmentable {
-  node: <T = AdmissionSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Chartevents_15Connection {
-  pageInfo: PageInfo;
-  edges: Chartevents_15Edge[];
-}
-
-export interface Chartevents_15ConnectionPromise
-  extends Promise<Chartevents_15Connection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_15Edge>>() => T;
-  aggregate: <T = AggregateChartevents_15Promise>() => T;
-}
-
-export interface Chartevents_15ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_15Connection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_15EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_15Subscription>() => T;
-}
-
-export interface IcustaySubscriptionPayload {
-  mutation: MutationType;
-  node: Icustay;
-  updatedFields: String[];
-  previousValues: IcustayPreviousValues;
-}
-
-export interface IcustaySubscriptionPayloadPromise
-  extends Promise<IcustaySubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = IcustayPromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = IcustayPreviousValuesPromise>() => T;
-}
-
-export interface IcustaySubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<IcustaySubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = IcustaySubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = IcustayPreviousValuesSubscription>() => T;
-}
-
-export interface Chartevents_14Connection {
-  pageInfo: PageInfo;
-  edges: Chartevents_14Edge[];
-}
-
-export interface Chartevents_14ConnectionPromise
-  extends Promise<Chartevents_14Connection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_14Edge>>() => T;
-  aggregate: <T = AggregateChartevents_14Promise>() => T;
-}
-
-export interface Chartevents_14ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_14Connection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_14EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_14Subscription>() => T;
-}
-
-export interface IcustayPreviousValues {
-  id: ID_Output;
-  dbsource: String;
-  first_careunit: String;
-  first_wardid: Int;
-  icustay_id: Int;
-  intime: DateTimeOutput;
-  last_careunit: String;
-  last_wardid: Int;
-  los?: Float;
-  outtime?: DateTimeOutput;
-}
-
-export interface IcustayPreviousValuesPromise
-  extends Promise<IcustayPreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  dbsource: () => Promise<String>;
-  first_careunit: () => Promise<String>;
-  first_wardid: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  intime: () => Promise<DateTimeOutput>;
-  last_careunit: () => Promise<String>;
-  last_wardid: () => Promise<Int>;
-  los: () => Promise<Float>;
-  outtime: () => Promise<DateTimeOutput>;
-}
-
-export interface IcustayPreviousValuesSubscription
-  extends Promise<AsyncIterator<IcustayPreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  dbsource: () => Promise<AsyncIterator<String>>;
-  first_careunit: () => Promise<AsyncIterator<String>>;
-  first_wardid: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  intime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  last_careunit: () => Promise<AsyncIterator<String>>;
-  last_wardid: () => Promise<AsyncIterator<Int>>;
-  los: () => Promise<AsyncIterator<Float>>;
-  outtime: () => Promise<AsyncIterator<DateTimeOutput>>;
-}
-
-export interface ServiceConnection {
-  pageInfo: PageInfo;
-  edges: ServiceEdge[];
-}
-
-export interface ServiceConnectionPromise
-  extends Promise<ServiceConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<ServiceEdge>>() => T;
-  aggregate: <T = AggregateServicePromise>() => T;
-}
-
-export interface ServiceConnectionSubscription
-  extends Promise<AsyncIterator<ServiceConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<ServiceEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateServiceSubscription>() => T;
-}
-
-export interface Microbiologyevent {
-  id: ID_Output;
-  ab_name?: String;
-  chartdate?: DateTimeOutput;
-  charttime?: DateTimeOutput;
-  dilution_comparison?: String;
-  dilution_text?: String;
-  dilution_value?: Float;
-  interpretation?: String;
-  isolate_num?: Int;
-  org_name?: String;
-  spec_type_desc?: String;
-}
-
-export interface MicrobiologyeventPromise
-  extends Promise<Microbiologyevent>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  ab_name: () => Promise<String>;
-  chartdate: () => Promise<DateTimeOutput>;
-  charttime: () => Promise<DateTimeOutput>;
-  dilution_comparison: () => Promise<String>;
-  dilution_text: () => Promise<String>;
-  dilution_value: () => Promise<Float>;
-  interpretation: () => Promise<String>;
-  isolate_num: () => Promise<Int>;
-  org_name: () => Promise<String>;
-  spec_type_desc: () => Promise<String>;
-}
-
-export interface MicrobiologyeventSubscription
-  extends Promise<AsyncIterator<Microbiologyevent>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  ab_name: () => Promise<AsyncIterator<String>>;
-  chartdate: () => Promise<AsyncIterator<DateTimeOutput>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  dilution_comparison: () => Promise<AsyncIterator<String>>;
-  dilution_text: () => Promise<AsyncIterator<String>>;
-  dilution_value: () => Promise<AsyncIterator<Float>>;
-  interpretation: () => Promise<AsyncIterator<String>>;
-  isolate_num: () => Promise<AsyncIterator<Int>>;
-  org_name: () => Promise<AsyncIterator<String>>;
-  spec_type_desc: () => Promise<AsyncIterator<String>>;
-}
-
-export interface PrescriptionEdge {
-  node: Prescription;
-  cursor: String;
-}
-
-export interface PrescriptionEdgePromise
-  extends Promise<PrescriptionEdge>,
-    Fragmentable {
-  node: <T = PrescriptionPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface PrescriptionEdgeSubscription
-  extends Promise<AsyncIterator<PrescriptionEdge>>,
-    Fragmentable {
-  node: <T = PrescriptionSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Inputevents_cvSubscriptionPayload {
-  mutation: MutationType;
-  node: Inputevents_cv;
-  updatedFields: String[];
-  previousValues: Inputevents_cvPreviousValues;
-}
-
-export interface Inputevents_cvSubscriptionPayloadPromise
-  extends Promise<Inputevents_cvSubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = Inputevents_cvPromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = Inputevents_cvPreviousValuesPromise>() => T;
-}
-
-export interface Inputevents_cvSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Inputevents_cvSubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Inputevents_cvSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Inputevents_cvPreviousValuesSubscription>() => T;
-}
-
-export interface OutputeventEdge {
-  node: Outputevent;
-  cursor: String;
-}
-
-export interface OutputeventEdgePromise
-  extends Promise<OutputeventEdge>,
-    Fragmentable {
-  node: <T = OutputeventPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface OutputeventEdgeSubscription
-  extends Promise<AsyncIterator<OutputeventEdge>>,
-    Fragmentable {
-  node: <T = OutputeventSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface Inputevents_cvPreviousValues {
-  id: ID_Output;
+export interface InputeventsCvPreviousValues {
+  id: UUID;
   amount?: Float;
   amountuom?: String;
   charttime?: DateTimeOutput;
@@ -22703,10 +22672,10 @@ export interface Inputevents_cvPreviousValues {
   storetime?: DateTimeOutput;
 }
 
-export interface Inputevents_cvPreviousValuesPromise
-  extends Promise<Inputevents_cvPreviousValues>,
+export interface InputeventsCvPreviousValuesPromise
+  extends Promise<InputeventsCvPreviousValues>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   amount: () => Promise<Float>;
   amountuom: () => Promise<String>;
   charttime: () => Promise<DateTimeOutput>;
@@ -22726,10 +22695,10 @@ export interface Inputevents_cvPreviousValuesPromise
   storetime: () => Promise<DateTimeOutput>;
 }
 
-export interface Inputevents_cvPreviousValuesSubscription
-  extends Promise<AsyncIterator<Inputevents_cvPreviousValues>>,
+export interface InputeventsCvPreviousValuesSubscription
+  extends Promise<AsyncIterator<InputeventsCvPreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   amount: () => Promise<AsyncIterator<Float>>;
   amountuom: () => Promise<AsyncIterator<String>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
@@ -22749,25 +22718,20 @@ export interface Inputevents_cvPreviousValuesSubscription
   storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
 
-export interface Inputevents_mvConnection {
-  pageInfo: PageInfo;
-  edges: Inputevents_mvEdge[];
+export interface AggregateDrgcode {
+  count: Int;
 }
 
-export interface Inputevents_mvConnectionPromise
-  extends Promise<Inputevents_mvConnection>,
+export interface AggregateDrgcodePromise
+  extends Promise<AggregateDrgcode>,
     Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Inputevents_mvEdge>>() => T;
-  aggregate: <T = AggregateInputevents_mvPromise>() => T;
+  count: () => Promise<Int>;
 }
 
-export interface Inputevents_mvConnectionSubscription
-  extends Promise<AsyncIterator<Inputevents_mvConnection>>,
+export interface AggregateDrgcodeSubscription
+  extends Promise<AsyncIterator<AggregateDrgcode>>,
     Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Inputevents_mvEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateInputevents_mvSubscription>() => T;
+  count: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface PageInfo {
@@ -22793,66 +22757,75 @@ export interface PageInfoSubscription
   endCursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface DrgcodeEdge {
-  node: Drgcode;
-  cursor: String;
+export interface DatetimeeventConnection {
+  pageInfo: PageInfo;
+  edges: DatetimeeventEdge[];
 }
 
-export interface DrgcodeEdgePromise extends Promise<DrgcodeEdge>, Fragmentable {
-  node: <T = DrgcodePromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface DrgcodeEdgeSubscription
-  extends Promise<AsyncIterator<DrgcodeEdge>>,
+export interface DatetimeeventConnectionPromise
+  extends Promise<DatetimeeventConnection>,
     Fragmentable {
-  node: <T = DrgcodeSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<DatetimeeventEdge>>() => T;
+  aggregate: <T = AggregateDatetimeeventPromise>() => T;
 }
 
-export interface Inputevents_mvSubscriptionPayload {
+export interface DatetimeeventConnectionSubscription
+  extends Promise<AsyncIterator<DatetimeeventConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<DatetimeeventEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateDatetimeeventSubscription>() => T;
+}
+
+export interface InputeventsMvSubscriptionPayload {
   mutation: MutationType;
-  node: Inputevents_mv;
+  node: InputeventsMv;
   updatedFields: String[];
-  previousValues: Inputevents_mvPreviousValues;
+  previousValues: InputeventsMvPreviousValues;
 }
 
-export interface Inputevents_mvSubscriptionPayloadPromise
-  extends Promise<Inputevents_mvSubscriptionPayload>,
+export interface InputeventsMvSubscriptionPayloadPromise
+  extends Promise<InputeventsMvSubscriptionPayload>,
     Fragmentable {
   mutation: () => Promise<MutationType>;
-  node: <T = Inputevents_mvPromise>() => T;
+  node: <T = InputeventsMvPromise>() => T;
   updatedFields: () => Promise<String[]>;
-  previousValues: <T = Inputevents_mvPreviousValuesPromise>() => T;
+  previousValues: <T = InputeventsMvPreviousValuesPromise>() => T;
 }
 
-export interface Inputevents_mvSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Inputevents_mvSubscriptionPayload>>,
+export interface InputeventsMvSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<InputeventsMvSubscriptionPayload>>,
     Fragmentable {
   mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Inputevents_mvSubscription>() => T;
+  node: <T = InputeventsMvSubscription>() => T;
   updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Inputevents_mvPreviousValuesSubscription>() => T;
+  previousValues: <T = InputeventsMvPreviousValuesSubscription>() => T;
 }
 
-export interface AggregateD_labitem {
-  count: Int;
+export interface DItemConnection {
+  pageInfo: PageInfo;
+  edges: DItemEdge[];
 }
 
-export interface AggregateD_labitemPromise
-  extends Promise<AggregateD_labitem>,
+export interface DItemConnectionPromise
+  extends Promise<DItemConnection>,
     Fragmentable {
-  count: () => Promise<Int>;
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<DItemEdge>>() => T;
+  aggregate: <T = AggregateDItemPromise>() => T;
 }
 
-export interface AggregateD_labitemSubscription
-  extends Promise<AsyncIterator<AggregateD_labitem>>,
+export interface DItemConnectionSubscription
+  extends Promise<AsyncIterator<DItemConnection>>,
     Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<DItemEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateDItemSubscription>() => T;
 }
 
-export interface Inputevents_mvPreviousValues {
-  id: ID_Output;
+export interface InputeventsMvPreviousValues {
+  id: UUID;
   amount?: Float;
   amountuom?: String;
   cancelreason?: Int;
@@ -22880,10 +22853,10 @@ export interface Inputevents_mvPreviousValues {
   totalamountuom?: String;
 }
 
-export interface Inputevents_mvPreviousValuesPromise
-  extends Promise<Inputevents_mvPreviousValues>,
+export interface InputeventsMvPreviousValuesPromise
+  extends Promise<InputeventsMvPreviousValues>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   amount: () => Promise<Float>;
   amountuom: () => Promise<String>;
   cancelreason: () => Promise<Int>;
@@ -22911,10 +22884,10 @@ export interface Inputevents_mvPreviousValuesPromise
   totalamountuom: () => Promise<String>;
 }
 
-export interface Inputevents_mvPreviousValuesSubscription
-  extends Promise<AsyncIterator<Inputevents_mvPreviousValues>>,
+export interface InputeventsMvPreviousValuesSubscription
+  extends Promise<AsyncIterator<InputeventsMvPreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   amount: () => Promise<AsyncIterator<Float>>;
   amountuom: () => Promise<AsyncIterator<String>>;
   cancelreason: () => Promise<AsyncIterator<Int>>;
@@ -22942,77 +22915,23 @@ export interface Inputevents_mvPreviousValuesSubscription
   totalamountuom: () => Promise<AsyncIterator<String>>;
 }
 
-export interface Procedureevents_mv {
-  id: ID_Output;
-  cancelreason?: Int;
-  comments_canceledby?: String;
-  comments_date?: DateTimeOutput;
-  comments_editedby?: String;
-  continueinnextdept?: Int;
-  endtime?: DateTimeOutput;
-  isopenbag?: Int;
-  linkorderid?: Int;
-  location?: String;
-  locationcategory?: String;
-  ordercategorydescription?: String;
-  ordercategoryname?: String;
-  orderid?: Int;
-  secondaryordercategoryname?: String;
-  starttime?: DateTimeOutput;
-  statusdescription?: String;
-  storetime?: DateTimeOutput;
-  value?: Float;
-  valueuom?: String;
+export interface DIcdDiagnosisEdge {
+  node: DIcdDiagnosis;
+  cursor: String;
 }
 
-export interface Procedureevents_mvPromise
-  extends Promise<Procedureevents_mv>,
+export interface DIcdDiagnosisEdgePromise
+  extends Promise<DIcdDiagnosisEdge>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
-  cancelreason: () => Promise<Int>;
-  comments_canceledby: () => Promise<String>;
-  comments_date: () => Promise<DateTimeOutput>;
-  comments_editedby: () => Promise<String>;
-  continueinnextdept: () => Promise<Int>;
-  endtime: () => Promise<DateTimeOutput>;
-  isopenbag: () => Promise<Int>;
-  linkorderid: () => Promise<Int>;
-  location: () => Promise<String>;
-  locationcategory: () => Promise<String>;
-  ordercategorydescription: () => Promise<String>;
-  ordercategoryname: () => Promise<String>;
-  orderid: () => Promise<Int>;
-  secondaryordercategoryname: () => Promise<String>;
-  starttime: () => Promise<DateTimeOutput>;
-  statusdescription: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  value: () => Promise<Float>;
-  valueuom: () => Promise<String>;
+  node: <T = DIcdDiagnosisPromise>() => T;
+  cursor: () => Promise<String>;
 }
 
-export interface Procedureevents_mvSubscription
-  extends Promise<AsyncIterator<Procedureevents_mv>>,
+export interface DIcdDiagnosisEdgeSubscription
+  extends Promise<AsyncIterator<DIcdDiagnosisEdge>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  cancelreason: () => Promise<AsyncIterator<Int>>;
-  comments_canceledby: () => Promise<AsyncIterator<String>>;
-  comments_date: () => Promise<AsyncIterator<DateTimeOutput>>;
-  comments_editedby: () => Promise<AsyncIterator<String>>;
-  continueinnextdept: () => Promise<AsyncIterator<Int>>;
-  endtime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  isopenbag: () => Promise<AsyncIterator<Int>>;
-  linkorderid: () => Promise<AsyncIterator<Int>>;
-  location: () => Promise<AsyncIterator<String>>;
-  locationcategory: () => Promise<AsyncIterator<String>>;
-  ordercategorydescription: () => Promise<AsyncIterator<String>>;
-  ordercategoryname: () => Promise<AsyncIterator<String>>;
-  orderid: () => Promise<AsyncIterator<Int>>;
-  secondaryordercategoryname: () => Promise<AsyncIterator<String>>;
-  starttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  statusdescription: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  value: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
+  node: <T = DIcdDiagnosisSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
 }
 
 export interface AdmissionConnection {
@@ -23036,25 +22955,20 @@ export interface AdmissionConnectionSubscription
   aggregate: <T = AggregateAdmissionSubscription>() => T;
 }
 
-export interface D_icd_diagnosisConnection {
-  pageInfo: PageInfo;
-  edges: D_icd_diagnosisEdge[];
+export interface AggregateCptevent {
+  count: Int;
 }
 
-export interface D_icd_diagnosisConnectionPromise
-  extends Promise<D_icd_diagnosisConnection>,
+export interface AggregateCpteventPromise
+  extends Promise<AggregateCptevent>,
     Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<D_icd_diagnosisEdge>>() => T;
-  aggregate: <T = AggregateD_icd_diagnosisPromise>() => T;
+  count: () => Promise<Int>;
 }
 
-export interface D_icd_diagnosisConnectionSubscription
-  extends Promise<AsyncIterator<D_icd_diagnosisConnection>>,
+export interface AggregateCpteventSubscription
+  extends Promise<AsyncIterator<AggregateCptevent>>,
     Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<D_icd_diagnosisEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateD_icd_diagnosisSubscription>() => T;
+  count: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface LabeventSubscriptionPayload {
@@ -23082,27 +22996,24 @@ export interface LabeventSubscriptionPayloadSubscription
   previousValues: <T = LabeventPreviousValuesSubscription>() => T;
 }
 
-export interface CpteventEdge {
-  node: Cptevent;
-  cursor: String;
+export interface AggregateChartevents8 {
+  count: Int;
 }
 
-export interface CpteventEdgePromise
-  extends Promise<CpteventEdge>,
+export interface AggregateChartevents8Promise
+  extends Promise<AggregateChartevents8>,
     Fragmentable {
-  node: <T = CpteventPromise>() => T;
-  cursor: () => Promise<String>;
+  count: () => Promise<Int>;
 }
 
-export interface CpteventEdgeSubscription
-  extends Promise<AsyncIterator<CpteventEdge>>,
+export interface AggregateChartevents8Subscription
+  extends Promise<AsyncIterator<AggregateChartevents8>>,
     Fragmentable {
-  node: <T = CpteventSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
+  count: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface LabeventPreviousValues {
-  id: ID_Output;
+  id: UUID;
   charttime?: DateTimeOutput;
   flag?: String;
   value?: String;
@@ -23113,7 +23024,7 @@ export interface LabeventPreviousValues {
 export interface LabeventPreviousValuesPromise
   extends Promise<LabeventPreviousValues>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   charttime: () => Promise<DateTimeOutput>;
   flag: () => Promise<String>;
   value: () => Promise<String>;
@@ -23124,7 +23035,7 @@ export interface LabeventPreviousValuesPromise
 export interface LabeventPreviousValuesSubscription
   extends Promise<AsyncIterator<LabeventPreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
   flag: () => Promise<AsyncIterator<String>>;
   value: () => Promise<AsyncIterator<String>>;
@@ -23132,27 +23043,66 @@ export interface LabeventPreviousValuesSubscription
   valueuom: () => Promise<AsyncIterator<String>>;
 }
 
-export interface Chartevents_8Edge {
-  node: Chartevents_8;
-  cursor: String;
+export interface Chartevents7 {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
 }
 
-export interface Chartevents_8EdgePromise
-  extends Promise<Chartevents_8Edge>,
+export interface Chartevents7Promise
+  extends Promise<Chartevents7>,
     Fragmentable {
-  node: <T = Chartevents_8Promise>() => T;
-  cursor: () => Promise<String>;
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
 }
 
-export interface Chartevents_8EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_8Edge>>,
+export interface Chartevents7Subscription
+  extends Promise<AsyncIterator<Chartevents7>>,
     Fragmentable {
-  node: <T = Chartevents_8Subscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Inputevents_cv {
-  id: ID_Output;
+export interface InputeventsCv {
+  id: UUID;
   amount?: Float;
   amountuom?: String;
   charttime?: DateTimeOutput;
@@ -23172,10 +23122,10 @@ export interface Inputevents_cv {
   storetime?: DateTimeOutput;
 }
 
-export interface Inputevents_cvPromise
-  extends Promise<Inputevents_cv>,
+export interface InputeventsCvPromise
+  extends Promise<InputeventsCv>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   amount: () => Promise<Float>;
   amountuom: () => Promise<String>;
   charttime: () => Promise<DateTimeOutput>;
@@ -23195,10 +23145,10 @@ export interface Inputevents_cvPromise
   storetime: () => Promise<DateTimeOutput>;
 }
 
-export interface Inputevents_cvSubscription
-  extends Promise<AsyncIterator<Inputevents_cv>>,
+export interface InputeventsCvSubscription
+  extends Promise<AsyncIterator<InputeventsCv>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   amount: () => Promise<AsyncIterator<Float>>;
   amountuom: () => Promise<AsyncIterator<String>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
@@ -23218,20 +23168,25 @@ export interface Inputevents_cvSubscription
   storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
 
-export interface AggregateChartevents_6 {
-  count: Int;
+export interface Chartevents5Connection {
+  pageInfo: PageInfo;
+  edges: Chartevents5Edge[];
 }
 
-export interface AggregateChartevents_6Promise
-  extends Promise<AggregateChartevents_6>,
+export interface Chartevents5ConnectionPromise
+  extends Promise<Chartevents5Connection>,
     Fragmentable {
-  count: () => Promise<Int>;
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<Chartevents5Edge>>() => T;
+  aggregate: <T = AggregateChartevents5Promise>() => T;
 }
 
-export interface AggregateChartevents_6Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_6>>,
+export interface Chartevents5ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents5Connection>>,
     Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents5EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents5Subscription>() => T;
 }
 
 export interface MicrobiologyeventSubscriptionPayload {
@@ -23259,66 +23214,27 @@ export interface MicrobiologyeventSubscriptionPayloadSubscription
   previousValues: <T = MicrobiologyeventPreviousValuesSubscription>() => T;
 }
 
-export interface Chartevents_5 {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
+export interface Chartevents3Edge {
+  node: Chartevents3;
+  cursor: String;
 }
 
-export interface Chartevents_5Promise
-  extends Promise<Chartevents_5>,
+export interface Chartevents3EdgePromise
+  extends Promise<Chartevents3Edge>,
     Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
+  node: <T = Chartevents3Promise>() => T;
+  cursor: () => Promise<String>;
 }
 
-export interface Chartevents_5Subscription
-  extends Promise<AsyncIterator<Chartevents_5>>,
+export interface Chartevents3EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents3Edge>>,
     Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
+  node: <T = Chartevents3Subscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
 }
 
 export interface MicrobiologyeventPreviousValues {
-  id: ID_Output;
+  id: UUID;
   ab_name?: String;
   chartdate?: DateTimeOutput;
   charttime?: DateTimeOutput;
@@ -23334,7 +23250,7 @@ export interface MicrobiologyeventPreviousValues {
 export interface MicrobiologyeventPreviousValuesPromise
   extends Promise<MicrobiologyeventPreviousValues>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   ab_name: () => Promise<String>;
   chartdate: () => Promise<DateTimeOutput>;
   charttime: () => Promise<DateTimeOutput>;
@@ -23350,7 +23266,7 @@ export interface MicrobiologyeventPreviousValuesPromise
 export interface MicrobiologyeventPreviousValuesSubscription
   extends Promise<AsyncIterator<MicrobiologyeventPreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   ab_name: () => Promise<AsyncIterator<String>>;
   chartdate: () => Promise<AsyncIterator<DateTimeOutput>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
@@ -23363,36 +23279,31 @@ export interface MicrobiologyeventPreviousValuesSubscription
   spec_type_desc: () => Promise<AsyncIterator<String>>;
 }
 
-export interface Chartevents_3Connection {
-  pageInfo: PageInfo;
-  edges: Chartevents_3Edge[];
+export interface AggregateChartevents17 {
+  count: Int;
 }
 
-export interface Chartevents_3ConnectionPromise
-  extends Promise<Chartevents_3Connection>,
+export interface AggregateChartevents17Promise
+  extends Promise<AggregateChartevents17>,
     Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_3Edge>>() => T;
-  aggregate: <T = AggregateChartevents_3Promise>() => T;
+  count: () => Promise<Int>;
 }
 
-export interface Chartevents_3ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_3Connection>>,
+export interface AggregateChartevents17Subscription
+  extends Promise<AsyncIterator<AggregateChartevents17>>,
     Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_3EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_3Subscription>() => T;
+  count: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface Service {
-  id: ID_Output;
+  id: UUID;
   curr_service?: String;
   prev_service?: String;
   transfertime: DateTimeOutput;
 }
 
 export interface ServicePromise extends Promise<Service>, Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   curr_service: () => Promise<String>;
   prev_service: () => Promise<String>;
   transfertime: () => Promise<DateTimeOutput>;
@@ -23401,29 +23312,39 @@ export interface ServicePromise extends Promise<Service>, Fragmentable {
 export interface ServiceSubscription
   extends Promise<AsyncIterator<Service>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   curr_service: () => Promise<AsyncIterator<String>>;
   prev_service: () => Promise<AsyncIterator<String>>;
   transfertime: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
 
-export interface Chartevents_17Edge {
-  node: Chartevents_17;
-  cursor: String;
+export interface Drgcode {
+  id: UUID;
+  description?: String;
+  drg_code: String;
+  drg_mortality?: Int;
+  drg_severity?: Int;
+  drg_type: String;
 }
 
-export interface Chartevents_17EdgePromise
-  extends Promise<Chartevents_17Edge>,
-    Fragmentable {
-  node: <T = Chartevents_17Promise>() => T;
-  cursor: () => Promise<String>;
+export interface DrgcodePromise extends Promise<Drgcode>, Fragmentable {
+  id: () => Promise<UUID>;
+  description: () => Promise<String>;
+  drg_code: () => Promise<String>;
+  drg_mortality: () => Promise<Int>;
+  drg_severity: () => Promise<Int>;
+  drg_type: () => Promise<String>;
 }
 
-export interface Chartevents_17EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_17Edge>>,
+export interface DrgcodeSubscription
+  extends Promise<AsyncIterator<Drgcode>>,
     Fragmentable {
-  node: <T = Chartevents_17Subscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
+  id: () => Promise<AsyncIterator<UUID>>;
+  description: () => Promise<AsyncIterator<String>>;
+  drg_code: () => Promise<AsyncIterator<String>>;
+  drg_mortality: () => Promise<AsyncIterator<Int>>;
+  drg_severity: () => Promise<AsyncIterator<Int>>;
+  drg_type: () => Promise<AsyncIterator<String>>;
 }
 
 export interface NoteeventSubscriptionPayload {
@@ -23451,24 +23372,24 @@ export interface NoteeventSubscriptionPayloadSubscription
   previousValues: <T = NoteeventPreviousValuesSubscription>() => T;
 }
 
-export interface AggregateChartevents_15 {
+export interface AggregateTransfer {
   count: Int;
 }
 
-export interface AggregateChartevents_15Promise
-  extends Promise<AggregateChartevents_15>,
+export interface AggregateTransferPromise
+  extends Promise<AggregateTransfer>,
     Fragmentable {
   count: () => Promise<Int>;
 }
 
-export interface AggregateChartevents_15Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_15>>,
+export interface AggregateTransferSubscription
+  extends Promise<AsyncIterator<AggregateTransfer>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface NoteeventPreviousValues {
-  id: ID_Output;
+  id: UUID;
   category?: String;
   chartdate?: DateTimeOutput;
   charttime?: DateTimeOutput;
@@ -23481,7 +23402,7 @@ export interface NoteeventPreviousValues {
 export interface NoteeventPreviousValuesPromise
   extends Promise<NoteeventPreviousValues>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   category: () => Promise<String>;
   chartdate: () => Promise<DateTimeOutput>;
   charttime: () => Promise<DateTimeOutput>;
@@ -23494,7 +23415,7 @@ export interface NoteeventPreviousValuesPromise
 export interface NoteeventPreviousValuesSubscription
   extends Promise<AsyncIterator<NoteeventPreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   category: () => Promise<AsyncIterator<String>>;
   chartdate: () => Promise<AsyncIterator<DateTimeOutput>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
@@ -23504,27 +23425,24 @@ export interface NoteeventPreviousValuesSubscription
   text: () => Promise<AsyncIterator<String>>;
 }
 
-export interface TransferEdge {
-  node: Transfer;
-  cursor: String;
+export interface AggregateNoteevent {
+  count: Int;
 }
 
-export interface TransferEdgePromise
-  extends Promise<TransferEdge>,
+export interface AggregateNoteeventPromise
+  extends Promise<AggregateNoteevent>,
     Fragmentable {
-  node: <T = TransferPromise>() => T;
-  cursor: () => Promise<String>;
+  count: () => Promise<Int>;
 }
 
-export interface TransferEdgeSubscription
-  extends Promise<AsyncIterator<TransferEdge>>,
+export interface AggregateNoteeventSubscription
+  extends Promise<AsyncIterator<AggregateNoteevent>>,
     Fragmentable {
-  node: <T = TransferSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
+  count: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Inputevents_mv {
-  id: ID_Output;
+export interface InputeventsMv {
+  id: UUID;
   amount?: Float;
   amountuom?: String;
   cancelreason?: Int;
@@ -23552,10 +23470,10 @@ export interface Inputevents_mv {
   totalamountuom?: String;
 }
 
-export interface Inputevents_mvPromise
-  extends Promise<Inputevents_mv>,
+export interface InputeventsMvPromise
+  extends Promise<InputeventsMv>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   amount: () => Promise<Float>;
   amountuom: () => Promise<String>;
   cancelreason: () => Promise<Int>;
@@ -23583,10 +23501,10 @@ export interface Inputevents_mvPromise
   totalamountuom: () => Promise<String>;
 }
 
-export interface Inputevents_mvSubscription
-  extends Promise<AsyncIterator<Inputevents_mv>>,
+export interface InputeventsMvSubscription
+  extends Promise<AsyncIterator<InputeventsMv>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   amount: () => Promise<AsyncIterator<Float>>;
   amountuom: () => Promise<AsyncIterator<String>>;
   cancelreason: () => Promise<AsyncIterator<Int>>;
@@ -23614,25 +23532,25 @@ export interface Inputevents_mvSubscription
   totalamountuom: () => Promise<AsyncIterator<String>>;
 }
 
-export interface PatientConnection {
+export interface InputeventsCvConnection {
   pageInfo: PageInfo;
-  edges: PatientEdge[];
+  edges: InputeventsCvEdge[];
 }
 
-export interface PatientConnectionPromise
-  extends Promise<PatientConnection>,
+export interface InputeventsCvConnectionPromise
+  extends Promise<InputeventsCvConnection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<PatientEdge>>() => T;
-  aggregate: <T = AggregatePatientPromise>() => T;
+  edges: <T = FragmentableArray<InputeventsCvEdge>>() => T;
+  aggregate: <T = AggregateInputeventsCvPromise>() => T;
 }
 
-export interface PatientConnectionSubscription
-  extends Promise<AsyncIterator<PatientConnection>>,
+export interface InputeventsCvConnectionSubscription
+  extends Promise<AsyncIterator<InputeventsCvConnection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<PatientEdgeSubscription>>>() => T;
-  aggregate: <T = AggregatePatientSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<InputeventsCvEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateInputeventsCvSubscription>() => T;
 }
 
 export interface OutputeventSubscriptionPayload {
@@ -23660,24 +23578,81 @@ export interface OutputeventSubscriptionPayloadSubscription
   previousValues: <T = OutputeventPreviousValuesSubscription>() => T;
 }
 
-export interface AggregateIcustay {
-  count: Int;
+export interface ProcedureeventsMv {
+  id: UUID;
+  cancelreason?: Int;
+  comments_canceledby?: String;
+  comments_date?: DateTimeOutput;
+  comments_editedby?: String;
+  continueinnextdept?: Int;
+  endtime?: DateTimeOutput;
+  isopenbag?: Int;
+  linkorderid?: Int;
+  location?: String;
+  locationcategory?: String;
+  ordercategorydescription?: String;
+  ordercategoryname?: String;
+  orderid?: Int;
+  secondaryordercategoryname?: String;
+  starttime?: DateTimeOutput;
+  statusdescription?: String;
+  storetime?: DateTimeOutput;
+  value?: Float;
+  valueuom?: String;
 }
 
-export interface AggregateIcustayPromise
-  extends Promise<AggregateIcustay>,
+export interface ProcedureeventsMvPromise
+  extends Promise<ProcedureeventsMv>,
     Fragmentable {
-  count: () => Promise<Int>;
+  id: () => Promise<UUID>;
+  cancelreason: () => Promise<Int>;
+  comments_canceledby: () => Promise<String>;
+  comments_date: () => Promise<DateTimeOutput>;
+  comments_editedby: () => Promise<String>;
+  continueinnextdept: () => Promise<Int>;
+  endtime: () => Promise<DateTimeOutput>;
+  isopenbag: () => Promise<Int>;
+  linkorderid: () => Promise<Int>;
+  location: () => Promise<String>;
+  locationcategory: () => Promise<String>;
+  ordercategorydescription: () => Promise<String>;
+  ordercategoryname: () => Promise<String>;
+  orderid: () => Promise<Int>;
+  secondaryordercategoryname: () => Promise<String>;
+  starttime: () => Promise<DateTimeOutput>;
+  statusdescription: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  value: () => Promise<Float>;
+  valueuom: () => Promise<String>;
 }
 
-export interface AggregateIcustaySubscription
-  extends Promise<AsyncIterator<AggregateIcustay>>,
+export interface ProcedureeventsMvSubscription
+  extends Promise<AsyncIterator<ProcedureeventsMv>>,
     Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
+  id: () => Promise<AsyncIterator<UUID>>;
+  cancelreason: () => Promise<AsyncIterator<Int>>;
+  comments_canceledby: () => Promise<AsyncIterator<String>>;
+  comments_date: () => Promise<AsyncIterator<DateTimeOutput>>;
+  comments_editedby: () => Promise<AsyncIterator<String>>;
+  continueinnextdept: () => Promise<AsyncIterator<Int>>;
+  endtime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  isopenbag: () => Promise<AsyncIterator<Int>>;
+  linkorderid: () => Promise<AsyncIterator<Int>>;
+  location: () => Promise<AsyncIterator<String>>;
+  locationcategory: () => Promise<AsyncIterator<String>>;
+  ordercategorydescription: () => Promise<AsyncIterator<String>>;
+  ordercategoryname: () => Promise<AsyncIterator<String>>;
+  orderid: () => Promise<AsyncIterator<Int>>;
+  secondaryordercategoryname: () => Promise<AsyncIterator<String>>;
+  starttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  statusdescription: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  value: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
 }
 
 export interface OutputeventPreviousValues {
-  id: ID_Output;
+  id: UUID;
   charttime?: DateTimeOutput;
   iserror?: Int;
   newbottle?: String;
@@ -23690,7 +23665,7 @@ export interface OutputeventPreviousValues {
 export interface OutputeventPreviousValuesPromise
   extends Promise<OutputeventPreviousValues>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   charttime: () => Promise<DateTimeOutput>;
   iserror: () => Promise<Int>;
   newbottle: () => Promise<String>;
@@ -23703,7 +23678,7 @@ export interface OutputeventPreviousValuesPromise
 export interface OutputeventPreviousValuesSubscription
   extends Promise<AsyncIterator<OutputeventPreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
   iserror: () => Promise<AsyncIterator<Int>>;
   newbottle: () => Promise<AsyncIterator<String>>;
@@ -23713,94 +23688,83 @@ export interface OutputeventPreviousValuesSubscription
   valueuom: () => Promise<AsyncIterator<String>>;
 }
 
-export interface D_labitem {
-  id: ID_Output;
-  category: String;
-  fluid: String;
-  itemid: Int;
-  label: String;
-  loinc_code?: String;
+export interface AggregateDCpt {
+  count: Int;
 }
 
-export interface D_labitemPromise extends Promise<D_labitem>, Fragmentable {
-  id: () => Promise<ID_Output>;
-  category: () => Promise<String>;
-  fluid: () => Promise<String>;
-  itemid: () => Promise<Int>;
-  label: () => Promise<String>;
-  labevents: <T = FragmentableArray<Labevent>>(
-    args?: {
-      where?: LabeventWhereInput;
-      orderBy?: LabeventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  loinc_code: () => Promise<String>;
-}
-
-export interface D_labitemSubscription
-  extends Promise<AsyncIterator<D_labitem>>,
+export interface AggregateDCptPromise
+  extends Promise<AggregateDCpt>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  category: () => Promise<AsyncIterator<String>>;
-  fluid: () => Promise<AsyncIterator<String>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  label: () => Promise<AsyncIterator<String>>;
-  labevents: <T = Promise<AsyncIterator<LabeventSubscription>>>(
-    args?: {
-      where?: LabeventWhereInput;
-      orderBy?: LabeventOrderByInput;
-      skip?: Int;
-      after?: String;
-      before?: String;
-      first?: Int;
-      last?: Int;
-    }
-  ) => T;
-  loinc_code: () => Promise<AsyncIterator<String>>;
+  count: () => Promise<Int>;
 }
 
-export interface Procedures_icd {
-  id: ID_Output;
+export interface AggregateDCptSubscription
+  extends Promise<AsyncIterator<AggregateDCpt>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface ProceduresIcd {
+  id: UUID;
   icd9_code: String;
   seq_num: Int;
 }
 
-export interface Procedures_icdPromise
-  extends Promise<Procedures_icd>,
+export interface ProceduresIcdPromise
+  extends Promise<ProceduresIcd>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   icd9_code: () => Promise<String>;
   seq_num: () => Promise<Int>;
 }
 
-export interface Procedures_icdSubscription
-  extends Promise<AsyncIterator<Procedures_icd>>,
+export interface ProceduresIcdSubscription
+  extends Promise<AsyncIterator<ProceduresIcd>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   icd9_code: () => Promise<AsyncIterator<String>>;
   seq_num: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface D_cptEdge {
-  node: D_cpt;
-  cursor: String;
+export interface Chartevent {
+  id: UUID;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  resultstatus?: String;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
 }
 
-export interface D_cptEdgePromise extends Promise<D_cptEdge>, Fragmentable {
-  node: <T = D_cptPromise>() => T;
-  cursor: () => Promise<String>;
+export interface CharteventPromise extends Promise<Chartevent>, Fragmentable {
+  id: () => Promise<UUID>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
 }
 
-export interface D_cptEdgeSubscription
-  extends Promise<AsyncIterator<D_cptEdge>>,
+export interface CharteventSubscription
+  extends Promise<AsyncIterator<Chartevent>>,
     Fragmentable {
-  node: <T = D_cptSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
+  id: () => Promise<AsyncIterator<UUID>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface PatientSubscriptionPayload {
@@ -23828,24 +23792,29 @@ export interface PatientSubscriptionPayloadSubscription
   previousValues: <T = PatientPreviousValuesSubscription>() => T;
 }
 
-export interface AggregateChartevents_7 {
-  count: Int;
+export interface Chartevents4Connection {
+  pageInfo: PageInfo;
+  edges: Chartevents4Edge[];
 }
 
-export interface AggregateChartevents_7Promise
-  extends Promise<AggregateChartevents_7>,
+export interface Chartevents4ConnectionPromise
+  extends Promise<Chartevents4Connection>,
     Fragmentable {
-  count: () => Promise<Int>;
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<Chartevents4Edge>>() => T;
+  aggregate: <T = AggregateChartevents4Promise>() => T;
 }
 
-export interface AggregateChartevents_7Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_7>>,
+export interface Chartevents4ConnectionSubscription
+  extends Promise<AsyncIterator<Chartevents4Connection>>,
     Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<Chartevents4EdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChartevents4Subscription>() => T;
 }
 
 export interface PatientPreviousValues {
-  id: ID_Output;
+  id: UUID;
   dob: DateTimeOutput;
   dod?: DateTimeOutput;
   dod_hosp?: DateTimeOutput;
@@ -23858,7 +23827,7 @@ export interface PatientPreviousValues {
 export interface PatientPreviousValuesPromise
   extends Promise<PatientPreviousValues>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   dob: () => Promise<DateTimeOutput>;
   dod: () => Promise<DateTimeOutput>;
   dod_hosp: () => Promise<DateTimeOutput>;
@@ -23871,7 +23840,7 @@ export interface PatientPreviousValuesPromise
 export interface PatientPreviousValuesSubscription
   extends Promise<AsyncIterator<PatientPreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   dob: () => Promise<AsyncIterator<DateTimeOutput>>;
   dod: () => Promise<AsyncIterator<DateTimeOutput>>;
   dod_hosp: () => Promise<AsyncIterator<DateTimeOutput>>;
@@ -23881,66 +23850,24 @@ export interface PatientPreviousValuesSubscription
   subject_id: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Chartevents_4 {
-  cgid?: Int;
-  charttime?: DateTimeOutput;
-  error?: Int;
-  hadm_id?: Int;
-  icustay_id?: Int;
-  itemid?: Int;
-  resultstatus?: String;
-  row_id: Int;
-  stopped?: String;
-  storetime?: DateTimeOutput;
-  subject_id: Int;
-  value?: String;
-  valuenum?: Float;
-  valueuom?: String;
-  warning?: Int;
+export interface AggregateChartevents16 {
+  count: Int;
 }
 
-export interface Chartevents_4Promise
-  extends Promise<Chartevents_4>,
+export interface AggregateChartevents16Promise
+  extends Promise<AggregateChartevents16>,
     Fragmentable {
-  cgid: () => Promise<Int>;
-  charttime: () => Promise<DateTimeOutput>;
-  error: () => Promise<Int>;
-  hadm_id: () => Promise<Int>;
-  icustay_id: () => Promise<Int>;
-  itemid: () => Promise<Int>;
-  resultstatus: () => Promise<String>;
-  row_id: () => Promise<Int>;
-  stopped: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  subject_id: () => Promise<Int>;
-  value: () => Promise<String>;
-  valuenum: () => Promise<Float>;
-  valueuom: () => Promise<String>;
-  warning: () => Promise<Int>;
+  count: () => Promise<Int>;
 }
 
-export interface Chartevents_4Subscription
-  extends Promise<AsyncIterator<Chartevents_4>>,
+export interface AggregateChartevents16Subscription
+  extends Promise<AsyncIterator<AggregateChartevents16>>,
     Fragmentable {
-  cgid: () => Promise<AsyncIterator<Int>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  error: () => Promise<AsyncIterator<Int>>;
-  hadm_id: () => Promise<AsyncIterator<Int>>;
-  icustay_id: () => Promise<AsyncIterator<Int>>;
-  itemid: () => Promise<AsyncIterator<Int>>;
-  resultstatus: () => Promise<AsyncIterator<String>>;
-  row_id: () => Promise<AsyncIterator<Int>>;
-  stopped: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  subject_id: () => Promise<AsyncIterator<Int>>;
-  value: () => Promise<AsyncIterator<String>>;
-  valuenum: () => Promise<AsyncIterator<Float>>;
-  valueuom: () => Promise<AsyncIterator<String>>;
-  warning: () => Promise<AsyncIterator<Int>>;
+  count: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface Outputevent {
-  id: ID_Output;
+  id: UUID;
   charttime?: DateTimeOutput;
   iserror?: Int;
   newbottle?: String;
@@ -23951,7 +23878,7 @@ export interface Outputevent {
 }
 
 export interface OutputeventPromise extends Promise<Outputevent>, Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   charttime: () => Promise<DateTimeOutput>;
   iserror: () => Promise<Int>;
   newbottle: () => Promise<String>;
@@ -23964,7 +23891,7 @@ export interface OutputeventPromise extends Promise<Outputevent>, Fragmentable {
 export interface OutputeventSubscription
   extends Promise<AsyncIterator<Outputevent>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
   iserror: () => Promise<AsyncIterator<Int>>;
   newbottle: () => Promise<AsyncIterator<String>>;
@@ -23974,23 +23901,20 @@ export interface OutputeventSubscription
   valueuom: () => Promise<AsyncIterator<String>>;
 }
 
-export interface Chartevents_16Edge {
-  node: Chartevents_16;
-  cursor: String;
+export interface AggregatePatient {
+  count: Int;
 }
 
-export interface Chartevents_16EdgePromise
-  extends Promise<Chartevents_16Edge>,
+export interface AggregatePatientPromise
+  extends Promise<AggregatePatient>,
     Fragmentable {
-  node: <T = Chartevents_16Promise>() => T;
-  cursor: () => Promise<String>;
+  count: () => Promise<Int>;
 }
 
-export interface Chartevents_16EdgeSubscription
-  extends Promise<AsyncIterator<Chartevents_16Edge>>,
+export interface AggregatePatientSubscription
+  extends Promise<AsyncIterator<AggregatePatient>>,
     Fragmentable {
-  node: <T = Chartevents_16Subscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
+  count: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface PrescriptionSubscriptionPayload {
@@ -24018,24 +23942,27 @@ export interface PrescriptionSubscriptionPayloadSubscription
   previousValues: <T = PrescriptionPreviousValuesSubscription>() => T;
 }
 
-export interface AggregateProcedureevents_mv {
-  count: Int;
+export interface DiagnosesIcdEdge {
+  node: DiagnosesIcd;
+  cursor: String;
 }
 
-export interface AggregateProcedureevents_mvPromise
-  extends Promise<AggregateProcedureevents_mv>,
+export interface DiagnosesIcdEdgePromise
+  extends Promise<DiagnosesIcdEdge>,
     Fragmentable {
-  count: () => Promise<Int>;
+  node: <T = DiagnosesIcdPromise>() => T;
+  cursor: () => Promise<String>;
 }
 
-export interface AggregateProcedureevents_mvSubscription
-  extends Promise<AsyncIterator<AggregateProcedureevents_mv>>,
+export interface DiagnosesIcdEdgeSubscription
+  extends Promise<AsyncIterator<DiagnosesIcdEdge>>,
     Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
+  node: <T = DiagnosesIcdSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
 }
 
 export interface PrescriptionPreviousValues {
-  id: ID_Output;
+  id: UUID;
   dose_unit_rx?: String;
   dose_val_rx?: String;
   drug: String;
@@ -24056,7 +23983,7 @@ export interface PrescriptionPreviousValues {
 export interface PrescriptionPreviousValuesPromise
   extends Promise<PrescriptionPreviousValues>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   dose_unit_rx: () => Promise<String>;
   dose_val_rx: () => Promise<String>;
   drug: () => Promise<String>;
@@ -24077,7 +24004,7 @@ export interface PrescriptionPreviousValuesPromise
 export interface PrescriptionPreviousValuesSubscription
   extends Promise<AsyncIterator<PrescriptionPreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   dose_unit_rx: () => Promise<AsyncIterator<String>>;
   dose_val_rx: () => Promise<AsyncIterator<String>>;
   drug: () => Promise<AsyncIterator<String>>;
@@ -24095,131 +24022,46 @@ export interface PrescriptionPreviousValuesSubscription
   startdate: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
 
-export interface Diagnoses_icdConnection {
-  pageInfo: PageInfo;
-  edges: Diagnoses_icdEdge[];
+export interface Chartevents9Edge {
+  node: Chartevents9;
+  cursor: String;
 }
 
-export interface Diagnoses_icdConnectionPromise
-  extends Promise<Diagnoses_icdConnection>,
+export interface Chartevents9EdgePromise
+  extends Promise<Chartevents9Edge>,
     Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Diagnoses_icdEdge>>() => T;
-  aggregate: <T = AggregateDiagnoses_icdPromise>() => T;
+  node: <T = Chartevents9Promise>() => T;
+  cursor: () => Promise<String>;
 }
 
-export interface Diagnoses_icdConnectionSubscription
-  extends Promise<AsyncIterator<Diagnoses_icdConnection>>,
+export interface Chartevents9EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents9Edge>>,
     Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Diagnoses_icdEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateDiagnoses_icdSubscription>() => T;
+  node: <T = Chartevents9Subscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface Noteevent {
-  id: ID_Output;
-  category?: String;
-  chartdate?: DateTimeOutput;
-  charttime?: DateTimeOutput;
-  description?: String;
-  iserror?: String;
-  storetime?: DateTimeOutput;
-  text?: String;
+export interface Chartevents2Edge {
+  node: Chartevents2;
+  cursor: String;
 }
 
-export interface NoteeventPromise extends Promise<Noteevent>, Fragmentable {
-  id: () => Promise<ID_Output>;
-  category: () => Promise<String>;
-  chartdate: () => Promise<DateTimeOutput>;
-  charttime: () => Promise<DateTimeOutput>;
-  description: () => Promise<String>;
-  iserror: () => Promise<String>;
-  storetime: () => Promise<DateTimeOutput>;
-  text: () => Promise<String>;
-}
-
-export interface NoteeventSubscription
-  extends Promise<AsyncIterator<Noteevent>>,
+export interface Chartevents2EdgePromise
+  extends Promise<Chartevents2Edge>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  category: () => Promise<AsyncIterator<String>>;
-  chartdate: () => Promise<AsyncIterator<DateTimeOutput>>;
-  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  description: () => Promise<AsyncIterator<String>>;
-  iserror: () => Promise<AsyncIterator<String>>;
-  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
-  text: () => Promise<AsyncIterator<String>>;
+  node: <T = Chartevents2Promise>() => T;
+  cursor: () => Promise<String>;
 }
 
-export interface Chartevents_9Connection {
-  pageInfo: PageInfo;
-  edges: Chartevents_9Edge[];
-}
-
-export interface Chartevents_9ConnectionPromise
-  extends Promise<Chartevents_9Connection>,
+export interface Chartevents2EdgeSubscription
+  extends Promise<AsyncIterator<Chartevents2Edge>>,
     Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_9Edge>>() => T;
-  aggregate: <T = AggregateChartevents_9Promise>() => T;
-}
-
-export interface Chartevents_9ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_9Connection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_9EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_9Subscription>() => T;
-}
-
-export interface Chartevents_2Connection {
-  pageInfo: PageInfo;
-  edges: Chartevents_2Edge[];
-}
-
-export interface Chartevents_2ConnectionPromise
-  extends Promise<Chartevents_2Connection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<Chartevents_2Edge>>() => T;
-  aggregate: <T = AggregateChartevents_2Promise>() => T;
-}
-
-export interface Chartevents_2ConnectionSubscription
-  extends Promise<AsyncIterator<Chartevents_2Connection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<Chartevents_2EdgeSubscription>>>() => T;
-  aggregate: <T = AggregateChartevents_2Subscription>() => T;
-}
-
-export interface Procedures_icdSubscriptionPayload {
-  mutation: MutationType;
-  node: Procedures_icd;
-  updatedFields: String[];
-  previousValues: Procedures_icdPreviousValues;
-}
-
-export interface Procedures_icdSubscriptionPayloadPromise
-  extends Promise<Procedures_icdSubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = Procedures_icdPromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = Procedures_icdPreviousValuesPromise>() => T;
-}
-
-export interface Procedures_icdSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Procedures_icdSubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Procedures_icdSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Procedures_icdPreviousValuesSubscription>() => T;
+  node: <T = Chartevents2Subscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
 }
 
 export interface Prescription {
-  id: ID_Output;
+  id: UUID;
   dose_unit_rx?: String;
   dose_val_rx?: String;
   drug: String;
@@ -24240,7 +24082,7 @@ export interface Prescription {
 export interface PrescriptionPromise
   extends Promise<Prescription>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   dose_unit_rx: () => Promise<String>;
   dose_val_rx: () => Promise<String>;
   drug: () => Promise<String>;
@@ -24261,7 +24103,7 @@ export interface PrescriptionPromise
 export interface PrescriptionSubscription
   extends Promise<AsyncIterator<Prescription>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   dose_unit_rx: () => Promise<AsyncIterator<String>>;
   dose_val_rx: () => Promise<AsyncIterator<String>>;
   drug: () => Promise<AsyncIterator<String>>;
@@ -24279,8 +24121,8 @@ export interface PrescriptionSubscription
   startdate: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
 
-export interface Procedureevents_mvPreviousValues {
-  id: ID_Output;
+export interface ProcedureeventsMvPreviousValues {
+  id: UUID;
   cancelreason?: Int;
   comments_canceledby?: String;
   comments_date?: DateTimeOutput;
@@ -24302,10 +24144,10 @@ export interface Procedureevents_mvPreviousValues {
   valueuom?: String;
 }
 
-export interface Procedureevents_mvPreviousValuesPromise
-  extends Promise<Procedureevents_mvPreviousValues>,
+export interface ProcedureeventsMvPreviousValuesPromise
+  extends Promise<ProcedureeventsMvPreviousValues>,
     Fragmentable {
-  id: () => Promise<ID_Output>;
+  id: () => Promise<UUID>;
   cancelreason: () => Promise<Int>;
   comments_canceledby: () => Promise<String>;
   comments_date: () => Promise<DateTimeOutput>;
@@ -24327,10 +24169,10 @@ export interface Procedureevents_mvPreviousValuesPromise
   valueuom: () => Promise<String>;
 }
 
-export interface Procedureevents_mvPreviousValuesSubscription
-  extends Promise<AsyncIterator<Procedureevents_mvPreviousValues>>,
+export interface ProcedureeventsMvPreviousValuesSubscription
+  extends Promise<AsyncIterator<ProcedureeventsMvPreviousValues>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
   cancelreason: () => Promise<AsyncIterator<Int>>;
   comments_canceledby: () => Promise<AsyncIterator<String>>;
   comments_date: () => Promise<AsyncIterator<DateTimeOutput>>;
@@ -24352,134 +24194,232 @@ export interface Procedureevents_mvPreviousValuesSubscription
   valueuom: () => Promise<AsyncIterator<String>>;
 }
 
-export interface Procedureevents_mvSubscriptionPayload {
+export interface ProcedureeventsMvSubscriptionPayload {
   mutation: MutationType;
-  node: Procedureevents_mv;
+  node: ProcedureeventsMv;
   updatedFields: String[];
-  previousValues: Procedureevents_mvPreviousValues;
+  previousValues: ProcedureeventsMvPreviousValues;
 }
 
-export interface Procedureevents_mvSubscriptionPayloadPromise
-  extends Promise<Procedureevents_mvSubscriptionPayload>,
+export interface ProcedureeventsMvSubscriptionPayloadPromise
+  extends Promise<ProcedureeventsMvSubscriptionPayload>,
     Fragmentable {
   mutation: () => Promise<MutationType>;
-  node: <T = Procedureevents_mvPromise>() => T;
+  node: <T = ProcedureeventsMvPromise>() => T;
   updatedFields: () => Promise<String[]>;
-  previousValues: <T = Procedureevents_mvPreviousValuesPromise>() => T;
+  previousValues: <T = ProcedureeventsMvPreviousValuesPromise>() => T;
 }
 
-export interface Procedureevents_mvSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<Procedureevents_mvSubscriptionPayload>>,
+export interface ProcedureeventsMvSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<ProcedureeventsMvSubscriptionPayload>>,
     Fragmentable {
   mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = Procedureevents_mvSubscription>() => T;
+  node: <T = ProcedureeventsMvSubscription>() => T;
   updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = Procedureevents_mvPreviousValuesSubscription>() => T;
+  previousValues: <T = ProcedureeventsMvPreviousValuesSubscription>() => T;
 }
 
-export interface AggregateChartevents_14 {
-  count: Int;
-}
-
-export interface AggregateChartevents_14Promise
-  extends Promise<AggregateChartevents_14>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateChartevents_14Subscription
-  extends Promise<AsyncIterator<AggregateChartevents_14>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface Cptevent {
-  id: ID_Output;
+export interface Noteevent {
+  id: UUID;
+  category?: String;
   chartdate?: DateTimeOutput;
-  costcenter: String;
-  cpt_cd: String;
-  cpt_number?: Int;
-  cpt_suffix?: String;
+  charttime?: DateTimeOutput;
   description?: String;
-  sectionheader?: String;
-  subsectionheader?: String;
-  ticket_id_seq?: Int;
+  iserror?: String;
+  storetime?: DateTimeOutput;
+  text?: String;
 }
 
-export interface CpteventPromise extends Promise<Cptevent>, Fragmentable {
-  id: () => Promise<ID_Output>;
+export interface NoteeventPromise extends Promise<Noteevent>, Fragmentable {
+  id: () => Promise<UUID>;
+  category: () => Promise<String>;
   chartdate: () => Promise<DateTimeOutput>;
-  costcenter: () => Promise<String>;
-  cpt_cd: () => Promise<String>;
-  cpt_number: () => Promise<Int>;
-  cpt_suffix: () => Promise<String>;
+  charttime: () => Promise<DateTimeOutput>;
   description: () => Promise<String>;
-  sectionheader: () => Promise<String>;
-  subsectionheader: () => Promise<String>;
-  ticket_id_seq: () => Promise<Int>;
+  iserror: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  text: () => Promise<String>;
 }
 
-export interface CpteventSubscription
-  extends Promise<AsyncIterator<Cptevent>>,
+export interface NoteeventSubscription
+  extends Promise<AsyncIterator<Noteevent>>,
     Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
+  id: () => Promise<AsyncIterator<UUID>>;
+  category: () => Promise<AsyncIterator<String>>;
   chartdate: () => Promise<AsyncIterator<DateTimeOutput>>;
-  costcenter: () => Promise<AsyncIterator<String>>;
-  cpt_cd: () => Promise<AsyncIterator<String>>;
-  cpt_number: () => Promise<AsyncIterator<Int>>;
-  cpt_suffix: () => Promise<AsyncIterator<String>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
   description: () => Promise<AsyncIterator<String>>;
-  sectionheader: () => Promise<AsyncIterator<String>>;
-  subsectionheader: () => Promise<AsyncIterator<String>>;
-  ticket_id_seq: () => Promise<AsyncIterator<Int>>;
+  iserror: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  text: () => Promise<AsyncIterator<String>>;
 }
 
-export interface D_icd_procedureConnection {
+export interface Chartevents15 {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents15Promise
+  extends Promise<Chartevents15>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents15Subscription
+  extends Promise<AsyncIterator<Chartevents15>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Chartevents6 {
+  cgid?: Int;
+  charttime?: DateTimeOutput;
+  error?: Int;
+  hadm_id?: Int;
+  icustay_id?: Int;
+  itemid?: Int;
+  resultstatus?: String;
+  row_id: Int;
+  stopped?: String;
+  storetime?: DateTimeOutput;
+  subject_id: Int;
+  value?: String;
+  valuenum?: Float;
+  valueuom?: String;
+  warning?: Int;
+}
+
+export interface Chartevents6Promise
+  extends Promise<Chartevents6>,
+    Fragmentable {
+  cgid: () => Promise<Int>;
+  charttime: () => Promise<DateTimeOutput>;
+  error: () => Promise<Int>;
+  hadm_id: () => Promise<Int>;
+  icustay_id: () => Promise<Int>;
+  itemid: () => Promise<Int>;
+  resultstatus: () => Promise<String>;
+  row_id: () => Promise<Int>;
+  stopped: () => Promise<String>;
+  storetime: () => Promise<DateTimeOutput>;
+  subject_id: () => Promise<Int>;
+  value: () => Promise<String>;
+  valuenum: () => Promise<Float>;
+  valueuom: () => Promise<String>;
+  warning: () => Promise<Int>;
+}
+
+export interface Chartevents6Subscription
+  extends Promise<AsyncIterator<Chartevents6>>,
+    Fragmentable {
+  cgid: () => Promise<AsyncIterator<Int>>;
+  charttime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  error: () => Promise<AsyncIterator<Int>>;
+  hadm_id: () => Promise<AsyncIterator<Int>>;
+  icustay_id: () => Promise<AsyncIterator<Int>>;
+  itemid: () => Promise<AsyncIterator<Int>>;
+  resultstatus: () => Promise<AsyncIterator<String>>;
+  row_id: () => Promise<AsyncIterator<Int>>;
+  stopped: () => Promise<AsyncIterator<String>>;
+  storetime: () => Promise<AsyncIterator<DateTimeOutput>>;
+  subject_id: () => Promise<AsyncIterator<Int>>;
+  value: () => Promise<AsyncIterator<String>>;
+  valuenum: () => Promise<AsyncIterator<Float>>;
+  valueuom: () => Promise<AsyncIterator<String>>;
+  warning: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface DIcdProcedureEdge {
+  node: DIcdProcedure;
+  cursor: String;
+}
+
+export interface DIcdProcedureEdgePromise
+  extends Promise<DIcdProcedureEdge>,
+    Fragmentable {
+  node: <T = DIcdProcedurePromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface DIcdProcedureEdgeSubscription
+  extends Promise<AsyncIterator<DIcdProcedureEdge>>,
+    Fragmentable {
+  node: <T = DIcdProcedureSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface LabeventConnection {
   pageInfo: PageInfo;
-  edges: D_icd_procedureEdge[];
+  edges: LabeventEdge[];
 }
 
-export interface D_icd_procedureConnectionPromise
-  extends Promise<D_icd_procedureConnection>,
+export interface LabeventConnectionPromise
+  extends Promise<LabeventConnection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<D_icd_procedureEdge>>() => T;
-  aggregate: <T = AggregateD_icd_procedurePromise>() => T;
+  edges: <T = FragmentableArray<LabeventEdge>>() => T;
+  aggregate: <T = AggregateLabeventPromise>() => T;
 }
 
-export interface D_icd_procedureConnectionSubscription
-  extends Promise<AsyncIterator<D_icd_procedureConnection>>,
+export interface LabeventConnectionSubscription
+  extends Promise<AsyncIterator<LabeventConnection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<D_icd_procedureEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateD_icd_procedureSubscription>() => T;
-}
-
-export interface NoteeventConnection {
-  pageInfo: PageInfo;
-  edges: NoteeventEdge[];
-}
-
-export interface NoteeventConnectionPromise
-  extends Promise<NoteeventConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<NoteeventEdge>>() => T;
-  aggregate: <T = AggregateNoteeventPromise>() => T;
-}
-
-export interface NoteeventConnectionSubscription
-  extends Promise<AsyncIterator<NoteeventConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<NoteeventEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateNoteeventSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<LabeventEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateLabeventSubscription>() => T;
 }
 
 /*
 The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1. 
 */
 export type Int = number;
+
+/*
+The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `"4"`) or integer (such as `4`) input value will be accepted as an ID.
+*/
+export type ID_Input = string | number;
+export type ID_Output = string;
 
 export type Long = string;
 
@@ -24503,11 +24443,7 @@ The `Float` scalar type represents signed double-precision fractional values as 
 */
 export type Float = number;
 
-/*
-The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `"4"`) or integer (such as `4`) input value will be accepted as an ID.
-*/
-export type ID_Input = string | number;
-export type ID_Output = string;
+export type UUID = string;
 
 /*
 The `Boolean` scalar type represents `true` or `false`.
@@ -24520,10 +24456,6 @@ export type Boolean = boolean;
 
 export const models: Model[] = [
   {
-    name: "Caregiver",
-    embedded: false
-  },
-  {
     name: "Admission",
     embedded: false
   },
@@ -24532,75 +24464,79 @@ export const models: Model[] = [
     embedded: false
   },
   {
+    name: "Caregiver",
+    embedded: false
+  },
+  {
     name: "Chartevent",
     embedded: false
   },
   {
-    name: "Chartevents_1",
+    name: "Chartevents1",
     embedded: false
   },
   {
-    name: "Chartevents_10",
+    name: "Chartevents10",
     embedded: false
   },
   {
-    name: "Chartevents_11",
+    name: "Chartevents11",
     embedded: false
   },
   {
-    name: "Chartevents_12",
+    name: "Chartevents12",
     embedded: false
   },
   {
-    name: "Chartevents_13",
+    name: "Chartevents13",
     embedded: false
   },
   {
-    name: "Chartevents_14",
+    name: "Chartevents14",
     embedded: false
   },
   {
-    name: "Chartevents_15",
+    name: "Chartevents15",
     embedded: false
   },
   {
-    name: "Chartevents_16",
+    name: "Chartevents16",
     embedded: false
   },
   {
-    name: "Chartevents_17",
+    name: "Chartevents17",
     embedded: false
   },
   {
-    name: "Chartevents_2",
+    name: "Chartevents2",
     embedded: false
   },
   {
-    name: "Chartevents_3",
+    name: "Chartevents3",
     embedded: false
   },
   {
-    name: "Chartevents_4",
+    name: "Chartevents4",
     embedded: false
   },
   {
-    name: "Chartevents_5",
+    name: "Chartevents5",
     embedded: false
   },
   {
-    name: "Chartevents_6",
+    name: "Chartevents6",
     embedded: false
   },
   {
-    name: "Chartevents_7",
+    name: "Chartevents7",
     embedded: false
   },
   {
-    name: "Chartevents_8",
+    name: "Chartevents8",
     embedded: false
   },
   {
-    name: "Chartevents_9",
+    name: "Chartevents9",
     embedded: false
   },
   {
@@ -24608,23 +24544,23 @@ export const models: Model[] = [
     embedded: false
   },
   {
-    name: "D_cpt",
+    name: "DCpt",
     embedded: false
   },
   {
-    name: "D_icd_diagnosis",
+    name: "DIcdDiagnosis",
     embedded: false
   },
   {
-    name: "D_icd_procedure",
+    name: "DIcdProcedure",
     embedded: false
   },
   {
-    name: "D_item",
+    name: "DItem",
     embedded: false
   },
   {
-    name: "D_labitem",
+    name: "DLabitem",
     embedded: false
   },
   {
@@ -24632,7 +24568,7 @@ export const models: Model[] = [
     embedded: false
   },
   {
-    name: "Diagnoses_icd",
+    name: "DiagnosesIcd",
     embedded: false
   },
   {
@@ -24644,11 +24580,11 @@ export const models: Model[] = [
     embedded: false
   },
   {
-    name: "Inputevents_cv",
+    name: "InputeventsCv",
     embedded: false
   },
   {
-    name: "Inputevents_mv",
+    name: "InputeventsMv",
     embedded: false
   },
   {
@@ -24676,11 +24612,11 @@ export const models: Model[] = [
     embedded: false
   },
   {
-    name: "Procedureevents_mv",
+    name: "ProcedureeventsMv",
     embedded: false
   },
   {
-    name: "Procedures_icd",
+    name: "ProceduresIcd",
     embedded: false
   },
   {

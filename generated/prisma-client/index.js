@@ -5,10 +5,6 @@ var typeDefs = require("./prisma-schema").typeDefs;
 
 var models = [
   {
-    name: "Caregiver",
-    embedded: false
-  },
-  {
     name: "Admission",
     embedded: false
   },
@@ -17,75 +13,79 @@ var models = [
     embedded: false
   },
   {
+    name: "Caregiver",
+    embedded: false
+  },
+  {
     name: "Chartevent",
     embedded: false
   },
   {
-    name: "Chartevents_1",
+    name: "Chartevents1",
     embedded: false
   },
   {
-    name: "Chartevents_10",
+    name: "Chartevents10",
     embedded: false
   },
   {
-    name: "Chartevents_11",
+    name: "Chartevents11",
     embedded: false
   },
   {
-    name: "Chartevents_12",
+    name: "Chartevents12",
     embedded: false
   },
   {
-    name: "Chartevents_13",
+    name: "Chartevents13",
     embedded: false
   },
   {
-    name: "Chartevents_14",
+    name: "Chartevents14",
     embedded: false
   },
   {
-    name: "Chartevents_15",
+    name: "Chartevents15",
     embedded: false
   },
   {
-    name: "Chartevents_16",
+    name: "Chartevents16",
     embedded: false
   },
   {
-    name: "Chartevents_17",
+    name: "Chartevents17",
     embedded: false
   },
   {
-    name: "Chartevents_2",
+    name: "Chartevents2",
     embedded: false
   },
   {
-    name: "Chartevents_3",
+    name: "Chartevents3",
     embedded: false
   },
   {
-    name: "Chartevents_4",
+    name: "Chartevents4",
     embedded: false
   },
   {
-    name: "Chartevents_5",
+    name: "Chartevents5",
     embedded: false
   },
   {
-    name: "Chartevents_6",
+    name: "Chartevents6",
     embedded: false
   },
   {
-    name: "Chartevents_7",
+    name: "Chartevents7",
     embedded: false
   },
   {
-    name: "Chartevents_8",
+    name: "Chartevents8",
     embedded: false
   },
   {
-    name: "Chartevents_9",
+    name: "Chartevents9",
     embedded: false
   },
   {
@@ -93,23 +93,23 @@ var models = [
     embedded: false
   },
   {
-    name: "D_cpt",
+    name: "DCpt",
     embedded: false
   },
   {
-    name: "D_icd_diagnosis",
+    name: "DIcdDiagnosis",
     embedded: false
   },
   {
-    name: "D_icd_procedure",
+    name: "DIcdProcedure",
     embedded: false
   },
   {
-    name: "D_item",
+    name: "DItem",
     embedded: false
   },
   {
-    name: "D_labitem",
+    name: "DLabitem",
     embedded: false
   },
   {
@@ -117,7 +117,7 @@ var models = [
     embedded: false
   },
   {
-    name: "Diagnoses_icd",
+    name: "DiagnosesIcd",
     embedded: false
   },
   {
@@ -129,11 +129,11 @@ var models = [
     embedded: false
   },
   {
-    name: "Inputevents_cv",
+    name: "InputeventsCv",
     embedded: false
   },
   {
-    name: "Inputevents_mv",
+    name: "InputeventsMv",
     embedded: false
   },
   {
@@ -161,11 +161,11 @@ var models = [
     embedded: false
   },
   {
-    name: "Procedureevents_mv",
+    name: "ProcedureeventsMv",
     embedded: false
   },
   {
-    name: "Procedures_icd",
+    name: "ProceduresIcd",
     embedded: false
   },
   {
