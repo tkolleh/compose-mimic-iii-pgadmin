@@ -10,14 +10,14 @@ services:
       MIMIC_PASSWORD: ${MIMIC_PASSWORD:-password}
       PGDATA: /var/lib/postgresql/data
     volumes:
-       - ${DB_DIR}:/var/lib/postgresql/data
-       - ${MIMIC_DATA_DIR}:/var/lib/postgresql/mdata
+       - ${DB_DIR-./database/postgresDB}:/var/lib/postgresql/data
+       - ${MIMIC_DATA_DIR-./database/MIMICData}:/var/lib/postgresql/mdata
     ports:
       - "5432:5432"
     networks:
       - postgres
     restart: unless-stopped
-  
+
   pgadmin:
     container_name: pgadmin_container
     image: dpage/pgadmin4
@@ -33,7 +33,7 @@ services:
     restart: unless-stopped
 
   prisma:
-    image: prismagraphql/prisma:1.28
+    image: prismagraphql/prisma:1.29
     restart: unless-stopped
     ports:
     - "4466:4466"
