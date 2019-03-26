@@ -1,11 +1,11 @@
-## Docker compose of Postgresql, PgAdmin & Prisma for the MIMIC-III dataset
+## Docker compose of Postgresql, PgAdmin & Postgraphile for the MIMIC-III dataset
 
 MIMIC-III (Medical Information Mart for Intensive Care III) is a large, freely-available database comprising deidentified health-related data associated with over forty thousand patients who stayed in critical care units of the Beth Israel Deaconess Medical Center between 2001 and 2012.
 
 This project composes the following containers: 
 - Postgres database setup with the MIMIC-III schema
 - PgAdmin for database management
-- Prisma for serving data using JavaScript
+- Postgraphile for serving data using GraphQL
 
 MIMIC data is not included in the containers
 
@@ -27,8 +27,8 @@ psql --host 127.0.0.1 --username=mimic --dbname=mimic -c 'SELECT FROM mimic.pati
 - **Password:** admin
 
 
-### Access to Prisma (Playground): 
-- **URL:** `http://localhost:4466`
+### Accesss database via graphql api
+- **URL:** `http://0.0.0.0:5000/graphiql`
 
 #### Test
 Retrieve a list of caregivers using GraphQL:
@@ -51,14 +51,10 @@ curl \
 ```
 
 ### Setup
-Link the database volume to a local folder i.e. `export DB_DIR="/Users/<path to dir>/postgresDB"`. Then setup the containers using `docker-compose up -d`. Install the Prisma client with: 
+Link the database volume to a local folder i.e. `export DB_DIR="/Users/<path to dir>/postgresDB"`. Then setup the containers using `docker-compose up -d`.
 
-```
-npm init -y
-npm install --save prisma-client-lib
-```
 
 ## References
 - [PostgresSQL scripts for mimic-code](https://github.com/MIT-LCP/mimic-code)
 - [Postgres container](https://hub.docker.com/_/postgres)
-- [PgAdmin4 container](https://hub.docker.com/r/dpage/pgadmin4/)
+- [Postgraphile container](https://github.com/graphile/postgraphile)
