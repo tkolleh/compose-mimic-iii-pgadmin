@@ -2,7 +2,7 @@ type Admission @indexes(value: [
   {name: "admissions_idx02", fields: ["hadm_id"]}
 ]) @pgTable(name: "admissions") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Admission location.
   admission_location: String!
   # Type of admission, for example emergency or elective.
@@ -59,7 +59,7 @@ type Admission @indexes(value: [
 
 type Callout @pgTable(name: "callout") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # The status of the response to the call out request.
   acknowledge_status: String!
   # Time at which the call out request was acknowledged.
@@ -112,7 +112,7 @@ type Callout @pgTable(name: "callout") {
 
 type Caregiver @pgTable(name: "caregivers") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Unique caregiver identifier.
   cgid: Int! @unique
   chartevents: [Chartevent]
@@ -130,7 +130,7 @@ type Caregiver @pgTable(name: "caregivers") {
 
 type Chartevent @pgTable(name: "chartevents") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Foreign key. Identifies the caregiver.
   # Relation chartevents.cgid -> caregivers.cgid does not target the id field of caregivers
   # cgid: Caregiver
@@ -176,7 +176,7 @@ type Chartevents1 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -197,7 +197,7 @@ type Chartevents10 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -218,7 +218,7 @@ type Chartevents11 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -239,7 +239,7 @@ type Chartevents12 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -260,7 +260,7 @@ type Chartevents13 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -281,7 +281,7 @@ type Chartevents14 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -302,7 +302,7 @@ type Chartevents15 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -323,7 +323,7 @@ type Chartevents16 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -344,7 +344,7 @@ type Chartevents17 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -365,7 +365,7 @@ type Chartevents2 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -386,7 +386,7 @@ type Chartevents3 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -407,7 +407,7 @@ type Chartevents4 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -428,7 +428,7 @@ type Chartevents5 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -449,7 +449,7 @@ type Chartevents6 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -470,7 +470,7 @@ type Chartevents7 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -491,7 +491,7 @@ type Chartevents8 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -512,7 +512,7 @@ type Chartevents9 @indexes(value: [
   icustay_id: Int
   itemid: Int
   resultstatus: String
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # row_id: Int!
   stopped: String
   storetime: DateTime
@@ -527,7 +527,7 @@ type Cptevent @indexes(value: [
   {name: "cptevents_idx02", fields: ["cpt_cd"]}
 ]) @pgTable(name: "cptevents") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Date when the event occured, if available.
   chartdate: DateTime
   # Center recording the code, for example the ICU or the respiratory unit.
@@ -556,7 +556,7 @@ type Cptevent @indexes(value: [
 
 type DCpt @pgTable(name: "d_cpt") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Code category.
   category: Int!
   # Text element of the Current Procedural Terminology, if any.
@@ -580,7 +580,7 @@ type DIcdDiagnosis @indexes(value: [
   {name: "d_icd_diag_idx02", fields: ["long_title"]}
 ]) @pgTable(name: "d_icd_diagnoses") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # ICD9 code - note that this is a fixed length character field, as whitespaces are important in uniquely identifying ICD-9 codes.
   icd9_code: String! @unique
   # Long title associated with the code.
@@ -594,7 +594,7 @@ type DIcdProcedure @indexes(value: [
   {name: "d_icd_proc_idx02", fields: ["long_title"]}
 ]) @pgTable(name: "d_icd_procedures") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # ICD9 code - note that this is a fixed length character field, as whitespaces are important in uniquely identifying ICD-9 codes.
   icd9_code: String! @unique
   # Long title associated with the code.
@@ -608,7 +608,7 @@ type DItem @indexes(value: [
   {name: "d_items_idx02", fields: ["label"]}
 ]) @pgTable(name: "d_items") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Abbreviation associated with the item.
   abbreviation: String
   # Category of data which the concept falls under.
@@ -643,7 +643,7 @@ type DLabitem @indexes(value: [
   {name: "d_labitems_idx03", fields: ["loinc_code"]}
 ]) @pgTable(name: "d_labitems") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Category of item, for example chemistry or hematology.
   category: String!
   # Fluid associated with the item, for example blood or urine.
@@ -659,7 +659,7 @@ type DLabitem @indexes(value: [
 
 type Datetimeevent @pgTable(name: "datetimeevents") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Foreign key. Identifies the caregiver.
   # Relation datetimeevents.cgid -> caregivers.cgid does not target the id field of caregivers
   # cgid: Caregiver!
@@ -697,7 +697,7 @@ type DiagnosesIcd @indexes(value: [
   {name: "diagnoses_icd_idx02", fields: ["icd9_code"]}
 ]) @pgTable(name: "diagnoses_icd") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Foreign key. Identifies the hospital stay.
   # Relation diagnoses_icd.hadm_id -> admissions.hadm_id does not target the id field of admissions
   # hadm_id: Admission!
@@ -715,7 +715,7 @@ type Drgcode @indexes(value: [
   {name: "drgcodes_idx03", fields: ["description"]}
 ]) @pgTable(name: "drgcodes") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Description of the Diagnosis-Related Group
   description: String
   # Diagnosis-Related Group code
@@ -738,7 +738,7 @@ type Icustay @indexes(value: [
   {name: "icustays_idx02", fields: ["icustay_id"]}
 ]) @pgTable(name: "icustays") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   chartevents: [Chartevent]
   datetimeevents: [Datetimeevent]
   # Source database of the item.
@@ -778,7 +778,7 @@ type InputeventsCv @indexes(value: [
   {name: "inputevents_cv_idx05", fields: ["itemid"]}
 ]) @pgTable(name: "inputevents_cv") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Amount of the item administered to the patient.
   amount: Float
   # Unit of measurement for the amount.
@@ -829,7 +829,7 @@ type InputeventsCv @indexes(value: [
 
 type InputeventsMv @pgTable(name: "inputevents_mv") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Amount of the item administered to the patient.
   amount: Float
   # Unit of measurement for the amount.
@@ -899,7 +899,7 @@ type InputeventsMv @pgTable(name: "inputevents_mv") {
 
 type Labevent @pgTable(name: "labevents") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Time when the event occured.
   charttime: DateTime
   # Flag indicating whether the lab test value is considered abnormal (null if the test was normal).
@@ -923,7 +923,7 @@ type Labevent @pgTable(name: "labevents") {
 
 type Microbiologyevent @pgTable(name: "microbiologyevents") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Foreign key. Identifies the antibody.
   # Relation microbiologyevents.ab_itemid -> d_items.itemid does not target the id field of d_items
   # ab_itemid: DItem
@@ -965,7 +965,7 @@ type Noteevent @indexes(value: [
   {name: "noteevents_idx05", fields: ["category"]}
 ]) @pgTable(name: "noteevents") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Category of the note, e.g. Discharge summary.
   category: String
   # Foreign key. Identifies the caregiver.
@@ -992,7 +992,7 @@ type Noteevent @indexes(value: [
 
 type Outputevent @pgTable(name: "outputevents") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Foreign key. Identifies the caregiver.
   # Relation outputevents.cgid -> caregivers.cgid does not target the id field of caregivers
   # cgid: Caregiver
@@ -1026,7 +1026,7 @@ type Outputevent @pgTable(name: "outputevents") {
 
 type Patient @pgTable(name: "patients") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   admissions: [Admission]
   callout: [Callout]
   chartevents: [Chartevent]
@@ -1067,7 +1067,7 @@ type Prescription @indexes(value: [
   {name: "prescriptions_idx04", fields: ["drug"]}
 ]) @pgTable(name: "prescriptions") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Unit of measurement associated with the dose.
   dose_unit_rx: String
   # Dose of the drug prescribed.
@@ -1110,7 +1110,7 @@ type Prescription @indexes(value: [
 }
 
 type ProcedureeventsMv @pgTable(name: "procedureevents_mv") {
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   cancelreason: Int
   # Relation procedureevents_mv.cgid -> caregivers.cgid does not target the id field of caregivers
   # cgid: Caregiver
@@ -1146,7 +1146,7 @@ type ProceduresIcd @indexes(value: [
   {name: "procedures_icd_idx02", fields: ["icd9_code"]}
 ]) @pgTable(name: "procedures_icd") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Foreign key. Identifies the hospital stay.
   # Relation procedures_icd.hadm_id -> admissions.hadm_id does not target the id field of admissions
   # hadm_id: Admission!
@@ -1161,7 +1161,7 @@ type ProceduresIcd @indexes(value: [
 
 type Service @pgTable(name: "services") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Current service type.
   curr_service: String
   # Foreign key. Identifies the hospital stay.
@@ -1178,7 +1178,7 @@ type Service @pgTable(name: "services") {
 
 type Transfer @pgTable(name: "transfers") {
   # Unique row identifier.
- id: UUID! @pgColumn(name: "row_id") @unique
+ id: ID! @pgColumn(name: "row_id") @unique
   # Current careunit.
   curr_careunit: String
   # Identifier for the current ward the patient is located in.

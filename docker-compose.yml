@@ -53,12 +53,12 @@ services:
             connector: postgres
             host: postgres
             database: mimic
-            user: mimic
+            user: postgres
             schema: mimic
             password: ${MIMIC_PASSWORD:-password}
             rawAccess: true
             port: '5432'
-            migrations: false
+            migrations: true
 
 networks:
   postgres:

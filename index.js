@@ -1,22 +1,7 @@
-const { prisma } = require('./generated/prisma-client')
+const Sequelize = require('sequelize');
 
-// async function main() {
-//   const query = `
-//     query {
-//       caregivers {
-//         cgid
-//       }
-//     }
-//   `
-//   const allCaregivers = await prisma.$graphql(query);
-//   console.log(allCaregivers);
-// }
-
-async function main() {
-  const cgs = await prisma.caregiver({ id: '1' });
-  console.log(cgs)
-}
-
-main().catch(e => console.error(e))
-
-
+// Option 1: Passing parameters separately
+const sequelize = new Sequelize('mimic', 'mimic', 'password', {
+  host: 'localhost',
+  dialect: postgres/* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
+});
