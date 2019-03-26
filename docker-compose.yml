@@ -32,11 +32,11 @@ services:
       - postgres
     restart: unless-stopped
 
-  prisma:
-    image: prismagraphql/prisma:1.29
+  postgraphile:
+    image: graphile/postgraphile:latest
     restart: unless-stopped
     ports:
-    - "4466:4466"
+    - "5000:5000"
     networks:
       - postgres
     links:
@@ -44,21 +44,8 @@ services:
     depends_on:
       - postgres
     environment:
-      PRISMA_CONFIG: |
-        port: 4466
-        # uncomment the next line and provide the env var PRISMA_MANAGEMENT_API_SECRET=my-secret to activate cluster security
-        # managementApiSecret: my-secret
-        databases:
-          default:
-            connector: postgres
-            host: postgres
-            database: mimic
-            user: mimic
-            schema: mimic
-            password: ${MIMIC_PASSWORD:-password}
-            rawAccess: true
-            port: '5432'
-            migrations: false
+      DATABASE_URL: ${DATABASE_URL-postgres://postgres:password@postgres:5432/mimic}
+    command: ["postgraphile", "--connection", $DATABASE_URL, "--host", "0.0.0.0", "--port", "5000", "--schema", "mimic"]        
 
 networks:
   postgres:
